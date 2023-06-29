@@ -14,8 +14,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 
 import Link from 'next/link'
-import { Logo } from '@/features/ui'
-import { PAGES, SOCIAL_LINKS } from '@/data'
+import { Logo, SocialLinks } from '@/features/ui'
+import { pages } from '@/data'
 
 export default function Menu() {
   const [open, setOpen] = React.useState(false)
@@ -113,23 +113,7 @@ function MenuLogo() {
       }}
     >
       <Logo />
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'center',
-        }}
-      >
-        {SOCIAL_LINKS.map((socialLink, index) => (
-          <IconButton
-            key={index}
-            href={socialLink.href}
-            sx={{ color: 'common.light' }}
-          >
-            <socialLink.icon />
-          </IconButton>
-        ))}
-      </Box>
+      <SocialLinks />
     </Box>
   )
 }
@@ -179,7 +163,7 @@ function MenuItems({ onClose }) {
         },
       }}
     >
-      {PAGES.map((page) => (
+      {pages.map((page) => (
         <MenuItem key={page.href} onClick={onClose} href={page.href}>
           {page.title}
         </MenuItem>

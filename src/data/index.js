@@ -1,2 +1,4 @@
-export { PAGES } from './pages'
-export { SOCIAL_LINKS } from './social-links'
+export { appConfig } from './app-config'
+export { pages } from './pages'
+export { socialLinks } from './social-links'
+export { contactLinks } from './contact-links'

@@ -25,7 +25,7 @@ export default function Header() {
           px: 3,
         }}
       >
-        <Logo />
+        <Logo color="preta" />
 
         <Menu target={menuAnchor} />
       </AppBar>

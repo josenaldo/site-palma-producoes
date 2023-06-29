@@ -1,4 +1,4 @@
-export const PAGES = [
+export const pages = [
   {
     title: 'Home',
     href: '/',

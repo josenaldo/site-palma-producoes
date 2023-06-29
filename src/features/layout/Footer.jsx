@@ -1,51 +1,34 @@
 'use client'
 
-import { Box, Divider, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
+
+import { appConfig } from '@/data'
+import { ContactLinks, SocialLinks } from '@/features/ui'
 
 export default function Footer() {
   return (
     <Box
       sx={{
         display: 'flex',
-        flexDirection: {
-          xs: 'column',
-          sm: 'row',
-        },
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '17px 23px',
-        backgroundColor: 'common.black',
-        color: 'common.white',
+        py: 3,
         width: '100%',
-        gap: 1,
+        backgroundColor: 'common.dark',
+        color: 'common.light',
       }}
     >
+      <SocialLinks />
+      <ContactLinks />
       <Typography
-        variant="body1"
+        variant="body2"
         sx={{
-          fontSize: '13px',
+          color: 'grey',
+          fontSize: '0.7rem',
         }}
       >
-        2023 &copy; Desenvolvido por Josenaldo Matos
-      </Typography>
-      <Divider
-        orientation="vertical"
-        flexItem
-        sx={{
-          borderColor: 'common.white',
-          display: {
-            xs: 'none',
-            sm: 'block',
-          },
-        }}
-      />
-      <Typography
-        variant="body1"
-        sx={{
-          fontSize: '13px',
-        }}
-      >
-        Projeto sem fins comerciais
+        &copy; {appConfig.copyrigth}
       </Typography>
     </Box>
   )

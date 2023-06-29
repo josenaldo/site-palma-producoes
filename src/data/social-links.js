@@ -2,7 +2,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 
-export const SOCIAL_LINKS = [
+export const socialLinks = [
   {
     title: 'Facebook',
     href: 'https://www.facebook.com/',
