@@ -8,10 +8,16 @@ import {
 const palette = {
   mode: 'light',
   primary: {
-    main: '#DAFF01',
+    main: '#81af43',
   },
   secondary: {
-    main: '#9353FF',
+    main: '#60398e',
+  },
+  tertiary: {
+    main: '#cb975d',
+  },
+  quaternary: {
+    main: '#0972ad',
   },
   white: {
     main: '#FFFFFF',
@@ -27,10 +33,12 @@ const palette = {
   },
   common: {
     black: '#000000',
+    dark: '#1a1a1a',
+    light: '#f4f4f4',
     white: '#FFFFFF',
   },
   text: {
-    primary: '#212529',
+    primary: '#1a1a1a',
     secondary: '#6C757D',
   },
   banners: {

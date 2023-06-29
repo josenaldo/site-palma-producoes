@@ -1,21 +1,31 @@
 'use client'
 
 import React from 'react'
-import { Box, IconButton, Menu, MenuItem as MuiMenuItem } from '@mui/material'
+import {
+  Box,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  Divider,
+  IconButton,
+  MenuItem as MuiMenuItem,
+} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 
 import Link from 'next/link'
+import { Logo } from '@/features/ui'
+import { PAGES, SOCIAL_LINKS } from '@/data'
 
 export default function MobileMenu({ target }) {
-  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [open, setOpen] = React.useState(false)
 
-  const handleMenu = (event) => {
-    setAnchorEl(target.current)
+  const handleOpen = () => {
+    setOpen(true)
   }
 
   const handleClose = () => {
-    setAnchorEl(null)
+    setOpen(false)
   }
 
   return (
@@ -23,66 +33,156 @@ export default function MobileMenu({ target }) {
       <IconButton
         size="large"
         edge="end"
-        color="primary"
+        color="common.black"
         aria-label="menu"
-        onClick={handleMenu}
+        onClick={handleOpen}
       >
         <MenuIcon />
       </IconButton>
 
-      <Menu
-        elevation={0}
-        marginThreshold={0}
-        id="menu-appbar"
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        keepMounted
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        open={Boolean(anchorEl)}
+      <Dialog
         onClose={handleClose}
+        open={open}
+        fullScreen
         sx={{
-          padding: 0,
-          margin: 0,
-          '& .MuiPaper-root': {
-            backgroundColor: 'menu.main',
-            color: 'common.white',
-            px: 3,
-            fontSize: '1rem',
-            margin: 0,
+          '& .MuiDialog-paper': {
+            backgroundColor: 'common.dark',
+            color: 'common.light',
           },
         }}
       >
-        <Box
+        <DialogTitle
           sx={{
             display: 'flex',
             justifyContent: 'flex-end',
           }}
         >
-          <IconButton color="primary" edge="end" onClick={handleClose}>
-            <ClearIcon fontSize="large" />
+          <IconButton
+            edge="end"
+            onClick={handleClose}
+            sx={{ color: 'common.light' }}
+          >
+            <ClearIcon />
           </IconButton>
-        </Box>
+        </DialogTitle>
 
-        <MenuItem onClick={handleClose} href="/">
-          Home
-        </MenuItem>
-        <MenuItem onClick={handleClose} href="/nossas-lojas">
-          Nossas lojas
-        </MenuItem>
-        <MenuItem onClick={handleClose} href="/novidades">
-          Novidades
-        </MenuItem>
-        <MenuItem onClick={handleClose} href="/promocoes" last>
-          Promoções
-        </MenuItem>
-      </Menu>
+        <DialogContent
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: {
+                xs: 'column',
+                sm: 'row',
+              },
+              justifyContent: 'center',
+              justifyItems: 'center',
+              alignContent: 'center',
+              alignItems: 'center',
+              gap: 2,
+            }}
+          >
+            <MenuLogo />
+
+            <MenuDivider />
+
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: {
+                  xs: 'center',
+                  sm: 'flex-start',
+                },
+              }}
+            >
+              {PAGES.map((page, index) => (
+                <MenuItem
+                  key={page.href}
+                  onClick={handleClose}
+                  href={page.href}
+                >
+                  {page.title}
+                </MenuItem>
+              ))}
+            </Box>
+          </Box>
+        </DialogContent>
+      </Dialog>
     </Box>
+  )
+}
+
+function MenuLogo() {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+
+        color: 'common.light',
+      }}
+    >
+      <Logo />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+        }}
+      >
+        {SOCIAL_LINKS.map((socialLink, index) => (
+          <IconButton
+            key={index}
+            href={socialLink.href}
+            sx={{ color: 'common.light' }}
+          >
+            <socialLink.icon />
+          </IconButton>
+        ))}
+      </Box>
+    </Box>
+  )
+}
+
+function MenuDivider() {
+  return (
+    <>
+      <Divider
+        variant="fullWidth"
+        orientation="vertical"
+        sx={{
+          borderColor: 'primary.main',
+          borderWidth: '2px',
+          display: {
+            xs: 'none',
+            sm: 'block',
+          },
+        }}
+      />
+      <Divider
+        variant="fullWidth"
+        orientation="horizontal"
+        sx={{
+          borderColor: 'primary.main',
+          borderWidth: '2px',
+          display: {
+            xs: 'block',
+            sm: 'none',
+            width: '100%',
+          },
+        }}
+      />
+    </>
   )
 }
 
@@ -92,9 +192,9 @@ function MenuItem({ href, children, last = false }) {
       component={Link}
       href={href}
       sx={{
-        color: 'common.white',
+        // color: 'common.white',
         fontSize: '1rem',
-        borderBottom: last ? 'none' : '1px solid',
+        textTransform: 'uppercase',
       }}
     >
       {children}

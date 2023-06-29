@@ -4,10 +4,8 @@ import React from 'react'
 
 import { AppBar, Box } from '@mui/material'
 
-import DesktopMenu from './DesktopMenu'
-import Logo from './Logo'
 import MobileMenu from './MobileMenu'
-import SearchBox from './SearchBox'
+import { Logo } from '@/features/ui'
 
 export default function Header() {
   const menuAnchor = React.useRef(null)
@@ -18,8 +16,8 @@ export default function Header() {
         elevation={0}
         position="static"
         sx={{
-          backgroundColor: 'common.black',
-          height: '58px',
+          backgroundColor: 'transparent',
+          height: '120px',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
@@ -27,39 +25,10 @@ export default function Header() {
           px: 3,
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: 3,
-          }}
-        >
-          <Logo />
-          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
-            <DesktopMenu />
-          </Box>
-        </Box>
-        <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
-          <SearchBox />
-        </Box>
-        <Box
-          sx={{
-            display: { xs: 'flex', sm: 'none' },
-          }}
-        >
-          <MobileMenu target={menuAnchor} />
-        </Box>
+        <Logo />
+
+        <MobileMenu target={menuAnchor} />
       </AppBar>
-      <Box
-        sx={{
-          display: { xs: 'flex', sm: 'none' },
-          flexDirection: 'row',
-          justifyContent: 'center',
-          padding: 3,
-        }}
-      >
-        <SearchBox buttonColor="black" />
-      </Box>
     </Box>
   )
 }
