@@ -164,25 +164,19 @@ function MenuItems({ onClose }) {
       }}
     >
       {pages.map((page) => (
-        <MenuItem key={page.href} onClick={onClose} href={page.href}>
+        <MuiMenuItem
+          key={page.href}
+          component={Link}
+          href={page.href}
+          onClick={onClose}
+          sx={{
+            fontSize: '1rem',
+            textTransform: 'uppercase',
+          }}
+        >
           {page.title}
-        </MenuItem>
+        </MuiMenuItem>
       ))}
     </Box>
-  )
-}
-
-function MenuItem({ href, children }) {
-  return (
-    <MuiMenuItem
-      component={Link}
-      href={href}
-      sx={{
-        fontSize: '1rem',
-        textTransform: 'uppercase',
-      }}
-    >
-      {children}
-    </MuiMenuItem>
   )
 }
