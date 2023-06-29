@@ -17,7 +17,7 @@ import Link from 'next/link'
 import { Logo } from '@/features/ui'
 import { PAGES, SOCIAL_LINKS } from '@/data'
 
-export default function MobileMenu({ target }) {
+export default function Menu() {
   const [open, setOpen] = React.useState(false)
 
   const handleOpen = () => {
@@ -92,27 +92,7 @@ export default function MobileMenu({ target }) {
 
             <MenuDivider />
 
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: {
-                  xs: 'center',
-                  sm: 'flex-start',
-                },
-              }}
-            >
-              {PAGES.map((page, index) => (
-                <MenuItem
-                  key={page.href}
-                  onClick={handleClose}
-                  href={page.href}
-                >
-                  {page.title}
-                </MenuItem>
-              ))}
-            </Box>
+            <MenuItems onClose={handleClose} />
           </Box>
         </DialogContent>
       </Dialog>
@@ -186,13 +166,34 @@ function MenuDivider() {
   )
 }
 
-function MenuItem({ href, children, last = false }) {
+function MenuItems({ onClose }) {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: {
+          xs: 'center',
+          sm: 'flex-start',
+        },
+      }}
+    >
+      {PAGES.map((page) => (
+        <MenuItem key={page.href} onClick={onClose} href={page.href}>
+          {page.title}
+        </MenuItem>
+      ))}
+    </Box>
+  )
+}
+
+function MenuItem({ href, children }) {
   return (
     <MuiMenuItem
       component={Link}
       href={href}
       sx={{
-        // color: 'common.white',
         fontSize: '1rem',
         textTransform: 'uppercase',
       }}

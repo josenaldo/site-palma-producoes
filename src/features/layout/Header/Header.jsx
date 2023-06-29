@@ -4,7 +4,7 @@ import React from 'react'
 
 import { AppBar, Box } from '@mui/material'
 
-import MobileMenu from './MobileMenu'
+import Menu from './Menu'
 import { Logo } from '@/features/ui'
 
 export default function Header() {
@@ -27,7 +27,7 @@ export default function Header() {
       >
         <Logo />
 
-        <MobileMenu target={menuAnchor} />
+        <Menu target={menuAnchor} />
       </AppBar>
     </Box>
   )
