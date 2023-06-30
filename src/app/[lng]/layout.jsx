@@ -1,4 +1,6 @@
 import { Inter } from 'next/font/google'
+import { dir } from 'i18next'
+import { languages } from '@/i18n/settings'
 
 import { ThemeProvider } from '@/features/styles'
 import { Footer, Header } from '@/features/layout'
@@ -15,9 +17,13 @@ export const metadata = {
   description: 'Palma Produções description',
 }
 
-export default function RootLayout({ children }) {
+export async function generateStaticPArams() {
+  return languages.map((lng) => ({ lng }))
+}
+
+export default function RootLayout({ children, params: { lng } }) {
   return (
-    <html lang="en">
+    <html lang={lng} dir={dir(lng)}>
       <ThemeProvider>
         <body className={mainFont.className} id="__next">
           <Header />
