@@ -26,9 +26,9 @@ export default function RootLayout({ children, params: { lng } }) {
     <html lang={lng} dir={dir(lng)}>
       <ThemeProvider>
         <body className={mainFont.className} id="__next">
-          <Header />
+          <Header lng={lng} />
           <main className={styles.main}>{children}</main>
-          <Footer />
+          <Footer lng={lng} />
         </body>
       </ThemeProvider>
     </html>

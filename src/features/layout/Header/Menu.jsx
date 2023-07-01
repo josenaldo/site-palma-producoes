@@ -14,10 +14,11 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 
 import Link from 'next/link'
+
 import { Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
 
-export default function Menu() {
+export default async function Menu({ lng }) {
   const [open, setOpen] = React.useState(false)
 
   const handleOpen = () => {
@@ -150,7 +151,7 @@ function MenuDivider() {
   )
 }
 
-function MenuItems({ onClose }) {
+function MenuItems({ lng, onClose }) {
   return (
     <Box
       sx={{

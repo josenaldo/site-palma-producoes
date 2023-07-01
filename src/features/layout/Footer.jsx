@@ -1,11 +1,13 @@
 'use client'
 
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, CircularProgress } from '@mui/material'
 
 import { appConfig } from '@/data'
-import { ContactLinks, SocialLinks } from '@/features/ui'
+import { ContactLinks, Loading, SocialLinks } from '@/features/ui'
+import { LanguageSelector } from '@/i18n'
+import { Suspense } from 'react'
 
-export default function Footer() {
+export default function Footer({ lng }) {
   return (
     <Box
       sx={{
@@ -17,6 +19,7 @@ export default function Footer() {
         width: '100%',
         backgroundColor: 'common.dark',
         color: 'common.light',
+        gap: '0.5rem',
       }}
     >
       <SocialLinks />
@@ -30,6 +33,10 @@ export default function Footer() {
       >
         &copy; {appConfig.copyrigth}
       </Typography>
+
+      <Suspense fallback={<CircularProgress />}>
+        <LanguageSelector lng={lng} />
+      </Suspense>
     </Box>
   )
 }

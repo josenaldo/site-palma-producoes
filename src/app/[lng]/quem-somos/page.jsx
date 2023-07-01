@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useTranslation } from '@/i18n'
+import { useTranslationServer as useTranslation } from '@/i18n'
 
 export default async function QuemSomosPage({ params: { lng } }) {
   const { t } = await useTranslation(lng, 'quem-somos')
