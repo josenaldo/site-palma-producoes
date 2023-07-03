@@ -3,11 +3,10 @@
 import { Box, Typography, CircularProgress } from '@mui/material'
 
 import { appConfig } from '@/data'
-import { ContactLinks, Loading, SocialLinks } from '@/features/ui'
-import { LanguageSelector } from '@/i18n'
-import { Suspense } from 'react'
+import { ContactLinks, SocialLinks } from '@/features/ui'
+import { LanguageSelector } from '@/features/i18n/client'
 
-export default function Footer({ lng }) {
+export default function Footer() {
   return (
     <Box
       sx={{
@@ -34,9 +33,7 @@ export default function Footer({ lng }) {
         &copy; {appConfig.copyrigth}
       </Typography>
 
-      <Suspense fallback={<CircularProgress />}>
-        <LanguageSelector lng={lng} />
-      </Suspense>
+      <LanguageSelector />
     </Box>
   )
 }

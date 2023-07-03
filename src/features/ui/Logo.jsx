@@ -7,5 +7,5 @@ import logoPreta from '@/assets/images/logo-header-preta.svg'
 export default function Logo({ color = 'white' }) {
   const src = color === 'white' ? logoBranca : logoPreta
 
-  return <Image src={src} alt="Logo" />
+  return <Image src={src} alt="Logo" priority />
 }

@@ -1,4 +1,5 @@
 'use client'
+
 import {
   purple as primaryColor,
   deepPurple as secondaryColor,

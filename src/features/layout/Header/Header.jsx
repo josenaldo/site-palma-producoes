@@ -1,17 +1,12 @@
-'use client'
-
-import React from 'react'
-
 import { AppBar, Box } from '@mui/material'
 
 import Menu from './Menu'
 import { Logo } from '@/features/ui'
+import React from 'react'
 
 export default function Header() {
-  const menuAnchor = React.useRef(null)
-
   return (
-    <Box component="header" ref={menuAnchor}>
+    <Box component="header">
       <AppBar
         elevation={0}
         position="static"
@@ -26,8 +21,7 @@ export default function Header() {
         }}
       >
         <Logo color="preta" />
-
-        <Menu target={menuAnchor} />
+        <Menu />
       </AppBar>
     </Box>
   )

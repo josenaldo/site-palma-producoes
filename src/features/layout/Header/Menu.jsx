@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import {
   Box,
@@ -13,12 +11,12 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 
-import Link from 'next/link'
+import { Link } from '@/features/ui'
 
 import { Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
 
-export default async function Menu({ lng }) {
+export default function Menu() {
   const [open, setOpen] = React.useState(false)
 
   const handleOpen = () => {
@@ -151,7 +149,9 @@ function MenuDivider() {
   )
 }
 
-function MenuItems({ lng, onClose }) {
+function MenuItems({ onClose }) {
+  if (!pages || pages.length === 0) return null
+
   return (
     <Box
       sx={{
@@ -165,18 +165,19 @@ function MenuItems({ lng, onClose }) {
       }}
     >
       {pages.map((page) => (
-        <MuiMenuItem
+        <Link
           key={page.href}
-          component={Link}
           href={page.href}
           onClick={onClose}
           sx={{
             fontSize: '1rem',
             textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: 'common.light',
           }}
         >
           {page.title}
-        </MuiMenuItem>
+        </Link>
       ))}
     </Box>
   )

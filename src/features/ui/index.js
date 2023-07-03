@@ -5,4 +5,4 @@ export { default as Logo } from './Logo'
 export { default as SocialLinks } from './SocialLinks'
 export { default as ContactLinks } from './ContactLinks'
 
-export { default as Loader } from './Loader/Loader'
+export { Loader } from './Loader'

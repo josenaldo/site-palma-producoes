@@ -1,4 +1,5 @@
 'use client'
+
 import { primaryColor } from './palette'
 const components = {
   MuiTypography: {
