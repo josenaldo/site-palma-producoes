@@ -11,24 +11,25 @@ import {
 import LanguageIcon from '@mui/icons-material/Language'
 
 import Image from 'next/image'
-import { useRouter, usePathname } from 'next/navigation'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { useLanguage } from '@/features/i18n/client'
+import { languageDetector } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
 export default function LanguageSelector() {
   const { t } = useTranslation('common')
-  const lng = useLanguage()
 
   const router = useRouter()
-  const pathname = usePathname()
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
   const handleChange = async (value) => {
-    const newPathname = pathname.replace(`/${lng}`, `/${value}`)
+    let pathname = router.pathname
+    const newPathname = pathname.replace(`[locale]`, `${value}`)
+    languageDetector.cache(value)
     router.push(newPathname)
     handleClose()
   }
