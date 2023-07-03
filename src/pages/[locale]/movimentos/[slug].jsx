@@ -7,7 +7,6 @@ import {
 
 const getStaticPaths = () => {
   const i18nPaths = i18nGetStaticPaths()
-  console.log('🟢 OLD', JSON.stringify(i18nPaths))
 
   const movimentos = [1, 2, 3, 4, 5]
 
@@ -31,7 +30,6 @@ const getStaticPaths = () => {
     ...i18nPaths,
     paths: paths,
   }
-  console.log('🟢 NEW', JSON.stringify(newPathsObject))
 
   return newPathsObject
 }
@@ -40,7 +38,6 @@ async function getStaticProps(ctx) {
   const i18nPropsFunc = makeStaticProps(['common', 'movimento'])
 
   const i18nProps = await i18nPropsFunc(ctx)
-  console.log('🟢 i18nProps', JSON.stringify(i18nProps))
   return {
     ...i18nProps,
     props: {
@@ -51,7 +48,6 @@ async function getStaticProps(ctx) {
 }
 
 export default function MovimentoPage(params) {
-  console.log('🟢 params', JSON.stringify(params))
   const { t } = useTranslation(['movimento'])
 
   return <div>Movimento: {params.slug}</div>
