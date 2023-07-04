@@ -13,13 +13,13 @@ import LanguageIcon from '@mui/icons-material/Language'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { useLanguage } from '@/features/i18n/client'
-import { languageDetector } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
 export default function LanguageSelector() {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation(['common'])
+
+  console.log('🟢t', t('common:languageSelector.language'))
 
   const router = useRouter()
 
@@ -29,7 +29,6 @@ export default function LanguageSelector() {
   const handleChange = async (value) => {
     let pathname = router.pathname
     const newPathname = pathname.replace(`[locale]`, `${value}`)
-    languageDetector.cache(value)
     router.push(newPathname)
     handleClose()
   }
@@ -52,7 +51,7 @@ export default function LanguageSelector() {
         onClick={handleClick}
         startIcon={<LanguageIcon />}
       >
-        {t('language')}
+        {t('languageSelector.language')}
       </Button>
 
       <Menu
@@ -74,7 +73,9 @@ export default function LanguageSelector() {
                 alt={t(language)}
               />
             </ListItemIcon>
-            <ListItemText>{t(language)}</ListItemText>
+            <ListItemText>
+              {t(`languageSelector.${language}`, { ns: 'common' })}
+            </ListItemText>
           </MenuItem>
         ))}
       </Menu>

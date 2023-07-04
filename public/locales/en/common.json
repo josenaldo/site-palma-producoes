@@ -1,4 +1,7 @@
 {
-  "title": "Hi there!",
-  "to-quem-somos-page": "To Quem Somos page"
+  "languageSelector": {
+    "language": "Language",
+    "pt": "Portuguese",
+    "en": "English"
+  }
 }

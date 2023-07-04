@@ -3,16 +3,16 @@ import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { Link } from '@/features/ui'
 
-const getStaticProps = makeStaticProps(['quem-somos'])
+const getStaticProps = makeStaticProps(['common', 'quem-somos'])
 
 export default function QuemSomosPage() {
-  const { t } = useTranslation('quem-somos')
+  const { t } = useTranslation(['common', 'quem-somos'])
 
   return (
     <div>
-      <h1>{t('title')}</h1>
+      <h1>{t('quem-somos:title')}</h1>
       <br />
-      <Link href={`/`}>{t('back-to-home')}</Link>
+      <Link href={`/`}>{t('quem-somos:back-to-home')}</Link>
     </div>
   )
 }

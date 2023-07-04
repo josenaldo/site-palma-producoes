@@ -1,4 +1,7 @@
 {
-  "title": "Olá 2!",
-  "to-quem-somos-page": "Para a página Quem Somos"
+  "languageSelector": {
+    "language": "Idioma",
+    "pt": "Português",
+    "en": "Inglês"
+  }
 }
