@@ -1,6 +1,4 @@
-'use client'
-
-import { Box, Typography, CircularProgress } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 import { appConfig } from '@/data'
 import { ContactLinks, SocialLinks } from '@/features/ui'

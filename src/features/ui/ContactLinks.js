@@ -8,7 +8,7 @@ export default function ContactLinks({ color = 'common.light' }) {
     <Box
       sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: { xs: 'column', sm: 'row' },
         justifyContent: 'center',
       }}
     >

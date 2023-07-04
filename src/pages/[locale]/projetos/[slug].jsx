@@ -48,7 +48,7 @@ async function getStaticProps(ctx) {
 }
 
 export default function MovimentoPage(params) {
-  const { t } = useTranslation(['projeto'])
+  const { t } = useTranslation(['common', 'projeto'])
 
   return <div>Movimento: {params.slug}</div>
 }

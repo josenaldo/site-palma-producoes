@@ -2,17 +2,18 @@ import { useTranslation } from 'next-i18next'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { Link } from '@/features/ui'
+import { Typography } from '@mui/material'
 
-const getStaticProps = makeStaticProps(['index'])
+const getStaticProps = makeStaticProps(['common', 'home'])
 
 export default function HomePage() {
-  const { t } = useTranslation('index')
+  const { t } = useTranslation(['common', 'home'])
 
   return (
     <div>
-      <h1 variant="h1">{t('title')}</h1>
+      <Typography variant="h1">{t('home:title')}</Typography>
       <br />
-      <Link href={`/quem-somos`}>{t('to-quem-somos-page')}</Link>
+      <Link href={`/quem-somos`}>{t('home:to-quem-somos-page')}</Link>
     </div>
   )
 }

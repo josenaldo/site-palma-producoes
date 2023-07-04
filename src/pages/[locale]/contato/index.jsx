@@ -5,7 +5,7 @@ import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 const getStaticProps = makeStaticProps(['common', 'contato'])
 
 export default function ContatoPage() {
-  const { t } = useTranslation(['contato'])
+  const { t } = useTranslation(['common', 'contato'])
 
   return <div>Contato</div>
 }

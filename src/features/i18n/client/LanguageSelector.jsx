@@ -49,7 +49,7 @@ export default function LanguageSelector() {
         onClick={handleClick}
         startIcon={<LanguageIcon />}
       >
-        {t('languageSelector.language')}
+        {t('common:languageSelector.language')}
       </Button>
 
       <Menu
@@ -72,7 +72,7 @@ export default function LanguageSelector() {
               />
             </ListItemIcon>
             <ListItemText>
-              {t(`languageSelector.${language}`, { ns: 'common' })}
+              {t(`common:languageSelector.${language}`, { ns: 'common' })}
             </ListItemText>
           </MenuItem>
         ))}

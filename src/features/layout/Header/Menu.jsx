@@ -6,16 +6,15 @@ import {
   DialogTitle,
   Divider,
   IconButton,
-  MenuItem as MuiMenuItem,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 
-import { Link } from '@/features/ui'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
-import { Logo, SocialLinks } from '@/features/ui'
+import { Link, Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
-import styled from '@emotion/styled'
 
 export default function Menu() {
   const [open, setOpen] = React.useState(false)
@@ -119,34 +118,23 @@ function MenuLogo() {
 }
 
 function MenuDivider() {
+  const theme = useTheme()
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const orientation = isSmallScreen ? 'horizontal' : 'vertical'
+  const width = isSmallScreen ? '100%' : null
+
   return (
-    <>
-      <Divider
-        variant="fullWidth"
-        orientation="vertical"
-        sx={{
-          borderColor: 'primary.main',
-          borderWidth: '2px',
-          display: {
-            xs: 'none',
-            sm: 'block',
-          },
-        }}
-      />
-      <Divider
-        variant="fullWidth"
-        orientation="horizontal"
-        sx={{
-          borderColor: 'primary.main',
-          borderWidth: '2px',
-          display: {
-            xs: 'block',
-            sm: 'none',
-            width: '100%',
-          },
-        }}
-      />
-    </>
+    <Divider
+      variant="fullWidth"
+      orientation={orientation}
+      sx={{
+        borderColor: 'primary.main',
+        borderWidth: '2px',
+        display: 'block',
+        width,
+      }}
+    />
   )
 }
 
@@ -167,18 +155,7 @@ function MenuItems({ onClose }) {
       }}
     >
       {pages.map((page) => (
-        <Link
-          key={page.href}
-          href={page.href}
-          onClick={onClose}
-          sx={{
-            fontSize: '1rem',
-            textTransform: 'uppercase',
-            textDecoration: 'none',
-            color: 'common.light',
-            fontWeight: 'bold',
-          }}
-        >
+        <Link key={page.href} href={page.href} onClick={onClose} variant="nav">
           {page.title}
         </Link>
       ))}
