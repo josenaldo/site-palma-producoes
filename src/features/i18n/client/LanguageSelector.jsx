@@ -19,8 +19,6 @@ const languages = ['pt', 'en']
 export default function LanguageSelector() {
   const { t } = useTranslation(['common'])
 
-  console.log('🟢t', t('common:languageSelector.language'))
-
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)

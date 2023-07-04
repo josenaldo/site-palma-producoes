@@ -15,6 +15,7 @@ import { Link } from '@/features/ui'
 
 import { Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
+import styled from '@emotion/styled'
 
 export default function Menu() {
   const [open, setOpen] = React.useState(false)
@@ -162,6 +163,7 @@ function MenuItems({ onClose }) {
           xs: 'center',
           sm: 'flex-start',
         },
+        gap: 2,
       }}
     >
       {pages.map((page) => (
@@ -174,6 +176,7 @@ function MenuItems({ onClose }) {
             textTransform: 'uppercase',
             textDecoration: 'none',
             color: 'common.light',
+            fontWeight: 'bold',
           }}
         >
           {page.title}
