@@ -3,5 +3,13 @@
     "language": "Language",
     "pt": "Portuguese",
     "en": "English"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "Who we are",
+    "services": "Services",
+    "projects": "Projects",
+    "moviments": "Movements",
+    "contact": "Contact"
   }
 }

@@ -15,8 +15,8 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { Link, Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
-import { useRouter } from 'next/router'
 import { useIsHome } from '@/features/layout'
+import { useTranslation } from 'react-i18next'
 
 export default function Menu() {
   const isHome = useIsHome()
@@ -146,6 +146,8 @@ function MenuDivider() {
 }
 
 function MenuItems({ onClose }) {
+  const { t } = useTranslation(['common'])
+
   if (!pages || pages.length === 0) return null
 
   return (
@@ -162,8 +164,8 @@ function MenuItems({ onClose }) {
       }}
     >
       {pages.map((page) => (
-        <Link key={page.href} href={page.href} onClick={onClose} variant="nav">
-          {page.title}
+        <Link key={page.key} href={page.href} onClick={onClose} variant="nav">
+          {t(page.title)}
         </Link>
       ))}
     </Box>

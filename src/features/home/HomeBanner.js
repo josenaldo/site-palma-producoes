@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 import styles from './HomeBanner.module.css'
 
-export default function HomeBanner() {
+export default function HomeBanner({ t }) {
   const [selectedItem, setSelectedItem] = useState(homeBannerItems[0])
 
   return (
@@ -30,7 +30,7 @@ export default function HomeBanner() {
             onClick={() => setSelectedItem(item)}
             onMouseOver={() => setSelectedItem(item)}
           >
-            {item.title}
+            {t(item.title, { ns: 'home' })}
           </Typography>
         ))}
       </Box>

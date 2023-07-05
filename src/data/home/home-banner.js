@@ -1,32 +1,32 @@
 export const homeBannerItems = [
   {
     id: 1,
-    title: 'IMPACTO',
+    title: 'homeBanner.impacto',
     image: '/images/home/banner-impacto.jpg',
   },
   {
     id: 2,
-    title: 'BRASILIDADE',
+    title: 'homeBanner.brasilidade',
     image: '/images/home/banner-brasilidade.jpg',
   },
   {
     id: 3,
-    title: 'SOCIOAMBIENTAL',
+    title: 'homeBanner.socioambiental',
     image: '/images/home/banner-socioambiental.jpg',
   },
   {
     id: 4,
-    title: 'RESISTÊNCIA',
+    title: 'homeBanner.resistência',
     image: '/images/home/banner-resistencia.jpg',
   },
   {
     id: 5,
-    title: 'CONEXÃO',
+    title: 'homeBanner.conexão',
     image: '/images/home/banner-conexao.jpg',
   },
   {
     id: 6,
-    title: 'CULTURA',
+    title: 'homeBanner.cultura',
     image: '/images/home/banner-cultura.jpg',
   },
 ]

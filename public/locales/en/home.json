@@ -1,4 +1,10 @@
 {
-  "title": "Hi there!",
-  "to-quem-somos-page": "To Quem Somos page"
+  "homeBanner": {
+    "impacto": "Impact",
+    "brasilidade": "Brazilianness",
+    "socioambiental": "Socioenvironmental",
+    "resistência": "Resistance",
+    "conexão": "Connection",
+    "cultura": "Culture"
+  }
 }

@@ -1,1 +1,1 @@
-export { default as MainBanner } from './HomeBanner'
+export { default as HomeBanner } from './HomeBanner'

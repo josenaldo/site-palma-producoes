@@ -1,4 +1,10 @@
 {
-  "title": "Olá 2!",
-  "to-quem-somos-page": "Para a página Quem Somos"
+  "homeBanner": {
+    "impacto": "Impacto",
+    "brasilidade": "Brasilidade",
+    "socioambiental": "Socioambiental",
+    "resistência": "Resistência",
+    "conexão": "Conexão",
+    "cultura": "Cultura"
+  }
 }

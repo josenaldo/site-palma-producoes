@@ -1,4 +1,4 @@
-import { AppBar, Box } from '@mui/material'
+import { AppBar } from '@mui/material'
 
 import Menu from './Menu'
 import { Logo } from '@/features/ui'

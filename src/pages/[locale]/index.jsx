@@ -1,9 +1,8 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
-import { Link } from '@/features/ui'
-import { MainBanner } from '@/features/home'
+import { HomeBanner } from '@/features/home'
 
 const getStaticProps = makeStaticProps(['common', 'home'])
 
@@ -17,7 +16,7 @@ export default function HomePage() {
         position: 'relative',
       }}
     >
-      <MainBanner t={t} />
+      <HomeBanner t={t} />
     </Box>
   )
 }

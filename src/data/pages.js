@@ -1,26 +1,26 @@
 export const pages = [
   {
-    title: 'Home',
+    title: 'menu.home',
     href: '/',
   },
   {
-    title: 'Quem somos',
+    title: 'menu.about',
     href: '/quem-somos',
   },
   {
-    title: 'Serviços',
+    title: 'menu.services',
     href: '/servicos',
   },
   {
-    title: 'Projetos',
+    title: 'menu.projects',
     href: '/projetos',
   },
   {
-    title: 'Movimentos',
+    title: 'menu.moviments',
     href: '/movimentos',
   },
   {
-    title: 'Contato',
+    title: 'menu.contact',
     href: '/contato',
   },
 ]
