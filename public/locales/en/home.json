@@ -6,5 +6,9 @@
     "resistência": "Resistance",
     "conexão": "Connection",
     "cultura": "Culture"
+  },
+  "intro": {
+    "title": "Design and reframe stories",
+    "button": "Know more"
   }
 }

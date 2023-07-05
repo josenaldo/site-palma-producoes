@@ -42,6 +42,11 @@ const typography = {
     fontFamily: titleFont.style.fontFamily,
     fontSize: 'clamp(0.70rem, calc(0.85rem + -0.15vw), 0.79rem)',
   },
+  sectionTitle: {
+    fontFamily: titleFont.style.fontFamily,
+    fontSize: 'clamp(1.42rem, calc(0.44rem + 2.63vw), 2.96rem);',
+    fontWeight: 400,
+  },
 }
 
 export { titleFont, textFont }

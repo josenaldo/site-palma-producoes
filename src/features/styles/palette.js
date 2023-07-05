@@ -24,6 +24,12 @@ const palette = {
   black: {
     main: '#000000',
   },
+  dark: {
+    main: '#1a1a1a',
+  },
+  light: {
+    main: '#f4f4f4',
+  },
   menu: {
     main: '#343A40',
   },
