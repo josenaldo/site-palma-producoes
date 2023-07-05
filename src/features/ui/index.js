@@ -6,3 +6,4 @@ export { default as SocialLinks } from './SocialLinks'
 export { default as ContactLinks } from './ContactLinks'
 
 export { Loader } from './Loader'
+export { BannerBox } from './BannerBox'

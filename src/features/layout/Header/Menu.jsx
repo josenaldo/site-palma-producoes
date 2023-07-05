@@ -15,8 +15,12 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { Link, Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
+import { useRouter } from 'next/router'
+import { useIsHome } from '@/features/layout'
 
 export default function Menu() {
+  const isHome = useIsHome()
+
   const [open, setOpen] = React.useState(false)
 
   const handleOpen = () => {
@@ -35,6 +39,9 @@ export default function Menu() {
         color="common.black"
         aria-label="menu"
         onClick={handleOpen}
+        sx={{
+          color: isHome ? 'common.light' : 'common.black',
+        }}
       >
         <MenuIcon />
       </IconButton>

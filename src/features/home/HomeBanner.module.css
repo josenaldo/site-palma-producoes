@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title {
+  font-size: clamp(3.5rem, 5vw, 6rem);
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title:hover {
+  color: white !important;
+}
