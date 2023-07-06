@@ -1,5 +1,6 @@
 import { Box, Button, Container, Stack, Typography } from '@mui/material'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined'
+import { YoutubeVideo } from '@/features/ui'
 
 export default function HomeIntro({ t }) {
   return (
@@ -14,16 +15,15 @@ export default function HomeIntro({ t }) {
           <Typography variant="sectionTitle" component="h1">
             {t('home:intro.title')}
           </Typography>
-          <Button color="dark">
-            <Stack component="span" justifyContent="center" alignItems="center">
-              <Typography>{t('home:intro.button')}</Typography>
-              <KeyboardArrowDownOutlinedIcon
-                sx={{
-                  fontSize: '4rem',
-                }}
-              />
-            </Stack>
-          </Button>
+          <Stack component="span" justifyContent="center" alignItems="center">
+            <Typography>{t('home:intro.subtitle')}</Typography>
+            <KeyboardArrowDownOutlinedIcon
+              sx={{
+                fontSize: '4rem',
+              }}
+            />
+          </Stack>
+          <YoutubeVideo url={t('home:intro.video')} />
         </Stack>
       </Container>
     </Box>

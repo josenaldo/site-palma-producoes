@@ -7,3 +7,4 @@ export { default as ContactLinks } from './ContactLinks'
 
 export { Loader } from './Loader'
 export { BannerBox } from './BannerBox'
+export { YoutubeVideo } from './YoutubeVideo'
