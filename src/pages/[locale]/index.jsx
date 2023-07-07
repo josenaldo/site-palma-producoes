@@ -8,6 +8,7 @@ import {
   HomeServices,
   HomeVideo,
   HomeWho,
+  HomeWish,
 } from '@/features/home'
 
 const getStaticProps = makeStaticProps(['common', 'home'])
@@ -22,6 +23,7 @@ export default function HomePage() {
       <HomeWho t={t} />
       <HomeVideo t={t} />
       <HomeServices t={t} />
+      <HomeWish t={t} />
     </Stack>
   )
 }
