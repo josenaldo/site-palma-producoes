@@ -12,7 +12,7 @@ export default function HomeIntro({ t }) {
     >
       <Container>
         <Stack spacing={2} justifyContent="center" alignItems="center">
-          <Typography variant="sectionTitle" component="h1">
+          <Typography variant="sectionTitle" component="h2">
             {t('home:intro.title')}
           </Typography>
           <Stack component="span" justifyContent="center" alignItems="center">

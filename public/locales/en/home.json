@@ -24,5 +24,13 @@
   },
   "video": {
     "video": "https://www.youtube.com/watch?v=jWOcfTHBIYM"
+  },
+  "services": {
+    "title": "What we make",
+    "button": "Services",
+    "projectConsulting": "Consulting - Innovation and Project Development",
+    "contentCreation": "Audiovisual Content Creation",
+    "visualComunication": "Visual and Strategic Communication",
+    "culturalProduction": "Cultural production"
   }
 }
