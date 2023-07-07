@@ -1,3 +1,4 @@
+import { Link } from '@/features/ui'
 import { Box, Button, Container, Stack, Typography } from '@mui/material'
 
 export default function HomeWho({ t }) {
@@ -103,6 +104,8 @@ export default function HomeWho({ t }) {
                 {t('home:who.title')}
               </Typography>
               <Button
+                component={Link}
+                href="/quem-somos"
                 variant="outlined"
                 color="dark"
                 sx={{
