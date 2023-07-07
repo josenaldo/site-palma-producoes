@@ -1,4 +1,5 @@
 export { default as Link } from './Link'
+export { default as ButtonLink } from './ButtonLink'
 export { default as SectionTitle } from './SectionTitle'
 export { default as Loading } from './Loader/Loader'
 export { default as Logo } from './Logo'
