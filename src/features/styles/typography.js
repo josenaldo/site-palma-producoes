@@ -44,8 +44,16 @@ const typography = {
   },
   sectionTitle: {
     fontFamily: titleFont.style.fontFamily,
-    fontSize: 'clamp(1.42rem, calc(0.44rem + 2.63vw), 2.96rem);',
+    fontSize: 'clamp(2.4rem, calc(0.44rem + 2.63vw), 2.96rem);',
     fontWeight: 400,
+    textAlign: 'center',
+  },
+  bigtag: {
+    fontFamily: titleFont.style.fontFamily,
+    fontSize: 'clamp(3.5rem, 7vw, 7rem)',
+    fontWeight: '400',
+    textAlign: 'center',
+    color: 'rgba(0, 0, 0, 0.5)',
   },
 }
 
