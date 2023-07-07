@@ -11,13 +11,13 @@ export default function HomeWish({ t }) {
     <BannerBox
       image="/images/home/mar.jpg"
       sx={{
-        height: '100vh',
+        height: '100%',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: '120px',
+        py: 5,
       }}
     >
       <Box

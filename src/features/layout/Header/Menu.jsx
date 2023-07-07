@@ -114,11 +114,10 @@ function MenuLogo() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-
         color: 'common.light',
       }}
     >
-      <Logo />
+      <Logo height={120} />
       <SocialLinks />
     </Box>
   )

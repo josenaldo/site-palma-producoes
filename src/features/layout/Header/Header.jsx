@@ -21,6 +21,7 @@ export default function Header() {
         alignItems: 'center',
         justifyContent: 'space-between',
         px: 3,
+        py: 2,
         zIndex: 1000,
       }}
     >
