@@ -23,7 +23,7 @@ export default function HomeIntro({ t }) {
               }}
             />
           </Stack>
-          <YoutubeVideo url={t('home:intro.video')} />
+          <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />
         </Stack>
       </Container>
     </Box>
