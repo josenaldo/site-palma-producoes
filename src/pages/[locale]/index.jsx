@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import { useTranslation } from 'next-i18next'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
@@ -9,7 +9,7 @@ import {
   HomeVideo,
   HomeWho,
   HomeWish,
-} from '@/features/home'
+} from '@/features/pages/home'
 
 const getStaticProps = makeStaticProps(['common', 'home'])
 

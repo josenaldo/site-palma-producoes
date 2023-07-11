@@ -112,7 +112,7 @@ function ServiceCard({ service, image }) {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2">{service}</Typography>
+        <Typography variant="h5">{service}</Typography>
       </CardContent>
     </Card>
   )
