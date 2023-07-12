@@ -1,14 +1,21 @@
-export { default as Link } from './Link'
-export { default as ButtonLink } from './ButtonLink'
-export { default as Loading } from './Loader/Loader'
-export { default as Logo } from './Logo'
-export { default as SocialLinks } from './SocialLinks'
-export { default as ContactLinks } from './ContactLinks'
+export { BannerBox } from './BannerBox'
 
-export { default as SectionTitle } from './SectionTitle'
-export { default as PageTitle } from './PageTitle'
+export { ButtonLink } from './ButtonLink'
+
+export { ContactLinks } from './ContactLinks'
+
+export { ImageBox } from './ImageBox'
+
+export { Link } from './Link'
 
 export { Loader } from './Loader'
-export { BannerBox } from './BannerBox'
+
+export { Logo } from './Logo'
+
+export { PageTitle } from './PageTitle'
+
+export { SectionTitle } from './SectionTitle'
+
+export { SocialLinks } from './SocialLinks'
+
 export { YoutubeVideo } from './YoutubeVideo'
-export { ImageBox } from './ImageBox'
