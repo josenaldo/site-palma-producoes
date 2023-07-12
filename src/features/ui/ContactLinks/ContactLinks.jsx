@@ -1,5 +1,3 @@
-'use client'
-
 import { contactLinks } from '@/data'
 import { Box, IconButton, Typography } from '@mui/material'
 

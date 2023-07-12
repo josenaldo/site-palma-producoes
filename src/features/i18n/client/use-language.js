@@ -1,5 +1,3 @@
-'use client'
-
 import i18nextConfig from '@/features/i18n/config'
 import { useRouter } from 'next/router'
 

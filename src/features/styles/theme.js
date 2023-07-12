@@ -1,5 +1,3 @@
-'use client'
-
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 import palette from './palette'
