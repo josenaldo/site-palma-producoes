@@ -1,7 +1,8 @@
 ---
-title: Letter to a unknown friend
+title: Quem faz a Palma
+subtitle: Satisfação em ter você aqui
 description:
-  "Dive into Josenaldo's story: a resilient software developer facing life's trials, who shares his journey of passion and determination in a heartfelt letter."
+  "Conheça a Palma Produções, uma produtora de conteúdo audiovisual inovadora e dinâmica. Saiba mais sobre nossa equipe de profissionais talentosos e nossa abordagem única para a produção de conteúdo."
 image: "/images/default.jpg"
 ---
 

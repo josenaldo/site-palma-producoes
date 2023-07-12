@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from '@mui/material'
+import { Box, Divider } from '@mui/material'
 
 import { MDXProvider } from '@mdx-js/react'
 import { Remark } from 'react-remark'
@@ -47,8 +47,6 @@ export default function MarkdownContent({ content, components = {} }) {
           rehypePlugins={rehypePlugins}
           remarkRehypeOptions={{
             allowDangerousHtml: true,
-            footnoteLabel: 'Notas de rodapé',
-            footnoteBackLabel: 'Voltar ao conteúdo',
           }}
           rehypeReactOptions={{ components: comp }}
           onError={(error) => {

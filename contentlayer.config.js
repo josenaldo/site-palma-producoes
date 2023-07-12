@@ -23,6 +23,11 @@ export const Page = defineDocumentType(() => ({
       description: 'The title of the page',
       required: true,
     },
+    subtitle: {
+      type: 'string',
+      description: 'The subtitle of the page',
+      required: true,
+    },
     description: {
       type: 'string',
       description: 'The description of the page',
@@ -118,7 +123,40 @@ export const Parceria = defineDocumentType(() => ({
   },
 }))
 
+export const Servico = defineDocumentType(() => ({
+  name: 'Servico',
+  filePathPattern: `servicos/**/*.md`,
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the service',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      description: 'The description of the service',
+      required: true,
+    },
+    icon: {
+      type: 'string',
+      description: 'The image of the service',
+      required: true,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => resolveUrl(doc, 'servicos'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.flattenedPath.replace(/servicos\/?/, '').split('/')[0],
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Page, Socia, Parceria],
+  documentTypes: [Page, Socia, Parceria, Servico],
 })

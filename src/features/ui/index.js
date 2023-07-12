@@ -12,6 +12,8 @@ export { Loader } from './Loader'
 
 export { Logo } from './Logo'
 
+export { PageHeader } from './PageHeader'
+
 export { PageTitle } from './PageTitle'
 
 export { SectionTitle } from './SectionTitle'

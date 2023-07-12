@@ -1,8 +1,12 @@
-export { default as MarkdownContent } from './MarkdownContent'
-export { default as Blockquote } from './Blockquote'
-export { default as Code } from './Code'
-export { default as ResponsiveImage } from './ResponsiveImage'
+export { MarkdownContent } from './MarkdownContent'
+
+export { ResponsiveImage } from './ResponsiveImage'
+
+export { Blockquote } from './Blockquote'
+
+export { Code } from './Code'
 
 export { default as pagesContentService } from './page-content-service'
 export { default as sociaContentService } from './socia-content-service'
 export { default as parceriaContentService } from './parceria-content-service'
+export { default as servicoContentService } from './servico-content-service'

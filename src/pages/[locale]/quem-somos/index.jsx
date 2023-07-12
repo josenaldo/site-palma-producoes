@@ -1,9 +1,6 @@
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 
-import {
-  getStaticPaths as i18nGetStaticPaths,
-  makeStaticProps,
-} from '@/features/i18n/server'
 import {
   Box,
   Button,
@@ -14,19 +11,21 @@ import {
   Collapse,
   Container,
   Typography,
-  Fade,
 } from '@mui/material'
+
+import {
+  getStaticPaths as i18nGetStaticPaths,
+  makeStaticProps,
+} from '@/features/i18n/server'
+
 import {
   MarkdownContent,
   pagesContentService,
   sociaContentService,
   parceriaContentService,
 } from '@/features/content'
-import { PageTitle, ImageBox } from '@/features/ui'
-import Image from 'next/image'
-import { useState } from 'react'
 
-// const getStaticProps = makeStaticProps(['common', 'quem-somos'])
+import { ImageBox, PageHeader } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'quem-somos'])({ params })
@@ -56,7 +55,11 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
   return (
     <Box>
       <Container>
-        <Topo t={t} page={page} />
+        <PageHeader
+          title={page.title}
+          subtitle={page.subtitle}
+          text={page.body.raw}
+        />
 
         <ImageBox
           src="/images/content/pages/quem-somos.jpg"
@@ -68,86 +71,7 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
         <Socias socias={socias} />
       </Container>
 
-      <Box
-        sx={{
-          gap: 2,
-          mt: 4,
-          backgroundColor: 'surfice.main',
-          py: 5,
-        }}
-      >
-        <Container
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: 2,
-          }}
-        >
-          <Typography
-            variant="h4"
-            sx={{
-              borderBottom: '5px solid',
-              borderColor: 'text.secondary',
-              mb: 4,
-              color: 'text.secondary',
-            }}
-          >
-            Parcerias
-          </Typography>
-        </Container>
-        <Container
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: {
-              xs: '1fr',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(4, 1fr)',
-            },
-            gap: 2,
-          }}
-        >
-          {parcerias.map((parceria) => (
-            <ParceriaButton key={parceria.name} parceria={parceria} />
-          ))}
-        </Container>
-      </Box>
-    </Box>
-  )
-}
-
-function Topo({ t, page }) {
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: {
-          xs: 'column',
-          md: 'row',
-        },
-        alignItems: 'center',
-        gap: 2,
-      }}
-    >
-      <PageTitle
-        title={t('quem-somos:title')}
-        subtitle={t('quem-somos:subtitle')}
-        sx={{
-          width: {
-            xs: '100%',
-            md: '30%',
-          },
-        }}
-      />
-      <Box
-        sx={{
-          width: {
-            xs: '100%',
-            md: '70%',
-          },
-        }}
-      >
-        <MarkdownContent content={page.body.raw} />
-      </Box>
+      <Parcerias parcerias={parcerias} />
     </Box>
   )
 }
@@ -324,6 +248,54 @@ function SociaCard({ socia, onClick, open }) {
         </Button>
       </CardActions>
     </Card>
+  )
+}
+
+function Parcerias({ parcerias }) {
+  return (
+    <Box
+      sx={{
+        gap: 2,
+        mt: 4,
+        backgroundColor: 'surfice.main',
+        py: 5,
+      }}
+    >
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: 2,
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            borderBottom: '5px solid',
+            borderColor: 'text.secondary',
+            mb: 4,
+            color: 'text.secondary',
+          }}
+        >
+          Parcerias
+        </Typography>
+      </Container>
+      <Container
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: {
+            xs: '1fr',
+            sm: 'repeat(2, 1fr)',
+            md: 'repeat(4, 1fr)',
+          },
+          gap: 2,
+        }}
+      >
+        {parcerias.map((parceria) => (
+          <ParceriaButton key={parceria.name} parceria={parceria} />
+        ))}
+      </Container>
+    </Box>
   )
 }
 
