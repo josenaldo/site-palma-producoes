@@ -156,6 +156,11 @@ export const Servico = defineDocumentType(() => ({
   name: 'Servico',
   filePathPattern: `servicos/**/*.md`,
   fields: {
+    id: {
+      type: 'number',
+      description: 'The id of the service',
+      required: true,
+    },
     title: {
       type: 'string',
       description: 'The title of the service',

@@ -1,4 +1,4 @@
-import { Bebas_Neue, Work_Sans } from 'next/font/google'
+import { Bebas_Neue, Work_Sans, } from 'next/font/google'
 import palette from './palette'
 
 const titleFont = Bebas_Neue({

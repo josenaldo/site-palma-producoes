@@ -7,7 +7,11 @@ export function getServicoData(url) {
 }
 
 export function getAllServicos(locale) {
-  return allServicos.filter((servico) => servico.locale === locale)
+  const filtered = allServicos.filter((servico) => servico.locale === locale)
+
+  const sorted = filtered.sort((a, b) => a.id - b.id)
+
+  return sorted
 }
 
 const servicoContentService = {

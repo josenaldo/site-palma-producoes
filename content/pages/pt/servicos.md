@@ -5,7 +5,7 @@ description:
   "Descubra como a Palma Produções pode ajudar a dar vida às suas ideias. Oferecemos uma variedade de serviços, incluindo consultoria em inovação, comunicação visual e estratégica, criação de conteúdo audiovisual e produção cultural. Nossa equipe de profissionais experientes está pronta para ajudá-lo a alcançar seus objetivos."
 image:
   url: "/images/content/pages/servicos.jpg"
-  alt: "Palma Productions - Servicos"
+  alt: "Palma Produçõess - Servicos"
   width: 1200
   height: 628
 ---

@@ -7,16 +7,16 @@ import {
 const palette = {
   mode: 'light',
   primary: {
-    main: '#81af43',
+    main: '#80ad3f',
   },
   secondary: {
-    main: '#60398e',
+    main: '#e2973b',
   },
   tertiary: {
-    main: '#cb975d',
+    main: '#662d80',
   },
   quaternary: {
-    main: '#0972ad',
+    main: '#0071a3',
   },
   white: {
     main: '#FFFFFF',
