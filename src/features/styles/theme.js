@@ -1,6 +1,6 @@
 'use client'
 
-import { createTheme } from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 import palette from './palette'
 import components from './components'
@@ -12,6 +12,7 @@ const baseTheme = {
   typography,
 }
 
-const theme = createTheme(baseTheme)
+let theme = createTheme(baseTheme)
+theme = responsiveFontSizes(theme)
 
 export default theme

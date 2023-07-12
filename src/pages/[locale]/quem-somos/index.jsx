@@ -80,9 +80,20 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
           sx={{
             display: 'flex',
             justifyContent: 'center',
+            gap: 2,
           }}
         >
-          <Typography>Parceiros</Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              borderBottom: '5px solid',
+              borderColor: 'text.secondary',
+              mb: 4,
+              color: 'text.secondary',
+            }}
+          >
+            Parcerias
+          </Typography>
         </Container>
         <Container
           sx={{
@@ -222,6 +233,7 @@ function Socias({ t, socias }) {
                 <Typography
                   variant="h4"
                   sx={{
+                    display: 'inline-block',
                     width: '100%',
                     borderBottom: '5px solid',
                     borderColor: 'primary.main',
@@ -264,15 +276,10 @@ function Socias({ t, socias }) {
 }
 
 function SociaCard({ socia, onClick, open }) {
-  const handleChange = (event) => {
-    setOpen((prev) => !prev)
-  }
-
   return (
     <Card
       elevation={open ? 5 : 1}
       key={socia.url}
-      // variant="outlined"
       sx={{
         display: 'flex',
         flexDirection: 'column',
