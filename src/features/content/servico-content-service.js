@@ -1,4 +1,4 @@
-import { allServico } from 'contentlayer/generated'
+import { allServicos } from 'contentlayer/generated'
 
 export function getServicoData(url) {
   const servico = allServico.find((servico) => servico.url === url)
@@ -7,12 +7,12 @@ export function getServicoData(url) {
 }
 
 export function getAllServicos(locale) {
-  return allServico.filter((servico) => servico.locale === locale)
+  return allServicos.filter((servico) => servico.locale === locale)
 }
 
-const servicosContentService = {
+const servicoContentService = {
   getServicoData,
   getAllServicos,
 }
 
-export default servicosContentService
+export default servicoContentService

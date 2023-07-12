@@ -1,4 +1,8 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+import {
+  defineDocumentType,
+  makeSource,
+  defineNestedType,
+} from 'contentlayer/source-files'
 
 function resolveUrl(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
@@ -13,6 +17,32 @@ function resolveUrl(doc, folder) {
 
   return `/${locale}/${folder}/${path}`
 }
+
+const Image = defineNestedType(() => ({
+  name: 'Image',
+  fields: {
+    url: {
+      type: 'string',
+      description: 'The url of the image',
+      required: true,
+    },
+    alt: {
+      type: 'string',
+      description: 'The alt of the image',
+      required: true,
+    },
+    width: {
+      type: 'number',
+      description: 'The width of the image',
+      defaultValue: 1200,
+    },
+    height: {
+      type: 'number',
+      description: 'The height of the image',
+      defaultValue: 628,
+    },
+  },
+}))
 
 export const Page = defineDocumentType(() => ({
   name: 'Page',
@@ -34,9 +64,8 @@ export const Page = defineDocumentType(() => ({
       required: true,
     },
     image: {
-      type: 'string',
-      description: 'The image of the page',
-      required: true,
+      type: 'nested',
+      of: Image,
     },
   },
   computedFields: {

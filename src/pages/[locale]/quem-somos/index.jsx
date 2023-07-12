@@ -13,10 +13,7 @@ import {
   Typography,
 } from '@mui/material'
 
-import {
-  getStaticPaths as i18nGetStaticPaths,
-  makeStaticProps,
-} from '@/features/i18n/server'
+import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 import {
   MarkdownContent,
@@ -43,11 +40,7 @@ export async function getStaticProps({ params }) {
   return props
 }
 
-export function getStaticPaths() {
-  const paths = i18nGetStaticPaths()
-
-  return paths
-}
+export { getStaticPaths }
 
 export default function QuemSomosPage({ page, socias, parcerias }) {
   const { t } = useTranslation(['common', 'quem-somos'])
@@ -62,10 +55,10 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
         />
 
         <ImageBox
-          src="/images/content/pages/quem-somos.jpg"
-          alt="Socias"
-          width={1200}
-          height={628}
+          src={page.image.url}
+          alt={page.image.alt}
+          width={page.image.width}
+          height={page.image.height}
         />
 
         <Socias socias={socias} t={t} />
