@@ -14,6 +14,7 @@ import {
   Collapse,
   Container,
   Typography,
+  Fade,
 } from '@mui/material'
 import {
   MarkdownContent,
@@ -56,51 +57,16 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
     <Box>
       <Container>
         <Topo t={t} page={page} />
+
         <ImageBox
           src="/images/content/pages/quem-somos.jpg"
           alt="Socias"
           width={1200}
           height={628}
         />
-        <Box
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: {
-              xs: '1fr',
-              md: 'repeat(3, 1fr)',
-            },
-            gap: 2,
-            mt: 4,
-          }}
-        >
-          {socias.map((socia) => (
-            <SociaCard key={socia.url} socia={socia} />
-          ))}
-        </Box>
+
+        <Socias socias={socias} />
       </Container>
-      <Box
-        sx={{
-          gap: 2,
-          mt: 4,
-          backgroundColor: 'surfice.main',
-          py: 5,
-        }}
-      >
-        <Container
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: {
-              xs: '1fr',
-              md: 'repeat(3, 1fr)',
-            },
-            gap: 2,
-          }}
-        >
-          {parcerias.map((parceria) => (
-            <ParceriaCard key={parceria.name} parceria={parceria} />
-          ))}
-        </Container>
-      </Box>
 
       <Box
         sx={{
@@ -112,37 +78,25 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
       >
         <Container
           sx={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Typography>Parceiros</Typography>
+        </Container>
+        <Container
+          sx={{
             display: 'grid',
             gridTemplateColumns: {
               xs: '1fr',
-              md: 'repeat(3, 1fr)',
+              sm: 'repeat(2, 1fr)',
+              md: 'repeat(4, 1fr)',
             },
             gap: 2,
           }}
         >
           {parcerias.map((parceria) => (
-            <Button
-              key={parceria.name}
-              color="dark"
-              href={parceria.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                color: 'text.secondary',
-              }}
-            >
-              <Typography
-                sx={{
-                  fontSize: '1.2rem',
-                  fontWeight: 'bold',
-                }}
-              >
-                {parceria.name}
-              </Typography>
-              <Typography variant="caption">{parceria.description}</Typography>
-            </Button>
+            <ParceriaButton key={parceria.name} parceria={parceria} />
           ))}
         </Container>
       </Box>
@@ -187,17 +141,138 @@ function Topo({ t, page }) {
   )
 }
 
-function SociaCard({ socia }) {
-  const [open, setOpen] = useState(false)
+function Socias({ t, socias }) {
+  const [selectedSocia, setSelectedSocia] = useState(null)
 
+  return (
+    <Box>
+      <Box
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: {
+            xs: '1fr',
+            sm: 'repeat(3, 1fr)',
+          },
+          gap: 2,
+          mt: 4,
+        }}
+      >
+        {socias.map((socia) => (
+          <SociaCard
+            key={socia.url}
+            socia={socia}
+            onClick={() => {
+              if (selectedSocia === socia) {
+                setSelectedSocia(null)
+                return
+              }
+              setSelectedSocia(socia)
+            }}
+            open={selectedSocia === socia}
+          />
+        ))}
+      </Box>
+
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          my: 5,
+        }}
+      >
+        {socias.map((socia, index) => (
+          <Collapse
+            key={socia.url}
+            in={selectedSocia === socia}
+            timeout={400}
+            addEndListener={(element) => {
+              const isNotLast = index !== socias.length - 1
+              if (selectedSocia === socia && isNotLast) {
+                element.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'center',
+                })
+              }
+            }}
+          >
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: {
+                  xs: 'column',
+                  md: 'row',
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  width: {
+                    xs: '100%',
+                    md: '30%',
+                  },
+                  pr: {
+                    xs: 0,
+                    md: 8,
+                  },
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                  alignItems: 'center',
+                }}
+              >
+                <Typography
+                  variant="h4"
+                  sx={{
+                    width: '100%',
+                    borderBottom: '5px solid',
+                    borderColor: 'primary.main',
+                    textAlign: {
+                      xs: 'center',
+                      md: 'right',
+                    },
+                  }}
+                >
+                  {socia.name}
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: 'flex',
+                  width: {
+                    xs: '100%',
+                    md: '70%',
+                  },
+                  py: 2,
+                }}
+              >
+                <MarkdownContent
+                  content={socia.body.raw}
+                  components={{
+                    p: ({ children }) => (
+                      <Typography variant="body2" mb={2}>
+                        {children}
+                      </Typography>
+                    ),
+                  }}
+                />
+              </Box>
+            </Box>
+          </Collapse>
+        ))}
+      </Box>
+    </Box>
+  )
+}
+
+function SociaCard({ socia, onClick, open }) {
   const handleChange = (event) => {
     setOpen((prev) => !prev)
   }
 
   return (
     <Card
+      elevation={open ? 5 : 1}
       key={socia.url}
-      variant="outlined"
+      // variant="outlined"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -216,25 +291,28 @@ function SociaCard({ socia }) {
           flexGrow: 1,
         }}
       >
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          textAlign="center"
+        >
           {socia.name}
         </Typography>
-        <Typography variant="caption">{socia.description}</Typography>
-        <Collapse in={open}>
-          <MarkdownContent
-            content={socia.body.raw}
-            components={{
-              p: ({ children }) => (
-                <Typography variant="body2" mb={2}>
-                  {children}
-                </Typography>
-              ),
-            }}
-          />
-        </Collapse>
+        <Typography
+          variant="caption"
+          sx={{
+            textAlign: 'center',
+            // wordWrap: 'normal',
+            display: 'inline-block',
+            // width: '100%',
+          }}
+        >
+          {socia.description}
+        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleChange}>
+        <Button size="small" onClick={onClick}>
           {open ? 'Mostrar menos' : 'Mostrar mais'}
         </Button>
       </CardActions>
@@ -242,49 +320,29 @@ function SociaCard({ socia }) {
   )
 }
 
-function ParceriaCard({ parceria }) {
+function ParceriaButton({ parceria }) {
   return (
-    <Card
-      variant="outlined"
+    <Button
+      key={parceria.name}
+      color="dark"
+      href={parceria.link}
+      target="_blank"
+      rel="noopener noreferrer"
       sx={{
         display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        color: 'text.secondary',
       }}
     >
-      <CardMedia
+      <Typography
         sx={{
-          display: 'flex',
-          width: '120px',
+          fontSize: '1.2rem',
+          fontWeight: 'bold',
         }}
       >
-        <ImageBox
-          src={parceria.image}
-          width={120}
-          height={120}
-          alt={parceria.name}
-        />
-      </CardMedia>
-      <CardContent
-        sx={{
-          flexGrow: 1,
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'flex-start',
-        }}
-      >
-        <Box>
-          <Typography gutterBottom variant="h5" component="div">
-            {parceria.name}
-          </Typography>
-          <Typography variant="caption">{parceria.description}</Typography>
-        </Box>
-        <Button size="small" href={parceria.link} target="_blank">
-          Visitar
-        </Button>
-      </CardContent>
-    </Card>
+        {parceria.name}
+      </Typography>
+      <Typography variant="caption">{parceria.description}</Typography>
+    </Button>
   )
 }
