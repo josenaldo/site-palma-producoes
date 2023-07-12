@@ -11,5 +11,9 @@
     "projects": "Projects",
     "moviments": "Movements",
     "contact": "Contact"
+  },
+  "button": {
+    "showMore": "View more",
+    "showLess": "View less"
   }
 }

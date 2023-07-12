@@ -68,10 +68,10 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
           height={628}
         />
 
-        <Socias socias={socias} />
+        <Socias socias={socias} t={t} />
       </Container>
 
-      <Parcerias parcerias={parcerias} />
+      <Parcerias parcerias={parcerias} t={t} />
     </Box>
   )
 }
@@ -94,6 +94,7 @@ function Socias({ t, socias }) {
       >
         {socias.map((socia) => (
           <SociaCard
+            t={t}
             key={socia.url}
             socia={socia}
             onClick={() => {
@@ -199,7 +200,7 @@ function Socias({ t, socias }) {
   )
 }
 
-function SociaCard({ socia, onClick, open }) {
+function SociaCard({ t, socia, onClick, open }) {
   return (
     <Card
       elevation={open ? 5 : 1}
@@ -244,14 +245,14 @@ function SociaCard({ socia, onClick, open }) {
       </CardContent>
       <CardActions>
         <Button size="small" onClick={onClick}>
-          {open ? 'Mostrar menos' : 'Mostrar mais'}
+          {open ? t('common:button.showLess') : t('common:button.showMore')}
         </Button>
       </CardActions>
     </Card>
   )
 }
 
-function Parcerias({ parcerias }) {
+function Parcerias({ t, parcerias }) {
   return (
     <Box
       sx={{
@@ -264,8 +265,11 @@ function Parcerias({ parcerias }) {
       <Container
         sx={{
           display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
           justifyContent: 'center',
           gap: 2,
+          mb: 4,
         }}
       >
         <Typography
@@ -273,11 +277,13 @@ function Parcerias({ parcerias }) {
           sx={{
             borderBottom: '5px solid',
             borderColor: 'text.secondary',
-            mb: 4,
             color: 'text.secondary',
           }}
         >
-          Parcerias
+          {t('quem-somos:partners.title')}
+        </Typography>
+        <Typography variant="body2" sx={{ color: 'text.primary' }}>
+          {t('quem-somos:partners.description')}
         </Typography>
       </Container>
       <Container
