@@ -21,3 +21,5 @@ export { SectionTitle } from './SectionTitle'
 export { SocialLinks } from './SocialLinks'
 
 export { YoutubeVideo } from './YoutubeVideo'
+
+export { Title } from './Title'

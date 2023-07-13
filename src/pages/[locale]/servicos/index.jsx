@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -12,16 +13,21 @@ import {
   Container,
   Typography,
 } from '@mui/material'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import StarIcon from '@mui/icons-material/Star'
+
+import Carousel from 'react-material-ui-carousel'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 import {
-  MarkdownContent,
   pagesContentService,
   servicoContentService,
+  depoimentoContentService,
 } from '@/features/content'
 
-import { ButtonLink, ImageBox, PageHeader } from '@/features/ui'
+import { ButtonLink, ImageBox, PageHeader, Title } from '@/features/ui'
 import Image from 'next/image'
 
 export async function getStaticProps({ params }) {
@@ -30,11 +36,12 @@ export async function getStaticProps({ params }) {
   const url = `/${locale}/servicos`
 
   const page = pagesContentService.getPageData(url)
-
   const servicos = servicoContentService.getAllServicos(locale)
+  const depoimentos = depoimentoContentService.getAllDepoimentos(locale)
 
   props.props.page = page
   props.props.servicos = servicos
+  props.props.depoimentos = depoimentos
 
   return props
 }
@@ -50,9 +57,8 @@ const colors = [
   palette.quaternary.main,
 ]
 
-export default function ServicosPage({ page, servicos }) {
+export default function ServicosPage({ page, servicos, depoimentos }) {
   const { t } = useTranslation(['common', 'servicos'])
-  console.log('🟢🟢🟢 servicos', servicos)
 
   return (
     <Box>
@@ -73,6 +79,8 @@ export default function ServicosPage({ page, servicos }) {
         <Servicos servicos={servicos} />
 
         <BannerProjetos t={t} />
+
+        <Depoimentos t={t} depoimentos={depoimentos} />
       </Container>
     </Box>
   )
@@ -177,6 +185,101 @@ function BannerProjetos({ t }) {
           {t('servicos:bannerProject.button')}
         </ButtonLink>
       </Box>
+    </Box>
+  )
+}
+
+function Depoimentos({ t, depoimentos }) {
+  console.log(t('servicos:testimonials'))
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        my: 10,
+        width: '100%',
+        gap: 4,
+      }}
+    >
+      <Title variant="h3" component="h3">
+        {t('servicos:testimonials')}
+      </Title>
+      <Carousel
+        interval={8000}
+        NextIcon={<ChevronRightIcon />}
+        PreviouIcon={<ChevronLeftIcon />}
+        navButtonsAlwaysVisible={true}
+        IndicatorIcon={<StarIcon />}
+        sx={{
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {depoimentos.map((depoimento) => (
+          <DepoimentoCard key={depoimento.url} depoimento={depoimento} />
+        ))}
+      </Carousel>
+    </Box>
+  )
+}
+
+function DepoimentoCard({ depoimento }) {
+  return (
+    <Box
+      sx={{
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Card sx={{ width: '80%' }} elevation={0}>
+        <CardMedia
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Avatar sx={{ width: 180, height: 180 }}>
+            <Image
+              src={depoimento.image.url}
+              alt={depoimento.image.alt}
+              width={depoimento.image.width}
+              height={depoimento.image.height}
+            />
+          </Avatar>
+        </CardMedia>
+        <CardContent
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            gap: 2,
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="q"
+            color="text.secondary"
+            sx={{
+              textAlign: 'center',
+              fontStyle: 'italic',
+            }}
+          >
+            {depoimento.testimonial}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {depoimento.name} - {depoimento.position}
+          </Typography>
+        </CardContent>
+      </Card>
     </Box>
   )
 }

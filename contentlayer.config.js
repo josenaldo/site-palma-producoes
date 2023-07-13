@@ -190,7 +190,44 @@ export const Servico = defineDocumentType(() => ({
   },
 }))
 
+const Depoimento = defineDocumentType(() => ({
+  name: 'Depoimento',
+  filePathPattern: `depoimentos/**/*.md`,
+  fields: {
+    name: {
+      type: 'string',
+      description: 'The name of the testimonial author',
+      required: true,
+    },
+    position: {
+      type: 'string',
+      description: 'The position of the testimonial author',
+      required: true,
+    },
+    testimonial: {
+      type: 'string',
+      description: 'The testimonial',
+      required: true,
+    },
+    image: {
+      type: 'nested',
+      of: Image,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => resolveUrl(doc, 'depoimentos'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.flattenedPath.replace(/depoimentos\/?/, '').split('/')[0],
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Page, Socia, Parceria, Servico],
+  documentTypes: [Page, Socia, Parceria, Servico, Depoimento],
 })
