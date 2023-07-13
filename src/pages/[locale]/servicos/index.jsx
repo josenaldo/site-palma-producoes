@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 
 import {
@@ -190,7 +189,6 @@ function BannerProjetos({ t }) {
 }
 
 function Depoimentos({ t, depoimentos }) {
-  console.log(t('servicos:testimonials'))
   return (
     <Box
       sx={{

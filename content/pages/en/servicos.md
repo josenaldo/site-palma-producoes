@@ -5,7 +5,7 @@ description:
   "Discover how Palma Produçõess can help bring your ideas to life. We offer a range of services, including innovation consulting, visual and strategic communication, audiovisual content creation, and cultural production. Our team of experienced professionals is ready to help you achieve your goals."
 image:
   url: "/images/content/pages/servicos.jpg"
-  alt: "Palma Produçõess - Servicos"
+  alt: "Palma Produções - Services"
   width: 1200
   height: 628
 ---

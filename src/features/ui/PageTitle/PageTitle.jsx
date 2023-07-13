@@ -1,3 +1,4 @@
+import { Title } from '@/features/ui'
 import { Box, Typography } from '@mui/material'
 
 export default function PageTitle({ title, subtitle, sx }) {
@@ -12,8 +13,10 @@ export default function PageTitle({ title, subtitle, sx }) {
         ...sx,
       }}
     >
-      <Typography variant="pageSubtitle">{subtitle}</Typography>
-      <Typography variant="pageTitle">{title}</Typography>
+      <Typography variant="body2">{subtitle}</Typography>
+      <Title variant="h2" component="h1">
+        {title}
+      </Title>
     </Box>
   )
 }

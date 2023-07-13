@@ -22,7 +22,7 @@ import {
   parceriaContentService,
 } from '@/features/content'
 
-import { ImageBox, PageHeader } from '@/features/ui'
+import { ImageBox, PageHeader, Title } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'quem-somos'])({ params })
@@ -265,16 +265,9 @@ function Parcerias({ t, parcerias }) {
           mb: 4,
         }}
       >
-        <Typography
-          variant="h4"
-          sx={{
-            borderBottom: '5px solid',
-            borderColor: 'text.secondary',
-            color: 'text.secondary',
-          }}
-        >
+        <Title variant="h4" color="text.secondary">
           {t('quem-somos:partners.title')}
-        </Typography>
+        </Title>
         <Typography variant="body2" sx={{ color: 'text.primary' }}>
           {t('quem-somos:partners.description')}
         </Typography>

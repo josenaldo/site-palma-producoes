@@ -1,5 +1,4 @@
 import { Typography } from '@mui/material'
-import { palette } from '@/features/styles'
 
 export default function Title({
   children,

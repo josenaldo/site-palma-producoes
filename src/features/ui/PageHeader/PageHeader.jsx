@@ -3,17 +3,23 @@ import { Box } from '@mui/material'
 import { MarkdownContent } from '@/features/content'
 import { PageTitle } from '@/features/ui'
 
-export default function PageHeader({ title, subtitle, text }) {
+export default function PageHeader({
+  title,
+  subtitle,
+  text,
+  direction = 'row',
+}) {
   return (
     <Box
       sx={{
         display: 'flex',
         flexDirection: {
           xs: 'column',
-          md: 'row',
+          md: direction,
         },
         alignItems: 'center',
         gap: 2,
+        mb: 2,
       }}
     >
       <PageTitle
@@ -22,7 +28,7 @@ export default function PageHeader({ title, subtitle, text }) {
         sx={{
           width: {
             xs: '100%',
-            md: '30%',
+            md: direction === 'row' ? '30%' : '100%',
           },
         }}
       />
@@ -30,7 +36,7 @@ export default function PageHeader({ title, subtitle, text }) {
         sx={{
           width: {
             xs: '100%',
-            md: '70%',
+            md: direction === 'row' ? '70%' : '100%',
           },
         }}
       >

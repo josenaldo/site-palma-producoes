@@ -45,6 +45,8 @@ const palette = {
   text: {
     primary: '#1a1a1a',
     secondary: '#6C757D',
+    dark: '#1a1a1a',
+    light: '#f4f4f4',
   },
   banners: {
     banner1: '#EE6471',

@@ -4,6 +4,18 @@ import {
   defineNestedType,
 } from 'contentlayer/source-files'
 
+function resolveSlug(folder, doc) {
+  const regex = new RegExp(`${folder}\/?`, 'g')
+
+  return doc._raw.flattenedPath.replace(regex, '').split('/')[1]
+}
+
+function resolveLocale(doc, folder) {
+  const regex = new RegExp(`${folder}\/?`, 'g')
+
+  return doc._raw.flattenedPath.replace(regex, '').split('/')[0]
+}
+
 function resolveUrl(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
 
@@ -187,6 +199,11 @@ export const Servico = defineDocumentType(() => ({
       resolve: (doc) =>
         doc._raw.flattenedPath.replace(/servicos\/?/, '').split('/')[0],
     },
+    slug: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.flattenedPath.replace(/servicos\/?/, '').split('/')[1],
+    },
   },
 }))
 
@@ -227,7 +244,54 @@ const Depoimento = defineDocumentType(() => ({
   },
 }))
 
+export const Projeto = defineDocumentType(() => ({
+  name: 'Projetos',
+  filePathPattern: `projetos/**/*.md`,
+  fields: {
+    id: {
+      type: 'number',
+      description: 'The id of the project',
+      required: true,
+    },
+    highlight: {
+      type: 'boolean',
+      description: 'The highlight of the project',
+      required: true,
+    },
+    title: {
+      type: 'string',
+      description: 'The title of the project',
+      required: true,
+    },
+    service: {
+      type: 'string',
+      description: 'The slug of the service of the project',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      description: 'The description of the project',
+      required: true,
+    },
+    image: {
+      type: 'nested',
+      of: Image,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => resolveUrl(doc, 'projetos'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.flattenedPath.replace(/projetos\/?/, '').split('/')[0],
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Page, Socia, Parceria, Servico, Depoimento],
+  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, Projeto],
 })
