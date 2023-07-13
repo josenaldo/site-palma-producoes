@@ -1,4 +1,6 @@
 {
-  "title": "Hi there!",
-  "to-quem-somos-page": "To Quem Somos page"
+  "bannerProject": {
+    "title": "What have we done?",
+    "button": "Show projects"
+  }
 }
