@@ -4,20 +4,28 @@ import { useRouter } from 'next/router'
 import NextLink from 'next/link'
 import { Link as MuiLink } from '@mui/material'
 
-export default function Link({ children, skipLocaleHandling, ...props }) {
+export default function Link({
+  children,
+  skipLocaleHandling = false,
+  href,
+  ...props
+}) {
   const router = useRouter()
   const locale = props.locale || router.query.locale || ''
 
-  let href = props.href || router.asPath
+  let newHref = href || router.asPath
+
+  // if href is external link, skip locale handling
   if (href.indexOf('http') === 0) skipLocaleHandling = true
+
   if (locale && !skipLocaleHandling) {
-    href = href
+    newHref = href
       ? `/${locale}${href}`
       : router.pathname.replace('[locale]', locale)
   }
 
   return (
-    <MuiLink component={NextLink} href={href} {...props}>
+    <MuiLink component={NextLink} href={newHref} {...props}>
       {children}
     </MuiLink>
   )

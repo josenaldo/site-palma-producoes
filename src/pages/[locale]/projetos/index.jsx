@@ -1,29 +1,12 @@
 import { useTranslation } from 'next-i18next'
 
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Collapse,
-  Container,
-  Typography,
-} from '@mui/material'
-import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import StarIcon from '@mui/icons-material/Star'
-
-import Carousel from 'react-material-ui-carousel'
+import { Box, Card, CardContent, Container, Typography } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 import { pagesContentService, projetoContentService } from '@/features/content'
 
-import { ButtonLink, ImageBox, PageHeader, Title } from '@/features/ui'
-import Image from 'next/image'
+import { ImageBox, Link, PageHeader } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'projetos'])({ params })
@@ -39,17 +22,9 @@ export async function getStaticProps({ params }) {
   return props
 }
 
-import { palette } from '@/features/styles'
 import { useState } from 'react'
 
 export { getStaticPaths }
-
-const colors = [
-  palette.primary.main,
-  palette.secondary.main,
-  palette.tertiary.main,
-  palette.quaternary.main,
-]
 
 export default function ServicosPage({ page, projetos }) {
   const { t } = useTranslation(['common', 'projetos'])
@@ -69,10 +44,11 @@ export default function ServicosPage({ page, projetos }) {
             display: 'grid',
             gridTemplateColumns: {
               xs: '1fr',
-              sm: '1fr 1fr',
+              md: '1fr 1fr',
             },
             gap: 4,
-            my: 4,
+            mt: 4,
+            mb: 8,
           }}
         >
           {projetos.map((projeto) => (
@@ -85,60 +61,92 @@ export default function ServicosPage({ page, projetos }) {
 }
 
 function ProjetoCard({ projeto }) {
-  console.log(projeto)
-
   const [elevation, setElevation] = useState(2)
+  const [brightness, setBrightness] = useState(40)
 
   return (
-    <Card
-      elevation={elevation}
-      sx={{
-        display: 'flex',
-        position: 'relative',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 6,
-      }}
-      onMouseOver={(e) => {
-        setElevation(20)
-      }}
-      onMouseOut={(e) => {
-        setElevation(2)
-      }}
-    >
-      <ImageBox
-        src={projeto.image.url}
-        alt={projeto.image.alt}
-        width={1200}
-        height={628}
+    <Link href={`/projetos/${projeto.slug}`}>
+      <Card
+        elevation={elevation}
         sx={{
-          filter: 'brightness(40%)',
-          zIndex: 0,
-        }}
-      />
-      <CardContent
-        sx={{
-          position: 'absolute',
           display: 'flex',
-          width: '100%',
-          height: '100%',
-          padding: 6,
-          flexDirection: 'column',
-          justifyContent: 'flex-end',
-          alignItems: 'flex-start',
-          zIndex: 2,
+          position: 'relative',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: 4,
+        }}
+        onMouseOver={(e) => {
+          setElevation(20)
+          setBrightness(60)
+        }}
+        onMouseOut={(e) => {
+          setElevation(2)
+          setBrightness(40)
+        }}
+        onClick={(e) => {
+          const oldElevation = elevation
+          const oldBrightness = brightness
+
+          setElevation(10)
+          setBrightness(50)
+
+          setTimeout(() => {
+            setElevation(oldElevation)
+            setBrightness(oldBrightness)
+          }, 100)
         }}
       >
-        <Typography variant="h6" component="h2" color="text.light">
-          {projeto.id}
-        </Typography>
-        <Typography variant="h5" component="h3" color="text.light">
-          {projeto.title}
-        </Typography>
-        <Typography variant="caption" color="text.light">
-          {projeto.description}
-        </Typography>
-      </CardContent>
-    </Card>
+        <ImageBox
+          src={projeto.image.url}
+          alt={projeto.image.alt}
+          width={1200}
+          height={628}
+          sx={{
+            filter: `brightness(${brightness}%)`,
+            zIndex: 0,
+          }}
+        />
+        <CardContent
+          sx={{
+            position: 'absolute',
+            display: 'flex',
+            width: '100%',
+            height: '100%',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            zIndex: 2,
+          }}
+        >
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{
+              color: 'rgb(255 255 255 / 0.4)',
+            }}
+          >
+            {`${projeto.id}`.padStart(2, '0')}
+          </Typography>
+          <Box>
+            <Typography variant="h5" component="h3" color="text.light">
+              {projeto.title}
+            </Typography>
+            <Typography
+              variant="caption"
+              color="text.light"
+              sx={{
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                display: '-webkit-box',
+                '-webkit-line-clamp': '2',
+                '-webkit-box-orient': 'vertical',
+              }}
+            >
+              {projeto.description}
+            </Typography>
+          </Box>
+        </CardContent>
+      </Card>
+    </Link>
   )
 }

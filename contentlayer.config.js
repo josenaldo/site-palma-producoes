@@ -288,6 +288,11 @@ export const Projeto = defineDocumentType(() => ({
       resolve: (doc) =>
         doc._raw.flattenedPath.replace(/projetos\/?/, '').split('/')[0],
     },
+    slug: {
+      type: 'string',
+      resolve: (doc) =>
+        doc._raw.flattenedPath.replace(/projetos\/?/, '').split('/')[1],
+    },
   },
 }))
 
