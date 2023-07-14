@@ -4,7 +4,7 @@ highlight: true
 title: "America Latina Video Art"
 service: "comunicacao-visual"
 description:
-  "The 'America Latina Video Art' project was an incredible opportunity for Palma Productions to exercise its expertise in Visual Identity Design. We worked to create a cohesive and appealing visual identity that reflected the essence of this innovative artistic project."
+  "Palma Produções created a cohesive, appealing visual identity for the 'America Latina Video Art' project, reflecting its innovative artistic essence."
 image:
   url: /images/content/projetos/america-latina-video-arte.jpg
   alt: "America Latina Video Art Project"

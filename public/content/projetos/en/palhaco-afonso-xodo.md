@@ -4,7 +4,7 @@ highlight: true
 title: Clown Afonso Xodó, Rio Band and Guests
 service: producao-cultural
 description:
-  "Palma Productions had the honor of being the executive producer of the 'Clown Afonso Xodó, Rio Band and Guests' project. This project was a celebration of culture and joy, bringing laughter and music to the audience. It was an amazing experience to work with such vibrant talents and create something truly special."
+  "Palma Produções produced 'Palhaço Afonso Xodó, Banda Rio and Guests', celebrating culture and joy."
 image:
   url: /images/content/projetos/palhaco-afonso-xodo.jpg
   alt: Clown Afonso Xodó, Rio Band and Guests

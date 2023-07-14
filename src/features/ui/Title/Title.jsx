@@ -15,7 +15,7 @@ export default function Title({
       color={color}
       sx={{
         display: 'inline-block',
-        borderBottom: `5px solid`,
+        borderBottom: `3px solid`,
         borderBottomColor: underlineColor,
         ...sx,
       }}

@@ -4,7 +4,7 @@ highlight: true
 title: Documentary “Master Sirso"
 service: producao-cultural
 description:
-  "The 'Master Sirso' Documentary is a Palma production that highlights the life and work of Master Sirso, a significant cultural figure. This project is an example of our commitment to quality cultural production."
+  "The 'Master Sirso' Documentary is an example of Palma's commitment to quality cultural production, highlighting Master Sirso's life."
 image:
   url: /images/content/projetos/documentario-mestre-sirso.jpg
   alt: Documentary “Master Sirso"

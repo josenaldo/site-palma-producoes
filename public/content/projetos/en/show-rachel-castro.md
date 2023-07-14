@@ -1,12 +1,13 @@
 ---
 id: 5
 highlight: true
-title: "Rachel Castro Show featuring Diogo Nogueira, Mariene de Castro, and Zélia Duncan"
-service: "criacao-de-conteudos"
-description: "Palma Produções proudly produced the Rachel Castro show, which featured big names in Brazilian music such as Diogo Nogueira, Mariene de Castro, and Zélia Duncan. It was a memorable event that showcased our commitment to high-quality content production."
+title: Rachel Castro Show
+service: criacao-de-conteudos
+description:
+  "Palma Produções produced the Rachel Castro show, featuring Diogo Nogueira, Mariene de Castro, and Zélia Duncan."
 image:
   url: /images/content/projetos/show-rachel-castro.jpg
-  alt: "Rachel Castro Show"
+  alt: Rachel Castro Show
   width: 1200
   height: 628
 ---

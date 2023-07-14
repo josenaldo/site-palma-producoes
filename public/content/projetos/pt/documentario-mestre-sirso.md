@@ -4,7 +4,7 @@ highlight: true
 title: Documentário “Mestre Sirso"
 service: producao-cultural
 description:
-  "O Documentário 'Mestre Sirso' é uma produção da Palma que destaca a vida e obra de Mestre Sirso, uma figura cultural significativa. Este projeto é um exemplo do nosso compromisso com a produção cultural de qualidade."
+  "O Documentário 'Mestre Sirso' é um exemplo do compromisso da Palma com a produção cultural de qualidade, destacando a vida de Mestre Sirso."
 image:
   url: /images/content/projetos/documentario-mestre-sirso.jpg
   alt: Documentário “Mestre Sirso"

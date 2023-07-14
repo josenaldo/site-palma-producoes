@@ -3,7 +3,8 @@ id: 4
 highlight: true
 title: "Human Rights Film Show"
 service: "producao-cultural"
-description: "A cultural production project that highlights the importance of human rights through the power of cinema."
+description:
+  "A cultural production project that highlights the importance of human rights through the power of cinema."
 image:
   url: /images/content/projetos/mostra-cinema-e-direitos-humanos.jpg
   alt: "Human Rights Film Show"
