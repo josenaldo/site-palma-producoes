@@ -26,7 +26,19 @@ export default function LanguageSelector() {
 
   const handleChange = async (value) => {
     let pathname = router.pathname
-    const newPathname = pathname.replace(`[locale]`, `${value}`)
+
+    const newQuery = {
+      ...router.query,
+      locale: value,
+    }
+
+    let newPathname = pathname
+    const queryKeys = Object.keys(newQuery)
+
+    queryKeys.forEach((key) => {
+      newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
+    })
+
     router.push(newPathname)
     handleClose()
   }

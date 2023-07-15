@@ -4,4 +4,6 @@ const config = {
   ...i18nextConfig,
 }
 
+export const { locales } = config.i18n
+
 export default config
