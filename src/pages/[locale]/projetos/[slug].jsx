@@ -5,9 +5,9 @@ import {
   makeStaticProps,
 } from '@/features/i18n/server'
 
-import { projetoContentService } from '@/features/content'
-import { Box } from '@mui/material'
-import { PageTitle } from '@/features/ui'
+import { MarkdownContent, projetoContentService } from '@/features/content'
+import { Box, Container, Typography } from '@mui/material'
+import { ImageBox, PageTitle } from '@/features/ui'
 
 export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
@@ -61,7 +61,28 @@ export default function ProjetosPage({ projeto, ...props }) {
 
   return (
     <Box>
-      <PageTitle title={projeto.title} />
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 4,
+        }}
+      >
+        <PageTitle title={projeto.title} />
+
+        <ImageBox
+          src={projeto.image.url}
+          alt={projeto.image.alt}
+          width={projeto.image.width}
+          height={projeto.image.height}
+        />
+
+        <Box>
+          <MarkdownContent content={projeto.body.raw} />
+        </Box>
+      </Container>
     </Box>
   )
 }
