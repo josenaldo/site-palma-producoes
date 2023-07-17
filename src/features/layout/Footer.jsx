@@ -46,7 +46,7 @@ export default function Footer({ t }) {
             fontSize: '0.7rem',
           }}
         >
-          &copy; {t('footer.common:copyright')}
+          &copy; {t('common:footer:copyright')}
         </Typography>
         <LanguageSelector />
       </Box>
