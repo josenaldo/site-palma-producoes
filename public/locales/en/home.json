@@ -1,11 +1,14 @@
 {
-  "homeBanner": {
-    "impacto": "Impact",
-    "brasilidade": "Brazilianness",
-    "socioambiental": "Socioenvironmental",
-    "resistência": "Resistance",
-    "conexão": "Connection",
-    "cultura": "Culture"
+  "hero": {
+    "title1": "Transforming Ideas into ",
+    "title2": "Reality",
+    "text": "Palma Produções offers innovative audiovisual content production, bringing your ideas to life.",
+    "button": "Contact Us",
+    "benefits": [
+      "Innovative content production",
+      "Experienced team of professionals",
+      "Custom solutions for your needs"
+    ]
   },
   "intro": {
     "title": "Design and reframe stories",

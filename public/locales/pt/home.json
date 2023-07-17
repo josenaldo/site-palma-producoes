@@ -1,11 +1,14 @@
 {
-  "homeBanner": {
-    "impacto": "Impacto",
-    "brasilidade": "Brasilidade",
-    "socioambiental": "Socioambiental",
-    "resistência": "Resistência",
-    "conexão": "Conexão",
-    "cultura": "Cultura"
+  "hero": {
+    "title1": "Transformando Ideias em ",
+    "title2": "Realidade",
+    "text": "A Palma Produções oferece produção de conteúdo audiovisual inovador, dando vida às suas ideias.",
+    "button": "Contate-nos",
+    "benefits": [
+      "Produção de conteúdo inovador",
+      "Equipe experiente de profissionais",
+      "Soluções personalizadas para suas necessidades"
+    ]
   },
   "intro": {
     "title": "Projetar e resignificar histórias",

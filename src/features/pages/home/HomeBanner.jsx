@@ -1,41 +1,119 @@
 import { BannerBox } from '@/features/ui'
-import { Box, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { homeBannerItems } from '@/data/home'
 import { useState } from 'react'
 
 import styles from './HomeBanner.module.css'
 
 export default function HomeBanner({ t }) {
-  const [selectedItem, setSelectedItem] = useState(homeBannerItems[0])
-
   return (
-    <section>
-      <BannerBox
-        image={selectedItem.image}
+    <Box
+      component="section"
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        position: 'relative',
+      }}
+    >
+      <Box
+        component="video"
+        autoPlay
+        muted
+        loop
+        id="heroVideo"
         sx={{
+          position: 'absolute',
+          zIndex: '-1',
+          width: '100vw',
           height: '100vh',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          paddingTop: '120px',
+          objectFit: 'cover',
+          overflow: 'hidden',
+          filter: 'brightness(0.3)',
         }}
       >
-        <Box className={styles.wrapper}>
-          {homeBannerItems.map((item, index) => (
-            <Typography
-              key={index}
-              variant="h1"
-              className={styles.title}
-              onClick={() => setSelectedItem(item)}
-              onMouseOver={() => setSelectedItem(item)}
+        <source src="/videos/home/hero-480p.mp4" type="video/mp4" />
+      </Box>
+
+      <Container sx={{}}>
+        <Box
+          sx={{
+            backgroundColor: 'rgba(255 255 255 / 10%)',
+            padding: 4,
+          }}
+        >
+          <Box
+            sx={{
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: {
+                xs: 'center',
+                md: 'flex-start',
+              },
+              color: 'text.light',
+              gap: 3,
+            }}
+          >
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                alignItems: {
+                  xs: 'center',
+                  md: 'flex-start',
+                },
+              }}
             >
-              {t(item.title, { ns: 'home' })}
+              <Typography
+                component="span"
+                variant="h2"
+                sx={{
+                  display: 'inline',
+                  textAlign: {
+                    xs: 'center',
+                    md: 'left',
+                  },
+                }}
+              >
+                <Box
+                  component="span"
+                  sx={{
+                    color: 'primary.main',
+                  }}
+                >
+                  {t('home:hero.title1')}
+                </Box>{' '}
+                <Box
+                  component="span"
+                  sx={{
+                    color: 'secondary.main',
+                  }}
+                >
+                  {t('home:hero.title2')}
+                </Box>
+              </Typography>
+            </Box>
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: {
+                  xs: 'center',
+                  md: 'left',
+                },
+              }}
+            >
+              {t('home:hero.text')}
             </Typography>
-          ))}
+            <Button variant="contained" color="primary" size="large">
+              {t('home:hero.button')}
+            </Button>
+          </Box>
         </Box>
-      </BannerBox>
-    </section>
+      </Container>
+    </Box>
   )
 }

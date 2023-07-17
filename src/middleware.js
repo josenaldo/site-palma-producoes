@@ -10,7 +10,7 @@ acceptLanguage.languages(locales)
 export const config = {
   // matcher: '/:lng*'
   matcher: [
-    '/((?!api|_next/static|_next/image|images|flags|assets|favicon.ico|sw.js).*)',
+    '/((?!api|_next/static|_next/image|images|videos|locales|content|flags|assets|favicon.ico|sw.js).*)',
   ],
 }
 
