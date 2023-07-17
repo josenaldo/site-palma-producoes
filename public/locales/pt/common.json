@@ -16,5 +16,8 @@
     "showMore": "Mostrar mais",
     "showLess": "Mostrar menos"
   },
-  "copyright": "2023 PALMAS PRODUÇÕES. DIREITOS RESERVADOS."
+  "footer": {
+    "copyright": "2023 PALMAS PRODUÇÕES. DIREITOS RESERVADOS.",
+    "backToTop": "Voltar ao topo"
+  }
 }

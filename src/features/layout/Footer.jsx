@@ -1,4 +1,5 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Button, IconButton, Typography } from '@mui/material'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 
 import { ContactLinks, SocialLinks } from '@/features/ui'
 import { LanguageSelector } from '@/features/i18n/client'
@@ -8,29 +9,66 @@ export default function Footer({ t }) {
     <Box
       sx={{
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
+        flexDirection: {
+          xs: 'column',
+          sm: 'row',
+        },
+        justifyContent: 'space-between',
         alignItems: 'center',
-        py: 3,
+        padding: 3,
         width: '100%',
         backgroundColor: 'common.dark',
         color: 'common.light',
-        gap: '0.5rem',
+        gap: 1,
       }}
     >
-      <SocialLinks />
-      <ContactLinks />
-      <Typography
-        variant="body2"
+      <Box
         sx={{
-          color: 'grey',
-          fontSize: '0.7rem',
+          width: '10%',
+        }}
+      ></Box>
+
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 1,
         }}
       >
-        &copy; {t('common:copyright')}
-      </Typography>
+        <SocialLinks />
+        <ContactLinks />
+        <Typography
+          variant="body2"
+          sx={{
+            color: 'grey',
+            fontSize: '0.7rem',
+          }}
+        >
+          &copy; {t('footer.common:copyright')}
+        </Typography>
+        <LanguageSelector />
+      </Box>
 
-      <LanguageSelector />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-end',
+        }}
+      >
+        <Button
+          color="secondary"
+          size="small"
+          endIcon={<ArrowUpwardIcon />}
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+          }}
+        >
+          {t('common:footer.backToTop')}
+        </Button>
+      </Box>
     </Box>
   )
 }
