@@ -5,23 +5,23 @@ import {
   makeStaticProps,
 } from '@/features/i18n/server'
 
-import { MarkdownContent, projetoContentService } from '@/features/content'
+import { MarkdownContent, portfolioContentService } from '@/features/content'
 import { Box, Container, Typography } from '@mui/material'
 import { ImageBox, PageTitle } from '@/features/ui'
 
 export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
-  const projetos = projetoContentService.getAllProjetos('pt')
+  const portfolioList = portfolioContentService.getAllPortfolio('pt')
   const paths = []
 
-  projetos.map((projeto) => {
+  portfolioList.map((portfolio) => {
     const p = i18nPaths.paths.map((path) => {
       const { locale } = path.params
 
       return {
         params: {
           locale,
-          slug: projeto.slug,
+          slug: portfolio.slug,
         },
       }
     })
@@ -38,25 +38,25 @@ export function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const i18nPropsFunc = makeStaticProps(['common', 'projeto'])
+  const i18nPropsFunc = makeStaticProps(['common', 'portfolio'])
   const { slug, locale } = ctx.params
-  const url = `/${locale}/projetos/${slug}`
+  const url = `/${locale}/portfolio/${slug}`
 
   const i18nProps = await i18nPropsFunc(ctx)
-  const projeto = projetoContentService.getProjetoData(url)
+  const portfolio = portfolioContentService.getPortfolioData(url)
 
   const props = {
     props: {
       ...i18nProps.props,
-      projeto,
+      portfolio,
     },
   }
 
   return props
 }
 
-export default function ProjetosPage({ projeto, ...props }) {
-  const { t } = useTranslation(['common', 'projeto'])
+export default function PortfolioPage({ portfolio, ...props }) {
+  const { t } = useTranslation(['common', 'portfolio'])
   console.log('props', props)
 
   return (
@@ -70,17 +70,17 @@ export default function ProjetosPage({ projeto, ...props }) {
           gap: 4,
         }}
       >
-        <PageTitle title={projeto.title} />
+        <PageTitle title={portfolio.title} />
 
         <ImageBox
-          src={projeto.image.url}
-          alt={projeto.image.alt}
-          width={projeto.image.width}
-          height={projeto.image.height}
+          src={portfolio.image.url}
+          alt={portfolio.image.alt}
+          width={portfolio.image.width}
+          height={portfolio.image.height}
         />
 
         <Box>
-          <MarkdownContent content={projeto.body.raw} />
+          <MarkdownContent content={portfolio.body.raw} />
         </Box>
       </Container>
     </Box>

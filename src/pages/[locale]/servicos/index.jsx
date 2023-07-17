@@ -77,7 +77,7 @@ export default function ServicosPage({ page, servicos, depoimentos }) {
 
         <Servicos servicos={servicos} />
 
-        <BannerProjetos t={t} />
+        <BannerPortfolio t={t} />
 
         <Depoimentos t={t} depoimentos={depoimentos} />
       </Container>
@@ -142,7 +142,7 @@ function Servicos({ servicos }) {
   )
 }
 
-function BannerProjetos({ t }) {
+function BannerPortfolio({ t }) {
   return (
     <Box
       sx={{
@@ -153,8 +153,8 @@ function BannerProjetos({ t }) {
       }}
     >
       <ImageBox
-        src="/images/content/pages/servicos-projetos.jpg"
-        alt="Projetos"
+        src="/images/content/pages/servicos-portfolio.jpg"
+        alt="Portfolio"
         width={1200}
         height={628}
         sx={{
@@ -173,15 +173,15 @@ function BannerProjetos({ t }) {
         }}
       >
         <Typography variant="h2" component="h2" color="light.main">
-          {t('servicos:bannerProject.title')}
+          {t('servicos:bannerPortfolio.title')}
         </Typography>
         <ButtonLink
-          href="/projetos"
+          href="/portfolio"
           variant="outlined"
           color="light"
           size="large"
         >
-          {t('servicos:bannerProject.button')}
+          {t('servicos:bannerPortfolio.button')}
         </ButtonLink>
       </Box>
     </Box>

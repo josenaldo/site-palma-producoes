@@ -6,7 +6,7 @@ service: "criacao-de-conteudos"
 description:
   "A Palma Produções produziu conteúdo fotográfico para o documentário 'Simbiose', capturando imagens que realçam a narrativa."
 image:
-  url: /images/content/projetos/doc-simbiose.jpg
+  url: /images/content/portfolio/doc-simbiose.jpg
   alt: "Doc. Simbiose (Laura de Carvalho)"
   width: 1200
   height: 628

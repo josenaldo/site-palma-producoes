@@ -244,33 +244,33 @@ const Depoimento = defineDocumentType(() => ({
   },
 }))
 
-export const Projeto = defineDocumentType(() => ({
-  name: 'Projetos',
-  filePathPattern: `projetos/**/*.md`,
+export const Portfolio = defineDocumentType(() => ({
+  name: 'Portfolio',
+  filePathPattern: `portfolio/**/*.md`,
   fields: {
     id: {
       type: 'number',
-      description: 'The id of the project',
+      description: 'The id of the portfolio',
       required: true,
     },
     highlight: {
       type: 'boolean',
-      description: 'The highlight of the project',
+      description: 'The highlight of the portfolio',
       required: true,
     },
     title: {
       type: 'string',
-      description: 'The title of the project',
+      description: 'The title of the portfolio',
       required: true,
     },
     service: {
       type: 'string',
-      description: 'The slug of the service of the project',
+      description: 'The slug of the service of the portfolio',
       required: true,
     },
     description: {
       type: 'string',
-      description: 'The description of the project',
+      description: 'The description of the portfolio',
       required: true,
     },
     image: {
@@ -281,22 +281,22 @@ export const Projeto = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => resolveUrl(doc, 'projetos'),
+      resolve: (doc) => resolveUrl(doc, 'portfolio'),
     },
     locale: {
       type: 'string',
       resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/projetos\/?/, '').split('/')[0],
+        doc._raw.flattenedPath.replace(/portfolio\/?/, '').split('/')[0],
     },
     slug: {
       type: 'string',
       resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/projetos\/?/, '').split('/')[1],
+        doc._raw.flattenedPath.replace(/portfolio\/?/, '').split('/')[1],
     },
   },
 }))
 
 export default makeSource({
   contentDirPath: 'public/content',
-  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, Projeto],
+  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, Portfolio],
 })

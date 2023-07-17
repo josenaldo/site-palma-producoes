@@ -6,7 +6,7 @@ service: producao-cultural
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:
-  url: /images/content/projetos/nos-somos-o-transito.jpg
+  url: /images/content/portfolio/nos-somos-o-transito.jpg
   alt: We are Traffic
   width: 1200
   height: 628

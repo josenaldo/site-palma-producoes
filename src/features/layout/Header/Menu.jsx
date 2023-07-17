@@ -136,7 +136,7 @@ function MenuDivider() {
       orientation={orientation}
       sx={{
         borderColor: 'primary.main',
-        borderWidth: '2px',
+        borderWidth: '3px',
         display: 'block',
         width,
       }}

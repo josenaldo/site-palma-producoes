@@ -6,7 +6,7 @@ service: "criacao-de-conteudos"
 description:
   "Palma Produções produced photographic content for the 'Simbiose' documentary, capturing images that enhance the narrative."
 image:
-  url: /images/content/projetos/doc-simbiose.jpg
+  url: /images/content/portfolio/doc-simbiose.jpg
   alt: "Doc. Simbiose (Laura de Carvalho)"
   width: 1200
   height: 628

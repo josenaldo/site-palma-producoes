@@ -12,8 +12,8 @@ export const pages = [
     href: '/servicos',
   },
   {
-    title: 'menu.projects',
-    href: '/projetos',
+    title: 'menu.portfolio',
+    href: '/portfolio',
   },
   {
     title: 'menu.moviments',

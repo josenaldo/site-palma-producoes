@@ -6,7 +6,7 @@ service: producao-cultural
 description:
   "The 'Master Sirso' Documentary is an example of Palma's commitment to quality cultural production, highlighting Master Sirso's life."
 image:
-  url: /images/content/projetos/documentario-mestre-sirso.jpg
+  url: /images/content/portfolio/documentario-mestre-sirso.jpg
   alt: Documentary “Master Sirso"
   width: 1200
   height: 628

@@ -6,7 +6,7 @@ service: "criacao-de-conteudos"
 description:
   "We produced the captivating teaser for 'The Cry | The Carioca Corsair', capturing the project's essence."
 image:
-  url: /images/content/projetos/o-grito-o-corsario-carioca.jpg
+  url: /images/content/portfolio/o-grito-o-corsario-carioca.jpg
   alt: "The Cry | The Carioca Corsair"
   width: 1200
   height: 628

@@ -6,7 +6,7 @@ service: "comunicacao-visual"
 description:
   "Palma Produções created a cohesive, appealing visual identity for the 'America Latina Video Art' project, reflecting its innovative artistic essence."
 image:
-  url: /images/content/projetos/america-latina-video-arte.jpg
+  url: /images/content/portfolio/america-latina-video-arte.jpg
   alt: "America Latina Video Art Project"
   width: 1200
   height: 628

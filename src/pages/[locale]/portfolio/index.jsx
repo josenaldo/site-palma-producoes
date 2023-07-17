@@ -4,20 +4,23 @@ import { Box, Card, CardContent, Container, Typography } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
-import { pagesContentService, projetoContentService } from '@/features/content'
+import {
+  pagesContentService,
+  portfolioContentService,
+} from '@/features/content'
 
 import { ImageBox, Link, PageHeader } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
-  const props = await makeStaticProps(['common', 'projetos'])({ params })
+  const props = await makeStaticProps(['common', 'portfolio'])({ params })
   const locale = params?.locale || 'pt'
-  const url = `/${locale}/projetos`
+  const url = `/${locale}/portfolio`
 
   const page = pagesContentService.getPageData(url)
-  const projetos = projetoContentService.getAllProjetos(locale)
+  const portfolioList = portfolioContentService.getAllPortfolio(locale)
 
   props.props.page = page
-  props.props.projetos = projetos
+  props.props.portfolioList = portfolioList
 
   return props
 }
@@ -26,8 +29,8 @@ import { useState } from 'react'
 
 export { getStaticPaths }
 
-export default function ServicosPage({ page, projetos }) {
-  const { t } = useTranslation(['common', 'projetos'])
+export default function ServicosPage({ page, portfolioList }) {
+  const { t } = useTranslation(['common', 'portfolio'])
 
   return (
     <Box>
@@ -51,8 +54,8 @@ export default function ServicosPage({ page, projetos }) {
             mb: 8,
           }}
         >
-          {projetos.map((projeto) => (
-            <ProjetoCard key={projeto.id} projeto={projeto} />
+          {portfolioList.map((portfolio) => (
+            <PortfolioCard key={portfolio.id} portfolio={portfolio} />
           ))}
         </Box>
       </Container>
@@ -60,12 +63,12 @@ export default function ServicosPage({ page, projetos }) {
   )
 }
 
-function ProjetoCard({ projeto }) {
+function PortfolioCard({ portfolio }) {
   const [elevation, setElevation] = useState(2)
   const [brightness, setBrightness] = useState(40)
 
   return (
-    <Link href={`/projetos/${projeto.slug}`}>
+    <Link href={`/portfolio/${portfolio.slug}`}>
       <Card
         elevation={elevation}
         sx={{
@@ -97,8 +100,8 @@ function ProjetoCard({ projeto }) {
         }}
       >
         <ImageBox
-          src={projeto.image.url}
-          alt={projeto.image.alt}
+          src={portfolio.image.url}
+          alt={portfolio.image.alt}
           width={1200}
           height={628}
           sx={{
@@ -125,11 +128,11 @@ function ProjetoCard({ projeto }) {
               color: 'rgb(255 255 255 / 0.4)',
             }}
           >
-            {`${projeto.id}`.padStart(2, '0')}
+            {`${portfolio.id}`.padStart(2, '0')}
           </Typography>
           <Box>
             <Typography variant="h5" component="h3" color="text.light">
-              {projeto.title}
+              {portfolio.title}
             </Typography>
             <Typography
               variant="caption"
@@ -142,7 +145,7 @@ function ProjetoCard({ projeto }) {
                 '-webkit-box-orient': 'vertical',
               }}
             >
-              {projeto.description}
+              {portfolio.description}
             </Typography>
           </Box>
         </CardContent>
