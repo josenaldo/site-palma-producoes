@@ -1,41 +1,53 @@
+import { be } from 'date-fns/locale'
 import { Bebas_Neue, Work_Sans } from 'next/font/google'
-import palette from './palette'
+import localFont from 'next/font/local'
 
-const titleFont = Bebas_Neue({
-  weight: ['400'],
-  subsets: ['latin'],
+const bebasKai = localFont({
+  src: './fonts/bebas-kai.ttf',
+  variable: '--font-bebas-kai',
 })
 
-const textFont = Work_Sans({
-  subsets: ['latin'],
+const workSans = localFont({
+  src: './fonts/work-sans-regular-variable-weight.ttf',
+  variable: '--font-work-sans-regular',
 })
+
+const workSansItalic = localFont({
+  src: './fonts/work-sans-italic-variable-weight.ttf',
+  variable: '--font-work-sans-italic',
+})
+
+const titleFont = bebasKai
+
+const textFont = workSans
+
+const textFontItalic = workSansItalic
 
 const typography = {
-  fontFamily: textFont.style.fontFamily,
+  fontFamily: workSans.style.fontFamily,
 
-  // https://utopia.fyi/type/calculator/?c=600,16,1.125,1536,20,1.333,3,2,600-900-1200-1536&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
   h1: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   h2: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   h3: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   h4: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   h5: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   h6: {
-    fontFamily: titleFont.style.fontFamily,
+    fontFamily: bebasKai.style.fontFamily,
   },
 
   // TODO - remove this and change to use the Title component
@@ -54,5 +66,5 @@ const typography = {
   },
 }
 
-export { titleFont, textFont }
+export { titleFont, textFont, textFontItalic }
 export default typography
