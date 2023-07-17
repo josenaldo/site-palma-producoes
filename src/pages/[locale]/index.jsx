@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import {
-  HomeBanner,
+  HomeHero,
   HomeIntro,
   HomeServices,
   HomeTestimonials,
@@ -39,7 +39,7 @@ export default function HomePage({ depoimentos, servicos }) {
   return (
     <AppLayout t={t}>
       <Stack>
-        <HomeBanner t={t} />
+        <HomeHero t={t} />
         <HomeIntro t={t} />
         <HomeWho t={t} />
         <HomeVideo t={t} />

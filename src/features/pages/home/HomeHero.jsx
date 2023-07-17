@@ -1,11 +1,6 @@
-import { BannerBox } from '@/features/ui'
 import { Box, Button, Container, Typography } from '@mui/material'
-import { homeBannerItems } from '@/data/home'
-import { useState } from 'react'
 
-import styles from './HomeBanner.module.css'
-
-export default function HomeBanner({ t }) {
+export default function HomeHero({ t }) {
   return (
     <Box
       component="section"
@@ -41,6 +36,7 @@ export default function HomeBanner({ t }) {
           sx={{
             backgroundColor: 'rgba(255 255 255 / 10%)',
             padding: 4,
+            borderRadius: 4,
           }}
         >
           <Box
@@ -49,10 +45,7 @@ export default function HomeBanner({ t }) {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: {
-                xs: 'center',
-                md: 'flex-start',
-              },
+              alignItems: 'center',
               color: 'text.light',
               gap: 3,
             }}
@@ -62,10 +55,7 @@ export default function HomeBanner({ t }) {
                 display: 'flex',
                 flexDirection: 'row',
                 flexWrap: 'wrap',
-                alignItems: {
-                  xs: 'center',
-                  md: 'flex-start',
-                },
+                alignItems: 'center',
               }}
             >
               <Typography
@@ -73,10 +63,7 @@ export default function HomeBanner({ t }) {
                 variant="h2"
                 sx={{
                   display: 'inline',
-                  textAlign: {
-                    xs: 'center',
-                    md: 'left',
-                  },
+                  textAlign: 'center',
                 }}
               >
                 <Box
@@ -100,10 +87,7 @@ export default function HomeBanner({ t }) {
             <Typography
               variant="h5"
               sx={{
-                textAlign: {
-                  xs: 'center',
-                  md: 'left',
-                },
+                textAlign: 'center',
               }}
             >
               {t('home:hero.text')}
