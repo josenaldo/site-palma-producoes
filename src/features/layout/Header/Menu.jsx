@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import {
   Box,
   Dialog,
@@ -21,7 +21,7 @@ import { useTranslation } from 'react-i18next'
 export default function Menu() {
   const isHome = useIsHome()
 
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
     setOpen(true)
@@ -32,7 +32,14 @@ export default function Menu() {
   }
 
   return (
-    <Box>
+    <Box
+      sx={{
+        display: {
+          xs: 'block',
+          md: 'none',
+        },
+      }}
+    >
       <IconButton
         size="large"
         edge="end"
