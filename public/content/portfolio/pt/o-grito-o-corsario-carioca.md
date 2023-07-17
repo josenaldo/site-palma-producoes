@@ -2,7 +2,10 @@
 id: 8
 highlight: true
 title: "O Grito | O Corsário Carioca"
-service: "criacao-de-conteudos"
+tags:
+  - Produção Cultural
+  - Audiovisual
+  - Documentário
 description:
   "Produzimos o teaser cativante para 'O Grito | O Corsário Carioca', capturando a essência do portfolio."
 image:

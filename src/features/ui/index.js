@@ -22,4 +22,6 @@ export { SocialLinks } from './SocialLinks'
 
 export { YoutubeVideo } from './YoutubeVideo'
 
+export { Tag } from './Tag'
+
 export { Title } from './Title'

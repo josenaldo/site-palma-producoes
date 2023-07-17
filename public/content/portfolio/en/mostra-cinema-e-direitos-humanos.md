@@ -2,7 +2,10 @@
 id: 4
 highlight: true
 title: "Human Rights Film Show"
-service: "producao-cultural"
+tags:
+  - Cultural Production
+  - Audiovisual
+  - Human Rights
 description:
   "A cultural production project that highlights the importance of human rights through the power of cinema."
 image:

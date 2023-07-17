@@ -9,7 +9,7 @@ import {
   portfolioContentService,
 } from '@/features/content'
 
-import { ImageBox, Link, PageHeader } from '@/features/ui'
+import { ImageBox, Link, PageHeader, Tag } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'portfolio'])({ params })
@@ -117,24 +117,32 @@ function PortfolioCard({ portfolio }) {
             width: '100%',
             height: '100%',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            justifyContent: 'flex-end',
             alignItems: 'flex-start',
             zIndex: 2,
           }}
         >
-          <Typography
-            variant="h2"
-            component="h2"
+          <Box
             sx={{
-              color: 'rgb(255 255 255 / 0.4)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 1,
             }}
           >
-            {`${portfolio.id}`.padStart(2, '0')}
-          </Typography>
-          <Box>
             <Typography variant="h5" component="h3" color="text.light">
               {portfolio.title}
             </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                gap: 1,
+              }}
+            >
+              {portfolio.tags &&
+                portfolio.tags.map((tag) => <Tag key={tag} label={tag} />)}
+            </Box>
             <Typography
               variant="caption"
               color="text.light"

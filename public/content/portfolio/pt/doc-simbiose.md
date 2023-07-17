@@ -2,7 +2,10 @@
 id: 6
 highlight: true
 title: "Doc. Simbiose (Laura de Carvalho)"
-service: "criacao-de-conteudos"
+tags:
+  - Produção Cultural
+  - Documentário
+  - Audiovisual
 description:
   "A Palma Produções produziu conteúdo fotográfico para o documentário 'Simbiose', capturando imagens que realçam a narrativa."
 image:

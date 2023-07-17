@@ -2,7 +2,10 @@
 id: 3
 highlight: true
 title: We are Traffic
-service: producao-cultural
+tags:
+  - Cultural Production
+  - Audiovisual
+  - Traffic Safety
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:

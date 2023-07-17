@@ -2,7 +2,10 @@
 id: 5
 highlight: true
 title: Rachel Castro Show
-service: criacao-de-conteudos
+tags:
+  - Cultural Production
+  - Audiovisual
+  - Music
 description:
   "Palma Produções produced the Rachel Castro show, featuring Diogo Nogueira, Mariene de Castro, and Zélia Duncan."
 image:

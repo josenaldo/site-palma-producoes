@@ -2,7 +2,10 @@
 id: 1
 highlight: true
 title: Documentário “Mestre Sirso"
-service: producao-cultural
+tags:
+  - Produção Cultural
+  - Documentário
+  - Audiovisual
 description:
   "O Documentário 'Mestre Sirso' é um exemplo do compromisso da Palma com a produção cultural de qualidade, destacando a vida de Mestre Sirso."
 image:

@@ -2,7 +2,10 @@
 id: 5
 highlight: true
 title: Show Rachel Castro
-service: criacao-de-conteudos
+tags:
+  - Produção Cultural
+  - Audiovisual
+  - Música
 description:
   "A Palma Produções produziu o show de Rachel Castro, com participações de Diogo Nogueira, Mariene de Castro e Zélia Duncan."
 image:

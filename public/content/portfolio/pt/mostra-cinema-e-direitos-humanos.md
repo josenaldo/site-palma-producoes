@@ -2,7 +2,10 @@
 id: 4
 highlight: true
 title: "Mostra Cinema e Direitos Humanos"
-service: "producao-cultural"
+tags:
+  - Produção Cultural
+  - Audiovisual
+  - Direitos Humanos
 description:
   "Um portfolio de produção cultural que destaca a importância dos direitos humanos através do poder do cinema."
 image:

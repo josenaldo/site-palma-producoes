@@ -2,7 +2,10 @@
 id: 2
 highlight: true
 title: Palhaço Afonso Xodó, Banda Rio e Convidados
-service: producao-cultural
+tags:
+  - Produção Cultural
+  - Audiovisual
+  - Documentário
 description:
   "A Palma Produções produziu o 'Palhaço Afonso Xodó, Banda Rio e Convidados', celebrando cultura e alegria."
 image:

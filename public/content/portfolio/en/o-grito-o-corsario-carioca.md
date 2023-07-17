@@ -2,7 +2,10 @@
 id: 8
 highlight: true
 title: "The Cry | The Carioca Corsair"
-service: "criacao-de-conteudos"
+tags:
+  - Cultural Production
+  - Audiovisual
+  - Documentary
 description:
   "We produced the captivating teaser for 'The Cry | The Carioca Corsair', capturing the project's essence."
 image:

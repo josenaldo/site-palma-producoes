@@ -2,7 +2,10 @@
 id: 6
 highlight: true
 title: "Doc. Simbiose (Laura de Carvalho)"
-service: "criacao-de-conteudos"
+tags:
+  - Cultural Production
+  - Documentary
+  - Audiovisual
 description:
   "Palma Produções produced photographic content for the 'Simbiose' documentary, capturing images that enhance the narrative."
 image:

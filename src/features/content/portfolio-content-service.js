@@ -1,13 +1,13 @@
-import { allPortfolios as portfolioList } from 'contentlayer/generated'
+import { allPortfolioItems } from 'contentlayer/generated'
 
 export function getPortfolioData(url) {
-  const portfolio = portfolioList.find((portfolio) => portfolio.url === url)
+  const portfolio = allPortfolioItems.find((portfolio) => portfolio.url === url)
 
   return portfolio
 }
 
 export function getAllPortfolio(locale) {
-  const filtered = portfolioList.filter(
+  const filtered = allPortfolioItems.filter(
     (portfolio) => portfolio.locale === locale
   )
 

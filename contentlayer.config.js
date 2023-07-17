@@ -244,33 +244,34 @@ const Depoimento = defineDocumentType(() => ({
   },
 }))
 
-export const Portfolio = defineDocumentType(() => ({
-  name: 'Portfolio',
+export const PortfolioItem = defineDocumentType(() => ({
+  name: 'PortfolioItem',
   filePathPattern: `portfolio/**/*.md`,
   fields: {
     id: {
       type: 'number',
-      description: 'The id of the portfolio',
+      description: 'The id of the portfolio item',
       required: true,
     },
     highlight: {
       type: 'boolean',
-      description: 'The highlight of the portfolio',
+      description: 'The highlight of the portfolio item',
       required: true,
     },
     title: {
       type: 'string',
-      description: 'The title of the portfolio',
+      description: 'The title of the portfolio item',
       required: true,
     },
-    service: {
-      type: 'string',
-      description: 'The slug of the service of the portfolio',
-      required: true,
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      description: 'The tags of the portfolio item',
+      required: false,
     },
     description: {
       type: 'string',
-      description: 'The description of the portfolio',
+      description: 'The description of the portfolio item',
       required: true,
     },
     image: {
@@ -298,5 +299,5 @@ export const Portfolio = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'public/content',
-  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, Portfolio],
+  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, PortfolioItem],
 })

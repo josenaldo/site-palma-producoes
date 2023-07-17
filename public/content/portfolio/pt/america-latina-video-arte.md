@@ -2,7 +2,10 @@
 id: 7
 highlight: true
 title: "America Latina Vídeo Arte"
-service: "comunicacao-visual"
+tags:
+  - Identidade Visual
+  - Design Gráfico
+  - Produção Cultural
 description:
   "Palma Produções criou uma identidade visual atraente e coesa para o portfolio 'America Latina Vídeo Arte', refletindo sua essência artística inovadora."
 image:

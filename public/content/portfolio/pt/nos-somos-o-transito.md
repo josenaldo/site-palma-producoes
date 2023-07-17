@@ -2,7 +2,10 @@
 id: 3
 highlight: true
 title: Nós somos o Trânsito
-service: producao-cultural
+tags:
+  - Produção Cultural
+  - Audiovisual
+  - Segurança no Trânsito
 description:
   "Um portfolio de produção executiva que visa conscientizar sobre a importância da segurança no trânsito."
 image:

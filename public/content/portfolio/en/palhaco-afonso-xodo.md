@@ -2,7 +2,10 @@
 id: 2
 highlight: true
 title: Clown Afonso Xodó, Rio Band and Guests
-service: producao-cultural
+tags:
+  - Cultural Production
+  - Audiovisual
+  - Documentary
 description:
   "Palma Produções produced 'Palhaço Afonso Xodó, Banda Rio and Guests', celebrating culture and joy."
 image:
