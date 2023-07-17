@@ -1,14 +1,9 @@
 import { Box } from '@mui/material'
 
 import { MarkdownContent } from '@/features/content'
-import { PageTitle } from '@/features/ui'
+import { Title } from '@/features/ui'
 
-export default function PageHeader({
-  title,
-  subtitle,
-  text,
-  direction = 'row',
-}) {
+export default function PageHeader({ title, text, direction = 'row' }) {
   return (
     <Box
       sx={{
@@ -18,20 +13,22 @@ export default function PageHeader({
           md: direction,
         },
         alignItems: 'center',
+        justifyContent: 'center',
         gap: 2,
         mb: 2,
       }}
     >
-      <PageTitle
-        title={title}
-        subtitle={subtitle}
+      <Title
         sx={{
           width: {
             xs: '100%',
             md: direction === 'row' ? '30%' : '100%',
           },
         }}
-      />
+      >
+        {title}
+      </Title>
+
       <Box
         sx={{
           width: {

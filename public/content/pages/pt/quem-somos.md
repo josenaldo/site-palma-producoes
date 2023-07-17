@@ -1,6 +1,5 @@
 ---
 title: Quem faz a Palma
-subtitle: Satisfação em ter você aqui
 description:
   "Conheça a Palma Produções, uma produtora de conteúdo audiovisual inovadora e dinâmica. Saiba mais sobre nossa equipe de profissionais talentosos e nossa abordagem única para a produção de conteúdo."
 image:

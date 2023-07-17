@@ -1,6 +1,5 @@
 ---
 title: Who Makes Palma
-subtitle: Delighted to have you here
 description:
   "Meet Palma Produções, an innovative and dynamic audiovisual content production company. Learn more about our team of talented professionals and our unique approach to content production."
 image:

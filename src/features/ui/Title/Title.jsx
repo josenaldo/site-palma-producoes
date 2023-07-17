@@ -17,6 +17,7 @@ export default function Title({
         display: 'inline-block',
         borderBottom: `3px solid`,
         borderBottomColor: underlineColor,
+        textAlign: 'center',
         ...sx,
       }}
     >

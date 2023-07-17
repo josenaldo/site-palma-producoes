@@ -1,6 +1,5 @@
 ---
 title: What We Do
-subtitle: Turning Ideas into Reality
 description:
   "Discover how Palma Produçõess can help bring your ideas to life. We offer a range of services, including innovation consulting, visual and strategic communication, audiovisual content creation, and cultural production. Our team of experienced professionals is ready to help you achieve your goals."
 image:

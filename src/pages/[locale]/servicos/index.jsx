@@ -63,11 +63,7 @@ export default function ServicosPage({ page, servicos, depoimentos }) {
   return (
     <AppLayout t={t}>
       <Container>
-        <PageHeader
-          title={page.title}
-          subtitle={page.subtitle}
-          text={page.body.raw}
-        />
+        <PageHeader title={page.title} text={page.body.raw} />
 
         <ImageBox
           src={page.image.url}

@@ -14,8 +14,6 @@ export { Logo } from './Logo'
 
 export { PageHeader } from './PageHeader'
 
-export { PageTitle } from './PageTitle'
-
 export { SectionTitle } from './SectionTitle'
 
 export { SocialLinks } from './SocialLinks'

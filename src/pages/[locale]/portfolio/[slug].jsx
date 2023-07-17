@@ -6,8 +6,8 @@ import {
 } from '@/features/i18n/server'
 
 import { MarkdownContent, portfolioContentService } from '@/features/content'
-import { Box, Container, Typography } from '@mui/material'
-import { ImageBox, PageTitle } from '@/features/ui'
+import { Box, Container } from '@mui/material'
+import { ImageBox, Title } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
 
 export function getStaticPaths() {
@@ -71,7 +71,7 @@ export default function PortfolioPage({ portfolio, ...props }) {
           gap: 4,
         }}
       >
-        <PageTitle title={portfolio.title} />
+        <Title>{portfolio.title}</Title>
 
         <ImageBox
           src={portfolio.image.url}

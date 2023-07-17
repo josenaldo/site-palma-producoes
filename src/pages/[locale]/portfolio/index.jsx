@@ -38,7 +38,6 @@ export default function ServicosPage({ page, portfolioList }) {
       <Container>
         <PageHeader
           title={page.title}
-          subtitle={page.subtitle}
           text={page.body.raw}
           direction="column"
         />

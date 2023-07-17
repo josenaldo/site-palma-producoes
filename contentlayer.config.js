@@ -65,11 +65,6 @@ export const Page = defineDocumentType(() => ({
       description: 'The title of the page',
       required: true,
     },
-    subtitle: {
-      type: 'string',
-      description: 'The subtitle of the page',
-      required: true,
-    },
     description: {
       type: 'string',
       description: 'The description of the page',
