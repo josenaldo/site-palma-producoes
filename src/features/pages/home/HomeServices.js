@@ -17,7 +17,7 @@ import iconBlue from '@/assets/images/icon-blue.svg'
 import iconPurple from '@/assets/images/icon-purple.svg'
 import iconOrange from '@/assets/images/icon-orange.svg'
 
-export default function HomeServices({ t }) {
+export default function HomeServices({ t, servicos }) {
   return (
     <Box
       component="section"

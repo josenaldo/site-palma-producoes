@@ -6,15 +6,34 @@ import {
   HomeBanner,
   HomeIntro,
   HomeServices,
+  HomeTestimonials,
   HomeVideo,
   HomeWho,
   HomeWish,
 } from '@/features/pages/home'
 import { AppLayout } from '@/features/layout'
 
-const getStaticProps = makeStaticProps(['common', 'home'])
+import {
+  depoimentoContentService,
+  servicoContentService,
+} from '@/features/content'
 
-export default function HomePage() {
+export { getStaticPaths }
+
+export async function getStaticProps({ params }) {
+  const propsWrapper = await makeStaticProps(['common', 'home'])({ params })
+  const locale = params?.locale || 'pt'
+
+  const depoimentos = depoimentoContentService.getAllDepoimentos(locale)
+  const servicos = servicoContentService.getAllServicos(locale)
+
+  propsWrapper.props.depoimentos = depoimentos
+  propsWrapper.props.servicos = servicos
+
+  return propsWrapper
+}
+
+export default function HomePage({ depoimentos, servicos }) {
   const { t } = useTranslation(['common', 'home'])
 
   return (
@@ -24,11 +43,10 @@ export default function HomePage() {
         <HomeIntro t={t} />
         <HomeWho t={t} />
         <HomeVideo t={t} />
-        <HomeServices t={t} />
+        <HomeServices t={t} servicos={servicos} />
+        <HomeTestimonials t={t} depoimentos={depoimentos} />
         <HomeWish t={t} />
       </Stack>
     </AppLayout>
   )
 }
-
-export { getStaticPaths, getStaticProps }
