@@ -26,6 +26,7 @@ export async function getStaticProps({ params }) {
 }
 
 import { useState } from 'react'
+import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
@@ -33,7 +34,7 @@ export default function ServicosPage({ page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
 
   return (
-    <Box>
+    <AppLayout t={t}>
       <Container>
         <PageHeader
           title={page.title}
@@ -59,7 +60,7 @@ export default function ServicosPage({ page, portfolioList }) {
           ))}
         </Box>
       </Container>
-    </Box>
+    </AppLayout>
   )
 }
 

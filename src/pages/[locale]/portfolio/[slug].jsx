@@ -8,6 +8,7 @@ import {
 import { MarkdownContent, portfolioContentService } from '@/features/content'
 import { Box, Container, Typography } from '@mui/material'
 import { ImageBox, PageTitle } from '@/features/ui'
+import { AppLayout } from '@/features/layout'
 
 export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
@@ -60,7 +61,7 @@ export default function PortfolioPage({ portfolio, ...props }) {
   console.log('props', props)
 
   return (
-    <Box>
+    <AppLayout t={t}>
       <Container
         sx={{
           display: 'flex',
@@ -83,6 +84,6 @@ export default function PortfolioPage({ portfolio, ...props }) {
           <MarkdownContent content={portfolio.body.raw} />
         </Box>
       </Container>
-    </Box>
+    </AppLayout>
   )
 }

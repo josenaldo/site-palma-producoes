@@ -46,6 +46,7 @@ export async function getStaticProps({ params }) {
 }
 
 import { palette } from '@/features/styles'
+import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
@@ -60,7 +61,7 @@ export default function ServicosPage({ page, servicos, depoimentos }) {
   const { t } = useTranslation(['common', 'servicos'])
 
   return (
-    <Box>
+    <AppLayout t={t}>
       <Container>
         <PageHeader
           title={page.title}
@@ -81,7 +82,7 @@ export default function ServicosPage({ page, servicos, depoimentos }) {
 
         <Depoimentos t={t} depoimentos={depoimentos} />
       </Container>
-    </Box>
+    </AppLayout>
   )
 }
 

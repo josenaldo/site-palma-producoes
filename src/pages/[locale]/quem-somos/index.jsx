@@ -23,6 +23,7 @@ import {
 } from '@/features/content'
 
 import { ImageBox, PageHeader, Title } from '@/features/ui'
+import { AppLayout } from '@/features/layout'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'quem-somos'])({ params })
@@ -46,7 +47,7 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
   const { t } = useTranslation(['common', 'quem-somos'])
 
   return (
-    <Box>
+    <AppLayout t={t}>
       <Container>
         <PageHeader
           title={page.title}
@@ -65,7 +66,7 @@ export default function QuemSomosPage({ page, socias, parcerias }) {
       </Container>
 
       <Parcerias parcerias={parcerias} t={t} />
-    </Box>
+    </AppLayout>
   )
 }
 

@@ -10,6 +10,7 @@ import {
   HomeWho,
   HomeWish,
 } from '@/features/pages/home'
+import { AppLayout } from '@/features/layout'
 
 const getStaticProps = makeStaticProps(['common', 'home'])
 
@@ -17,14 +18,16 @@ export default function HomePage() {
   const { t } = useTranslation(['common', 'home'])
 
   return (
-    <Stack>
-      <HomeBanner t={t} />
-      <HomeIntro t={t} />
-      <HomeWho t={t} />
-      <HomeVideo t={t} />
-      <HomeServices t={t} />
-      <HomeWish t={t} />
-    </Stack>
+    <AppLayout t={t}>
+      <Stack>
+        <HomeBanner t={t} />
+        <HomeIntro t={t} />
+        <HomeWho t={t} />
+        <HomeVideo t={t} />
+        <HomeServices t={t} />
+        <HomeWish t={t} />
+      </Stack>
+    </AppLayout>
   )
 }
 

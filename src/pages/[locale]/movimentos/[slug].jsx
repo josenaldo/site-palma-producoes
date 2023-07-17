@@ -4,6 +4,7 @@ import {
   getStaticPaths as i18nGetStaticPaths,
   makeStaticProps,
 } from '@/features/i18n/server'
+import { AppLayout } from '@/features/layout'
 
 const getStaticPaths = () => {
   const i18nPaths = i18nGetStaticPaths()
@@ -50,7 +51,7 @@ async function getStaticProps(ctx) {
 export default function MovimentoPage(params) {
   const { t } = useTranslation(['common', 'movimento'])
 
-  return <div>Movimento: {params.slug}</div>
+  return <AppLayout t={t}>Movimento: {params.slug}</AppLayout>
 }
 
 export { getStaticPaths, getStaticProps }
