@@ -158,7 +158,7 @@ function BannerPortfolio({ t }) {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2" component="h2" color="light.main">
+        <Typography variant="h2" component="h2" color="text[50]">
           {t('servicos:bannerPortfolio.title')}
         </Typography>
         <ButtonLink

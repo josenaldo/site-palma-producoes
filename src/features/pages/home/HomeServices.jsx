@@ -1,4 +1,4 @@
-import { ButtonLink, Logo } from '@/features/ui'
+import { ButtonLink, Logo, Title } from '@/features/ui'
 import {
   Avatar,
   Box,
@@ -25,35 +25,15 @@ export default function HomeServices({ t, servicos }) {
         py: 5,
       }}
     >
-      <Container>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: {
-              xs: 'column',
-              md: 'row',
-            },
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: 2,
-          }}
-        >
-          <Typography variant="sectionTitle" component="h2">
-            {t('home:services.title')}
-          </Typography>
-          <ButtonLink
-            href="/servicos"
-            variant="outlined"
-            color="dark"
-            sx={{
-              height: 'fit-content',
-              px: 4,
-            }}
-          >
-            {t('home:services.button')}
-          </ButtonLink>
-        </Box>
-
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 4,
+        }}
+      >
+        <Title variant="h3">{t('home:services.title')}</Title>
         <Box
           sx={{
             display: 'grid',
@@ -83,6 +63,18 @@ export default function HomeServices({ t, servicos }) {
             image={iconPurple}
           />
         </Box>
+
+        <ButtonLink
+          href="/servicos"
+          variant="outlined"
+          color="dark"
+          sx={{
+            height: 'fit-content',
+            px: 4,
+          }}
+        >
+          {t('home:services.button')}
+        </ButtonLink>
       </Container>
     </Box>
   )

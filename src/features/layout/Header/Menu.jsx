@@ -43,7 +43,6 @@ export default function Menu() {
       <IconButton
         size="large"
         edge="end"
-        color="common.black"
         aria-label="menu"
         onClick={handleOpen}
         sx={{
