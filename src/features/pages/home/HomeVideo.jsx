@@ -6,7 +6,7 @@ export default function HomeVideo({ t }) {
     <Box
       component="section"
       sx={{
-        py: 5,
+        pt: 5,
       }}
     >
       <YoutubeVideo url={t('home:video.video')} aspectRatio="21/9" />

@@ -1,4 +1,4 @@
-import { BannerBox } from '@/features/ui'
+import { BannerBox, Title } from '@/features/ui'
 import { Box, Container, Stack, Typography } from '@mui/material'
 
 export default function HomeWish({ t }) {
@@ -28,13 +28,9 @@ export default function HomeWish({ t }) {
       >
         <Container>
           <Stack spacing={2} justifyContent="center" alignItems="center">
-            <Typography
-              variant="sectionTitle"
-              component="h2"
-              color="text.light"
-            >
+            <Title variant="h3" color="text.light">
               {t('home:wish.title')}
-            </Typography>
+            </Title>
 
             {texts &&
               texts.map((text, index) => (
