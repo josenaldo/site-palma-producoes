@@ -2,6 +2,7 @@
 name: Alexandra Karmiriam
 description: Sócia - Designer - Fotógrafa - Produtora de Conteúdo Visual
 image: "/images/content/socias/alexandra-karmiriam.jpg"
+order: 3
 ---
 
 Alexandra Karmirian é uma profissional apaixonada por design, inovação, cultura e sustentabilidade. Com vários cursos de fotografia no Ateliê da Imagem, ela é formada em Design Industrial, pós-graduada em Fotografia e Imagem e especializada em Design Thinking. Alexandra trabalhou na moda como Designer e Diretora de Arte e foi voluntária na equipe de Comunicação e Comunidade da Organização Social TETO. Com foco na ideação e design de projetos de impacto baseados em Inovação e Produção de Conteúdo Estratégico e Visual, trabalha como Conteúdo Visual na ONG Gastromotiva.

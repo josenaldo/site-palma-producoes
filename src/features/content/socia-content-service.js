@@ -7,7 +7,12 @@ export function getSociaData(url) {
 }
 
 export function getAllSocias(locale) {
-  return allSocia.filter((socia) => socia.locale === locale)
+  const filtered = allSocia.filter((socia) => socia.locale === locale)
+
+  const sorted = filtered.sort((a, b) => {
+    return a.order - b.order
+  })
+  return sorted
 }
 
 const sociasContentService = {

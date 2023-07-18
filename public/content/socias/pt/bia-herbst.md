@@ -2,6 +2,7 @@
 name: Bia Herbst
 description: Sócia - Fotógrafa - Videomaker - Produtora Cultural
 image: "/images/content/socias/bia-herbst.jpg"
+order: 2
 ---
 
 Bia Herbst é uma profissional multifacetada que combina suas habilidades em publicidade, marketing, fotografia, cinematografia e produção cultural para criar soluções criativas e inovadoras. Sua formação diversificada e experiência nas indústrias de comunicação, mídia e artes a tornam capaz de abordar desafios de uma perspectiva única e holística. Bia é graduada em Publicidade e Propaganda, e suas habilidades foram aprimoradas por meio de estudos e trabalho com renomados profissionais do setor, como Greice Rosa e Marco Antonio Portela.

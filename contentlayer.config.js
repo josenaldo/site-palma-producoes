@@ -107,6 +107,11 @@ export const Socia = defineDocumentType(() => ({
       description: 'The image of the stockholder',
       required: true,
     },
+    order: {
+      type: 'number',
+      description: 'The order of the stockholder',
+      required: true,
+    },
   },
   computedFields: {
     url: {

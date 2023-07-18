@@ -1,7 +1,8 @@
 ---
-name: Emanuela Paiva
+name: Emanuela Palma
 description: Sócia - Jornalista - Fotógrafa - Documentarista
-image: "/images/content/socias/emanuela-paiva.jpg"
+image: "/images/content/socias/emanuela-palma.jpg"
+order: 1
 ---
 
 Emanuela Palma é uma jornalista, fotógrafa e documentarista com pós-graduação em Fotografia e Imagem. Ela concluiu o curso de Edição na Academia Internacional de Cinema, no Rio de Janeiro, e frequentou o curso de Roteiro na Escola Darcy Ribeiro. Entre 2013 e 2018, Emanuela foi coordenadora de produção da Mostra Cinema e Direitos Humanos, em Porto Velho, Rondônia. Ela dirigiu e produziu o documentário: Interoceânica – da Amazônia ao Pacífico, portfolio contemplado pela Becas Avina.

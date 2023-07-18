@@ -193,7 +193,7 @@ function Socias({ t, socias }) {
 function SociaCard({ t, socia, onClick, open }) {
   return (
     <Card
-      elevation={open ? 5 : 1}
+      elevation={open ? 5 : 0}
       key={socia.url}
       sx={{
         display: 'flex',
@@ -233,7 +233,12 @@ function SociaCard({ t, socia, onClick, open }) {
           {socia.description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
         <Button size="small" onClick={onClick}>
           {open ? t('common:button.showLess') : t('common:button.showMore')}
         </Button>
