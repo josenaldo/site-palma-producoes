@@ -1,5 +1,6 @@
-import { ButtonLink, Link } from '@/features/ui'
-import { Box, Button, Container, Stack, Typography } from '@mui/material'
+import { ButtonLink, Title } from '@/features/ui'
+import { Box, Container, Typography } from '@mui/material'
+import Image from 'next/image'
 
 export default function HomeWho({ t }) {
   const texts = t('home:who.text', {
@@ -14,59 +15,73 @@ export default function HomeWho({ t }) {
         py: 5,
       }}
     >
-      <Container>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 4,
+        }}
+      >
+        <Title variant="h3">{t('home:who.title')}</Title>
+
         <Box
           sx={{
             display: 'flex',
             flexDirection: {
               xs: 'column',
-              sm: 'row',
+              md: 'row',
             },
             justifyContent: 'center',
+            alignItems: 'center',
+            alignContent: 'center',
+            justifyItems: 'center',
+            position: 'relative',
           }}
         >
           <Box
             sx={{
-              display: {
-                xs: 'none',
-                sm: 'flex',
-              },
+              display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center',
-              py: {
-                xs: 2,
-                sm: 4,
+              justifyContent: {
+                xs: 'flex-start',
+                md: 'center',
               },
-              transform: {
-                xs: 'none',
-                sm: 'rotate(-90deg)',
+              position: {
+                xs: 'absolute',
+                md: 'relative',
               },
+              width: '100%',
+              height: '420px',
             }}
           >
-            <Typography variant="bigtag">{t('home:who.impact')}</Typography>
+            <Box
+              sx={{
+                position: 'relative',
+                zIndex: -1,
+                width: '120px',
+                height: '420px',
+                filter: {
+                  xs: 'opacity(0.2)',
+                  md: 'none',
+                },
+              }}
+            >
+              <Image src={t('home:who.impact')} alt="Impact" fill />
+            </Box>
           </Box>
 
           <Box
             sx={{
               display: 'flex',
               flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
 
               flexGrow: 1,
-              gap: 2,
+              gap: 8,
             }}
           >
-            <Typography
-              variant="sectionTitle"
-              component="h2"
-              sx={{
-                display: {
-                  xs: 'block',
-                  sm: 'none',
-                },
-              }}
-            >
-              {t('home:who.title')}
-            </Typography>
             <Box
               sx={{
                 display: 'flex',
@@ -78,45 +93,21 @@ export default function HomeWho({ t }) {
                 <Typography key={`home:who.text.${index}`}>{text}</Typography>
               ))}
             </Box>
-
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: {
-                  xs: 'column',
-                  sm: 'row',
-                },
-                alignItems: 'center',
-                gap: 2,
-                mt: 4,
-              }}
-            >
-              <Typography
-                variant="sectionTitle"
-                component="h2"
-                sx={{
-                  display: {
-                    xs: 'none',
-                    sm: 'block',
-                  },
-                }}
-              >
-                {t('home:who.title')}
-              </Typography>
-              <ButtonLink
-                href="/quem-somos"
-                variant="outlined"
-                color="dark"
-                sx={{
-                  height: 'fit-content',
-                  px: 4,
-                }}
-              >
-                {t('home:who.button')}
-              </ButtonLink>
-            </Box>
           </Box>
         </Box>
+
+        <ButtonLink
+          size="large"
+          href="/quem-somos"
+          variant="outlined"
+          color="dark"
+          sx={{
+            height: 'fit-content',
+            px: 4,
+          }}
+        >
+          {t('home:who.button')}
+        </ButtonLink>
       </Container>
     </Box>
   )
