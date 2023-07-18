@@ -120,11 +120,11 @@ const palette = {
     darker: quaternary[900],
   },
   surfice: {
-    lighter: surfice[100],
-    light: surfice[300],
-    main: surfice[500],
-    dark: surfice[700],
-    darker: surfice[900],
+    lighter: grey[100],
+    light: grey[300],
+    main: grey[500],
+    dark: grey[700],
+    darker: grey[900],
   },
 
   white: {
@@ -147,10 +147,10 @@ const palette = {
     white: '#FFFFFF',
   },
   text: {
-    primary: text[700],
-    secondary: text[500],
-    dark: text[900],
-    light: text[50],
+    primary: grey[700],
+    secondary: grey[500],
+    dark: grey[900],
+    light: grey[50],
   },
 }
 

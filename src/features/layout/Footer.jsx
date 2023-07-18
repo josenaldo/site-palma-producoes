@@ -18,7 +18,7 @@ export default function Footer({ t }) {
         padding: 3,
         width: '100%',
         backgroundColor: 'common.dark',
-        color: 'common.light',
+        color: 'text.light',
         gap: 1,
       }}
     >
@@ -42,7 +42,6 @@ export default function Footer({ t }) {
         <Typography
           variant="body2"
           sx={{
-            color: 'grey',
             fontSize: '0.7rem',
           }}
         >

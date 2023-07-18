@@ -248,7 +248,7 @@ function Parcerias({ t, parcerias }) {
       sx={{
         gap: 2,
         mt: 4,
-        backgroundColor: 'surfice.main',
+        backgroundColor: 'surfice.lighter',
         py: 5,
       }}
     >
@@ -265,9 +265,6 @@ function Parcerias({ t, parcerias }) {
         <Title variant="h4" color="text.secondary">
           {t('quem-somos:partners.title')}
         </Title>
-        <Typography variant="body2" sx={{ color: 'text.primary' }}>
-          {t('quem-somos:partners.description')}
-        </Typography>
       </Container>
       <Container
         sx={{

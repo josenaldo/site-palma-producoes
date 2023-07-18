@@ -28,7 +28,11 @@ export default function HomeWish({ t }) {
       >
         <Container>
           <Stack spacing={2} justifyContent="center" alignItems="center">
-            <Typography variant="sectionTitle" component="h2" color="text[50]">
+            <Typography
+              variant="sectionTitle"
+              component="h2"
+              color="text.light"
+            >
               {t('home:wish.title')}
             </Typography>
 
@@ -38,7 +42,7 @@ export default function HomeWish({ t }) {
                   key={index}
                   variant="body1"
                   component="p"
-                  color="text[100]"
+                  color="text.light"
                   sx={{
                     textAlign: 'center',
                   }}
