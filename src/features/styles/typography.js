@@ -8,20 +8,23 @@ const bebasKai = localFont({
 })
 
 const workSans = localFont({
-  src: './fonts/work-sans-regular-variable-weight.ttf',
-  variable: '--font-work-sans-regular',
-})
-
-const workSansItalic = localFont({
-  src: './fonts/work-sans-italic-variable-weight.ttf',
-  variable: '--font-work-sans-italic',
+  src: [
+    {
+      path: './fonts/work-sans-regular-variable-weight.ttf',
+      style: 'normal',
+      weight: '100 900',
+    },
+    {
+      path: './fonts/work-sans-italic-variable-weight.ttf',
+      weight: '100 900',
+      style: 'italic',
+    },
+  ],
 })
 
 const titleFont = bebasKai
 
 const textFont = workSans
-
-const textFontItalic = workSansItalic
 
 const typography = {
   fontFamily: workSans.style.fontFamily,
@@ -57,14 +60,7 @@ const typography = {
     fontWeight: 400,
     textAlign: 'center',
   },
-  bigtag: {
-    fontFamily: titleFont.style.fontFamily,
-    fontSize: 'clamp(3.5rem, 7vw, 7rem)',
-    fontWeight: '400',
-    textAlign: 'center',
-    color: 'rgba(0, 0, 0, 0.5)',
-  },
 }
 
-export { titleFont, textFont, textFontItalic }
+export { titleFont, textFont }
 export default typography

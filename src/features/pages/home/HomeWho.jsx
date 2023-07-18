@@ -62,7 +62,7 @@ export default function HomeWho({ t }) {
                 width: '120px',
                 height: '420px',
                 filter: {
-                  xs: 'opacity(0.2)',
+                  xs: 'opacity(0.1)',
                   md: 'none',
                 },
               }}

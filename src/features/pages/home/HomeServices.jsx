@@ -30,44 +30,72 @@ export default function HomeServices({ t, servicos }) {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: 4,
+          gap: 8,
         }}
       >
         <Title variant="h3">{t('home:services.title')}</Title>
         <Box
           sx={{
-            display: 'grid',
-
-            gridTemplateColumns: {
-              xs: '1fr',
-              sm: '1fr 1fr',
-            },
-            mt: 5,
-            gap: 4,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: -1,
           }}
         >
-          <ServiceCard
-            service={t('home:services.projectConsulting')}
-            image={iconGreen}
-          />
-          <ServiceCard
-            service={t('home:services.contentCreation')}
-            image={iconBlue}
-          />
-          <ServiceCard
-            service={t('home:services.visualComunication')}
-            image={iconOrange}
-          />
-          <ServiceCard
-            service={t('home:services.culturalProduction')}
-            image={iconPurple}
-          />
+          <Box
+            sx={{
+              display: {
+                xs: 'block',
+                sm: 'block',
+              },
+              height: {
+                xs: '500px',
+                sm: '220px',
+              },
+              width: {
+                xs: '280px',
+                sm: '220px',
+              },
+              borderRadius: {
+                // xs: '50% 20% / 10% 40%',
+                xs: '50% 50% / 25% 25%',
+                sm: '50%',
+              },
+              border: (theme) => `3px solid ${theme.palette.surfice.lighter}`,
+              position: 'absolute',
+            }}
+          ></Box>
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: '1fr',
+                sm: '1fr 1fr',
+              },
+              gap: {
+                xs: 4,
+                sm: 8,
+                md: 10,
+              },
+            }}
+          >
+            {servicos.map((servico, index) => (
+              <ServiceCard
+                key={servico.url}
+                service={servico.title}
+                image={servico.icon}
+                direction={index % 2 !== 0 ? 'left' : 'right'}
+              />
+            ))}
+          </Box>
         </Box>
 
         <ButtonLink
           href="/servicos"
           variant="outlined"
           color="dark"
+          size="large"
           sx={{
             height: 'fit-content',
             px: 4,
@@ -80,31 +108,46 @@ export default function HomeServices({ t, servicos }) {
   )
 }
 
-function ServiceCard({ service, image }) {
+function ServiceCard({ service, image, direction = 'left' }) {
   return (
     <Card
-      variant="outlined"
+      elevation={0}
       sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: direction === 'left' ? 'row' : 'row-reverse',
+        alignItems: 'center',
+        justifyContent: 'revert',
       }}
     >
       <CardMedia
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          p: 2,
+          backgroundColor: 'rgb(255, 255, 255, 0.9)',
+          borderRadius: '50%',
+          zIndex: 1,
         }}
       >
-        <Image src={image} alt={service} height={64} />
+        <Image src={image} alt={service} height={80} width={80} />
       </CardMedia>
       <CardContent
         sx={{
           display: 'flex',
           alignItems: 'center',
+          textAlign: direction === 'left' ? 'left' : 'right',
+          zIndex: 1,
         }}
       >
-        <Typography variant="h5">{service}</Typography>
+        <Typography
+          fontWeight="600"
+          fontSize="1.1rem"
+          sx={{
+            paddingRight: direction === 'left' ? 6 : 0,
+            paddingLeft: direction === 'left' ? 0 : 6,
+          }}
+        >
+          {service}
+        </Typography>
       </CardContent>
     </Card>
   )

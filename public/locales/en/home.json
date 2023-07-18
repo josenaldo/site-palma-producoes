@@ -16,7 +16,7 @@
     "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE"
   },
   "who": {
-    "impact": "/images/home/impact.png?1",
+    "impact": "/images/home/impact.png",
     "title": "Who makes it happen",
     "text": [
       "The Palma Produções operates in **impactful projects** in the cultural and socio-environmental areas, with a focus on **narrative solutions** that value the **memory and cultural diversity of Brazil.**",
@@ -30,11 +30,7 @@
   },
   "services": {
     "title": "What we make",
-    "button": "Services",
-    "projectConsulting": "Consulting - Innovation and Project Development",
-    "contentCreation": "Audiovisual Content Creation",
-    "visualComunication": "Visual and Strategic Communication",
-    "culturalProduction": "Cultural production"
+    "button": "Services"
   },
   "wish": {
     "title": "What we want",
