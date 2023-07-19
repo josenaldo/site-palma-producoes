@@ -1,4 +1,5 @@
 export { ContentCard } from './ContentCard'
+export { ContentImageCard } from './ContentImageCard'
 
 export { MarkdownContent } from './MarkdownContent'
 
