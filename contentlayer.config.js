@@ -304,7 +304,71 @@ export const PortfolioItem = defineDocumentType(() => ({
   },
 }))
 
+export const Post = defineDocumentType(() => ({
+  name: 'Post',
+  filePathPattern: `posts/**/*.md`,
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the post',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      description: 'The description of the post',
+      required: true,
+    },
+    date: {
+      type: 'date',
+      description: 'The date of the post',
+      required: true,
+    },
+    author: {
+      type: 'string',
+      description: 'The author of the post',
+      required: true,
+    },
+    category: {
+      type: 'string',
+      description: 'The category of the post',
+      required: true,
+    },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      description: 'The tags of the post',
+      required: false,
+    },
+    image: {
+      type: 'nested',
+      of: Image,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => resolveUrl(doc, 'posts'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) => resolveLocale(doc, 'posts'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'posts'),
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'public/content',
-  documentTypes: [Page, Socia, Parceria, Servico, Depoimento, PortfolioItem],
+  documentTypes: [
+    Page,
+    Socia,
+    Parceria,
+    Servico,
+    Depoimento,
+    PortfolioItem,
+    Post,
+  ],
 })

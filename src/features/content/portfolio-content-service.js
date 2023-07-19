@@ -16,7 +16,7 @@ export function getAllPortfolio(locale) {
   return sorted
 }
 
-export function getPortfolio(locale, page = 1, limit = 10) {
+export function getPortfolio(locale, page = 0, limit = 10) {
   const filtered = allPortfolio.filter(
     (portfolio) => portfolio.locale === locale
   )

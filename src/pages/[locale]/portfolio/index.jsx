@@ -30,7 +30,7 @@ import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
-export default function ServicosPage({ isoLocale, page, portfolioList }) {
+export default function PortfolioPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
   console.log('page', page)
 

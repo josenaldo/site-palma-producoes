@@ -40,7 +40,7 @@ function MenuItems({ t, color = 'text.dark' }) {
       }}
     >
       {pages.map((page) => (
-        <Link key={page.key} href={page.href} variant="nav" color={color}>
+        <Link key={page.slug} href={page.href} variant="nav" color={color}>
           {t(page.title)}
         </Link>
       ))}
