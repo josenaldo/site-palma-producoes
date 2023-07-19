@@ -11,7 +11,11 @@ import {
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
-import { pagesContentService, postContentService } from '@/features/content'
+import {
+  ContentCard,
+  pagesContentService,
+  postContentService,
+} from '@/features/content'
 
 import { ButtonLink, ImageBox, Link, PageHeader, Tag } from '@/features/ui'
 
@@ -69,7 +73,7 @@ export default function MovimentosPage({ isoLocale, page, posts }) {
           }}
         >
           {posts.slice(1, 5).map((post) => (
-            <PostCard key={posts.id} post={post} />
+            <PostCard key={post.slug} post={post} />
           ))}
         </Box>
 
@@ -86,7 +90,15 @@ export default function MovimentosPage({ isoLocale, page, posts }) {
           }}
         >
           {posts.slice(5, posts.length).map((post) => (
-            <PostCardOpen key={posts.id} post={post} />
+            <ContentCard
+              key={post.slug}
+              t={t}
+              url={post.url}
+              title={post.title}
+              description={post.description}
+              image={post.image}
+              tags={post.tags}
+            />
           ))}
         </Box>
       </Container>
@@ -180,8 +192,8 @@ function PostCard({ post }) {
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 display: '-webkit-box',
-                '-webkit-line-clamp': '2',
-                '-webkit-box-orient': 'vertical',
+                WebkitLineClamp: '2',
+                WebkitBoxOrient: 'vertical',
               }}
             >
               {post.description}

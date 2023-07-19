@@ -4,7 +4,7 @@ description: "Get to know the inspiring journey of the partners at Palma Product
 date: "2023-07-19 13:00:00 -0300"
 author: "Emanuela Palma"
 image:
-  url: "/images/content/posts/the-journey-of-each-partner-at-palma-productions.jpg"
+  url: "/images/content/posts/a-jornada-de-cada-socia-na-palma-producoes.jpg"
   alt: "Partners at Palma Productions"
   width: 1200
   height: 628

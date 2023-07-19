@@ -4,7 +4,7 @@ description: "Discover how Palma Produções collaborates with artists and cultu
 date: 2023-07-19 13:00:00 -0300
 author: Emanuela Palma
 image:
-  url: /images/content/posts/how-palma-producoes-works-with-cultural-production.jpg
+  url: /images/content/posts/como-a-palma-producoes-trabalha-com-producao-cultural.jpg
   alt: "Palma Produções team working on cultural production"
   width: 1200
   height: 628

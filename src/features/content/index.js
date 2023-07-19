@@ -1,3 +1,5 @@
+export { ContentCard } from './ContentCard'
+
 export { MarkdownContent } from './MarkdownContent'
 
 export { ResponsiveImage } from './ResponsiveImage'
