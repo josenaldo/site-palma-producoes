@@ -53,7 +53,7 @@ export default function ServicosPage({ page, servicos, depoimentos }) {
 
   return (
     <AppLayout t={t}>
-      <Container>
+      <Container sx={{ mb: 4 }}>
         <PageHeader title={page.title} text={page.body.raw} />
 
         <ImageBox
@@ -156,6 +156,7 @@ function BannerPortfolio({ t }) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          mb: 4,
         }}
       >
         <Typography variant="h2" component="h2" color="text[50]">
