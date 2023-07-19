@@ -32,6 +32,7 @@ export { getStaticPaths }
 
 export default function ServicosPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
+  console.log('page', page)
 
   return (
     <AppLayout

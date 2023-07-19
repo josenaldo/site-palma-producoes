@@ -4,7 +4,7 @@ import {
   defineNestedType,
 } from 'contentlayer/source-files'
 
-function resolveSlug(folder, doc) {
+function resolveSlug(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
 
   return doc._raw.flattenedPath.replace(regex, '').split('/')[1]
@@ -19,15 +19,14 @@ function resolveLocale(doc, folder) {
 function resolveUrl(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
 
-  const locale = doc._raw.flattenedPath.replace(regex, '').split('/')[0]
+  const pathWithoutFolder = doc._raw.flattenedPath.replace(regex, '')
 
-  const path = doc._raw.flattenedPath
-    .replace(regex, '')
-    .split('/')
-    .slice(1)
-    .join('/')
+  const locale = pathWithoutFolder.split('/')[0]
+  const path = pathWithoutFolder.split('/').slice(1).join('/')
+  const url =
+    folder === 'pages' ? `/${locale}/${path}` : `/${locale}/${folder}/${path}`
 
-  return `/${locale}/${folder}/${path}`
+  return url
 }
 
 const Image = defineNestedType(() => ({
@@ -78,12 +77,15 @@ export const Page = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => `/${doc._raw.flattenedPath.replace(/pages\/?/, '')}`,
+      resolve: (doc) => resolveUrl(doc, 'pages'),
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/pages\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'pages'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'pages'),
     },
   },
 }))
@@ -120,8 +122,11 @@ export const Socia = defineDocumentType(() => ({
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/socias\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'socias'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'socias'),
     },
   },
 }))
@@ -158,8 +163,11 @@ export const Parceria = defineDocumentType(() => ({
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/parcerias\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'parcerias'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'parcerias'),
     },
   },
 }))
@@ -196,13 +204,11 @@ export const Servico = defineDocumentType(() => ({
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/servicos\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'servicos'),
     },
     slug: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/servicos\/?/, '').split('/')[1],
+      resolve: (doc) => resolveSlug(doc, 'servicos'),
     },
   },
 }))
@@ -238,8 +244,11 @@ const Depoimento = defineDocumentType(() => ({
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/depoimentos\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'depoimentos'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'depoimentos'),
     },
   },
 }))
@@ -286,13 +295,11 @@ export const PortfolioItem = defineDocumentType(() => ({
     },
     locale: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/portfolio\/?/, '').split('/')[0],
+      resolve: (doc) => resolveLocale(doc, 'portfolio'),
     },
     slug: {
       type: 'string',
-      resolve: (doc) =>
-        doc._raw.flattenedPath.replace(/portfolio\/?/, '').split('/')[1],
+      resolve: (doc) => resolveSlug(doc, 'portfolio'),
     },
   },
 }))
