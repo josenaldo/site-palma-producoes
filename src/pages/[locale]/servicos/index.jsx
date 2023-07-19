@@ -11,11 +11,7 @@ import {
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
-import {
-  pagesContentService,
-  servicoContentService,
-  depoimentoContentService,
-} from '@/features/content'
+import { pagesContentService, servicoContentService } from '@/features/content'
 
 import { ButtonLink, ImageBox, PageHeader } from '@/features/ui'
 import Image from 'next/image'
@@ -39,20 +35,24 @@ export async function getStaticProps({ params }) {
 
   const page = pagesContentService.getPageData(url)
   const servicos = servicoContentService.getAllServicos(locale)
-  const depoimentos = depoimentoContentService.getAllDepoimentos(locale)
 
   props.props.page = page
   props.props.servicos = servicos
-  props.props.depoimentos = depoimentos
 
   return props
 }
 
-export default function ServicosPage({ page, servicos, depoimentos }) {
+export default function ServicosPage({ isoLocale, page, servicos }) {
   const { t } = useTranslation(['common', 'servicos'])
 
   return (
-    <AppLayout t={t}>
+    <AppLayout
+      title={page.title}
+      description={page.description}
+      image={page.image}
+      isoLocale={isoLocale}
+      t={t}
+    >
       <Container sx={{ mb: 4 }}>
         <PageHeader title={page.title} text={page.body.raw} />
 

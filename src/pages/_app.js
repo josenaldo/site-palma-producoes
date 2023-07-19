@@ -1,4 +1,7 @@
 import { appWithTranslation } from 'next-i18next'
+import { DefaultSeo } from 'next-seo'
+
+import { seoConfig } from '@/data'
 import { RootLayout } from '@/features/layout'
 import '@/features/styles/globals.css'
 import nextI18nConfig from '../../next-i18next.config'
@@ -6,6 +9,7 @@ import nextI18nConfig from '../../next-i18next.config'
 function App({ Component, pageProps }) {
   return (
     <RootLayout>
+      <DefaultSeo {...seoConfig} />
       <Component {...pageProps} />
     </RootLayout>
   )

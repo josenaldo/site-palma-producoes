@@ -25,8 +25,23 @@ export async function getI18nProps(ctx, ns = ['common']) {
 
 export function makeStaticProps(ns = {}) {
   return async function getStaticProps(ctx) {
+    const locale = ctx?.params?.locale || 'pt'
+    const isoLocale = getIsoLocale(locale)
+    const props = await getI18nProps(ctx, ns)
+
+    props.isoLocale = isoLocale
+
     return {
-      props: await getI18nProps(ctx, ns),
+      props,
     }
   }
+}
+
+const isoLocales = {
+  pt: 'pt-BR',
+  en: 'en-US',
+}
+
+export function getIsoLocale(locale) {
+  return isoLocales[locale] || 'pt-BR'
 }

@@ -33,11 +33,11 @@ export async function getStaticProps({ params }) {
   return propsWrapper
 }
 
-export default function HomePage({ depoimentos, servicos }) {
+export default function HomePage({ isoLocale, depoimentos, servicos }) {
   const { t } = useTranslation(['common', 'home'])
 
   return (
-    <AppLayout t={t}>
+    <AppLayout t={t} isoLocale={isoLocale}>
       <Stack>
         <HomeHero t={t} />
         <HomeIntro t={t} />

@@ -30,11 +30,17 @@ import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
-export default function ServicosPage({ page, portfolioList }) {
+export default function ServicosPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
 
   return (
-    <AppLayout t={t}>
+    <AppLayout
+      title={page.title}
+      description={page.description}
+      image={page.image}
+      isoLocale={isoLocale}
+      t={t}
+    >
       <Container>
         <PageHeader
           title={page.title}

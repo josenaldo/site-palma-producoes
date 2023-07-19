@@ -26,7 +26,9 @@ import { ImageBox, PageHeader, Title } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
 
 export async function getStaticProps({ params }) {
-  const props = await makeStaticProps(['common', 'quem-somos'])({ params })
+  const propsWrapper = await makeStaticProps(['common', 'quem-somos'])({
+    params,
+  })
   const locale = params?.locale || 'pt'
   const url = `/${locale}/quem-somos`
 
@@ -34,20 +36,26 @@ export async function getStaticProps({ params }) {
   const socias = sociaContentService.getAllSocias(locale)
   const parcerias = parceriaContentService.getAllParcerias(locale)
 
-  props.props.page = page
-  props.props.socias = socias
-  props.props.parcerias = parcerias
+  propsWrapper.props.page = page
+  propsWrapper.props.socias = socias
+  propsWrapper.props.parcerias = parcerias
 
-  return props
+  return propsWrapper
 }
 
 export { getStaticPaths }
 
-export default function QuemSomosPage({ page, socias, parcerias }) {
+export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
   const { t } = useTranslation(['common', 'quem-somos'])
 
   return (
-    <AppLayout t={t}>
+    <AppLayout
+      title={page.title}
+      description={page.description}
+      image={page.image}
+      isoLocale={isoLocale}
+      t={t}
+    >
       <Container>
         <PageHeader title={page.title} text={page.body.raw} />
 
