@@ -14,7 +14,7 @@ export default function ContentImageCard({
   const [brightness, setBrightness] = useState(40)
 
   return (
-    <Link href={url}>
+    <Link href={url} skipLocaleHandling>
       <Card
         elevation={elevation}
         sx={{

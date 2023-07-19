@@ -15,7 +15,7 @@ export default function PageHeader({ title, text, direction = 'row' }) {
         alignItems: 'center',
         justifyContent: 'center',
         gap: 2,
-        mb: 2,
+        mb: 6,
       }}
     >
       <Title
