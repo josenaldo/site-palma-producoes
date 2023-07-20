@@ -1,6 +1,10 @@
 export { BannerBox } from './BannerBox'
 
+export { Blockquote } from './Blockquote'
+
 export { ButtonLink } from './ButtonLink'
+
+export { Code } from './Code'
 
 export { ContactLinks } from './ContactLinks'
 
@@ -15,6 +19,8 @@ export { Logo } from './Logo'
 export { PageHeader } from './PageHeader'
 
 export { SectionTitle } from './SectionTitle'
+
+export { ShareLink } from './ShareLink'
 
 export { SocialLinks } from './SocialLinks'
 

@@ -19,5 +19,12 @@
   "footer": {
     "copyright": "2023 PALMAS PRODUÇÕES. DIREITOS RESERVADOS.",
     "backToTop": "Voltar ao topo"
+  },
+  "share": {
+    "title": "Compartilhe",
+    "text": "Olha só o que eu achei no site da Palma Produções!",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "Linkedin"
   }
 }

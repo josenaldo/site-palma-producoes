@@ -8,11 +8,11 @@ import {
   Typography,
 } from '@mui/material'
 
-import { ButtonLink, ImageBox, Link, Tag } from '@/features/ui'
+import { ButtonLink, ImageBox, Link } from '@/features/ui'
 import { ContentTags } from '@/features/content/ContentTags'
 import { ContentAuthor } from '@/features/content/ContentAuthor'
 import { ContentDate } from '@/features/content/ContentDate'
-import ShareLink from '@/features/share/ShareLink'
+import { ShareLink } from '@/features/ui/ShareLink'
 
 export default function ContentCard({
   t,
@@ -117,6 +117,7 @@ export default function ContentCard({
           title={title}
           description={description}
           image={image.url}
+          t={t}
         />
       </CardActions>
     </Card>

@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, IconButton } from '@mui/material'
-
 import ShareIcon from '@mui/icons-material/Share'
-import ShareDialog from '@/features/share/ShareDialog'
 
-const ShareLink = ({ title, description, url, image, color = 'secondary' }) => {
-  const [open, setOpen] = React.useState(false)
-  const [isNativeShare, setNativeShare] = React.useState(false)
+import ShareDialog from './ShareDialog'
+
+export default function ShareLink({
+  title,
+  description,
+  url,
+  image,
+  color = 'secondary',
+  t = { t },
+}) {
+  const [open, setOpen] = useState(false)
+  const [isNativeShare, setNativeShare] = useState(false)
 
   const handleClose = () => {
     setOpen(false)
@@ -68,10 +75,9 @@ const ShareLink = ({ title, description, url, image, color = 'secondary' }) => {
           onClose={() => {
             handleClose()
           }}
+          t={t}
         />
       )}
     </Box>
   )
 }
-
-export default ShareLink
