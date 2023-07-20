@@ -16,15 +16,18 @@ function resolveLocale(doc, folder) {
   return doc._raw.flattenedPath.replace(regex, '').split('/')[0]
 }
 
-function resolveUrl(doc, folder) {
+function resolveUrl(doc, folder, newPath = null) {
   const regex = new RegExp(`${folder}\/?`, 'g')
 
   const pathWithoutFolder = doc._raw.flattenedPath.replace(regex, '')
 
   const locale = pathWithoutFolder.split('/')[0]
   const path = pathWithoutFolder.split('/').slice(1).join('/')
+
+  const category = newPath ? newPath : folder
+
   const url =
-    folder === 'pages' ? `/${locale}/${path}` : `/${locale}/${folder}/${path}`
+    folder === 'pages' ? `/${locale}/${path}` : `/${locale}/${category}/${path}`
 
   return url
 }
@@ -347,7 +350,7 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => resolveUrl(doc, 'posts'),
+      resolve: (doc) => resolveUrl(doc, 'posts', 'movimentos'),
     },
     locale: {
       type: 'string',

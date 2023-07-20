@@ -7,7 +7,7 @@ export function getPostData(url) {
   return post
 }
 
-export function getAllPost(locale) {
+export function getAllPosts(locale) {
   const filtered = allPost.filter((post) => post.locale === locale)
 
   const sorted = filtered.sort((a, b) => {
@@ -31,7 +31,7 @@ export function getPosts(locale, page = 0, limit = 10) {
 
 const postContentService = {
   getPostData,
-  getAllPost,
+  getAllPosts,
   getPosts,
 }
 

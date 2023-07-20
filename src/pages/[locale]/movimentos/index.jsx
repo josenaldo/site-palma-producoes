@@ -33,6 +33,7 @@ export { getStaticPaths }
 
 export default function MovimentosPage({ isoLocale, page, posts }) {
   const { t } = useTranslation(['common', 'movimentos'])
+  console.log(posts)
 
   return (
     <AppLayout

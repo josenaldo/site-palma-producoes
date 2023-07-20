@@ -4,22 +4,26 @@ import {
   getStaticPaths as i18nGetStaticPaths,
   makeStaticProps,
 } from '@/features/i18n/server'
+
+import { ContentBlock, postContentService } from '@/features/content'
+import { Box, Container } from '@mui/material'
+import { ImageBox, Title } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
 
-const getStaticPaths = () => {
+export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
-
-  const movimentos = [1, 2, 3, 4, 5]
+  const posts = postContentService.getAllPosts('pt')
 
   const paths = []
 
-  movimentos.map((movimento) => {
+  posts.map((posts) => {
     const p = i18nPaths.paths.map((path) => {
+      const { locale } = path.params
+
       return {
-        ...path,
         params: {
-          ...path.params,
-          slug: `${movimento}`,
+          locale,
+          slug: posts.slug,
         },
       }
     })
@@ -35,23 +39,51 @@ const getStaticPaths = () => {
   return newPathsObject
 }
 
-async function getStaticProps(ctx) {
-  const i18nPropsFunc = makeStaticProps(['common', 'movimento'])
+export async function getStaticProps(ctx) {
+  const i18nPropsFunc = makeStaticProps(['common', 'movimentos'])
+  const { slug, locale } = ctx.params
+  const url = `/${locale}/movimentos/${slug}`
 
   const i18nProps = await i18nPropsFunc(ctx)
-  return {
-    ...i18nProps,
+  const post = postContentService.getPostData(url)
+
+  const props = {
     props: {
       ...i18nProps.props,
-      slug: ctx?.params?.slug,
+      post: post,
     },
   }
+
+  return props
 }
 
-export default function MovimentoPage(params) {
-  const { t } = useTranslation(['common', 'movimento'])
+export default function PortfolioPage({ post, ...props }) {
+  const { t } = useTranslation(['common', 'movimentos'])
 
-  return <AppLayout t={t}>Movimento: {params.slug}</AppLayout>
+  return (
+    <AppLayout t={t}>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 4,
+        }}
+      >
+        <Title>{post.title}</Title>
+
+        <ImageBox
+          src={post.image.url}
+          alt={post.image.alt}
+          width={post.image.width}
+          height={post.image.height}
+        />
+
+        <Box>
+          <ContentBlock content={post.body.raw} />
+        </Box>
+      </Container>
+    </AppLayout>
+  )
 }
-
-export { getStaticPaths, getStaticProps }

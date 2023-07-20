@@ -69,7 +69,7 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
               description={portfolio.description}
               image={portfolio.image}
               tags={portfolio.tags}
-              
+
             />
           ))}
         </Box>
