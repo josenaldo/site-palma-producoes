@@ -1,13 +1,6 @@
 import { useTranslation } from 'next-i18next'
 
-import {
-  Box,
-  Card,
-  CardActions,
-  CardContent,
-  Container,
-  Typography,
-} from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
@@ -18,7 +11,7 @@ import {
   postContentService,
 } from '@/features/content'
 
-import { ButtonLink, ImageBox, Link, PageHeader, Tag } from '@/features/ui'
+import { PageHeader } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'movimentos'])({ params })
@@ -34,14 +27,12 @@ export async function getStaticProps({ params }) {
   return props
 }
 
-import { useState } from 'react'
 import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
 export default function MovimentosPage({ isoLocale, page, posts }) {
   const { t } = useTranslation(['common', 'movimentos'])
-  console.log('posts', posts)
 
   return (
     <AppLayout
@@ -115,6 +106,9 @@ export default function MovimentosPage({ isoLocale, page, posts }) {
               description={post.description}
               image={post.image}
               tags={post.tags}
+              date={post.date}
+              author={post.author}
+              isoLocale={isoLocale}
             />
           ))}
         </Box>

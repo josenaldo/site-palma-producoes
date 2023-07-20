@@ -9,14 +9,21 @@ import {
 } from '@mui/material'
 
 import { ButtonLink, ImageBox, Link, Tag } from '@/features/ui'
+import { ContentTags } from '@/features/content/ContentTags'
+import { ContentAuthor } from '@/features/content/ContentAuthor'
+import { ContentDate } from '@/features/content/ContentDate'
+import ShareLink from '@/features/share/ShareLink'
 
 export default function ContentCard({
   t,
+  isoLocale = 'pt-BR',
   url,
   title,
   description,
   tags,
   image,
+  date,
+  author,
 }) {
   const [brightness, setBrightness] = useState(40)
 
@@ -83,22 +90,34 @@ export default function ContentCard({
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
+            alignItems: 'center',
             gap: 1,
           }}
         >
-          {tags &&
-            tags.map((tag) => (
-              <Tag key={tag} label={tag} backgroundColor="tertiary.main" />
-            ))}
+          <ContentAuthor author={author} />
+          <ContentDate date={date} isoLocale={isoLocale} />
         </Box>
+
         <Typography variant="body1">{description}</Typography>
+        <ContentTags tags={tags} backgroundColor="tertiary.main" />
       </CardContent>
-      <CardActions>
+      <CardActions
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
         <ButtonLink href={url} color="primary" skipLocaleHandling>
           {t('common:button.showMore')}
         </ButtonLink>
+
+        <ShareLink
+          url={url}
+          title={title}
+          description={description}
+          image={image.url}
+        />
       </CardActions>
     </Card>
   )

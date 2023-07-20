@@ -1,5 +1,8 @@
 export { ContentCard } from './ContentCard'
 export { ContentImageCard } from './ContentImageCard'
+export { ContentDate } from './ContentDate'
+export { ContentAuthor } from './ContentAuthor'
+export { ContentTags } from './ContentTags'
 
 export { MarkdownContent } from './MarkdownContent'
 

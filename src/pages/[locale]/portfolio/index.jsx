@@ -33,7 +33,6 @@ export { getStaticPaths }
 
 export default function PortfolioPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
-  console.log('page', page)
 
   return (
     <AppLayout
@@ -70,6 +69,7 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
               description={portfolio.description}
               image={portfolio.image}
               tags={portfolio.tags}
+              
             />
           ))}
         </Box>

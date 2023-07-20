@@ -58,7 +58,6 @@ export async function getStaticProps(ctx) {
 
 export default function PortfolioPage({ portfolio, ...props }) {
   const { t } = useTranslation(['common', 'portfolio'])
-  console.log('props', props)
 
   return (
     <AppLayout t={t}>
