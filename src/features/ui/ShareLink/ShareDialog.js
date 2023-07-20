@@ -13,6 +13,8 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import TelegramIcon from '@mui/icons-material/Telegram'
+import LinkedinIcon from '@mui/icons-material/Linkedin'
+
 import CloseIcon from '@mui/icons-material/Close'
 
 const iconFontSize = {
@@ -31,7 +33,7 @@ const iconSpace = {
   xl: '24px',
 }
 
-function getHref(t, url, netUrl) {
+function getHrefAndText(t, url, netUrl) {
   const fullUrl = process.env.NEXT_PUBLIC_SITE_URL + url
   const text = t(`common:share.text`)
   const shareUrl = `${text}\n\n${fullUrl}`
@@ -39,33 +41,47 @@ function getHref(t, url, netUrl) {
   return netUrl + encodeURIComponent(shareUrl)
 }
 
+function getHref(t, url, netUrl) {
+  const fullUrl = process.env.NEXT_PUBLIC_SITE_URL + url
+  return netUrl + fullUrl
+}
 const networks = [
   {
     key: 'shareFacebook',
     getUrl: (t, url) => {
-      const fullUrl = encodeURIComponent(process.env.NEXT_PUBLIC_SITE_URL + url)
-      return 'https://www.facebook.com/sharer/sharer.php?u=' + fullUrl
+      return getHref(t, url, 'https://www.facebook.com/sharer/sharer.php?u=')
     },
     Icon: FacebookIcon,
   },
   {
     key: 'shareTwitter',
     getUrl: (t, url) => {
-      return getHref(t, url, 'https://twitter.com/intent/tweet?text=')
+      return getHrefAndText(t, url, 'https://twitter.com/intent/tweet?text=')
     },
     Icon: TwitterIcon,
   },
   {
+    key: 'shareLinkedin',
+    getUrl: (t, url) => {
+      return getHref(
+        t,
+        url,
+        'https://www.linkedin.com/shareArticle?mini=true&url='
+      )
+    },
+    Icon: LinkedinIcon,
+  },
+  {
     key: 'shareWhatsapp',
     getUrl: (t, url) => {
-      return getHref(t, url, 'https://api.whatsapp.com/send?text=')
+      return getHrefAndText(t, url, 'https://api.whatsapp.com/send?text=')
     },
     Icon: WhatsAppIcon,
   },
   {
     key: 'shareTelegram',
     getUrl: (t, url) => {
-      return getHref(t, url, 'https://telegram.me/share/url?url=')
+      return getHrefAndText(t, url, 'https://telegram.me/share/url?url=')
     },
     Icon: TelegramIcon,
   },
