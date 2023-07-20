@@ -13,7 +13,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import TelegramIcon from '@mui/icons-material/Telegram'
-import LinkedinIcon from '@mui/icons-material/Linkedin'
+import LinkedinIcon from '@mui/icons-material/LinkedIn'
 
 import CloseIcon from '@mui/icons-material/Close'
 
