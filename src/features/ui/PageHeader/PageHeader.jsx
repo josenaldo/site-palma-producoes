@@ -18,16 +18,18 @@ export default function PageHeader({ title, text, direction = 'row' }) {
         mb: 6,
       }}
     >
-      <Title
+      <Box
         sx={{
+          display: 'flex',
+          justifyContent: 'center',
           width: {
             xs: '100%',
             md: direction === 'row' ? '30%' : '100%',
           },
         }}
       >
-        {title}
-      </Title>
+        <Title>{title}</Title>
+      </Box>
 
       {text && (
         <Box

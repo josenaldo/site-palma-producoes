@@ -1,10 +1,10 @@
-export { ContentCard } from './ContentCard'
-export { ContentImageCard } from './ContentImageCard'
-export { ContentDate } from './ContentDate'
 export { ContentAuthor } from './ContentAuthor'
-export { ContentTags } from './ContentTags'
-
 export { ContentBlock } from './ContentBlock'
+export { ContentCard } from './ContentCard'
+export { ContentDate } from './ContentDate'
+export { ContentImageCard } from './ContentImageCard'
+export { ContentPage } from './ContentPage'
+export { ContentTags } from './ContentTags'
 
 export { ResponsiveImage } from './ResponsiveImage'
 
