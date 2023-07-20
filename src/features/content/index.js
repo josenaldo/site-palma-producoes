@@ -4,7 +4,7 @@ export { ContentDate } from './ContentDate'
 export { ContentAuthor } from './ContentAuthor'
 export { ContentTags } from './ContentTags'
 
-export { MarkdownContent } from './MarkdownContent'
+export { ContentBlock } from './ContentBlock'
 
 export { ResponsiveImage } from './ResponsiveImage'
 

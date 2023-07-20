@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
-import { MarkdownContent } from '@/features/content'
+import { ContentBlock } from '@/features/content'
 import { Title } from '@/features/ui'
 
 export default function PageHeader({ title, text, direction = 'row' }) {
@@ -38,7 +38,7 @@ export default function PageHeader({ title, text, direction = 'row' }) {
             },
           }}
         >
-          <MarkdownContent content={text} />
+          <ContentBlock content={text} />
         </Box>
       )}
     </Box>

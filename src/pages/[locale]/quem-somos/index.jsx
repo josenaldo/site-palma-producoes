@@ -16,7 +16,7 @@ import {
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 import {
-  MarkdownContent,
+  ContentBlock,
   pagesContentService,
   sociaContentService,
   parceriaContentService,
@@ -179,7 +179,7 @@ function Socias({ t, socias }) {
                   py: 2,
                 }}
               >
-                <MarkdownContent
+                <ContentBlock
                   content={socia.body.raw}
                   components={{
                     p: ({ children }) => (

@@ -10,12 +10,11 @@ import externalLinks from 'rehype-external-links'
 import rehypePrism from 'rehype-prism-plus'
 import rehypeRaw from 'rehype-raw'
 
-import { Link } from '@/features/ui'
-import { ResponsiveImage, Code, Blockquote } from '@/features/content'
+import { Link, ResponsiveImage, Code, Blockquote } from '@/features/ui'
 
-import styles from './MarkdownContent.module.css'
+import styles from './ContentBlock.module.css'
 
-export default function MarkdownContent({ content, components = {} }) {
+export default function ContentBlock({ content, components = {} }) {
   const remarkPlugins = [
     remarkParse,
     remarkGfm,

@@ -5,7 +5,7 @@ import {
   makeStaticProps,
 } from '@/features/i18n/server'
 
-import { MarkdownContent, portfolioContentService } from '@/features/content'
+import { ContentBlock, portfolioContentService } from '@/features/content'
 import { Box, Container } from '@mui/material'
 import { ImageBox, Title } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
@@ -80,7 +80,7 @@ export default function PortfolioPage({ portfolio, ...props }) {
         />
 
         <Box>
-          <MarkdownContent content={portfolio.body.raw} />
+          <ContentBlock content={portfolio.body.raw} />
         </Box>
       </Container>
     </AppLayout>
