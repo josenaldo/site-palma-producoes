@@ -4,12 +4,13 @@ import {
   ContentDate,
   ContentTags,
 } from '@/features/content'
-import { ImageBox, Title } from '@/features/ui'
+import { ImageBox, ShareLink, Title } from '@/features/ui'
 import { Box } from '@mui/material'
 
 export default function ContentPage({
   t,
   isoLocale = 'pt-BR',
+  description,
   title,
   image,
   body,
@@ -42,6 +43,13 @@ export default function ContentPage({
         >
           <ContentAuthor author={author} />
           <ContentDate date={date} isoLocale={isoLocale} />
+          <ShareLink
+            url={url}
+            title={title}
+            description={description}
+            image={image.url}
+            t={t}
+          />
         </Box>
         <ContentTags tags={tags} backgroundColor="tertiary.main" />
       </Box>

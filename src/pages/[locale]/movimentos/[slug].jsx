@@ -78,6 +78,7 @@ export default function PortfolioPage({ post, ...props }) {
         <ContentPage
           t={t}
           title={post.title}
+          description={post.description}
           image={post.image}
           body={post.body}
           tags={post.tags}
