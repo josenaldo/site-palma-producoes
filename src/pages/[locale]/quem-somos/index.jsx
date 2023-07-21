@@ -111,7 +111,7 @@ function Socias({ t, socias }) {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          my: 5,
+          mt: 5,
         }}
       >
         {socias.map((socia, index) => (
@@ -260,7 +260,6 @@ function Parcerias({ t, parcerias }) {
     <Box
       sx={{
         gap: 2,
-        mt: 4,
         backgroundColor: 'surfice.lighter',
         py: 5,
       }}
