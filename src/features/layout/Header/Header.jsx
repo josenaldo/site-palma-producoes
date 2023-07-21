@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AppBar, Box, Container } from '@mui/material'
+import { AppBar, Box, Container, useScrollTrigger } from '@mui/material'
 
 import { Logo } from '@/features/ui'
 import { useIsHome } from '@/features/layout'
@@ -8,16 +8,20 @@ import { useIsHome } from '@/features/layout'
 import Menu from './Menu'
 import DesktopMenu from './DesktopMenu'
 
-export default function Header({ t }) {
+export default function Header({ t, color, ...props }) {
   const isHome = useIsHome()
+  const elevated = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+  })
 
   return (
     <AppBar
       component="header"
-      elevation={isHome ? 0 : 1}
-      color="transparent"
+      elevation={elevated ? 4 : 0}
+      color={elevated ? 'white' : 'transparent'}
       sx={{
-        position: isHome ? 'absolute' : 'static',
+        position: isHome ? 'fixed' : 'sticky',
         height: '120px',
         px: {
           xs: 0,
@@ -36,7 +40,7 @@ export default function Header({ t }) {
           justifyContent: 'space-between',
         }}
       >
-        <Logo color={isHome ? 'white' : 'black'} />
+        <Logo color={!isHome || elevated ? 'black' : 'white'} />
         <Box
           sx={{
             flexGrow: 1,
@@ -47,7 +51,7 @@ export default function Header({ t }) {
           }}
         >
           <Menu t={t} />
-          <DesktopMenu t={t} />
+          <DesktopMenu t={t} elevated={elevated} />
         </Box>
       </Container>
     </AppBar>

@@ -3,7 +3,7 @@ import useIsHome from '@/features/layout/useIsHome'
 import { Link, SocialLinks } from '@/features/ui'
 import { Box } from '@mui/material'
 
-export default function DesktopMenu({ t }) {
+export default function DesktopMenu({ t, elevated }) {
   const isHome = useIsHome()
 
   return (
@@ -20,8 +20,11 @@ export default function DesktopMenu({ t }) {
         gap: 2,
       }}
     >
-      <SocialLinks color={isHome ? 'text.light' : 'text.dark'} />
-      <MenuItems t={t} color={isHome ? 'text.light' : 'text.dark'} />
+      <SocialLinks color={!isHome || elevated ? 'text.dark' : 'text.light'} />
+      <MenuItems
+        t={t}
+        color={!isHome || elevated ? 'text.dark' : 'text.light'}
+      />
     </Box>
   )
 }
