@@ -28,9 +28,6 @@ export default function HomeTestimonials({ t, depoimentos }) {
         gap: 4,
       }}
     >
-      <Title variant="h3" component="h3">
-        {t('home:testimonials')}
-      </Title>
       <Carousel
         interval={8000}
         PrevIcon={<ChevronLeftIcon sx={{ fontSize: '2.5rem' }} />}
