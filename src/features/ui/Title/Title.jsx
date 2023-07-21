@@ -5,7 +5,7 @@ export default function Title({
   variant = 'h2',
   component = 'h2',
   color = 'text.primary',
-  underlineColor = 'primary.main',
+  borderBottomColor = 'primary.main',
   sx = {},
 }) {
   return (
@@ -16,7 +16,7 @@ export default function Title({
       sx={{
         display: 'inline-block',
         borderBottom: `3px solid`,
-        borderBottomColor: underlineColor,
+        borderBottomColor: borderBottomColor,
         textAlign: 'center',
         ...sx,
       }}

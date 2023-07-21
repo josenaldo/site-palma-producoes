@@ -3,7 +3,12 @@ import { Box } from '@mui/material'
 import { ContentBlock } from '@/features/content'
 import { Title } from '@/features/ui'
 
-export default function PageHeader({ title, text, direction = 'row' }) {
+export default function PageHeader({
+  title,
+  text,
+  direction = 'row',
+  borderBottomColor = 'primary.main',
+}) {
   return (
     <Box
       sx={{
@@ -28,7 +33,7 @@ export default function PageHeader({ title, text, direction = 'row' }) {
           },
         }}
       >
-        <Title>{title}</Title>
+        <Title borderBottomColor={borderBottomColor}>{title}</Title>
       </Box>
 
       {text && (

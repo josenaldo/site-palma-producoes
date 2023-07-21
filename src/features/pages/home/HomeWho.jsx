@@ -23,8 +23,6 @@ export default function HomeWho({ t }) {
           gap: 4,
         }}
       >
-        <Title variant="h3">{t('home:who.title')}</Title>
-
         <Box
           sx={{
             display: 'flex',
@@ -87,27 +85,57 @@ export default function HomeWho({ t }) {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 4,
+                fontSize: '1.2rem',
               }}
             >
               {texts.map((text, index) => (
-                <Typography key={`home:who.text.${index}`}>{text}</Typography>
+                <Typography
+                  key={`home:who.text.${index}`}
+                  sx={{ fontSize: 'inherit' }}
+                >
+                  {text}
+                </Typography>
               ))}
+            </Box>
+
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: {
+                  xs: 'column',
+                  md: 'row',
+                },
+                alignItems: {
+                  xs: 'center',
+                  md: 'center',
+                },
+                justifyContent: {
+                  xs: 'center',
+                  md: 'flex-start',
+                },
+                gap: 4,
+                width: '100%',
+              }}
+            >
+              <Title variant="h3" borderBottomColor="transparent">
+                {t('home:who.title')}
+              </Title>
+              <ButtonLink
+                size="large"
+                href="/quem-somos"
+                variant="outlined"
+                color="dark"
+                sx={{
+                  height: 'fit-content',
+                  px: 4,
+                  flexGrow: 1,
+                }}
+              >
+                {t('home:who.button')}
+              </ButtonLink>
             </Box>
           </Box>
         </Box>
-
-        <ButtonLink
-          size="large"
-          href="/quem-somos"
-          variant="outlined"
-          color="dark"
-          sx={{
-            height: 'fit-content',
-            px: 4,
-          }}
-        >
-          {t('home:who.button')}
-        </ButtonLink>
       </Container>
     </Box>
   )
