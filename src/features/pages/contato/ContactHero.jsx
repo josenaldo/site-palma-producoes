@@ -19,7 +19,7 @@ export default function ContactHero({ t }) {
           postProcess: 'markdown',
         })}
         titleColor="text.dark"
-        titleHighlightColor="tertiary.main"
+        titleHighlightColor="secondary.main"
         titleVariant="h4"
         text={t('contato:hero.text')}
         textVariant="body1"
