@@ -5,11 +5,7 @@ import { AppLayout } from '@/features/layout'
 import { pagesContentService } from '@/features/content'
 import { Box, Container, Typography } from '@mui/material'
 import { Link, PageHeader } from '@/features/ui'
-import {
-  ContactForm,
-  ContactList,
-  ContactSubHeader,
-} from '@/features/pages/contato'
+import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'contato'])({
@@ -54,7 +50,7 @@ export default function ContatoPage({ isoLocale, page }) {
           direction="column"
         />
 
-        <ContactSubHeader />
+        <ContactHero t={t} />
 
         <Box
           sx={{
@@ -69,6 +65,7 @@ export default function ContatoPage({ isoLocale, page }) {
               md: 'flex-start',
             },
             justifyContent: 'space-between',
+            mt: 4,
           }}
         >
           <ContactList t={t} />

@@ -1,4 +1,8 @@
 {
-  "title": "Hi there!",
-  "to-quem-somos-page": "To Quem Somos page"
+  "hero": {
+    "title": "Do you have a project in mind and want __to bring it to life__ with us?",
+    "text": " Tell us about it and fill out the form below!",
+    "ctaText": "Fill out the Form",
+    "ctaLink": "/contact"
+  }
 }

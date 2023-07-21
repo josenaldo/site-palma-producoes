@@ -1,3 +1,3 @@
 export { default as ContactForm } from './ContactForm'
 export { default as ContactList } from './ContactList'
-export { default as ContactSubHeader } from './ContactSubHeader'
+export { default as ContactHero } from './ContactHero'

@@ -119,6 +119,13 @@ const palette = {
     dark: quaternary[700],
     darker: quaternary[900],
   },
+  grey: {
+    lighter: grey[100],
+    light: grey[300],
+    main: grey[500],
+    dark: grey[700],
+    darker: grey[900],
+  },
   surfice: {
     lighter: grey[100],
     light: grey[300],
