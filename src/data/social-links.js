@@ -5,17 +5,20 @@ import YouTubeIcon from '@mui/icons-material/YouTube'
 export const socialLinks = [
   {
     title: 'Facebook',
-    href: 'https://www.facebook.com/',
+    text: 'palmaproducoes',
+    href: 'https://www.facebook.com/BiaHerbst/',
     icon: FacebookIcon,
   },
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/',
+    text: '@palmaproducoes',
+    href: 'https://www.instagram.com/alekarmirian/',
     icon: InstagramIcon,
   },
   {
     title: 'YouTube',
-    href: 'https://www.youtube.com/',
+    text: '@palmaproducoes',
+    href: 'https://www.youtube.com/@palmaproducoes/',
     icon: YouTubeIcon,
   },
 ]

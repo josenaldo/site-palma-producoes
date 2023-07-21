@@ -5,13 +5,8 @@ import {
   makeStaticProps,
 } from '@/features/i18n/server'
 
-import {
-  ContentBlock,
-  ContentPage,
-  portfolioContentService,
-} from '@/features/content'
-import { Box, Container } from '@mui/material'
-import { ImageBox, Title } from '@/features/ui'
+import { ContentPage, portfolioContentService } from '@/features/content'
+import { Container } from '@mui/material'
 import { AppLayout } from '@/features/layout'
 
 export function getStaticPaths() {
@@ -64,7 +59,7 @@ export default function PortfolioPage({ portfolio, ...props }) {
   const { t } = useTranslation(['common', 'portfolio'])
 
   return (
-    <AppLayout t={t}>
+    <AppLayout t={t} >
       <Container
         sx={{
           display: 'flex',
