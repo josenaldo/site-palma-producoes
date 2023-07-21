@@ -5,7 +5,11 @@ import {
   makeStaticProps,
 } from '@/features/i18n/server'
 
-import { ContentBlock, portfolioContentService } from '@/features/content'
+import {
+  ContentBlock,
+  ContentPage,
+  portfolioContentService,
+} from '@/features/content'
 import { Box, Container } from '@mui/material'
 import { ImageBox, Title } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
@@ -70,18 +74,17 @@ export default function PortfolioPage({ portfolio, ...props }) {
           gap: 4,
         }}
       >
-        <Title>{portfolio.title}</Title>
-
-        <ImageBox
-          src={portfolio.image.url}
-          alt={portfolio.image.alt}
-          width={portfolio.image.width}
-          height={portfolio.image.height}
+        <ContentPage
+          t={t}
+          title={portfolio.title}
+          description={portfolio.description}
+          image={portfolio.image}
+          body={portfolio.body}
+          tags={portfolio.tags}
+          author={portfolio.author}
+          date={portfolio.date}
+          url={portfolio.url}
         />
-
-        <Box>
-          <ContentBlock content={portfolio.body.raw} />
-        </Box>
       </Container>
     </AppLayout>
   )
