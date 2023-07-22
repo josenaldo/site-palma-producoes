@@ -112,13 +112,7 @@ export default function ContentCard({
           {t('common:button.showMore')}
         </ButtonLink>
 
-        <ShareLink
-          url={url}
-          title={title}
-          description={description}
-          image={image.url}
-          t={t}
-        />
+        <ShareLink url={url} title={title} image={image.url} t={t} />
       </CardActions>
     </Card>
   )

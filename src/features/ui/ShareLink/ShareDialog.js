@@ -137,11 +137,9 @@ export default function ShareDialog({
           flexDirection: 'column',
         }}
       >
-        <DialogContentText>
-          {t('common:share.title')} &quot;{title}&quot;
+        <DialogContentText sx={{ textAlign: 'center' }}>
+          {description || t('common:share.text')}
         </DialogContentText>
-
-        <Typography variant="caption">{description}</Typography>
       </DialogContent>
       <DialogActions>
         {networks.map((network) => (

@@ -1,5 +1,5 @@
 import { Hero } from '@/features/ui/Hero'
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 export default function HomeHero({ t }) {
   return (
@@ -44,7 +44,6 @@ export default function HomeHero({ t }) {
           titleVariant="h2"
           text={t('home:hero.text')}
           textVariant="h5"
-          // textColor="text.dark"
           ctaColor="primary"
           ctaText={t('home:hero.button')}
           ctaHref="/contato"

@@ -44,13 +44,7 @@ export default function ContentPage({
         >
           <ContentAuthor author={author} />
           <ContentDate date={date} isoLocale={isoLocale} />
-          <ShareLink
-            url={url}
-            title={title}
-            description={description}
-            image={image.url}
-            t={t}
-          />
+          <ShareLink url={url} title={title} image={image.url} t={t} />
         </Box>
         <ContentTags tags={tags} backgroundColor="tertiary.main" />
       </Box>

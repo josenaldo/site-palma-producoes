@@ -21,10 +21,12 @@
     "backToTop": "Voltar ao topo"
   },
   "share": {
-    "title": "Compartilhe",
-    "text": "Olha só o que eu achei no site da Palma Produções!",
+    "title": "Compartilhe a Palma",
+    "text": "Obrigado!",
     "facebook": "Facebook",
     "twitter": "Twitter",
-    "linkedin": "Linkedin"
+    "linkedin": "Linkedin",
+    "whatsapp": "whatsapp",
+    "telegram": "Telegram"
   }
 }
