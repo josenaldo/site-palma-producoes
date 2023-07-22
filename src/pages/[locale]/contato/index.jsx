@@ -64,7 +64,7 @@ export default function ContatoPage({ isoLocale, page }) {
               xs: 'center',
               md: 'flex-start',
             },
-            justifyContent: 'space-between',
+            justifyContent: 'space-evenly',
             mt: 4,
           }}
         >
