@@ -1,9 +1,24 @@
 import { useForm } from 'react-hook-form'
 
 import { Box, Button, TextField } from '@mui/material'
+import { FormInputText } from '@/features/form'
+
+const defaultValues = {
+  name: '',
+  phone: '',
+  email: '',
+  message: '',
+}
 
 export default function ContactForm({ t }) {
-  const { register, handleSubmit, reset, control, setValue } = useForm()
+  const { handleSubmit, reset, control, setValue } = useForm({
+    defaultValues,
+  })
+
+  const onSubmit = (data) => {
+    console.log('Enviando mensagem', data)
+  }
+
   return (
     <Box
       sx={{
@@ -19,20 +34,43 @@ export default function ContactForm({ t }) {
         },
       }}
     >
-      <TextField label="Nome" {...register('name')} fullWidth />
-      <TextField label="Telefone" {...register('phone')} fullWidth />
-      <TextField label="Email" {...register('email')} fullWidth />
-      <TextField
+      <FormInputText name={'name'} control={control} label="Nome" fullWidth />
+      <FormInputText
+        name={'phone'}
+        control={control}
+        label="Telefone"
+        fullWidth
+      />
+      <FormInputText name={'email'} control={control} label="Email" fullWidth />
+      <FormInputText
+        name={'message'}
+        control={control}
         label="Mensagem"
-        {...register('message')}
         fullWidth
         multiline
         rows={4}
-        minRows={4}
       />
-      <Button variant="contained" color="primary" type="submit">
-        Enviar
-      </Button>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          gap: 1,
+        }}
+      >
+        <Button
+          onClick={handleSubmit(onSubmit)}
+          variant="contained"
+          color="primary"
+          type="submit"
+        >
+          Enviar
+        </Button>
+        <Button onClick={() => reset()} variant="outlined" color="grey">
+          Reset
+        </Button>
+      </Box>
     </Box>
   )
 }
