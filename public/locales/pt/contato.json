@@ -4,5 +4,13 @@
     "text": "Nos conte sobre ele e preencha o formulário abaixo!",
     "ctaText": "Preencher Formulário",
     "ctaHref": "/contact"
+  },
+  "form": {
+    "name": "Nome",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "reset": "Limpar"
   }
 }

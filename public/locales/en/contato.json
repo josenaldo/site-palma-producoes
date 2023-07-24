@@ -3,6 +3,14 @@
     "title": "Do you have a project in mind and want __to bring it to life__ with us?",
     "text": " Tell us about it and fill out the form below!",
     "ctaText": "Fill out the Form",
-    "ctaLink": "/contact"
+    "ctaHref": "/contact"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "reset": "Reset"
   }
 }

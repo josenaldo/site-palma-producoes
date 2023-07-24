@@ -28,5 +28,30 @@
     "linkedin": "Linkedin",
     "whatsapp": "whatsapp",
     "telegram": "Telegram"
+  },
+  "form": {
+    "error": {
+      "unknown": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+      "default": {
+        "required": "Campo é obrigatório",
+        "minLength": "Campo deve conter mais caracteres",
+        "maxLength": "Campo deve conter menos caracteres",
+        "min": "Campo deve ser maior",
+        "max": "Campo deve ser menor",
+        "pattern": "Campo fora do padrão",
+        "validate": "Campo inválido",
+        "email": "Campo deve ser um e-mail válido",
+        "phone": "Campo deve ser um telefone válido"
+      },
+      "required": "Campo {{label}} é obrigatório",
+      "minLength": "Campo {{label}} deve conter ao menos {{value}} caracteres",
+      "maxLength": "Campo {{label}} deve conter no máximo {{value}}  caracteres",
+      "min": "O campo {{label}} deve ser no mínimo {{value}}",
+      "max": "O campo {{label}} deve ser no máximo {{value}}",
+      "pattern": "O campo campo {{label}} fora do padrão {{pattern}}",
+      "validate": "Campo {{label}} é inválido",
+      "email": "O campo {{label}} deve ser um e-mail válido",
+      "phone": "O campo {{label}} deve ser um telefone válido"
+    }
   }
 }

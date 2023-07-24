@@ -1,35 +1,41 @@
-import { Controller } from 'react-hook-form'
 import TextField from '@mui/material/TextField'
 
+import { FormControl, FormErrors } from '@/features/form/'
+
 export default function FormInputText({
+  children,
   name,
-  control,
+  type,
+  id,
   label,
-  variant = 'outlined',
+  helperText = '',
+  register,
+  validation = {},
+  formState,
   size = 'small',
+  rules = {},
+  setValue,
+  fullWidth = true,
   ...rest
 }) {
+  const errors = formState.errors
+
   return (
-    <Controller
-      name={name}
-      control={control}
-      render={({
-        field: { onChange, value },
-        fieldState: { error },
-        formState,
-      }) => (
-        <TextField
-          helperText={error ? error.message : null}
-          size={size}
-          error={!!error}
-          onChange={onChange}
-          value={value}
-          fullWidth
-          label={label}
-          variant={variant}
-          {...rest}
-        />
-      )}
-    />
+    <FormControl fullWidth={fullWidth}>
+      <TextField
+        id={id}
+        type={type}
+        name={name}
+        label={label}
+        size={size}
+        helperText={helperText}
+        {...register(name, validation)}
+        error={errors[name] !== undefined}
+        {...rest}
+      >
+        {children}
+      </TextField>
+      <FormErrors name={name} errors={errors} label={label} />
+    </FormControl>
   )
 }

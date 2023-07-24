@@ -1,1 +1,5 @@
+export { default as Form } from './Form'
+export { default as FormControl } from './FormControl'
+export { default as FormErrors } from './FormErrors'
 export { default as FormInputText } from './FormInputText'
+export { default as FormInputPhone } from './FormInputPhone'

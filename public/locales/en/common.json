@@ -30,5 +30,31 @@
       "whatsapp": "whatsapp",
       "telegram": "Telegram"
     }
+  },
+  "form": {
+    "error": {
+      "unknown": "An error occurred, please try again later.",
+      "default": {
+        "required": "The field is required",
+        "minLength": "The field must contain more characters",
+        "maxLength": "The field must contain less characters",
+        "min": "The field must be greater",
+        "max": "The field must be less",
+        "pattern": "The field is invalid",
+        "validate": "The field is invalid",
+        "email": "The field must be a valid email",
+        "phone": "The field must be a valid phone"
+      },
+
+      "required": "{{label}} field is required",
+      "minLength": "{{label}} field must contain more characters",
+      "maxLength": "{{label}} field must contain less characters",
+      "min": "{{label}} field must be greater",
+      "max": "{{label}} field must be less",
+      "pattern": "{{label}} field is invalid",
+      "validate": "{{label}} field is invalid",
+      "email": "{{label}} field must be a valid email",
+      "phone": "{{label}} field must be a valid phone"
+    }
   }
 }
