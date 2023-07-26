@@ -11,6 +11,10 @@
     "phone": "Phone",
     "message": "Message",
     "send": "Send",
-    "reset": "Reset"
+    "reset": "Reset",
+    "successMessage": "Success: Message sent!",
+    "successDetails": "Thank you for contacting us. We will get back to you as soon as possible.",
+    "errorMessage": "Error: Message not sent!",
+    "errorDetails": "An error occurred while sending the message. Please try again later."
   }
 }

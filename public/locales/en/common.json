@@ -53,8 +53,15 @@
       "max": "{{label}} field must be less",
       "pattern": "{{label}} field is invalid",
       "validate": "{{label}} field is invalid",
+
       "email": "{{label}} field must be a valid email",
       "phone": "{{label}} field must be a valid phone"
+    },
+    "notification": {
+      "success": "Success!",
+      "error": "Error!",
+      "warning": "Warning!",
+      "info": "Information!"
     }
   }
 }

@@ -4,8 +4,13 @@ import * as yup from 'yup'
 import 'yup-phone-lite'
 
 import { Box, Button } from '@mui/material'
+import LoadingButton from '@mui/lab/LoadingButton'
+
 import { Form, FormInputPhone, FormInputText } from '@/features/form'
-import { useTranslation } from 'react-i18next'
+import axios from 'axios'
+import { useState } from 'react'
+
+import { Notification, useNotification } from '@/features/notification'
 
 const defaultValues = {
   name: '',
@@ -15,6 +20,10 @@ const defaultValues = {
 }
 
 export default function ContactForm({ t }) {
+  const [loading, setLoading] = useState(false)
+  const { dispatch, setNotification, setErrorNotification, LEVELS } =
+    useNotification()
+
   const nameLabel = t('contato:form.name')
   const phoneLabel = t('contato:form.phone')
   const emailLabel = t('contato:form.email')
@@ -55,8 +64,28 @@ export default function ContactForm({ t }) {
     resolver: yupResolver(validations),
   })
 
-  const onSubmit = (data) => {
-    console.log('Enviando mensagem', data)
+  const onSubmit = async (data) => {
+    setLoading(true)
+
+    try {
+      const res = await axios.post('/api/contact', data)
+      dispatch(
+        setNotification({
+          type: LEVELS.SUCCESS,
+          message: t('contato:form.successMessage'),
+          details: t('contato:form.successDetails'),
+        })
+      )
+    } catch (error) {
+      dispatch(
+        setErrorNotification({
+          message: t('contato:form.errorMessage'),
+          details: t('contato:form.errorDetails'),
+          error,
+        })
+      )
+    }
+    setLoading(false)
   }
 
   return (
@@ -64,7 +93,6 @@ export default function ContactForm({ t }) {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-
         alignItems: 'flex-start',
         justifyContent: 'center',
         gap: 2,
@@ -74,6 +102,7 @@ export default function ContactForm({ t }) {
         },
       }}
     >
+      <Notification />
       <Form
         id="contactForm"
         onSubmit={onSubmit}
@@ -91,14 +120,14 @@ export default function ContactForm({ t }) {
           id="name"
           type="text"
           name="name"
-          label="Nome"
+          label={t('contato:form.name')}
           fullWidth
           required
         />
         <FormInputPhone
           id="phone"
           name="phone"
-          label="Telefone"
+          label={t('contato:form.phone')}
           fullWidth
           required
         />
@@ -106,7 +135,7 @@ export default function ContactForm({ t }) {
           id="email"
           type="text"
           name="email"
-          label="Email"
+          label={t('contato:form.email')}
           fullWidth
           required
         />
@@ -114,7 +143,7 @@ export default function ContactForm({ t }) {
           id="message"
           type="text"
           name="message"
-          label="Mensagem"
+          label={t('contato:form.message')}
           fullWidth
           required
           multiline
@@ -130,14 +159,15 @@ export default function ContactForm({ t }) {
           gap: 1,
         }}
       >
-        <Button
+        <LoadingButton
+          loading={loading}
           variant="contained"
           color="primary"
           type="submit"
           form="contactForm"
         >
           {t('contato:form.send')}
-        </Button>
+        </LoadingButton>
         <Button onClick={() => reset()} variant="outlined" color="grey">
           {t('contato:form.reset')}
         </Button>

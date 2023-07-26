@@ -1,10 +1,11 @@
 import { useTranslation } from 'next-i18next'
 
+import { Box, Container } from '@mui/material'
+
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
 import { pagesContentService } from '@/features/content'
-import { Box, Container, Typography } from '@mui/material'
-import { Link, PageHeader } from '@/features/ui'
+import { PageHeader } from '@/features/ui'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
 
 export async function getStaticProps({ params }) {
@@ -66,6 +67,7 @@ export default function ContatoPage({ isoLocale, page }) {
             },
             justifyContent: 'space-evenly',
             mt: 4,
+            gap: 4,
           }}
         >
           <ContactList t={t} />

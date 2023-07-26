@@ -36,3 +36,6 @@ next-env.d.ts
 
 # Content-layer
 .contentlayer
+
+# React email
+/.react-email

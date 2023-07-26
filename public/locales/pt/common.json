@@ -53,5 +53,11 @@
       "email": "O campo {{label}} deve ser um e-mail válido",
       "phone": "O campo {{label}} deve ser um telefone válido"
     }
+  },
+  "notification": {
+    "success": "Sucesso!",
+    "error": "Erro!",
+    "warning": "Atenção!",
+    "info": "Informação!"
   }
 }
