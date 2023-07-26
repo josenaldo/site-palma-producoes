@@ -4,6 +4,11 @@ import { ContactEmail } from '@/emails'
 import { sendEmail } from '@/features/email'
 
 export default async function handler(req, res) {
+  //only accept post
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' })
+  }
+
   // Get parameters from the request body (name, phone, email, message)
   const { name, phone, email, message } = req.body
 

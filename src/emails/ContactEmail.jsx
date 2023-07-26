@@ -31,14 +31,14 @@ const container = {
 }
 
 const heading = {
-  fontSize: '4rem',
-  lineHeight: '4rem',
+  fontSize: '3rem',
+  lineHeight: '3rem',
   fontWeight: '700',
   color: '#484848',
 }
 
 const paragraph = {
-  fontSize: '18px',
-  lineHeight: '1.4',
+  fontSize: '1rem',
+  lineHeight: '1rem',
   color: '#484848',
 }
