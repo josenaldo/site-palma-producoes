@@ -78,7 +78,7 @@ export default function PortfolioPage({ post, ...props }) {
         <ContentPage
           t={t}
           title={post.title}
-          titleBorderBottomColo="transparent"
+          titleBorderBottomColor="transparent"
           description={post.description}
           image={post.image}
           body={post.body}

@@ -12,7 +12,7 @@ export default function ContentPage({
   isoLocale = 'pt-BR',
   description,
   title,
-  titleBorderBottomColo = 'primary.main',
+  titleBorderBottomColor = 'primary.main',
   image,
   body,
   tags,
@@ -33,7 +33,7 @@ export default function ContentPage({
           alignItems: 'center',
         }}
       >
-        <Title borderBottomColor={titleBorderBottomColo}>{title}</Title>
+        <Title borderBottomColor={titleBorderBottomColor}>{title}</Title>
         <Box
           sx={{
             display: 'flex',

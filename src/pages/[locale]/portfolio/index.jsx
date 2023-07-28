@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 
-import { Box, Card, CardContent, Container, Typography } from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
@@ -10,7 +10,8 @@ import {
   portfolioContentService,
 } from '@/features/content'
 
-import { ImageBox, Link, PageHeader, Tag } from '@/features/ui'
+import { PageHeader } from '@/features/ui'
+import { AppLayout } from '@/features/layout'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'portfolio'])({ params })
@@ -25,9 +26,6 @@ export async function getStaticProps({ params }) {
 
   return props
 }
-
-import { useState } from 'react'
-import { AppLayout } from '@/features/layout'
 
 export { getStaticPaths }
 
@@ -69,7 +67,6 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
               description={portfolio.description}
               image={portfolio.image}
               tags={portfolio.tags}
-
             />
           ))}
         </Box>
