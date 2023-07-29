@@ -39,6 +39,7 @@
     "i18next-http-backend": "^2.2.1",
     "i18next-localstorage-backend": "^4.1.1",
     "i18next-resources-to-backend": "^1.1.4",
+    "lunr": "^2.3.9",
     "markdown-it": "^13.0.1",
     "mui-tel-input": "^3.2.2",
     "next": "13.4.10",
