@@ -12,13 +12,10 @@ import LanguageIcon from '@mui/icons-material/Language'
 
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
 
 const languages = ['pt', 'en']
 
-export default function LanguageSelector() {
-  const { t } = useTranslation(['common'])
-
+export default function LanguageSelector({ t }) {
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)

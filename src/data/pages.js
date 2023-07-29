@@ -20,6 +20,10 @@ export const pages = [
     href: '/movimentos',
   },
   {
+    title: 'menu.search',
+    href: '/pesquisa',
+  },
+  {
     title: 'menu.contact',
     href: '/contato',
   },

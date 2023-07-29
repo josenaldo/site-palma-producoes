@@ -1,7 +1,3 @@
-// export { default as createSearchIndex } from './create-search-index.js'
-
-const createSearchIndex = require('./create-search-index.js')
-
-module.exports = {
-  createSearchIndex,
-}
+export { default as SearchResult } from './SearchResult'
+export { default as SearchForm } from './SearchForm'
+export { default as SearchResults } from './SearchResults'

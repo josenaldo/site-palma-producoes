@@ -10,6 +10,7 @@
     "services": "Serviços",
     "portfolio": "Portfolio",
     "moviments": "Movimentos",
+    "search": "Pesquisa",
     "contact": "Contato"
   },
   "button": {
@@ -23,11 +24,13 @@
   "share": {
     "title": "Compartilhe a Palma",
     "text": "Obrigado!",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "linkedin": "Linkedin",
-    "whatsapp": "whatsapp",
-    "telegram": "Telegram"
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "whatsapp": "whatsapp",
+      "telegram": "Telegram"
+    }
   },
   "form": {
     "error": {
@@ -52,12 +55,12 @@
       "validate": "Campo {{label}} é inválido",
       "email": "O campo {{label}} deve ser um e-mail válido",
       "phone": "O campo {{label}} deve ser um telefone válido"
+    },
+    "notification": {
+      "success": "Sucesso!",
+      "error": "Erro!",
+      "warning": "Atenção!",
+      "info": "Informação!"
     }
-  },
-  "notification": {
-    "success": "Sucesso!",
-    "error": "Erro!",
-    "warning": "Atenção!",
-    "info": "Informação!"
   }
 }

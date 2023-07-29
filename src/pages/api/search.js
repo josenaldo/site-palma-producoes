@@ -17,9 +17,6 @@ const handler = async (req, res) => {
     return res.end(JSON.stringify([]))
   }
 
-  console.log('🟢Searching for:', q)
-  console.log('🟢Locale:', locale)
-
   try {
     const lunrIndex = lunr.Index.load(index)
     const results = lunrIndex.search(q)

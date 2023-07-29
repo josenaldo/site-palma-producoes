@@ -16,9 +16,8 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { Link, Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
 import { useIsHome } from '@/features/layout'
-import { useTranslation } from 'react-i18next'
 
-export default function Menu() {
+export default function Menu({ t }) {
   const isHome = useIsHome()
 
   const [open, setOpen] = useState(false)
@@ -104,7 +103,7 @@ export default function Menu() {
 
             <MenuDivider />
 
-            <MenuItems onClose={handleClose} />
+            <MenuItems t={t} onClose={handleClose} />
           </Box>
         </DialogContent>
       </Dialog>
@@ -150,9 +149,7 @@ function MenuDivider() {
   )
 }
 
-function MenuItems({ onClose }) {
-  const { t } = useTranslation(['common'])
-
+function MenuItems({ t, onClose }) {
   if (!pages || pages.length === 0) return null
 
   return (

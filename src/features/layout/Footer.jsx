@@ -47,7 +47,7 @@ export default function Footer({ t }) {
         >
           &copy; {t('common:footer:copyright')}
         </Typography>
-        <LanguageSelector />
+        <LanguageSelector t={t} />
       </Box>
 
       <Box

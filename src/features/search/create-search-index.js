@@ -68,4 +68,4 @@ async function createSearchIndex() {
 
 // export default createSearchIndex
 
-module.exports = createSearchIndex
+module.exports = { createSearchIndex }

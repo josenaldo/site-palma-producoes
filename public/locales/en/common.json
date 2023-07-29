@@ -10,6 +10,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "moviments": "Movements",
+    "search": "Search",
     "contact": "Contact"
   },
   "button": {
@@ -45,7 +46,6 @@
         "email": "The field must be a valid email",
         "phone": "The field must be a valid phone"
       },
-
       "required": "{{label}} field is required",
       "minLength": "{{label}} field must contain more characters",
       "maxLength": "{{label}} field must contain less characters",
@@ -53,7 +53,6 @@
       "max": "{{label}} field must be less",
       "pattern": "{{label}} field is invalid",
       "validate": "{{label}} field is invalid",
-
       "email": "{{label}} field must be a valid email",
       "phone": "{{label}} field must be a valid phone"
     },

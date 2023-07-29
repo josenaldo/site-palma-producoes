@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 
 const { withContentlayer } = require('next-contentlayer')
-const { createSearchIndex } = require('./src/features/search/index.js')
-
-// import { withContentlayer } from 'next-contentlayer'
-// import { createSearchIndex } from './src/features/search/index.js'
+const {
+  createSearchIndex,
+} = require('./src/features/search/create-search-index.js')
 
 const nextConfig = {
   trailingSlash: true,
   reactStrictMode: false,
+  productionBrowserSourceMaps: true,
   images: {
     domains: ['img.youtube.com', 'i3.ytimg.com', 'localhost'],
   },
@@ -25,5 +25,3 @@ const nextConfig = {
 }
 
 module.exports = withContentlayer(nextConfig)
-
-// export default withContentlayer(nextConfig)

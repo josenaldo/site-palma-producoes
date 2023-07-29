@@ -10,9 +10,9 @@ export default function AppLayout({
   title,
   description,
   image,
-  t,
   isoLocale,
   children,
+  t,
 }) {
   const og = useMemo(() => {
     const imageObject = image
