@@ -10,8 +10,9 @@ import {
   portfolioContentService,
 } from '@/features/content'
 
-import { PageHeader } from '@/features/ui'
+import { PageHeader, Pagination } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
+import { useState } from 'react'
 
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'portfolio'])({ params })
@@ -31,6 +32,22 @@ export { getStaticPaths }
 
 export default function PortfolioPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
+  const [pageIndex, setPageIndex] = useState(1)
+  const [loading, setLoading] = useState(false)
+
+  const pageSize = 6
+  const currentPage = pageIndex > 0 ? pageIndex - 1 : 0
+
+  const portfoliosToShow = portfolioList.slice(
+    currentPage * pageSize,
+    currentPage * pageSize + pageSize
+  )
+
+  const handleChangePage = (event, value) => {
+    console.log('handleChangePage', { event, value })
+    setPageIndex(value)
+    setLoading(false)
+  }
 
   return (
     <AppLayout
@@ -58,7 +75,7 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
             mb: 8,
           }}
         >
-          {portfolioList.map((portfolio) => (
+          {portfoliosToShow.map((portfolio) => (
             <ContentImageCard
               key={portfolio.slug}
               t={t}
@@ -70,6 +87,13 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
             />
           ))}
         </Box>
+        <Pagination
+          onChange={handleChangePage}
+          page={pageIndex}
+          count={8}
+          loading={false}
+          showEllipses={false}
+        />
       </Container>
     </AppLayout>
   )
