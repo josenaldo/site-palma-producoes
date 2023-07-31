@@ -1,7 +1,9 @@
+import { useMemo } from 'react'
+
+import { Box } from '@mui/material'
+
 import { contactLinks, socialLinks } from '@/data'
 import { Link } from '@/features/ui'
-import { Box } from '@mui/material'
-import { useMemo } from 'react'
 
 export default function ContactList() {
   const links = useMemo(() => [...contactLinks, ...socialLinks], [])

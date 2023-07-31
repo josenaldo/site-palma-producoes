@@ -30,9 +30,7 @@ export async function getStaticProps({ params }) {
 
 export { getStaticPaths }
 
-export default function PortfolioPage({ isoLocale, page, portfolioList }) {
-  const { t } = useTranslation(['common', 'portfolio'])
-
+export default function PortfolioPage({ page, portfolioList }) {
   const [pageIndex, setPageIndex] = useState(1)
   const [loading, setLoading] = useState(false)
 
@@ -55,8 +53,6 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
       title={page.title}
       description={page.description}
       image={page.image}
-      isoLocale={isoLocale}
-      t={t}
     >
       <Container>
         <PageHeader
@@ -79,7 +75,6 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
           {portfoliosToShow.map((portfolio) => (
             <ContentImageCard
               key={portfolio.slug}
-              t={t}
               url={portfolio.url}
               title={portfolio.title}
               description={portfolio.description}

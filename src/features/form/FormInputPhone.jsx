@@ -1,5 +1,6 @@
-import { Controller } from 'react-hook-form'
 import { MuiTelInput, matchIsValidTel } from 'mui-tel-input'
+import { Controller } from 'react-hook-form'
+
 import { FormControl, FormErrors } from '@/features/form/'
 
 export default function FormInputText({
@@ -44,7 +45,7 @@ export default function FormInputText({
           />
         )}
       />
-      <FormErrors name={name} errors={errors} label={label} />
+      <FormErrors name={name} errors={errors} />
     </FormControl>
   )
 }

@@ -1,7 +1,9 @@
+import React from 'react'
+
 import { Box } from '@mui/material'
+
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import React from 'react'
 
 export default function Form({
   children,
@@ -19,6 +21,7 @@ export default function Form({
       resolver: yupResolver(validations),
     })
 
+  // TODO: resolver bug do setValue
   const formProps = {
     register: register,
     formState: formState,

@@ -2,14 +2,15 @@ import React from 'react'
 
 import { AppBar, Box, Container, useScrollTrigger } from '@mui/material'
 
-import { Logo } from '@/features/ui'
 import { useIsHome } from '@/features/layout'
+import { Logo } from '@/features/ui'
 
-import Menu from './Menu'
+import MobileMenu from './MobileMenu'
 import DesktopMenu from './DesktopMenu'
 
-export default function Header({ t, color, ...props }) {
+export default function Header({ color, ...props }) {
   const isHome = useIsHome()
+
   const elevated = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
@@ -50,8 +51,8 @@ export default function Header({ t, color, ...props }) {
             justifyContent: 'flex-end',
           }}
         >
-          <Menu t={t} />
-          <DesktopMenu t={t} elevated={elevated} />
+          <MobileMenu />
+          <DesktopMenu elevated={elevated} />
         </Box>
       </Container>
     </AppBar>

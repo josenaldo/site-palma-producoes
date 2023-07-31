@@ -10,9 +10,9 @@ export { ContactLinks } from './ContactLinks'
 
 export { ImageBox } from './ImageBox'
 
-export { Link } from './Link'
+export { Hero } from './Hero'
 
-export { Loader } from './Loader'
+export { Link } from './Link'
 
 export { Logo } from './Logo'
 

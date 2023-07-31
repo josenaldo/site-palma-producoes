@@ -8,7 +8,7 @@ const isoLocales = {
 }
 
 export default function useTranslation(ns = ['common']) {
-  const { t, i18n } = next18nUseTranslation(ns)
+  const useTranslationResponse = next18nUseTranslation(ns)
   const router = useRouter()
 
   const { locale } = router.query
@@ -21,8 +21,7 @@ export default function useTranslation(ns = ['common']) {
   }
 
   return {
-    t,
-    i18n,
+    ...useTranslationResponse,
     locale: currentLocale,
     isoLocale: isoLocales[currentLocale] || 'pt-BR',
   }

@@ -7,9 +7,11 @@ import {
   Typography,
 } from '@mui/material'
 
+import { useTranslation } from '@/features/i18n'
 import { ImageBox } from '@/features/ui'
 
-export default function SociaCard({ t, socia, onClick, open }) {
+export default function SociaCard({ socia, onClick, open }) {
+  const { t } = useTranslation(['common', 'quem-somos'])
   return (
     <Card
       elevation={open ? 5 : 0}

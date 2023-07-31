@@ -1,18 +1,11 @@
-import { useTranslation } from '@/features/i18n'
+import { Container } from '@mui/material'
 
+import { ContentPage, postContentService } from '@/features/content'
+import { AppLayout } from '@/features/layout'
 import {
   getStaticPaths as i18nGetStaticPaths,
   makeStaticProps,
 } from '@/features/i18n/server'
-
-import {
-  ContentBlock,
-  ContentPage,
-  postContentService,
-} from '@/features/content'
-import { Box, Container } from '@mui/material'
-import { ImageBox, Title } from '@/features/ui'
-import { AppLayout } from '@/features/layout'
 
 export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
@@ -61,11 +54,13 @@ export async function getStaticProps(ctx) {
   return props
 }
 
-export default function PortfolioPage({ post, ...props }) {
-  const { t } = useTranslation(['common', 'movimentos'])
-
+export default function PortfolioPage({ post }) {
   return (
-    <AppLayout t={t}>
+    <AppLayout
+      title={post.title}
+      description={post.description}
+      image={post.image}
+    >
       <Container
         sx={{
           display: 'flex',
@@ -76,16 +71,15 @@ export default function PortfolioPage({ post, ...props }) {
         }}
       >
         <ContentPage
-          t={t}
           title={post.title}
           titleBorderBottomColor="transparent"
-          description={post.description}
           image={post.image}
           body={post.body}
           tags={post.tags}
           author={post.author}
           date={post.date}
           url={post.url}
+          ns={['common', 'movimentos']}
         />
       </Container>
     </AppLayout>

@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+
 import {
   Box,
   Button,
@@ -10,9 +13,6 @@ import {
 } from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language'
 
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-
 const languages = ['pt', 'en']
 
 export default function LanguageSelector({ t }) {
@@ -21,6 +21,7 @@ export default function LanguageSelector({ t }) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
+  // TODO: verificar se mudança de idioma respeita parametros da busca
   const handleChange = async (value) => {
     let pathname = router.pathname
 

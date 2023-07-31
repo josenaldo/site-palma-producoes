@@ -1,6 +1,8 @@
-import { ImageBox, Link, Tag } from '@/features/ui'
-import { Box, Card, CardContent, Typography } from '@mui/material'
 import { useState } from 'react'
+
+import { Box, Card, CardContent, Typography } from '@mui/material'
+
+import { ImageBox, Link, Tag } from '@/features/ui'
 
 export default function ContentImageCard({
   url,

@@ -1,23 +1,20 @@
-import { ButtonLink, Logo, Title } from '@/features/ui'
 import {
-  Avatar,
   Box,
   Card,
   CardContent,
   CardMedia,
   Container,
-  Stack,
   Typography,
 } from '@mui/material'
 
 import Image from 'next/image'
-import servicesImage from '@/assets/images/palma-services.svg'
-import iconGreen from '@/assets/images/icon-green.svg'
-import iconBlue from '@/assets/images/icon-blue.svg'
-import iconPurple from '@/assets/images/icon-purple.svg'
-import iconOrange from '@/assets/images/icon-orange.svg'
 
-export default function HomeServices({ t, servicos }) {
+import { useTranslation } from '@/features/i18n'
+import { ButtonLink, Title } from '@/features/ui'
+
+export default function HomeServices({ servicos }) {
+  const { t } = useTranslation(['common', 'home'])
+
   return (
     <Box
       component="section"

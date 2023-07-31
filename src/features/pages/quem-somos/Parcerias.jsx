@@ -1,8 +1,12 @@
-import { ParceriaCard } from '@/features/pages/quem-somos'
-import { Title } from '@/features/ui'
 import { Box, Container } from '@mui/material'
 
-export default function Parcerias({ t, parcerias }) {
+import { useTranslation } from '@/features/i18n'
+import { ParceriaCard } from '@/features/pages/quem-somos'
+import { Title } from '@/features/ui'
+
+export default function Parcerias({ parcerias }) {
+  const { t } = useTranslation(['common', 'quem-somos'])
+
   return (
     <Box
       sx={{

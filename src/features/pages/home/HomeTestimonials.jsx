@@ -1,22 +1,11 @@
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Typography,
-} from '@mui/material'
+import { Box, Card, CardContent, Container, Typography } from '@mui/material'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import StarIcon from '@mui/icons-material/Star'
 
 import Carousel from 'react-material-ui-carousel'
 
-import { Title } from '@/features/ui'
-import Image from 'next/image'
-
-export default function HomeTestimonials({ t, depoimentos }) {
+export default function HomeTestimonials({ depoimentos }) {
   return (
     <Container
       sx={{

@@ -1,10 +1,13 @@
+import { useState } from 'react'
+
 import { Box, Collapse, Typography } from '@mui/material'
 
 import { ContentBlock } from '@/features/content'
+import { useTranslation } from '@/features/i18n'
 import { SociaCard } from '@/features/pages/quem-somos'
-import { useState } from 'react'
 
-export default function Socias({ t, socias }) {
+export default function Socias({ socias }) {
+  const { t } = useTranslation(['common', 'quem-somos'])
   const [selectedSocia, setSelectedSocia] = useState(null)
 
   return (

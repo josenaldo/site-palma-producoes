@@ -7,7 +7,12 @@ import {
 } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
 
+import { useTranslation } from '@/features/i18n'
+
+// todo: add i18n
 export default function SearchForm({ handleSearch, query, setQuery, loading }) {
+  const { t } = useTranslation(['common', 'pesquisa'])
+
   return (
     <Box
       sx={{

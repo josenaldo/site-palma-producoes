@@ -1,10 +1,14 @@
-import { Box, Button, IconButton, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 
-import { ContactLinks, SocialLinks } from '@/features/ui'
+import { useTranslation } from '@/features/i18n'
 import { LanguageSelector } from '@/features/i18n/client'
+import { ContactLinks, SocialLinks } from '@/features/ui'
 
-export default function Footer({ t }) {
+// TODO: corrigir espaçmento entre language selector, contatos, copyright e botoes sociais
+export default function Footer() {
+  const { t } = useTranslation(['common'])
+
   return (
     <Box
       sx={{

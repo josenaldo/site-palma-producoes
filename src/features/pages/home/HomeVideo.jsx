@@ -1,7 +1,11 @@
-import { YoutubeVideo } from '@/features/ui'
 import { Box } from '@mui/material'
 
-export default function HomeVideo({ t }) {
+import { useTranslation } from '@/features/i18n'
+import { YoutubeVideo } from '@/features/ui'
+
+export default function HomeVideo() {
+  const { t } = useTranslation(['common', 'home'])
+
   return (
     <Box
       component="section"

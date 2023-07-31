@@ -1,7 +1,11 @@
-import { SearchResult } from '@/features/search'
 import { Box } from '@mui/material'
 
-export default function SearchResults({ results, t }) {
+import { useTranslation } from '@/features/i18n'
+import { SearchResult } from '@/features/search'
+
+export default function SearchResults({ results }) {
+  const { t } = useTranslation(['common', 'pesquisa'])
+
   return (
     <Box
       sx={{

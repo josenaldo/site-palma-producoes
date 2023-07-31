@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { useTranslation } from '@/features/i18n'
-
 import { Container } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
@@ -11,9 +8,9 @@ import {
   parceriaContentService,
 } from '@/features/content'
 
-import { ImageBox, PageHeader } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
 import { Parcerias, Socias } from '@/features/pages/quem-somos'
+import { ImageBox, PageHeader } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'quem-somos'])({
@@ -36,15 +33,11 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
-  const { t } = useTranslation(['common', 'quem-somos'])
-
   return (
     <AppLayout
       title={page.title}
       description={page.description}
       image={page.image}
-      isoLocale={isoLocale}
-      t={t}
     >
       <Container>
         <PageHeader title={page.title} text={page.body.raw} />
@@ -56,10 +49,10 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
           height={page.image.height}
         />
 
-        <Socias socias={socias} t={t} />
+        <Socias socias={socias} />
       </Container>
 
-      <Parcerias parcerias={parcerias} t={t} />
+      <Parcerias parcerias={parcerias} />
     </AppLayout>
   )
 }

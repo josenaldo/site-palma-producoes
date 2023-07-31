@@ -1,4 +1,4 @@
-import TextField from '@mui/material/TextField'
+import { TextField } from '@mui/material'
 
 import { FormControl, FormErrors } from '@/features/form/'
 
@@ -35,7 +35,7 @@ export default function FormInputText({
       >
         {children}
       </TextField>
-      <FormErrors name={name} errors={errors} label={label} />
+      <FormErrors name={name} errors={errors} />
     </FormControl>
   )
 }

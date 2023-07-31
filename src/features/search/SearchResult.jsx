@@ -1,7 +1,11 @@
-import { Tag, ButtonLink, ShareLink, Link } from '@/features/ui'
 import { Card, CardMedia, Box, CardContent, Typography } from '@mui/material'
 
-export default function SearchResult({ t, result }) {
+import { useTranslation } from '@/features/i18n'
+import { Tag, ButtonLink, ShareLink, Link } from '@/features/ui'
+
+export default function SearchResult({ result }) {
+  const { t } = useTranslation(['common', 'pesquisa'])
+
   return (
     <Card
       elevation={0}

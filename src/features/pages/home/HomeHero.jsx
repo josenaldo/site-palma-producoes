@@ -1,7 +1,11 @@
-import { Hero } from '@/features/ui/Hero'
 import { Box, Container } from '@mui/material'
 
-export default function HomeHero({ t }) {
+import { useTranslation } from '@/features/i18n'
+import { Hero } from '@/features/ui'
+
+export default function HomeHero() {
+  const { t } = useTranslation(['common', 'home'])
+
   return (
     <Box
       component="section"

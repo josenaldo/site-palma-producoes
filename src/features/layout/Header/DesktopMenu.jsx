@@ -1,9 +1,12 @@
-import { pages } from '@/data'
-import useIsHome from '@/features/layout/useIsHome'
-import { Link, SocialLinks } from '@/features/ui'
 import { Box } from '@mui/material'
 
-export default function DesktopMenu({ t, elevated }) {
+import { pages } from '@/data'
+import { useTranslation } from '@/features/i18n'
+import { useIsHome } from '@/features/layout'
+import { Link, SocialLinks } from '@/features/ui'
+
+export default function DesktopMenu({ elevated }) {
+  const { t } = useTranslation(['common'])
   const isHome = useIsHome()
 
   return (

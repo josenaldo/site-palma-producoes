@@ -1,5 +1,6 @@
-import i18nConfig from '@/features/i18n/config'
 import { useRouter } from 'next/router'
+
+import i18nConfig from '@/features/i18n/config'
 
 export default function useIsHome() {
   const router = useRouter()

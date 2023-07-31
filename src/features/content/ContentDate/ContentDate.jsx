@@ -1,7 +1,7 @@
-import { format, parse, parseISO } from 'date-fns'
-
 import { Box, Typography } from '@mui/material'
 import DateIcon from '@mui/icons-material/CalendarToday'
+
+import { format, parse } from 'date-fns'
 
 export default function ContentDate({
   date,

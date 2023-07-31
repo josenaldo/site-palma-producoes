@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import {
   Box,
   Dialog,
@@ -6,18 +7,20 @@ import {
   DialogTitle,
   Divider,
   IconButton,
+  useMediaQuery,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
-
 import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
 
-import { Link, Logo, SocialLinks } from '@/features/ui'
 import { pages } from '@/data'
+import { useTranslation } from '@/features/i18n'
 import { useIsHome } from '@/features/layout'
+import { Link, Logo, SocialLinks } from '@/features/ui'
 
-export default function Menu({ t }) {
+export default function MobileMenu() {
+  const { t } = useTranslation(['common'])
+
   const isHome = useIsHome()
 
   const [open, setOpen] = useState(false)

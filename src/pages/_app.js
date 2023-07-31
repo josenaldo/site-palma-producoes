@@ -6,6 +6,7 @@ import { RootLayout } from '@/features/layout'
 import '@/features/styles/globals.css'
 import nextI18nConfig from '../../next-i18next.config'
 
+// TODO adicionar manifest.json e icones
 function App({ Component, pageProps }) {
   return (
     <RootLayout>

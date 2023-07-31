@@ -3,6 +3,7 @@ import { Box, IconButton } from '@mui/material'
 import ShareIcon from '@mui/icons-material/Share'
 
 import ShareDialog from './ShareDialog'
+import { useTranslation } from '@/features/i18n'
 
 export default function ShareLink({
   title,
@@ -10,7 +11,6 @@ export default function ShareLink({
   url,
   image,
   color = 'secondary',
-  t = { t },
 }) {
   const [open, setOpen] = useState(false)
   const [isNativeShare, setNativeShare] = useState(false)
@@ -75,7 +75,6 @@ export default function ShareLink({
           onClose={() => {
             handleClose()
           }}
-          t={t}
         />
       )}
     </Box>

@@ -4,7 +4,7 @@ import { ErrorMessage } from '@hookform/error-message'
 
 import { useTranslation } from '@/features/i18n'
 
-export default function FormErrors({ errors, name, label }) {
+export default function FormErrors({ errors, name }) {
   const { t } = useTranslation(['common'])
 
   return (

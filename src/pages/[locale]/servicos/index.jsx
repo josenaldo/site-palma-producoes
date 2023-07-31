@@ -41,7 +41,8 @@ export async function getStaticProps({ params }) {
   return props
 }
 
-export default function ServicosPage({ isoLocale, page, servicos }) {
+// TODO: Extrair componentes para pacote próprio
+export default function ServicosPage({ page, servicos }) {
   const { t } = useTranslation(['common', 'servicos'])
 
   return (
@@ -49,8 +50,6 @@ export default function ServicosPage({ isoLocale, page, servicos }) {
       title={page.title}
       description={page.description}
       image={page.image}
-      isoLocale={isoLocale}
-      t={t}
     >
       <Container sx={{ mb: 4 }}>
         <PageHeader title={page.title} text={page.body.raw} />

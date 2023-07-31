@@ -1,9 +1,4 @@
-import {
-  Box,
-  Stack,
-  Pagination as MuiPagination,
-  LinearProgress,
-} from '@mui/material'
+import { Box, Pagination as MuiPagination, LinearProgress } from '@mui/material'
 
 export default function Pagination({
   onChange,

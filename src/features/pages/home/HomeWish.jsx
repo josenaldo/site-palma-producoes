@@ -1,7 +1,11 @@
-import { BannerBox, Title } from '@/features/ui'
 import { Box, Container, Stack, Typography } from '@mui/material'
 
-export default function HomeWish({ t }) {
+import { useTranslation } from '@/features/i18n'
+import { BannerBox, Title } from '@/features/ui'
+
+export default function HomeWish() {
+  const { t } = useTranslation(['common', 'home'])
+
   const texts = t('home:wish.text', {
     returnObjects: true,
     postProcess: 'markdown',

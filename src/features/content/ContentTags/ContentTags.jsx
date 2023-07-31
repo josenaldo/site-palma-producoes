@@ -1,5 +1,6 @@
-import { Tag } from '@/features/ui'
 import { Box } from '@mui/material'
+
+import { Tag } from '@/features/ui'
 
 export default function ContentTags({
   tags,

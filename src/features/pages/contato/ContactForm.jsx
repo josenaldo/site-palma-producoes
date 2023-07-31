@@ -1,15 +1,16 @@
+import { useState } from 'react'
+
+import { Box, Button } from '@mui/material'
+import LoadingButton from '@mui/lab/LoadingButton'
+
+import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import 'yup-phone-lite'
 
-import { Box, Button } from '@mui/material'
-import LoadingButton from '@mui/lab/LoadingButton'
-
 import { Form, FormInputPhone, FormInputText } from '@/features/form'
-import axios from 'axios'
-import { useState } from 'react'
-
+import { useTranslation } from '@/features/i18n'
 import { Notification, useNotification } from '@/features/notification'
 
 const defaultValues = {
@@ -19,7 +20,8 @@ const defaultValues = {
   message: '',
 }
 
-export default function ContactForm({ t }) {
+export default function ContactForm() {
+  const { t } = useTranslation(['contato', 'common'])
   const [loading, setLoading] = useState(false)
   const { dispatch, setNotification, setErrorNotification, LEVELS } =
     useNotification()
@@ -59,7 +61,8 @@ export default function ContactForm({ t }) {
     })
     .required()
 
-  const { handleSubmit, reset, control, setValue } = useForm({
+  // TODO: Mover reset para dentro do componente Form
+  const { reset, control } = useForm({
     defaultValues,
     resolver: yupResolver(validations),
   })

@@ -24,15 +24,12 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function ContatoPage({ isoLocale, page }) {
-  const { t } = useTranslation(['common', 'contato'])
-
   return (
     <AppLayout
       title={page.title}
       description={page.description}
       image={page.image}
       isoLocale={isoLocale}
-      t={t}
     >
       <Container
         sx={{
@@ -50,7 +47,7 @@ export default function ContatoPage({ isoLocale, page }) {
           direction="column"
         />
 
-        <ContactHero t={t} />
+        <ContactHero />
 
         <Box
           sx={{
@@ -69,8 +66,8 @@ export default function ContatoPage({ isoLocale, page }) {
             gap: 4,
           }}
         >
-          <ContactList t={t} />
-          <ContactForm t={t} />
+          <ContactList />
+          <ContactForm />
         </Box>
       </Container>
     </AppLayout>

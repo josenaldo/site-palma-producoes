@@ -1,11 +1,6 @@
-import {
-  Alert,
-  AlertTitle,
-  Box,
-  Button,
-  Collapse,
-  Divider,
-} from '@mui/material'
+import { useState } from 'react'
+
+import { Alert, AlertTitle, Box, Button, Collapse } from '@mui/material'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 
@@ -14,8 +9,8 @@ import {
   useNotificationDispatch,
   useNotificationValue,
 } from '@/features/notification'
-import { useState } from 'react'
 
+// TODO: aplicar I18N
 export default function Notification() {
   const dispatch = useNotificationDispatch()
   const removeNotification = useRemoveNotification()

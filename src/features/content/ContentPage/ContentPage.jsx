@@ -1,3 +1,5 @@
+import { Box } from '@mui/material'
+
 import {
   ContentAuthor,
   ContentBlock,
@@ -5,12 +7,9 @@ import {
   ContentTags,
 } from '@/features/content'
 import { ImageBox, ShareLink, Title } from '@/features/ui'
-import { Box } from '@mui/material'
+import { useTranslation } from '@/features/i18n'
 
 export default function ContentPage({
-  t,
-  isoLocale = 'pt-BR',
-  description,
   title,
   titleBorderBottomColor = 'primary.main',
   image,
@@ -19,7 +18,10 @@ export default function ContentPage({
   author,
   date,
   url,
+  ns = ['common'],
 }) {
+  const { t, isoLocale } = useTranslation(ns)
+
   return (
     <Box>
       <Box

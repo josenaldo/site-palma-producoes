@@ -34,19 +34,18 @@ export async function getStaticProps({ params }) {
   return propsWrapper
 }
 
-export default function HomePage({ isoLocale, depoimentos, servicos }) {
-  const { t } = useTranslation(['common', 'home'])
-
+// TODo: add SEO
+export default function HomePage({ depoimentos, servicos }) {
   return (
-    <AppLayout t={t} isoLocale={isoLocale}>
+    <AppLayout>
       <Stack>
-        <HomeHero t={t} />
-        <HomeIntro t={t} />
-        <HomeWho t={t} />
-        <HomeVideo t={t} />
-        <HomeServices t={t} servicos={servicos} />
-        <HomeTestimonials t={t} depoimentos={depoimentos} />
-        <HomeWish t={t} />
+        <HomeHero />
+        <HomeIntro />
+        <HomeWho />
+        <HomeVideo />
+        <HomeServices servicos={servicos} />
+        <HomeTestimonials depoimentos={depoimentos} />
+        <HomeWish />
       </Stack>
     </AppLayout>
   )

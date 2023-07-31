@@ -27,8 +27,6 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function SearchPage({ isoLocale, locale, page }) {
-  console.log('SearchPage', { isoLocale, locale, page })
-
   const { t } = useTranslation(['common', 'pesquisa'])
 
   const [query, setQuery] = useState('')
@@ -82,8 +80,6 @@ export default function SearchPage({ isoLocale, locale, page }) {
       title={page.title}
       description={page.description}
       image={page.image}
-      isoLocale={isoLocale}
-      t={t}
     >
       <Container>
         <PageHeader
@@ -96,10 +92,9 @@ export default function SearchPage({ isoLocale, locale, page }) {
           setQuery={setQuery}
           handleSearch={handleSearch}
           loading={loading}
-          t={t}
         />
 
-        <SearchResults results={results} t={t} />
+        <SearchResults results={results} />
       </Container>
     </AppLayout>
   )

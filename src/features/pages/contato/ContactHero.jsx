@@ -1,8 +1,11 @@
-import { Link } from '@/features/ui'
-import { Hero } from '@/features/ui/Hero'
 import { Box } from '@mui/material'
 
-export default function ContactHero({ t }) {
+import { useTranslation } from '@/features/i18n'
+import { Hero } from '@/features/ui'
+
+export default function ContactHero() {
+  const { t } = useTranslation(['common', 'contato'])
+
   return (
     <Box
       sx={{

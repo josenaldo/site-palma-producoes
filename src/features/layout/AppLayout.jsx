@@ -8,14 +8,9 @@ import { seoConfig, APP_DEFAULT_IMAGE } from '@/data'
 
 import { useTranslation } from '@/features/i18n'
 
-export default function AppLayout({
-  title,
-  description,
-  image,
-  isoLocale,
-  children,
-}) {
-  const { t } = useTranslation(['common'])
+export default function AppLayout({ title, description, image, children }) {
+  const { t, isoLocale } = useTranslation(['common'])
+
   const og = useMemo(() => {
     const imageObject = image
       ? {
@@ -42,9 +37,9 @@ export default function AppLayout({
     <Box>
       <NextSeo title={title} description={description} openGraph={og} />
 
-      <Header t={t} />
+      <Header />
       <main id="__next">{children}</main>
-      <Footer t={t} />
+      <Footer />
     </Box>
   )
 }

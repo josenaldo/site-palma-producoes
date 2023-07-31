@@ -14,8 +14,9 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-
 import CloseIcon from '@mui/icons-material/Close'
+
+import { useTranslation } from '@/features/i18n'
 
 const iconFontSize = {
   xs: 40,
@@ -45,6 +46,7 @@ function getHref(t, url, netUrl) {
   const fullUrl = process.env.NEXT_PUBLIC_SITE_URL + url
   return netUrl + fullUrl
 }
+
 const networks = [
   {
     key: 'shareFacebook',
@@ -87,14 +89,9 @@ const networks = [
   },
 ]
 
-export default function ShareDialog({
-  title,
-  description,
-  url,
-  open,
-  onClose,
-  t = () => null,
-}) {
+export default function ShareDialog({ description, url, open, onClose }) {
+  const { t } = useTranslation(['common'])
+
   const handleClose = () => {
     onClose()
   }

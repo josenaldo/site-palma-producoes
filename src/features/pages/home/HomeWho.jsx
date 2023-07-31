@@ -1,8 +1,13 @@
-import { ButtonLink, Title } from '@/features/ui'
 import { Box, Container, Typography } from '@mui/material'
+
 import Image from 'next/image'
 
-export default function HomeWho({ t }) {
+import { useTranslation } from '@/features/i18n'
+import { ButtonLink, Title } from '@/features/ui'
+
+export default function HomeWho() {
+  const { t } = useTranslation(['common', 'home'])
+
   const texts = t('home:who.text', {
     returnObjects: true,
     postProcess: 'markdown',

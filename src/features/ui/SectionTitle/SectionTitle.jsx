@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material'
 
+// TODO: Verificar se não é melhor mover para outro lugar
 export default function SectionTitle({ children, color = 'text.primary' }) {
   return (
     <Typography

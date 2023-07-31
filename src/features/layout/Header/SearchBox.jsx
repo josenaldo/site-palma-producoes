@@ -1,12 +1,6 @@
 import { Box, Button, TextField } from '@mui/material'
-import { styled } from '@mui/material/styles'
 
-const SearchTextField = styled(TextField)({
-  '& .MuiInputBase-root': {
-    height: '38px !important',
-  },
-})
-
+// TODO: colocar campo de busca no menu
 export default function SearchBox({ buttonColor = 'white' }) {
   return (
     <Box
@@ -16,9 +10,9 @@ export default function SearchBox({ buttonColor = 'white' }) {
         gap: 2,
       }}
     >
-      <SearchTextField
+      <TextField
         variant="outlined"
-        placeholder="Digite o produto"
+        placeholder="Search"
         sx={{
           backgroundColor: 'common.white',
           color: 'common.black',
@@ -27,6 +21,9 @@ export default function SearchBox({ buttonColor = 'white' }) {
             xs: '100%',
             sm: '145px',
             lg: '170px',
+          },
+          '& .MuiInputBase-root': {
+            height: '380px !important',
           },
         }}
       />
