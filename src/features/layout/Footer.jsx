@@ -47,6 +47,7 @@ export default function Footer() {
           variant="body2"
           sx={{
             fontSize: '0.7rem',
+            py: 1,
           }}
         >
           &copy; {t('common:footer:copyright')}

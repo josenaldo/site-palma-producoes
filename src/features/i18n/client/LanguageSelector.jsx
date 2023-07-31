@@ -49,7 +49,11 @@ export default function LanguageSelector({ t }) {
   }
 
   return (
-    <Box>
+    <Box
+      sx={{
+        py: 1,
+      }}
+    >
       <Button
         id="basic-button"
         variant="outlined"
