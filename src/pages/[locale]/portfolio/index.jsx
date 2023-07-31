@@ -32,10 +32,11 @@ export { getStaticPaths }
 
 export default function PortfolioPage({ isoLocale, page, portfolioList }) {
   const { t } = useTranslation(['common', 'portfolio'])
+
   const [pageIndex, setPageIndex] = useState(1)
   const [loading, setLoading] = useState(false)
 
-  const pageSize = 6
+  const pageSize = process.env.NEXT_PUBLIC_DEFAULT_PAGE_SIZE || 10
   const currentPage = pageIndex > 0 ? pageIndex - 1 : 0
 
   const portfoliosToShow = portfolioList.slice(
@@ -44,7 +45,7 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
   )
 
   const handleChangePage = (event, value) => {
-    console.log('handleChangePage', { event, value })
+    setLoading(true)
     setPageIndex(value)
     setLoading(false)
   }
@@ -90,8 +91,8 @@ export default function PortfolioPage({ isoLocale, page, portfolioList }) {
         <Pagination
           onChange={handleChangePage}
           page={pageIndex}
-          count={8}
-          loading={false}
+          count={portfolioList.length}
+          loading={loading}
           showEllipses={false}
         />
       </Container>

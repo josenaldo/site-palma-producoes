@@ -13,9 +13,8 @@ import { ContentTags } from '@/features/content/ContentTags'
 import { ContentAuthor } from '@/features/content/ContentAuthor'
 import { ContentDate } from '@/features/content/ContentDate'
 import { ShareLink } from '@/features/ui/ShareLink'
-
+import { useTranslation } from 'next-i18next'
 export default function ContentCard({
-  t,
   isoLocale = 'pt-BR',
   url,
   title,
@@ -25,6 +24,8 @@ export default function ContentCard({
   date,
   author,
 }) {
+  const { t } = useTranslation(['common'])
+
   const [brightness, setBrightness] = useState(40)
 
   if (!t) return null

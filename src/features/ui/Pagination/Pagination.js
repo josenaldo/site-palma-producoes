@@ -14,6 +14,10 @@ export default function Pagination({
   boundaryCount = 0,
   showEllipses = true,
 }) {
+  if (!count) return null
+
+  if (count <= 1) return null
+
   return (
     <Box
       sx={{
