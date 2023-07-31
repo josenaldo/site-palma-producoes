@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from '@/features/i18n'
 
 import {
   getStaticPaths as i18nGetStaticPaths,
@@ -59,7 +59,7 @@ export default function PortfolioPage({ portfolio, ...props }) {
   const { t } = useTranslation(['common', 'portfolio'])
 
   return (
-    <AppLayout t={t} >
+    <AppLayout t={t}>
       <Container
         sx={{
           display: 'flex',

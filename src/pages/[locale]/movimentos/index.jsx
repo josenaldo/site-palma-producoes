@@ -1,17 +1,18 @@
-import { useTranslation } from 'next-i18next'
+import { useEffect, useState } from 'react'
 
 import { Box, Container } from '@mui/material'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
+import { AppLayout } from '@/features/layout'
+import { useTranslation } from '@/features/i18n'
+import { PageHeader, Pagination } from '@/features/ui'
 import {
   ContentCard,
   ContentImageCard,
   pagesContentService,
   postContentService,
 } from '@/features/content'
-
-import { PageHeader, Pagination } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'movimentos'])({
@@ -36,20 +37,15 @@ export async function getStaticProps({ params }) {
   return propsWrapper
 }
 
-import { AppLayout } from '@/features/layout'
-import { useEffect, useState } from 'react'
-
 export { getStaticPaths }
 
 export default function MovimentosPage({
-  isoLocale,
-  locale,
   page,
   itemsPerPage,
   posts,
   pageCount,
 }) {
-  const { t } = useTranslation(['common', 'movimentos'])
+  const { t, isoLocale, locale } = useTranslation(['common', 'movimentos'])
 
   const [pageIndex, setPageIndex] = useState(1)
   const [loading, setLoading] = useState(false)
@@ -124,7 +120,6 @@ function FirstTierHighlightPost({ t, post }) {
     <Box>
       <ContentImageCard
         key={post.slug}
-        t={t}
         url={post.url}
         title={post.title}
         description={post.description}
@@ -151,7 +146,6 @@ function SecondTierHighlightPosts({ t, posts }) {
       {posts.map((post) => (
         <ContentImageCard
           key={post.slug}
-          t={t}
           url={post.url}
           title={post.title}
           description={post.description}
@@ -178,7 +172,6 @@ function NonHighlightPosts({ t, posts, isoLocale }) {
       {posts.map((post) => (
         <ContentCard
           key={post.slug}
-          t={t}
           url={post.url}
           title={post.title}
           description={post.description}

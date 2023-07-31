@@ -1,5 +1,3 @@
-import { useTranslation } from 'next-i18next'
-
 import {
   Box,
   Card,
@@ -18,6 +16,7 @@ import Image from 'next/image'
 
 import { palette } from '@/features/styles'
 import { AppLayout } from '@/features/layout'
+import { useTranslation } from '@/features/i18n'
 
 const colors = [
   palette.primary.main,

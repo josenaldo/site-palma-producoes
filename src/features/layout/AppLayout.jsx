@@ -6,14 +6,16 @@ import { Header } from '@/features/layout/Header'
 import { useMemo } from 'react'
 import { seoConfig, APP_DEFAULT_IMAGE } from '@/data'
 
+import { useTranslation } from '@/features/i18n'
+
 export default function AppLayout({
   title,
   description,
   image,
   isoLocale,
   children,
-  t,
 }) {
+  const { t } = useTranslation(['common'])
   const og = useMemo(() => {
     const imageObject = image
       ? {

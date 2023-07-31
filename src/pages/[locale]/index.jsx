@@ -1,7 +1,8 @@
 import { Stack } from '@mui/material'
-import { useTranslation } from 'next-i18next'
 
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
+
+import { AppLayout } from '@/features/layout'
 import {
   HomeHero,
   HomeIntro,
@@ -11,7 +12,7 @@ import {
   HomeWho,
   HomeWish,
 } from '@/features/pages/home'
-import { AppLayout } from '@/features/layout'
+import { useTranslation } from '@/features/i18n'
 
 import {
   depoimentoContentService,

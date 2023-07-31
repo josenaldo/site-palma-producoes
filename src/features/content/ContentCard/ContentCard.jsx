@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import {
   Box,
   Card,
@@ -8,14 +9,11 @@ import {
   Typography,
 } from '@mui/material'
 
-import { ButtonLink, ImageBox, Link } from '@/features/ui'
-import { ContentTags } from '@/features/content/ContentTags'
-import { ContentAuthor } from '@/features/content/ContentAuthor'
-import { ContentDate } from '@/features/content/ContentDate'
-import { ShareLink } from '@/features/ui/ShareLink'
-import { useTranslation } from 'next-i18next'
+import { ButtonLink, ImageBox, Link, ShareLink } from '@/features/ui'
+import { ContentTags, ContentAuthor, ContentDate } from '@/features/content'
+import { useTranslation } from '@/features/i18n'
+
 export default function ContentCard({
-  isoLocale = 'pt-BR',
   url,
   title,
   description,
@@ -24,7 +22,7 @@ export default function ContentCard({
   date,
   author,
 }) {
-  const { t } = useTranslation(['common'])
+  const { t, isoLocale } = useTranslation(['common'])
 
   const [brightness, setBrightness] = useState(40)
 

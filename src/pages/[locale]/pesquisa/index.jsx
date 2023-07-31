@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 
-import { useTranslation } from 'next-i18next'
-
 import { Box, Container } from '@mui/material'
 
 import { AppLayout } from '@/features/layout'
@@ -11,6 +9,7 @@ import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { pagesContentService } from '@/features/content'
 import { PageHeader } from '@/features/ui'
 import { SearchForm, SearchResults } from '@/features/search'
+import { useTranslation } from '@/features/i18n'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'pesquisa'])({ params })

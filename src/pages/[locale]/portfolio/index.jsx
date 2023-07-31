@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from '@/features/i18n'
 
 import { Box, Container } from '@mui/material'
 

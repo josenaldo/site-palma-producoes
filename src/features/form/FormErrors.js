@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material'
 
 import { ErrorMessage } from '@hookform/error-message'
-import { useTranslation } from 'next-i18next'
+
+import { useTranslation } from '@/features/i18n'
 
 export default function FormErrors({ errors, name, label }) {
   const { t } = useTranslation(['common'])
