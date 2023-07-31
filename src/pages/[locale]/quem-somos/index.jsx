@@ -12,6 +12,7 @@ import { AppLayout } from '@/features/layout'
 import { Parcerias, Socias } from '@/features/pages/quem-somos'
 import { ImageBox, PageHeader } from '@/features/ui'
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'quem-somos'])({
     params,

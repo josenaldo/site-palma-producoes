@@ -52,14 +52,6 @@ const typography = {
   h6: {
     fontFamily: bebasKai.style.fontFamily,
   },
-
-  // TODO - remove this and change to use the Title component
-  sectionTitle: {
-    fontFamily: titleFont.style.fontFamily,
-    fontSize: 'clamp(2.4rem, calc(0.44rem + 2.63vw), 2.96rem);',
-    fontWeight: 400,
-    textAlign: 'center',
-  },
 }
 
 export { titleFont, textFont }

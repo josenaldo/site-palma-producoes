@@ -14,6 +14,7 @@ import { PageHeader, Pagination } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
 import { useState } from 'react'
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const props = await makeStaticProps(['common', 'portfolio'])({ params })
   const locale = params?.locale || 'pt'

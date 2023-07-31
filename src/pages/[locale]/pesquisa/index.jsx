@@ -11,6 +11,7 @@ import { PageHeader } from '@/features/ui'
 import { SearchForm, SearchResults } from '@/features/search'
 import { useTranslation } from '@/features/i18n'
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'pesquisa'])({ params })
   const locale = params?.locale || 'pt'

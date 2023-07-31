@@ -14,6 +14,7 @@ import {
   postContentService,
 } from '@/features/content'
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'movimentos'])({
     params,

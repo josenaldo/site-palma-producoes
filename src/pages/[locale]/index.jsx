@@ -12,7 +12,6 @@ import {
   HomeWho,
   HomeWish,
 } from '@/features/pages/home'
-import { useTranslation } from '@/features/i18n'
 
 import {
   depoimentoContentService,
@@ -21,6 +20,7 @@ import {
 
 export { getStaticPaths }
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'home'])({ params })
   const locale = params?.locale || 'pt'

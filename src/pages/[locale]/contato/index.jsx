@@ -5,8 +5,8 @@ import { AppLayout } from '@/features/layout'
 import { pagesContentService } from '@/features/content'
 import { PageHeader } from '@/features/ui'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
-import { useTranslation } from '@/features/i18n'
 
+// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
   const propsWrapper = await makeStaticProps(['common', 'contato'])({
     params,
