@@ -35,7 +35,7 @@ export default function SearchForm({ handleSearch, query, setQuery, loading }) {
         }}
       >
         <TextField
-          placeholder="Pesquisa"
+          placeholder={t('pesquisa:searchPlaceholder')}
           id="input-search-page"
           value={query}
           color="secondary"

@@ -1,5 +1,5 @@
 ---
-title: "How Palma Produções Works with Audiovisual Content Creation"
+title: "2 - How Palma Produções Works with Audiovisual Content Creation"
 description: "Discover how Palma Produções utilizes its expertise in audiovisual content creation to bring your brand's story to life and engage your target audience."
 date: 2023-07-19 13:00:00 -0300
 author: Emanuela Palma
