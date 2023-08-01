@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material'
 
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
+import { getStaticPaths } from '@/features/i18n/server'
 
 import { AppLayout } from '@/features/layout'
 import {
@@ -17,12 +17,11 @@ import {
   depoimentoContentService,
   servicoContentService,
 } from '@/features/content'
+import { buildStaticProps } from '@/features/pages/server'
 
-export { getStaticPaths }
-
-// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
-  const propsWrapper = await makeStaticProps(['common', 'home'])({ params })
+  const propsWrapper = await buildStaticProps(params, 'home')
+
   const locale = params?.locale || 'pt'
 
   const depoimentos = depoimentoContentService.getAllDepoimentos(locale)
@@ -34,10 +33,16 @@ export async function getStaticProps({ params }) {
   return propsWrapper
 }
 
+export { getStaticPaths }
+
 // TODo: add SEO
-export default function HomePage({ depoimentos, servicos }) {
+export default function HomePage({ page, depoimentos, servicos }) {
   return (
-    <AppLayout>
+    <AppLayout
+      title={page.title}
+      description={page.description}
+      image={page.image}
+    >
       <Stack>
         <HomeHero />
         <HomeIntro />

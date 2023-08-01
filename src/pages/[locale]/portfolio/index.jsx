@@ -2,31 +2,23 @@ import { useState } from 'react'
 
 import { Box, Container } from '@mui/material'
 
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
+import { getStaticPaths } from '@/features/i18n/server'
 
-import {
-  ContentImageCard,
-  pagesContentService,
-  portfolioContentService,
-} from '@/features/content'
+import { ContentImageCard, portfolioContentService } from '@/features/content'
 
 import { AppLayout } from '@/features/layout'
 import { PageHeader } from '@/features/pages'
 import { Pagination } from '@/features/ui'
+import { buildStaticProps } from '@/features/pages/server'
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
-  const props = await makeStaticProps(['common', 'portfolio'])({ params })
+  const propsWrapper = await buildStaticProps(params, 'portfolio')
+
   const locale = params?.locale || 'pt'
-  const url = `/${locale}/portfolio`
-
-  const page = pagesContentService.getPageData(url)
   const portfolioList = portfolioContentService.getAllPortfolio(locale)
+  propsWrapper.props.portfolioList = portfolioList
 
-  props.props.page = page
-  props.props.portfolioList = portfolioList
-
-  return props
+  return propsWrapper
 }
 
 export { getStaticPaths }

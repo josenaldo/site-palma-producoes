@@ -2,35 +2,28 @@ import { useEffect, useState } from 'react'
 
 import { Box, Container } from '@mui/material'
 
-import { AppLayout } from '@/features/layout'
-import { useTranslation } from '@/features/i18n'
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
-import { PageHeader } from '@/features/pages'
-import { Pagination } from '@/features/ui'
 import {
   ContentCard,
   ContentImageCard,
-  pagesContentService,
   postContentService,
 } from '@/features/content'
+import { AppLayout } from '@/features/layout'
+import { useTranslation } from '@/features/i18n'
+import { getStaticPaths } from '@/features/i18n/server'
+import { PageHeader } from '@/features/pages'
+import { buildStaticProps } from '@/features/pages/server'
+import { Pagination } from '@/features/ui'
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
-  const propsWrapper = await makeStaticProps(['common', 'movimentos'])({
-    params,
-  })
-  const locale = params?.locale || 'pt'
-  const url = `/${locale}/movimentos`
+  const propsWrapper = await buildStaticProps(params, 'movimentos')
 
-  const page = pagesContentService.getPageData(url)
+  const locale = params?.locale || 'pt'
 
   const startPage = 1
   const itemsPerPage = process.env.NEXT_PUBLIC_DEFAULT_PAGE_SIZE || 10
   const pageCount = postContentService.getPostsPageCount(locale, itemsPerPage)
   const posts = postContentService.getPosts(locale, startPage, itemsPerPage)
 
-  propsWrapper.props.locale = locale
-  propsWrapper.props.page = page
   propsWrapper.props.itemsPerPage = itemsPerPage
   propsWrapper.props.pageCount = pageCount
   propsWrapper.props.posts = posts

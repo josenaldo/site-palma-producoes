@@ -1,22 +1,13 @@
 import { Box, Container } from '@mui/material'
 
-import { pagesContentService } from '@/features/content'
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
+import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
 import { PageHeader } from '@/features/pages'
+import { buildStaticProps } from '@/features/pages/server'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
-  const propsWrapper = await makeStaticProps(['common', 'contato'])({
-    params,
-  })
-  const locale = params?.locale || 'pt'
-  const url = `/${locale}/contato`
-
-  const page = pagesContentService.getPageData(url)
-
-  propsWrapper.props.page = page
+  const propsWrapper = await buildStaticProps(params, 'contato')
 
   return propsWrapper
 }

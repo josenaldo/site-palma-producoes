@@ -2,25 +2,17 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 
-import { Box, Container } from '@mui/material'
+import { Container } from '@mui/material'
 
-import { pagesContentService } from '@/features/content'
 import { useTranslation } from '@/features/i18n'
+import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
 import { PageHeader } from '@/features/pages'
+import { buildStaticProps } from '@/features/pages/server'
 import { SearchForm, SearchResults } from '@/features/search'
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
-  const propsWrapper = await makeStaticProps(['common', 'pesquisa'])({ params })
-  const locale = params?.locale || 'pt'
-  const url = `/${locale}/pesquisa`
-
-  const page = pagesContentService.getPageData(url)
-
-  propsWrapper.props.page = page
-  propsWrapper.props.locale = locale
+  const propsWrapper = await buildStaticProps(params, 'pesquisa')
 
   return propsWrapper
 }
@@ -28,8 +20,8 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 // TODO: adicionar i18n
-export default function SearchPage({ isoLocale, locale, page }) {
-  const { t } = useTranslation(['common', 'pesquisa'])
+export default function SearchPage({ page }) {
+  const { locale } = useTranslation(['common', 'pesquisa'])
 
   const [query, setQuery] = useState('')
   const [loading, setLoading] = useState(false)
