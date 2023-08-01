@@ -3,7 +3,6 @@ import { Box } from '@mui/material'
 import { ContentBlock } from '@/features/content'
 import { Title } from '@/features/ui'
 
-// TODO: Verificar se não é melhor mover para outro lugar
 export default function PageHeader({
   title,
   text,
