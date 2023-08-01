@@ -30,7 +30,9 @@ export default function HomeServices({ servicos }) {
           gap: 8,
         }}
       >
-        <Title variant="h3">{t('home:services.title')}</Title>
+        <Title variant="h3" borderBottomColor="transparent">
+          {t('home:services.title')}
+        </Title>
         <Box
           sx={{
             display: 'flex',

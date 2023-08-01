@@ -1,9 +1,9 @@
 import { Box, Container } from '@mui/material'
 
+import { pagesContentService } from '@/features/content'
 import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
-import { pagesContentService } from '@/features/content'
-import { PageHeader } from '@/features/ui'
+import { PageHeader } from '@/features/pages'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
 
 // TODO: refatorar getStaticProps

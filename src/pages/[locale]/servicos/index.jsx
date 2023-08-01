@@ -4,8 +4,9 @@ import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 import { pagesContentService, servicoContentService } from '@/features/content'
 import { AppLayout } from '@/features/layout'
+import { PageHeader } from '@/features/pages'
 import { BannerPortfolio, ServiceList } from '@/features/pages/servicos'
-import { ImageBox, PageHeader } from '@/features/ui'
+import { ImageBox } from '@/features/ui'
 
 export { getStaticPaths }
 

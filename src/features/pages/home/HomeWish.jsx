@@ -32,7 +32,11 @@ export default function HomeWish() {
       >
         <Container>
           <Stack spacing={2} justifyContent="center" alignItems="center">
-            <Title variant="h3" color="text.light">
+            <Title
+              variant="h3"
+              color="text.light"
+              borderBottomColor="transparent"
+            >
               {t('home:wish.title')}
             </Title>
 

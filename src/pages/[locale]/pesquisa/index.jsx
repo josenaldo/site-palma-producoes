@@ -4,12 +4,12 @@ import axios from 'axios'
 
 import { Box, Container } from '@mui/material'
 
-import { AppLayout } from '@/features/layout'
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 import { pagesContentService } from '@/features/content'
-import { PageHeader } from '@/features/ui'
-import { SearchForm, SearchResults } from '@/features/search'
 import { useTranslation } from '@/features/i18n'
+import { AppLayout } from '@/features/layout'
+import { PageHeader } from '@/features/pages'
+import { SearchForm, SearchResults } from '@/features/search'
+import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
 
 // TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {
@@ -27,6 +27,7 @@ export async function getStaticProps({ params }) {
 
 export { getStaticPaths }
 
+// TODO: adicionar i18n
 export default function SearchPage({ isoLocale, locale, page }) {
   const { t } = useTranslation(['common', 'pesquisa'])
 

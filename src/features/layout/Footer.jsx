@@ -5,7 +5,6 @@ import { useTranslation } from '@/features/i18n'
 import { LanguageSelector } from '@/features/i18n/client'
 import { ContactLinks, SocialLinks } from '@/features/ui'
 
-// TODO: corrigir espaçmento entre language selector, contatos, copyright e botoes sociais
 export default function Footer() {
   const { t } = useTranslation(['common'])
 

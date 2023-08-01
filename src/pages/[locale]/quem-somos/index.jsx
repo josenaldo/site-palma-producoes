@@ -10,7 +10,8 @@ import {
 
 import { AppLayout } from '@/features/layout'
 import { Parcerias, Socias } from '@/features/pages/quem-somos'
-import { ImageBox, PageHeader } from '@/features/ui'
+import { PageHeader } from '@/features/pages'
+import { ImageBox } from '@/features/ui'
 
 // TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {

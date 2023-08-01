@@ -1,4 +1,4 @@
-import { useTranslation } from '@/features/i18n'
+import { useState } from 'react'
 
 import { Box, Container } from '@mui/material'
 
@@ -10,9 +10,9 @@ import {
   portfolioContentService,
 } from '@/features/content'
 
-import { PageHeader, Pagination } from '@/features/ui'
 import { AppLayout } from '@/features/layout'
-import { useState } from 'react'
+import { PageHeader } from '@/features/pages'
+import { Pagination } from '@/features/ui'
 
 // TODO: refatorar getStaticProps
 export async function getStaticProps({ params }) {

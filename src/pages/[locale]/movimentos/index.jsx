@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 
 import { Box, Container } from '@mui/material'
 
-import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
-
 import { AppLayout } from '@/features/layout'
 import { useTranslation } from '@/features/i18n'
-import { PageHeader, Pagination } from '@/features/ui'
+import { getStaticPaths, makeStaticProps } from '@/features/i18n/server'
+import { PageHeader } from '@/features/pages'
+import { Pagination } from '@/features/ui'
 import {
   ContentCard,
   ContentImageCard,

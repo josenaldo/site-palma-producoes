@@ -16,11 +16,7 @@ export { Link } from './Link'
 
 export { Logo } from './Logo'
 
-export { PageHeader } from './PageHeader'
-
 export { Pagination } from './Pagination'
-
-export { SectionTitle } from './SectionTitle'
 
 export { ShareLink } from './ShareLink'
 
