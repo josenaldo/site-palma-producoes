@@ -12,10 +12,12 @@ import {
   MenuItem,
 } from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language'
+import { useTranslation } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
-export default function LanguageSelector({ t }) {
+export default function LanguageSelector() {
+  const { t } = useTranslation(['common'])
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -86,7 +88,7 @@ export default function LanguageSelector({ t }) {
               />
             </ListItemIcon>
             <ListItemText>
-              {t(`common:languageSelector.${language}`, { ns: 'common' })}
+              {t('common:languageSelector.' + language)}
             </ListItemText>
           </MenuItem>
         ))}

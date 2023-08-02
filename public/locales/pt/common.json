@@ -23,14 +23,7 @@
   },
   "share": {
     "title": "Compartilhe a Palma",
-    "text": "Obrigado!",
-    "social": {
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "linkedin": "LinkedIn",
-      "whatsapp": "whatsapp",
-      "telegram": "Telegram"
-    }
+    "text": "Obrigado!"
   },
   "form": {
     "error": {
