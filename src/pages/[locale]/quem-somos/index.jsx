@@ -1,6 +1,5 @@
 import { Container } from '@mui/material'
 
-
 import { sociaContentService, parceriaContentService } from '@/features/content'
 import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
@@ -38,6 +37,7 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
           alt={page.image.alt}
           width={page.image.width}
           height={page.image.height}
+          priority
         />
 
         <Socias socias={socias} />

@@ -1,7 +1,18 @@
 import { Box } from '@mui/material'
 import Image from 'next/image'
 
-export default function ImageBox({ src, alt, width, height, sx = {} }) {
+import { useImageSizes } from '@/features/hooks'
+
+export default function ImageBox({
+  src,
+  alt,
+  width,
+  height,
+  priority = false,
+  sx = {},
+}) {
+  const sizes = useImageSizes(width)
+
   return (
     <Box
       sx={{
@@ -14,7 +25,7 @@ export default function ImageBox({ src, alt, width, height, sx = {} }) {
         ...sx,
       }}
     >
-      <Image src={src} fill alt={alt} priority />
+      <Image src={src} fill alt={alt} priority={priority} sizes={sizes} />
     </Box>
   )
 }
