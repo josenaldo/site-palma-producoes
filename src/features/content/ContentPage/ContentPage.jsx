@@ -35,7 +35,13 @@ export default function ContentPage({
           alignItems: 'center',
         }}
       >
-        <Title borderBottomColor={titleBorderBottomColor}>{title}</Title>
+        <Title
+          variant="h1"
+          componente="h1"
+          borderBottomColor={titleBorderBottomColor}
+        >
+          {title}
+        </Title>
         <Box
           sx={{
             display: 'flex',
@@ -59,7 +65,7 @@ export default function ContentPage({
       />
 
       <Box>
-        <ContentBlock content={body.raw} />
+        <ContentBlock body={body} />
       </Box>
     </Box>
   )

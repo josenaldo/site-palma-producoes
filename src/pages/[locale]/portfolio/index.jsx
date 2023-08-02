@@ -48,11 +48,7 @@ export default function PortfolioPage({ page, portfolioList }) {
       image={page.image}
     >
       <Container>
-        <PageHeader
-          title={page.title}
-          text={page.body.raw}
-          direction="column"
-        />
+        <PageHeader title={page.title} text={page.body} direction="column" />
 
         <Box
           sx={{

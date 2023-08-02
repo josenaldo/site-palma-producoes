@@ -1,60 +1,42 @@
-import { Box, Divider } from '@mui/material'
+import { Box, Divider, Typography } from '@mui/material'
 
-import { MDXProvider } from '@mdx-js/react'
-import { Remark } from 'react-remark'
+import { useMDXComponent } from 'next-contentlayer/hooks'
 
-import remarkGfm from 'remark-gfm'
-import remarkParse from 'remark-parse'
-
-import externalLinks from 'rehype-external-links'
-import rehypePrism from 'rehype-prism-plus'
-import rehypeRaw from 'rehype-raw'
-
-import { Link, ResponsiveImage, Code, Blockquote } from '@/features/ui'
+import {
+  Link,
+  ResponsiveImage,
+  Code,
+  Blockquote,
+  YoutubeVideo,
+} from '@/features/ui'
 
 import styles from './ContentBlock.module.css'
 
-export default function ContentBlock({ content, components = {} }) {
-  const remarkPlugins = [
-    remarkParse,
-    remarkGfm,
-    [
-      externalLinks,
-      {
-        target: '_blank',
-        rel: ['nofollow', 'noopener', 'noreferrer'],
-      },
-    ],
-  ]
+export default function ContentBlock({ body, components = {} }) {
+  const content = body?.code || body?.html || body?.raw || body
 
-  const rehypePlugins = [rehypeRaw, rehypePrism]
+  const MDXContent = useMDXComponent(content)
 
   const comp = {
     img: ResponsiveImage,
+    h1: (props) => <Typography component="h1" variant="h1" {...props} />,
+    h2: (props) => <Typography component="h2" variant="h2" {...props} />,
+    h3: (props) => <Typography component="h3" variant="h3" {...props} />,
+    h4: (props) => <Typography component="h4" variant="h4" {...props} />,
+    h5: (props) => <Typography component="h5" variant="h5" {...props} />,
+    h6: (props) => <Typography component="h6" variant="h6" {...props} />,
+    p: (props) => <Typography component="p" variant="body1" {...props} />,
     a: Link,
     pre: Code,
     hr: Divider,
     blockquote: Blockquote,
+    Youtube: YoutubeVideo,
     ...components,
   }
 
   return (
     <Box className={styles.markdownBody}>
-      <MDXProvider>
-        <Remark
-          remarkPlugins={remarkPlugins}
-          rehypePlugins={rehypePlugins}
-          remarkRehypeOptions={{
-            allowDangerousHtml: true,
-          }}
-          rehypeReactOptions={{ components: comp }}
-          onError={(error) => {
-            console.error(error)
-          }}
-        >
-          {content}
-        </Remark>
-      </MDXProvider>
+      <MDXContent components={comp} />
     </Box>
   )
 }

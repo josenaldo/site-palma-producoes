@@ -32,11 +32,7 @@ export default function ContatoPage({ isoLocale, page }) {
           mb: 8,
         }}
       >
-        <PageHeader
-          title={page.title}
-          text={page.body.raw}
-          direction="column"
-        />
+        <PageHeader title={page.title} text={page.body} direction="column" />
 
         <ContactHero />
 

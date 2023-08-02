@@ -30,7 +30,7 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
       image={page.image}
     >
       <Container>
-        <PageHeader title={page.title} text={page.body.raw} />
+        <PageHeader title={page.title} text={page.body} />
 
         <ImageBox
           src={page.image.url}

@@ -30,7 +30,7 @@ export default function ServicosPage({ page, servicos }) {
       image={page.image}
     >
       <Container sx={{ mb: 4 }}>
-        <PageHeader title={page.title} text={page.body.raw} />
+        <PageHeader title={page.title} text={page.body} />
 
         <ImageBox
           src={page.image.url}

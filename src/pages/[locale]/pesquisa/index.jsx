@@ -85,11 +85,7 @@ export default function SearchPage({ page, itemsPerPage }) {
       image={page.image}
     >
       <Container>
-        <PageHeader
-          title={page.title}
-          text={page.body.raw}
-          direction="column"
-        />
+        <PageHeader title={page.title} text={page.body} direction="column" />
 
         <SearchForm
           query={query}

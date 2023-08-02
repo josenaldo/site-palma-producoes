@@ -45,7 +45,7 @@ export default function PageHeader({
             },
           }}
         >
-          <ContentBlock content={text} />
+          <ContentBlock body={text} />
         </Box>
       )}
     </Box>

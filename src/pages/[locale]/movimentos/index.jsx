@@ -72,11 +72,7 @@ export default function MovimentosPage({
       t={t}
     >
       <Container>
-        <PageHeader
-          title={page.title}
-          text={page.body.raw}
-          direction="column"
-        />
+        <PageHeader title={page.title} text={page.body} direction="column" />
 
         {pageIndex === 1 && postsToShow.length > 0 && (
           <FirstTierHighlightPost t={t} post={postsToShow[0]} />
