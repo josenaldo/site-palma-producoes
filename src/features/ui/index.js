@@ -4,6 +4,8 @@ export { Blockquote } from './Blockquote'
 
 export { ButtonLink } from './ButtonLink'
 
+export { Carousel } from './Carousel'
+
 export { Code } from './Code'
 
 export { ContactLinks } from './ContactLinks'

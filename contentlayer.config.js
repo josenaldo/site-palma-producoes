@@ -5,12 +5,14 @@ import {
 } from 'contentlayer/source-files'
 
 import remarkGfm from 'remark-gfm'
+import remarkUnwrapImages from 'remark-unwrap-images'
 
 import externalLinks from 'rehype-external-links'
 import rehypePrism from 'rehype-prism-plus'
 
 const remarkPlugins = [
   remarkGfm,
+  remarkUnwrapImages,
   [
     externalLinks,
     {

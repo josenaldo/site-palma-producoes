@@ -9,7 +9,7 @@ tags:
 description:
   "O Documentário 'Mestre Sirso' é um exemplo do compromisso da Palma com a produção cultural de qualidade, destacando a vida de Mestre Sirso."
 image:
-  url: /images/content/portfolio/documentario-mestre-sirso.jpg?3
+  url: /images/content/portfolio/documentario-mestre-sirso.jpg
   alt: Documentário “Mestre Sirso"
   width: 1200
   height: 628
@@ -25,7 +25,21 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
 - **Diretor**:
 - **Roteiristas**:
 
-[CARROSSEL]
+<Carrossel>
+
+  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-01.jpg)
+
+  ![Foto2](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-02.jpg)
+
+  ![Foto3](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-03.jpg)
+
+  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-04.jpg)
+
+  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-05.jpg)
+
+  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-06.jpg)
+
+</Carrossel>
 
 ## Trailers
 
