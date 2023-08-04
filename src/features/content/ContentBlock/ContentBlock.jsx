@@ -26,7 +26,9 @@ export default function ContentBlock({ body, components = {} }) {
     pre: Code,
     hr: Divider,
     blockquote: Blockquote,
-    Youtube: YoutubeVideo,
+    Youtube: ({ url, props }) => (
+      <YoutubeVideo url={url} {...props} sx={{ my: 4 }} />
+    ),
     Carrossel: ({ children, ...props }) => {
       const cleanedChildren = React.Children.toArray(children).filter(
         (child) => {

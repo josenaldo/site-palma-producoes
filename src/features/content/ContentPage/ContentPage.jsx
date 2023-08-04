@@ -19,6 +19,7 @@ export default function ContentPage({
   date,
   url,
   ns = ['common'],
+  showMainImage = true,
 }) {
   const { t, isoLocale } = useTranslation(ns)
 
@@ -35,6 +36,15 @@ export default function ContentPage({
           alignItems: 'center',
         }}
       >
+        {showMainImage && (
+          <ImageBox
+            src={image.url}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+          />
+        )}
+
         <Title
           variant="h1"
           componente="h1"
@@ -56,13 +66,6 @@ export default function ContentPage({
         </Box>
         <ContentTags tags={tags} backgroundColor="tertiary.main" />
       </Box>
-
-      <ImageBox
-        src={image.url}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
-      />
 
       <Box>
         <ContentBlock body={body} />

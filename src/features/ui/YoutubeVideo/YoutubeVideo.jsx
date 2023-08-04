@@ -4,6 +4,7 @@ export default function YoutubeVideo({
   url,
   aspectRatio = '16/9',
   width = '100%',
+  sx = {},
 }) {
   const videoId = url.split('v=')[1]
   const aspectRatioValue = aspectRatio.replace('/', 'x')
@@ -15,6 +16,7 @@ export default function YoutubeVideo({
       sx={{
         aspectRatio: aspectRatio,
         width: width,
+        ...sx,
       }}
       title="YouTube video player"
       frameBorder="0"

@@ -12,6 +12,11 @@ export default function Carousel({ children }) {
       NextIcon={<ChevronRightIcon sx={{ fontSize: '2.5rem' }} />}
       navButtonsAlwaysVisible={true}
       // IndicatorIcon={<StarIcon />}
+      indicatorContainerProps={{
+        style: {
+          paddingTop: '20px',
+        },
+      }}
       sx={{
         width: '100%',
         display: 'flex',
