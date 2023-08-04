@@ -1,12 +1,8 @@
 export { BannerBox } from './BannerBox'
 
-export { Blockquote } from './Blockquote'
-
 export { ButtonLink } from './ButtonLink'
 
 export { Carousel } from './Carousel'
-
-export { Code } from './Code'
 
 export { ContactLinks } from './ContactLinks'
 
@@ -24,8 +20,8 @@ export { ShareLink } from './ShareLink'
 
 export { SocialLinks } from './SocialLinks'
 
-export { YoutubeVideo } from './YoutubeVideo'
-
 export { Tag } from './Tag'
 
 export { Title } from './Title'
+
+export { YoutubeVideo } from './YoutubeVideo'

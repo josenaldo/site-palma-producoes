@@ -161,4 +161,4 @@ Venha fazer parte dessa história e seja parte da mudança que queremos ver no m
 
 ## Benfeitores
 
-<Lista items={benfeitores} />
+<Lista items={benfeitores} label="Pesquisa seu nome" />

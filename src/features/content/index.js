@@ -6,8 +6,7 @@ export { ContentImageCard } from './ContentImageCard'
 export { ContentPage } from './ContentPage'
 export { ContentTags } from './ContentTags'
 
-export { ResponsiveImage } from './ResponsiveImage'
-
+// TODO: extrair esses services para suas pastas
 export { default as pagesContentService } from './page-content-service'
 export { default as sociaContentService } from './socia-content-service'
 export { default as parceriaContentService } from './parceria-content-service'
