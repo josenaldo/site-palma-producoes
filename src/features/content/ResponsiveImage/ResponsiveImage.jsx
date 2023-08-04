@@ -4,18 +4,12 @@ import { ImageBox } from '@/features/ui'
 /**
  * Componente que insira imagens no conteúdo markdown e informe as dimensões da imagem.
  *
- * `![AltText {768x432} {priority} {caption: Photo by Someone}](/image.jpg)`
+ * `![AltText [768x432] [priority] [caption: Photo by Someone]](/image.jpg)`
  *
  * @param {*} props
  * @returns
  */
 export default function ResponsiveImage(props) {
-  // const alt = props.alt?.replace(/ *\{[^)]*\} */g, '')
-  // const metaSize = props.alt?.match(/\{([^)]+)x([^)]+)\}/g)
-
-  // const metaWidth = metaSize ? metaSize[0].match(/{([^}]+)x/) : null
-  // const metaHeight = metaSize ? metaSize[0].match(/x([^}]+)}/) : null
-
   const alt = props.alt?.replace(/\[[^\]]*\]/g, '').trim()
   const metaSize = props.alt?.match(/\[([^\]]+)\]/g)
 
@@ -44,7 +38,6 @@ export default function ResponsiveImage(props) {
           alt={alt}
           width={width}
           height={height}
-          // className="postImg"
           priority={isPriority}
         />
       </a>
