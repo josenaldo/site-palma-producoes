@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from '@mui/material'
+import { Box, Chip, Divider, TextField, Typography } from '@mui/material'
 
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
@@ -63,6 +63,54 @@ export default function ContentBlock({ body, components = {} }) {
       )
 
       return <Carousel {...props}>{cleanedChildren}</Carousel>
+    },
+    Lista: ({ items, ...props }) => {
+      const [filter, setFilter] = React.useState('')
+
+      console.log(items)
+      return (
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
+            gap: 2,
+            my: 2,
+          }}
+        >
+          <Box>
+            <TextField
+              placeholder="Procure seu nome"
+              size="small"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            />
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 1,
+            }}
+          >
+            {items
+              .filter(
+                (item) =>
+                  item
+                    .toLowerCase()
+                    .trim()
+                    .indexOf(filter.toLowerCase().trim()) > -1
+              )
+              .map((item, index) => (
+                <Chip key={index} label={item.trim()} />
+              ))}
+          </Box>
+        </Box>
+      )
     },
     ...components,
   }
