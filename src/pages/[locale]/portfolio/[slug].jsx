@@ -72,6 +72,7 @@ export default function PortfolioPage({ portfolio }) {
       >
         <ContentPage
           title={portfolio.title}
+          titleBorderBottomColor="transparent"
           image={portfolio.image}
           body={portfolio.body}
           tags={portfolio.tags}

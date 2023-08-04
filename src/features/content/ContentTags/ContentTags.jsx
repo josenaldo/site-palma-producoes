@@ -12,6 +12,7 @@ export default function ContentTags({
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
+        justifyContent: 'center',
         gap: 1,
       }}
     >
