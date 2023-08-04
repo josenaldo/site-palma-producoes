@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 
+// TODO: Otimizar o carregamento do iframe e por uma imagem de preview
 export default function YoutubeVideo({
   url,
   aspectRatio = '16/9',

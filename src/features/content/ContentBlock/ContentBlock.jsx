@@ -26,8 +26,34 @@ export default function ContentBlock({ body, components = {} }) {
     pre: Code,
     hr: Divider,
     blockquote: Blockquote,
+    li: (props) => (
+      <Typography
+        component="li"
+        variant="body1"
+        sx={{
+          wordWrap: 'break-word',
+        }}
+        {...props}
+      />
+    ),
     Youtube: ({ url, props }) => (
-      <YoutubeVideo url={url} {...props} sx={{ my: 4 }} />
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <YoutubeVideo
+          url={url}
+          {...props}
+          sx={{
+            my: 4,
+            // width: '90%',
+          }}
+        />
+      </Box>
     ),
     Carrossel: ({ children, ...props }) => {
       const cleanedChildren = React.Children.toArray(children).filter(

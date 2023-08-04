@@ -7,9 +7,9 @@ tags:
   - Produção Cultural
   - Audiovisual
 description:
-  "O Documentário 'Mestre Sirso' é um exemplo do compromisso da Palma com a produção cultural de qualidade, destacando a vida de Mestre Sirso."
+  "Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas."
 image:
-  url: /images/content/portfolio/documentario-mestre-sirso.jpg
+  url: /images/content/portfolio/documentario-mestre-sirso/capa.jpg
   alt: Documentário “Mestre Sirso"
   width: 1200
   height: 628
@@ -34,6 +34,7 @@ Na roda da vida, a busca pela inclusão persiste, e Sirso desempenha um papel fu
 - **Ano**: 2021
 - **Duração**: 68 min
 - **Produtoras**: Palma Produções e Carnevale Produções
+- **Classificação**: LIVRE
 
 ## A Vida do Mestre Sirso
 
@@ -47,17 +48,19 @@ A história inspiradora de Mestre Sirso lançou luz sobre a importância da Capo
 
 <Carrossel>
 
-  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-01.jpg)
+  ![Cartaz recortado](/images/content/portfolio/documentario-mestre-sirso/cartaz-recortado.jpg)
 
-  ![Foto2](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-02.jpg)
+  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/foto-01.jpg)
 
-  ![Foto3](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-03.jpg)
+  ![Foto2](/images/content/portfolio/documentario-mestre-sirso/foto-02.jpg)
 
-  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-04.jpg)
+  ![Foto3](/images/content/portfolio/documentario-mestre-sirso/foto-03.jpg)
 
-  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-05.jpg)
+  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/foto-04.jpg)
 
-  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/documentario-mestre-sirso-foto-06.jpg)
+  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/foto-05.jpg)
+
+  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/foto-06.jpg)
 
 </Carrossel>
 
@@ -70,6 +73,8 @@ O filme convida o espectador a refletir sobre a importância da inclusão de pes
 A realização do documentário "Mestre Sirso" permitirá que a história deste homem extraordinário ultrapasse as fronteiras da cidade de Cascavel, alcançando corações e mentes em todo o mundo. Sua trajetória não se limita apenas à Capoeira; é um chamado para a inclusão e a diversidade, um convite para quebrar estereótipos e celebrar as singularidades de cada indivíduo.
 
 Venha fazer parte dessa história e seja parte da mudança que queremos ver no mundo!
+
+![Cartaz do filme [1200x1697]  [caption: Cartaz do filme]](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
 
 ## Trailers
 
@@ -150,3 +155,5 @@ Venha fazer parte dessa história e seja parte da mudança que queremos ver no m
 - [Embauba Play  - Perfil da diretora](https://embaubaplay.com/diretor_s/emanuela-palma/)
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 - [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
+- [Página do projeto no Youtube](https://www.youtube.com/@MSFCAP)
+- [Facebook do Filme](https://www.facebook.com/mestresirsofilme/)

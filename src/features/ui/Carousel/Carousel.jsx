@@ -14,7 +14,7 @@ export default function Carousel({ children }) {
       // IndicatorIcon={<StarIcon />}
       indicatorContainerProps={{
         style: {
-          paddingTop: '20px',
+          paddingTop: '10px',
         },
       }}
       sx={{

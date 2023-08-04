@@ -1,7 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
 import { Box, Typography } from '@mui/material'
+import { ImageBox } from '@/features/ui'
 
 /**
  * Componente que insira imagens no conteúdo markdown e informe as dimensões da imagem.
@@ -12,51 +10,45 @@ import { Box, Typography } from '@mui/material'
  * @returns
  */
 export default function ResponsiveImage(props) {
-  const alt = props.alt?.replace(/ *\{[^)]*\} */g, '')
-  const metaSize = props.alt?.match(/\{([^)]+)x([^)]+)\}/g)
+  // const alt = props.alt?.replace(/ *\{[^)]*\} */g, '')
+  // const metaSize = props.alt?.match(/\{([^)]+)x([^)]+)\}/g)
 
-  const metaWidth = metaSize ? metaSize[0].match(/{([^}]+)x/) : null
-  const metaHeight = metaSize ? metaSize[0].match(/x([^}]+)}/) : null
+  // const metaWidth = metaSize ? metaSize[0].match(/{([^}]+)x/) : null
+  // const metaHeight = metaSize ? metaSize[0].match(/x([^}]+)}/) : null
+
+  const alt = props.alt?.replace(/\[[^\]]*\]/g, '').trim()
+  const metaSize = props.alt?.match(/\[([^\]]+)\]/g)
+
+  const metaWidth = metaSize ? metaSize[0].match(/\[([^\]]+)x/) : null
+  const metaHeight = metaSize ? metaSize[0].match(/x([^\]]+)\]/) : null
 
   const width = metaWidth ? metaWidth[1] : '1000'
   const height = metaHeight ? metaHeight[1] : '500'
 
-  const isPriority = props.alt?.toLowerCase().includes('{priority}')
-  const hasCaption = props.alt?.toLowerCase().includes('{caption:')
-  const caption = props.alt?.match(/{caption: (.*?)}/)?.pop()
+  const isPriority = props.alt?.toLowerCase().includes('[priority]')
+  const hasCaption = props.alt?.toLowerCase().includes('[caption:')
+  const caption = props.alt?.match(/\[caption: (.*?)\]/)?.pop()
 
   return (
     <Box
       sx={{
-        display: 'inline-block',
-        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
         width: '100%',
-        position: 'relative',
       }}
     >
-      <Box
-        sx={{
-          display: 'inline-block',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: `${height}px`,
-          width: `${width}px`,
-        }}
-      >
-        <a href={props.src} target="_blank" rel="noopener noreferrer">
-          <Image
-            src={props.src}
-            width={width}
-            height={height}
-            className="postImg"
-            alt={alt}
-            priority={isPriority}
-            layout="responsive"
-            loading="lazy"
-          />
-        </a>
-      </Box>
+      <a href={props.src} target="_blank" rel="noopener noreferrer">
+        <ImageBox
+          src={props.src}
+          alt={alt}
+          width={width}
+          height={height}
+          // className="postImg"
+          priority={isPriority}
+        />
+      </a>
+
       {hasCaption && (
         <Box
           sx={{
