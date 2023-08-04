@@ -51,6 +51,11 @@ export default function ContentImageCard({
           alt={image.alt}
           width={1200}
           height={628}
+          aspectRatio={{
+            xs: 1 / 1,
+            sm: 1200 / 628,
+          }}
+          cover
           sx={{
             filter: `brightness(${brightness}%)`,
             zIndex: 0,
@@ -78,16 +83,7 @@ export default function ContentImageCard({
             <Typography variant="h5" component="h3" color="text.light">
               {title}
             </Typography>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                flexWrap: 'wrap',
-                gap: 1,
-              }}
-            >
-              {tags && tags.map((tag) => <Tag key={tag} label={tag} />)}
-            </Box>
+
             <Typography
               variant="caption"
               color="text.light"
@@ -101,6 +97,20 @@ export default function ContentImageCard({
             >
               {description}
             </Typography>
+
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                gap: 1,
+              }}
+            >
+              {tags &&
+                tags.map((tag) => (
+                  <Tag backgroundColor="tertiary.main" key={tag} label={tag} />
+                ))}
+            </Box>
           </Box>
         </CardContent>
       </Card>

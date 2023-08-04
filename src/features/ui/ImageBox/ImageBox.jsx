@@ -10,6 +10,8 @@ export default function ImageBox({
   height,
   priority = false,
   sx = {},
+  aspectRatio,
+  cover = false,
 }) {
   const sizes = useImageSizes(width)
 
@@ -20,12 +22,23 @@ export default function ImageBox({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        aspectRatio: `${width}/${height}`,
+        aspectRatio: aspectRatio ? aspectRatio : `${width}/${height}`,
         width: '100%',
+
         ...sx,
       }}
     >
-      <Image src={src} fill alt={alt} priority={priority} sizes={sizes} />
+      <Image
+        src={src}
+        fill
+        alt={alt}
+        priority={priority}
+        sizes={sizes}
+        style={{
+          objectFit: cover ? 'cover' : 'contain',
+          overflow: cover ? 'hidden' : 'visible',
+        }}
+      />
     </Box>
   )
 }
