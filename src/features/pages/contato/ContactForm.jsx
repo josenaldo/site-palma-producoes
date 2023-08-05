@@ -21,15 +21,15 @@ const defaultValues = {
 }
 
 export default function ContactForm() {
-  const { t } = useTranslation(['contato', 'common'])
+  const { t } = useTranslation(['common'])
   const [loading, setLoading] = useState(false)
   const { dispatch, setNotification, setErrorNotification, LEVELS } =
     useNotification()
 
-  const nameLabel = t('contato:form.name')
-  const phoneLabel = t('contato:form.phone')
-  const emailLabel = t('contato:form.email')
-  const messageLabel = t('contato:form.message')
+  const nameLabel = t('common:form.contato.name')
+  const phoneLabel = t('common:form.contato.phone')
+  const emailLabel = t('common:form.contato.email')
+  const messageLabel = t('common:form.contato.message')
 
   const validations = yup
     .object({
@@ -75,15 +75,15 @@ export default function ContactForm() {
       dispatch(
         setNotification({
           type: LEVELS.SUCCESS,
-          message: t('contato:form.successMessage'),
-          details: t('contato:form.successDetails'),
+          message: t('common:form.contato.successMessage'),
+          details: t('common:form.contato.successDetails'),
         })
       )
     } catch (error) {
       dispatch(
         setErrorNotification({
-          message: t('contato:form.errorMessage'),
-          details: t('contato:form.errorDetails'),
+          message: t('common:form.contato.errorMessage'),
+          details: t('common:form.contato.errorDetails'),
           error,
         })
       )
@@ -123,14 +123,14 @@ export default function ContactForm() {
           id="name"
           type="text"
           name="name"
-          label={t('contato:form.name')}
+          label={t('common:form.contato.name')}
           fullWidth
           required
         />
         <FormInputPhone
           id="phone"
           name="phone"
-          label={t('contato:form.phone')}
+          label={t('common:form.contato.phone')}
           fullWidth
           required
         />
@@ -138,7 +138,7 @@ export default function ContactForm() {
           id="email"
           type="text"
           name="email"
-          label={t('contato:form.email')}
+          label={t('common:form.contato.email')}
           fullWidth
           required
         />
@@ -146,7 +146,7 @@ export default function ContactForm() {
           id="message"
           type="text"
           name="message"
-          label={t('contato:form.message')}
+          label={t('common:form.contato.message')}
           fullWidth
           required
           multiline
@@ -169,10 +169,10 @@ export default function ContactForm() {
           type="submit"
           form="contactForm"
         >
-          {t('contato:form.send')}
+          {t('common:form.contato.send')}
         </LoadingButton>
         <Button onClick={() => reset()} variant="outlined" color="grey">
-          {t('contato:form.reset')}
+          {t('common:form.contato.reset')}
         </Button>
       </Box>
     </Box>
