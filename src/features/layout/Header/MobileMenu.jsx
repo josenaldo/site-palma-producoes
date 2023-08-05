@@ -169,7 +169,7 @@ function MenuItems({ t, onClose }) {
       }}
     >
       {pages.map((page) => (
-        <Link key={page.key} href={page.href} onClick={onClose} variant="nav">
+        <Link key={page.href} href={page.href} onClick={onClose} variant="nav">
           {t(page.title)}
         </Link>
       ))}

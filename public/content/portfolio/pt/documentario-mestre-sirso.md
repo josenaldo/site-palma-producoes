@@ -14,7 +14,7 @@ image:
   width: 1200
   height: 628
 ---
-import benfeitores from './benfeitores.json'
+
 
 Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas.
 
@@ -160,5 +160,7 @@ Venha fazer parte dessa história e seja parte da mudança que queremos ver no m
 - [Facebook do Filme](https://www.facebook.com/mestresirsofilme/)
 
 ## Benfeitores
+
+import benfeitores from '../../data/benfeitores.json'
 
 <Lista items={benfeitores} label="Pesquisa seu nome" />

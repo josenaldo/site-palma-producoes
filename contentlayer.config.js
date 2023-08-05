@@ -392,6 +392,7 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'public/content',
+  contentDirExclude: ['./data'],
   mdx: {
     remarkPlugins: remarkPlugins,
     rehypePlugins: rehypePlugins,

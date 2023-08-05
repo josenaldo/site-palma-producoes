@@ -8,6 +8,8 @@ export { ContactLinks } from './ContactLinks'
 
 export { ImageBox } from './ImageBox'
 
+export { ImageFallback } from './ImageFallback'
+
 export { Hero } from './Hero'
 
 export { Link } from './Link'
