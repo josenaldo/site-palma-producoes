@@ -61,12 +61,6 @@ export default function ContactForm() {
     })
     .required()
 
-  // TODO: Mover reset para dentro do componente Form
-  const { reset, control } = useForm({
-    defaultValues,
-    resolver: yupResolver(validations),
-  })
-
   const onSubmit = async (data) => {
     setLoading(true)
 
@@ -163,15 +157,15 @@ export default function ContactForm() {
         }}
       >
         <LoadingButton
-          loading={loading}
+          form="contactForm"
+          type="submit"
           variant="contained"
           color="primary"
-          type="submit"
-          form="contactForm"
+          loading={loading}
         >
           {t('common:form.contato.send')}
         </LoadingButton>
-        <Button onClick={() => reset()} variant="outlined" color="grey">
+        <Button form="contactForm" type="reset" variant="outlined" color="grey">
           {t('common:form.contato.reset')}
         </Button>
       </Box>

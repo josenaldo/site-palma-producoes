@@ -13,7 +13,7 @@ export default function Form({
   sx,
   ...props
 }) {
-  const { register, handleSubmit, formState, control, watch, setValue } =
+  const { register, handleSubmit, formState, control, watch, setValue, reset } =
     useForm({
       criteriaMode: 'all',
       mode: 'onChange',
@@ -34,6 +34,9 @@ export default function Form({
       component="form"
       noValidate
       onSubmit={handleSubmit(onSubmit)}
+      onReset={() => {
+        reset(defaultValues)
+      }}
       sx={{
         ...sx,
       }}
