@@ -3,7 +3,7 @@ import { Box } from '@mui/material'
 import { ContentBlock } from '@/features/content'
 import { Title } from '@/features/ui'
 
-export default function PageHeader({
+export default function ContentPageHeader({
   title,
   text,
   direction = 'row',

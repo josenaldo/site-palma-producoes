@@ -4,10 +4,13 @@ import { Box, Container } from '@mui/material'
 
 import { getStaticPaths } from '@/features/i18n/server'
 
-import { ContentImageCard, portfolioContentService } from '@/features/content'
+import {
+  ContentPageHeader,
+  ContentImageCard,
+  portfolioContentService,
+} from '@/features/content'
 
 import { AppLayout } from '@/features/layout'
-import { PageHeader } from '@/features/pages'
 import { Pagination } from '@/features/ui'
 import { buildStaticProps } from '@/features/pages/server'
 
@@ -48,7 +51,11 @@ export default function PortfolioPage({ page, portfolioList }) {
       image={page.image}
     >
       <Container>
-        <PageHeader title={page.title} text={page.body} direction="column" />
+        <ContentPageHeader
+          title={page.title}
+          text={page.body}
+          direction="column"
+        />
 
         <Box
           sx={{

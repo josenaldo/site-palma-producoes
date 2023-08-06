@@ -21,7 +21,6 @@ export default function Form({
       resolver: yupResolver(validations),
     })
 
-  // TODO: resolver bug do setValue
   const formProps = {
     register: register,
     formState: formState,

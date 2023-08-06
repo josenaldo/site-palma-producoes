@@ -2,7 +2,7 @@ import { Box, Container } from '@mui/material'
 
 import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
-import { PageHeader } from '@/features/pages'
+import { ContentPageHeader } from '@/features/content'
 import { buildStaticProps } from '@/features/pages/server'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
 
@@ -32,7 +32,11 @@ export default function ContatoPage({ isoLocale, page }) {
           mb: 8,
         }}
       >
-        <PageHeader title={page.title} text={page.body} direction="column" />
+        <ContentPageHeader
+          title={page.title}
+          text={page.body}
+          direction="column"
+        />
 
         <ContactHero />
 

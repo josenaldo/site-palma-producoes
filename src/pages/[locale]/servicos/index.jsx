@@ -1,9 +1,8 @@
 import { Container } from '@mui/material'
 
-import { servicoContentService } from '@/features/content'
-import { getStaticPaths } from '@/features/i18n/server'
+import { ContentPageHeader, servicoContentService } from '@/features/content'
 import { AppLayout } from '@/features/layout'
-import { PageHeader } from '@/features/pages'
+import { getStaticPaths } from '@/features/i18n/server'
 import { buildStaticProps } from '@/features/pages/server'
 import { BannerPortfolio, ServiceList } from '@/features/pages/servicos'
 import { ImageBox } from '@/features/ui'
@@ -30,7 +29,7 @@ export default function ServicosPage({ page, servicos }) {
       image={page.image}
     >
       <Container sx={{ mb: 4 }}>
-        <PageHeader title={page.title} text={page.body} />
+        <ContentPageHeader title={page.title} text={page.body} />
 
         <ImageBox
           src={page.image.url}

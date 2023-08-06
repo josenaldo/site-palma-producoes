@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
-import axios from 'axios'
 
 import { Container } from '@mui/material'
 
+import { useRouter } from 'next/router'
+import axios from 'axios'
+
+import { ContentPageHeader } from '@/features/content'
 import { useTranslation } from '@/features/i18n'
 import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
-import { PageHeader } from '@/features/pages'
 import { buildStaticProps } from '@/features/pages/server'
 import { SearchForm, SearchResults } from '@/features/search'
 import { Pagination } from '@/features/ui'
@@ -86,7 +87,11 @@ export default function SearchPage({ page, itemsPerPage }) {
       image={page.image}
     >
       <Container>
-        <PageHeader title={page.title} text={page.body} direction="column" />
+        <ContentPageHeader
+          title={page.title}
+          text={page.body}
+          direction="column"
+        />
 
         <SearchForm
           query={query}

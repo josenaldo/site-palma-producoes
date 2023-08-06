@@ -1,0 +1,7 @@
+export { default as depoimentoContentService } from './depoimento-content-service'
+export { default as pagesContentService } from './page-content-service'
+export { default as parceriaContentService } from './parceria-content-service'
+export { default as portfolioContentService } from './portfolio-content-service'
+export { default as postContentService } from './post-content-service'
+export { default as servicoContentService } from './servico-content-service'
+export { default as sociaContentService } from './socia-content-service'
