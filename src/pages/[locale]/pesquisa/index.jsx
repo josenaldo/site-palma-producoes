@@ -63,6 +63,7 @@ export default function SearchPage({ page, itemsPerPage }) {
     const { q } = router.query
 
     if (!q) return
+
     setLoading(true)
 
     const search = async (query, pageIndex, itemsPerPage) => {

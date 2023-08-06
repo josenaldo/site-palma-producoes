@@ -23,7 +23,6 @@ export default function LanguageSelector() {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
-  // TODO: verificar se mudança de idioma respeita parametros da busca
   const handleChange = async (value) => {
     let pathname = router.pathname
 
@@ -38,6 +37,11 @@ export default function LanguageSelector() {
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
     })
+
+    const queryString = router.asPath.split('?')[1] || ''
+    if (queryString) {
+      newPathname += `?${queryString}`
+    }
 
     router.push(newPathname)
     handleClose()
