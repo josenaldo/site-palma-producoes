@@ -11,7 +11,7 @@ import { useTranslation } from '@/features/i18n'
 
 // todo: add i18n
 export default function SearchForm({ handleSearch, query, setQuery, loading }) {
-  const { t } = useTranslation(['common', 'pesquisa'])
+  const { t } = useTranslation(['common'])
 
   return (
     <Box
@@ -35,7 +35,7 @@ export default function SearchForm({ handleSearch, query, setQuery, loading }) {
         }}
       >
         <TextField
-          placeholder={t('pesquisa:searchPlaceholder')}
+          placeholder={t('common:search.searchPlaceholder')}
           id="input-search-page"
           value={query}
           color="secondary"

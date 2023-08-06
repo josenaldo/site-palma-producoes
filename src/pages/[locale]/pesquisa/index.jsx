@@ -29,7 +29,7 @@ function buildQuery({ locale, query, pageIndex, itemsPerPage }) {
 }
 
 export default function SearchPage({ page, itemsPerPage }) {
-  const { locale } = useTranslation(['common', 'pesquisa'])
+  const { locale } = useTranslation(['common'])
 
   const [query, setQuery] = useState('')
   const [loading, setLoading] = useState(false)

@@ -70,5 +70,9 @@
     "info": "Informação!",
     "showDetails": "Mostrar detalhes",
     "hideDetails": "Ocultar detalhes"
+  },
+  "search": {
+    "viewMore": "Ver mais",
+    "searchPlaceholder": "Pesquisar"
   }
 }

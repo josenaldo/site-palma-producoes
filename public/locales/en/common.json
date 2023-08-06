@@ -69,5 +69,9 @@
     "info": "Information!",
     "showDetails": "Show details",
     "hideDetails": "Hide details"
+  },
+  "search": {
+    "viewMore": "View more",
+    "searchPlaceholder": "Search"
   }
 }

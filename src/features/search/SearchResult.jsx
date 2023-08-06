@@ -4,7 +4,7 @@ import { useTranslation } from '@/features/i18n'
 import { Tag, ButtonLink, ShareLink, Link } from '@/features/ui'
 
 export default function SearchResult({ result }) {
-  const { t } = useTranslation(['common', 'pesquisa'])
+  const { t } = useTranslation(['common'])
 
   return (
     <Card
@@ -99,7 +99,7 @@ export default function SearchResult({ result }) {
               skipLocaleHandling
               size="small"
             >
-              {t('pesquisa:viewMore')}
+              {t('common:search.viewMore')}
             </ButtonLink>
 
             <ShareLink

@@ -7,7 +7,6 @@ export { ContentPage } from './ContentPage'
 export { ContentTags } from './ContentTags'
 export { ContentPageHeader } from './ContentPageHeader'
 
-// TODO: extrair esses services para suas pastas
 export { pagesContentService } from './services'
 export { sociaContentService } from './services'
 export { parceriaContentService } from './services'

@@ -4,7 +4,6 @@ import { useState } from 'react'
 export default function ChipList({ items, label = 'Filter', ...props }) {
   const [filter, setFilter] = useState('')
 
-  console.log(items)
   return (
     <Box
       sx={{
