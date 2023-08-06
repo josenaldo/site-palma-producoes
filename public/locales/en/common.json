@@ -49,12 +49,6 @@
       "email": "{{label}} field must be a valid email",
       "phone": "{{label}} field must be a valid phone"
     },
-    "notification": {
-      "success": "Success!",
-      "error": "Error!",
-      "warning": "Warning!",
-      "info": "Information!"
-    },
     "contato": {
       "name": "Name",
       "email": "Email",
@@ -67,5 +61,13 @@
       "errorMessage": "Error: Message not sent!",
       "errorDetails": "An error occurred while sending the message. Please try again later."
     }
+  },
+  "notification": {
+    "success": "Success!",
+    "error": "Error!",
+    "warning": "Warning!",
+    "info": "Information!",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details"
   }
 }

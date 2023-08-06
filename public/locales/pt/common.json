@@ -49,12 +49,7 @@
       "email": "O campo {{label}} deve ser um e-mail válido",
       "phone": "O campo {{label}} deve ser um telefone válido"
     },
-    "notification": {
-      "success": "Sucesso!",
-      "error": "Erro!",
-      "warning": "Atenção!",
-      "info": "Informação!"
-    },
+
     "contato": {
       "name": "Nome",
       "phone": "Telefone",
@@ -67,5 +62,13 @@
       "errorMessage": "Erro: Mensagem não enviada!",
       "errorDetails": "Ocorreu um erro ao enviar sua mensagem, por favor tente novamente mais tarde."
     }
+  },
+  "notification": {
+    "success": "Sucesso!",
+    "error": "Erro!",
+    "warning": "Atenção!",
+    "info": "Informação!",
+    "showDetails": "Mostrar detalhes",
+    "hideDetails": "Ocultar detalhes"
   }
 }

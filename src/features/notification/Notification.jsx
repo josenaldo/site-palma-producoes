@@ -9,9 +9,10 @@ import {
   useNotificationDispatch,
   useNotificationValue,
 } from '@/features/notification'
+import { useTranslation } from '@/features/i18n'
 
-// TODO: aplicar I18N
 export default function Notification() {
+  const { t } = useTranslation(['common'])
   const dispatch = useNotificationDispatch()
   const removeNotification = useRemoveNotification()
   const notification = useNotificationValue()
@@ -45,10 +46,11 @@ export default function Notification() {
             onClick={() => setOpen(!open)}
             endIcon={open ? <ArrowDropDownIcon /> : <ArrowRightIcon />}
           >
-            {open ? 'Hide details' : 'Show details'}
+            {open
+              ? t('common:notification.hideDetails')
+              : t('common:notification.showDetails')}
           </Button>
 
-          {/* <Divider /> */}
           <Collapse in={open}>
             <Box component="ul" sx={{ padding: '0' }}>
               {notification.error.statusCode && (
