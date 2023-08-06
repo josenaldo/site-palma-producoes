@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Box } from '@mui/material'
 import YouTube from 'react-youtube'
 
@@ -21,6 +20,8 @@ export default function YoutubeVideo({
       gyroscope: 1,
       pictureInPicture: 1,
       webShare: 1,
+      origin: process.env.NEXT_PUBLIC_SITE_URL,
+      enablejsapi: 1,
     },
   }
 
