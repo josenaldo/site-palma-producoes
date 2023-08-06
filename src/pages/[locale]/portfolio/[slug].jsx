@@ -35,7 +35,6 @@ export function getStaticPaths() {
   return newPathsObject
 }
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps(ctx) {
   const i18nPropsFunc = makeStaticProps(['common', 'portfolio'])
   const { slug, locale } = ctx.params
