@@ -28,20 +28,21 @@ export default function ServicosPage({ page, servicos }) {
       description={page.description}
       image={page.image}
     >
-      <Container sx={{ mb: 4 }}>
+      <Container>
         <ContentPageHeader title={page.title} text={page.body} />
-
-        <ImageBox
-          src={page.image.url}
-          alt={page.image.alt}
-          width={page.image.width}
-          height={page.image.height}
-        />
-
-        <ServiceList services={servicos} />
-
-        <BannerPortfolio />
       </Container>
+
+      <ImageBox
+        src={page.image.url}
+        alt={page.image.alt}
+        width={page.image.width}
+        height={page.image.height}
+      />
+
+      <Container>
+        <ServiceList services={servicos} />
+      </Container>
+      <BannerPortfolio />
     </AppLayout>
   )
 }
