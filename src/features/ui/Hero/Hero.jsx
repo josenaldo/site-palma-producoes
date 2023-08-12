@@ -13,6 +13,7 @@ export default function Hero({
   CTA = null,
   ctaText,
   ctaHref,
+  ctaVariant = 'contained',
   backgroundColor = 'rgba(255 255 255 / 10%)',
   ctaColor = 'primary',
   ctaTarget = '_self',
@@ -80,12 +81,15 @@ export default function Hero({
           <CTA />
         ) : (
           <ButtonLink
-            variant="contained"
+            variant={ctaVariant}
             color={ctaColor}
             size="large"
             href={ctaHref}
             target="_self"
             rel={ctaTarget === '_blank' ? 'noopener noreferrer' : undefined}
+            sx={{
+              textAlign: 'center',
+            }}
           >
             {ctaText}
           </ButtonLink>

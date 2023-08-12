@@ -33,6 +33,7 @@ export default function HomeCTA() {
           ctaColor="primary"
           ctaText={t('home:cta.button')}
           ctaHref="/contato"
+          ctaVariant="outlined"
           noPadding
         />
       </Container>
