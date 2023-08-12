@@ -11,8 +11,7 @@ export default function HomeIntro() {
     <Box component="section" id="homeIntro">
       <Container
         sx={{
-          my: 5,
-          py: 5,
+          mt: 10,
         }}
       >
         <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />

@@ -12,21 +12,21 @@ export default function HomeWish() {
   })
 
   return (
-    <BannerBox
-      image="/images/home/mar.jpg"
+    <Box
+      component="section"
       sx={{
-        height: '100%',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        py: 5,
+        mt: 10,
       }}
     >
-      <Box
-        component="section"
+      <BannerBox
+        image="/images/home/mar.jpg"
         sx={{
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
           py: 5,
         }}
       >
@@ -56,7 +56,7 @@ export default function HomeWish() {
               ))}
           </Stack>
         </Container>
-      </Box>
-    </BannerBox>
+      </BannerBox>
+    </Box>
   )
 }

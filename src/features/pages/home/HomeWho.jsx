@@ -19,7 +19,7 @@ export default function HomeWho() {
     <Box
       component="section"
       sx={{
-        py: 5,
+        mt: 10,
       }}
     >
       <Container

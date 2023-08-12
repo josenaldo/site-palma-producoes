@@ -5,6 +5,7 @@ import { Title } from '@/features/ui'
 
 export default function ContentPageHeader({
   title,
+  titleTextWrap = 'nowrap',
   text,
   direction = 'row',
   borderBottomColor = 'primary.main',
@@ -33,7 +34,9 @@ export default function ContentPageHeader({
           },
         }}
       >
-        <Title borderBottomColor={borderBottomColor}>{title}</Title>
+        <Title borderBottomColor={borderBottomColor} textWrap={titleTextWrap}>
+          {title}
+        </Title>
       </Box>
 
       {text && (
