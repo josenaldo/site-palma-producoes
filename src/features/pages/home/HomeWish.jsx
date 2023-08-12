@@ -49,6 +49,7 @@ export default function HomeWish() {
                   color="text.light"
                   sx={{
                     textAlign: 'center',
+                    textAlign: 'justify',
                   }}
                 >
                   {text}
