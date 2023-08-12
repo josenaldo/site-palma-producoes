@@ -1,6 +1,6 @@
 ---
 name: Bia Herbst
-description: Partner - Photographer - Videomaker - Cultural Producer
+description: Partner - Photographer
 image: "/images/content/socias/bia-herbst.jpg"
 order: 2
 ---

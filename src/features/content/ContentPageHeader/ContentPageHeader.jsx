@@ -20,7 +20,7 @@ export default function ContentPageHeader({
         },
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 2,
+        gap: 4,
         mb: 6,
       }}
     >
@@ -46,6 +46,7 @@ export default function ContentPageHeader({
               xs: '100%',
               md: direction === 'row' ? '70%' : '100%',
             },
+            textAlign: 'justify',
           }}
         >
           <ContentBlock body={text} />

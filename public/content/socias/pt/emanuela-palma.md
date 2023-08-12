@@ -1,6 +1,6 @@
 ---
 name: Emanuela Palma
-description: Sócia - Jornalista - Fotógrafa - Documentarista
+description: Sócia - Jornalista
 image: "/images/content/socias/emanuela-palma.jpg"
 order: 1
 ---

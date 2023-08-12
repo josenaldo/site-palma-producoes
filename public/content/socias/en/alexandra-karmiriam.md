@@ -1,6 +1,6 @@
 ---
 name: Alexandra Karmiriam
-description: Partner - Designer - Photographer - Visual Content Producer
+description: Partner - Designer - Visual Content Producer
 image: "/images/content/socias/alexandra-karmiriam.jpg"
 order: 3
 ---

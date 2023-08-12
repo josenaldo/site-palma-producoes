@@ -1,6 +1,6 @@
 ---
 name: Alexandra Karmiriam
-description: Sócia - Designer - Fotógrafa - Produtora de Conteúdo Visual
+description: Sócia - Designer - Produtora de Conteúdo Visual
 image: "/images/content/socias/alexandra-karmiriam.jpg"
 order: 3
 ---

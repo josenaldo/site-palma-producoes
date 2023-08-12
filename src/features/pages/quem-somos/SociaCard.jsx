@@ -14,7 +14,7 @@ export default function SociaCard({ socia, onClick, open }) {
   const { t } = useTranslation(['common', 'quem-somos'])
   return (
     <Card
-      elevation={open ? 5 : 0}
+      elevation={0}
       key={socia.url}
       sx={{
         display: 'flex',
@@ -39,6 +39,7 @@ export default function SociaCard({ socia, onClick, open }) {
           variant="h5"
           component="div"
           textAlign="center"
+          color={open ? 'primary.main' : 'text.primary'}
         >
           {socia.name}
         </Typography>
@@ -46,9 +47,9 @@ export default function SociaCard({ socia, onClick, open }) {
           variant="caption"
           sx={{
             textAlign: 'center',
-            // wordWrap: 'normal',
             display: 'inline-block',
-            // width: '100%',
+            width: '100%',
+            textTransform: 'uppercase',
           }}
         >
           {socia.description}
