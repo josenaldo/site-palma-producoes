@@ -13,7 +13,7 @@ import { Notification, useNotification } from '@/features/notification'
 
 const defaultValues = {
   name: '',
-  phone: '',
+  phone: '+55',
   email: '',
   message: '',
 }

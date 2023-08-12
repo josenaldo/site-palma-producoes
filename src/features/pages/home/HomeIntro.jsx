@@ -8,19 +8,14 @@ export default function HomeIntro() {
   const { t } = useTranslation(['common', 'home'])
 
   return (
-    <Box component="section">
-      <Container>
-        <Stack justifyContent="center" alignItems="center">
-          <Stack component="span" justifyContent="center" alignItems="center">
-            <KeyboardArrowDownOutlinedIcon
-              sx={{
-                fontSize: '6rem',
-                color: 'text.dark',
-              }}
-            />
-          </Stack>
-          <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />
-        </Stack>
+    <Box component="section" id="homeIntro">
+      <Container
+        sx={{
+          my: 5,
+          py: 5,
+        }}
+      >
+        <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />
       </Container>
     </Box>
   )
