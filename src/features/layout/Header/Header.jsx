@@ -59,7 +59,39 @@ export default function Header({ color, ...props }) {
           justifyContent: 'space-between',
         }}
       >
-        <Logo color={!isHome || elevated ? 'black' : 'white'} />
+        <Box
+          sx={{
+            display: {
+              xs: 'none',
+              sm: 'none',
+              md: 'none',
+              lg: 'block',
+              xl: 'block',
+            },
+          }}
+        >
+          <Logo
+            color={!isHome || elevated ? 'black' : 'white'}
+            type="horizontal"
+          />
+        </Box>
+        <Box
+          sx={{
+            display: {
+              xs: 'block',
+              sm: 'block',
+              md: 'block',
+              lg: 'none',
+              xl: 'none',
+            },
+          }}
+        >
+          <Logo
+            color={!isHome || elevated ? 'black' : 'white'}
+            type="vertical"
+          />
+        </Box>
+
         <Box
           sx={{
             flexGrow: 1,
