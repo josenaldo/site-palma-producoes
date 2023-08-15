@@ -22,6 +22,8 @@ export default function ResponsiveImage(props) {
   const isPriority = props.alt?.toLowerCase().includes('[priority]')
   const hasCaption = props.alt?.toLowerCase().includes('[caption:')
   const caption = props.alt?.match(/\[caption: (.*?)\]/)?.pop()
+  const fullWidth = props.alt?.match(/\[full-width\]/)?.pop() ? true : false
+  const aspectRatio = props.alt?.match(/\[aspect-ratio: (.*?)\]/)?.pop() || null
 
   return (
     <Box
@@ -39,6 +41,9 @@ export default function ResponsiveImage(props) {
           width={width}
           height={height}
           priority={isPriority}
+          aspectRatio={aspectRatio}
+          cover={aspectRatio ? true : false}
+          fullWidth={fullWidth}
         />
       </a>
 

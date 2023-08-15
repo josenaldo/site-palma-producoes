@@ -97,6 +97,16 @@ export const Page = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The image full width of the page',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
+    },
   },
   computedFields: {
     url: {
@@ -316,6 +326,16 @@ export const PortfolioItem = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The image full width of the PortfolioItem',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
+    },
   },
   computedFields: {
     url: {
@@ -372,6 +392,16 @@ export const Post = defineDocumentType(() => ({
     image: {
       type: 'nested',
       of: Image,
+    },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The main image full width of the Post',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
     },
   },
   computedFields: {

@@ -13,6 +13,8 @@ image:
   alt: Documentário “Mestre Sirso"
   width: 1200
   height: 628
+mainImageFullWidth: true
+showMainImage: true
 ---
 
 
@@ -75,7 +77,7 @@ A realização do documentário "Mestre Sirso" permitirá que a história deste 
 
 Venha fazer parte dessa história e seja parte da mudança que queremos ver no mundo!
 
-![Cartaz do filme [1200x1697] [caption: Cartaz do filme]](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
+![Cartaz do filme [1200x1697] [caption: Cartaz do filme] [aspect-ratio: 21/9]](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
 
 ## Trailers
 
