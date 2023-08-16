@@ -30,6 +30,7 @@ export default function ContactHero() {
         ctaColor="primary"
         ctaText={t('contato:hero.ctaText')}
         ctaHref={t('contato:hero.ctaHref')}
+        ctaVariant={t('contato:hero.ctaVariant', 'outlined')}
         noPadding
       />
     </Box>
