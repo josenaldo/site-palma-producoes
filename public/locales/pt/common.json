@@ -73,6 +73,13 @@
   },
   "search": {
     "viewMore": "Ver mais",
-    "searchPlaceholder": "Pesquisar"
+    "searchPlaceholder": "Pesquisar",
+    "results": {
+      "types": {
+        "Page": "Página",
+        "Post": "Movimento",
+        "PortfolioItem": "Portfólio"
+      }
+    }
   }
 }

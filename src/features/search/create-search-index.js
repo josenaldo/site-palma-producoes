@@ -1,10 +1,5 @@
-// import lunr from 'lunr'
-// import fs from 'fs'
-// import { allDocuments } from '../../../.contentlayer/generated/index.mjs'
-
 const lunr = require('lunr')
 const fs = require('fs')
-// const { allDocuments } = require('../../../.contentlayer/generated/index.mjs')
 
 async function createSearchIndex() {
   console.log('🟢Creating search index...')
@@ -13,7 +8,7 @@ async function createSearchIndex() {
     '../../../.contentlayer/generated/index.mjs'
   )
 
-  const searchableDocumentTypes = ['Page', 'Post', 'Project']
+  const searchableDocumentTypes = ['Page', 'Post', 'PortfolioItem']
 
   const searchableDocuments = allDocuments.filter((doc) => {
     return searchableDocumentTypes.includes(doc.type)
@@ -28,21 +23,9 @@ async function createSearchIndex() {
       image: doc.image,
       type: doc.type,
       locale: doc.locale,
+      body: doc.body.raw,
     }
   })
-
-  const documents = searchableDocuments.reduce(function (memo, doc) {
-    memo[doc.url] = {
-      url: doc.url,
-      title: doc.title,
-      description: doc.description,
-      content: doc.body.raw,
-      image: doc.image,
-      type: doc.type,
-      locale: doc.locale,
-    }
-    return memo
-  }, {})
 
   const index = lunr(function () {
     this.ref('url')
@@ -52,6 +35,7 @@ async function createSearchIndex() {
     this.field('image')
     this.field('type')
     this.field('locale')
+    this.field('body')
 
     documentList.forEach(function (doc) {
       this.add(doc)
@@ -60,12 +44,8 @@ async function createSearchIndex() {
 
   const dir = process.cwd() + '/src/pages/api'
   const indexFilePath = dir + '/search-index.json'
-  const docsFilePath = dir + '/search-documents.json'
 
   fs.writeFileSync(indexFilePath, JSON.stringify(index))
-  fs.writeFileSync(docsFilePath, JSON.stringify(documents))
 }
-
-// export default createSearchIndex
 
 module.exports = { createSearchIndex }

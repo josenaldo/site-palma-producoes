@@ -41,77 +41,88 @@ export default function SearchResult({ result }) {
           }}
         ></Box>
       </CardMedia>
-      <Box>
-        <CardContent
+      <CardContent
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          padding: 0,
+          pb: '0 !important',
+          margin: 0,
+          gap: 1,
+          height: {
+            xs: 'auto',
+            sm: 'auto',
+            md: '150px',
+          },
+        }}
+      >
+        <Box
           sx={{
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            justifyContent: 'flex-start',
-            pt: 0,
-            pb: 0,
+            flexDirection: 'row',
             gap: 1,
-            px: 0,
+            alignItems: 'center',
           }}
         >
-          <Box
+          <Tag
+            backgroundColor="tertiary.main"
+            textColor="text.light"
+            label={t(`common:search.results.types.${result.type}`)}
+          />
+
+          <Link
+            variant="outlined"
+            href={result.url}
+            skipLocaleHandling
+            size="small"
             sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              gap: 1,
-              alignItems: 'center',
+              textDecoration: 'none',
             }}
           >
-            <Tag
-              backgroundColor="tertiary.main"
-              textColor="text.light"
-              label={result.type}
-            />
-
-            <Link
-              variant="outlined"
-              href={result.url}
-              skipLocaleHandling
-              size="small"
-              sx={{
-                textDecoration: 'none',
-              }}
-            >
-              <Typography variant="h6" component="h2" color="primary">
-                {result.title}
-              </Typography>
-            </Link>
-          </Box>
+            <Typography variant="h6" component="h2" color="primary">
+              {result.title}
+            </Typography>
+          </Link>
+        </Box>
+        <Box
+          sx={{
+            display: 'block',
+            flexGrow: 1,
+            height: '100%',
+          }}
+        >
           <Typography variant="caption" component="p">
             {result.description}
           </Typography>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              gap: 1,
-              alignItems: 'center',
-            }}
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            gap: 1,
+            alignItems: 'center',
+          }}
+        >
+          <ButtonLink
+            variant="outlined"
+            href={result.url}
+            skipLocaleHandling
+            size="small"
           >
-            <ButtonLink
-              variant="outlined"
-              href={result.url}
-              skipLocaleHandling
-              size="small"
-            >
-              {t('common:search.viewMore')}
-            </ButtonLink>
+            {t('common:search.viewMore')}
+          </ButtonLink>
 
-            <ShareLink
-              t={t}
-              title={result.title}
-              description={result.description}
-              url={`${process.env.NEXT_PUBLIC_SITE_URL}${result.url}`}
-              image={`${process.env.NEXT_PUBLIC_SITE_URL}${result.image}`}
-            />
-          </Box>
-        </CardContent>
-      </Box>
+          <ShareLink
+            t={t}
+            title={result.title}
+            description={result.description}
+            url={`${process.env.NEXT_PUBLIC_SITE_URL}${result.url}`}
+            image={`${process.env.NEXT_PUBLIC_SITE_URL}${result.image}`}
+          />
+        </Box>
+      </CardContent>
     </Card>
   )
 }

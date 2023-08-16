@@ -77,8 +77,8 @@ export default function SearchPage({ page, itemsPerPage }) {
 
     setQuery(q)
 
-    search(query, pageIndex, itemsPerPage)
-  }, [query, router, locale, pageIndex, itemsPerPage])
+    search(q, pageIndex, itemsPerPage)
+  }, [router, locale, pageIndex, itemsPerPage])
 
   return (
     <AppLayout

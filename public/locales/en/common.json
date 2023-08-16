@@ -72,6 +72,13 @@
   },
   "search": {
     "viewMore": "View more",
-    "searchPlaceholder": "Search"
+    "searchPlaceholder": "Search",
+    "results": {
+      "types": {
+        "Page": "Page",
+        "Post": "Moviment",
+        "PortfolioItem": "Portfolio"
+      }
+    }
   }
 }
