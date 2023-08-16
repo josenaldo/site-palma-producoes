@@ -3,8 +3,6 @@ import Image from 'next/image'
 
 import { useImageSizes } from '@/features/hooks'
 
-import styles from './ImageBox.module.css'
-
 export default function ImageBox({
   src,
   alt,
@@ -18,33 +16,32 @@ export default function ImageBox({
 }) {
   const sizes = useImageSizes(width)
 
-  console.log('src: ', src)
-  console.log('fullWidth: ', fullWidth)
   return (
-    <Box className={fullWidth ? styles.fullWidth : ''}>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          position: 'relative',
-          aspectRatio: aspectRatio ? aspectRatio : `${width}/${height}`,
-          width: '100%',
-          ...sx,
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        aspectRatio: aspectRatio ? aspectRatio : `${width}/${height}`,
+        width: fullWidth ? '100vw' : '100%',
+        maxWidth: fullWidth ? '100vw' : '100%',
+        marginLeft: fullWidth ? '-50vw' : '0',
+        left: fullWidth ? '50%' : '0',
+        ...sx,
+      }}
+    >
+      <Image
+        src={src}
+        fill
+        alt={alt}
+        priority={priority}
+        sizes={sizes}
+        style={{
+          objectFit: cover ? 'cover' : 'contain',
+          overflow: cover ? 'hidden' : 'visible',
         }}
-      >
-        <Image
-          src={src}
-          fill
-          alt={alt}
-          priority={priority}
-          sizes={sizes}
-          style={{
-            objectFit: cover ? 'cover' : 'contain',
-            overflow: cover ? 'hidden' : 'visible',
-          }}
-        />
-      </Box>
+      />
     </Box>
   )
 }

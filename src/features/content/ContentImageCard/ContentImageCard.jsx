@@ -78,12 +78,12 @@ export default function ContentImageCard({
               display: 'flex',
               flexDirection: 'column',
               gap: 1,
+              padding: 2,
             }}
           >
             <Typography variant="h5" component="h3" color="text.light">
               {title}
             </Typography>
-
             <Typography
               variant="caption"
               color="text.light"
@@ -97,18 +97,21 @@ export default function ContentImageCard({
             >
               {description}
             </Typography>
-
             <Box
               sx={{
                 display: 'flex',
-                flexDirection: 'row',
+                flexDirection: 'column',
                 flexWrap: 'wrap',
-                gap: 1,
+                // gap: 1,
+                color: 'text.light',
+                textTransform: 'uppercase',
               }}
             >
               {tags &&
-                tags.map((tag) => (
-                  <Tag backgroundColor="tertiary.main" key={tag} label={tag} />
+                tags.map((tag, index) => (
+                  <Typography variant="caption" key={tag}>
+                    {tag}
+                  </Typography>
                 ))}
             </Box>
           </Box>

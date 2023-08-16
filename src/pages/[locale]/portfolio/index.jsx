@@ -73,7 +73,6 @@ export default function PortfolioPage({ page, portfolioList }) {
               key={portfolio.slug}
               url={portfolio.url}
               title={portfolio.title}
-              description={portfolio.description}
               image={portfolio.image}
               tags={portfolio.tags}
             />
