@@ -116,7 +116,6 @@ function FirstTierHighlightPost({ t, post }) {
         key={post.slug}
         url={post.url}
         title={post.title}
-        description={post.description}
         image={post.image}
         tags={post.tags}
       />
@@ -142,7 +141,6 @@ function SecondTierHighlightPosts({ t, posts }) {
           key={post.slug}
           url={post.url}
           title={post.title}
-          description={post.description}
           image={post.image}
           tags={post.tags}
         />
