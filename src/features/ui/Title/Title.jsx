@@ -20,6 +20,7 @@ export default function Title({
         borderBottomColor: borderBottomColor,
         textAlign: 'center',
         textWrap: textWrap,
+        whiteSpace: textWrap === 'nowrap' ? 'nowrap' : 'normal',
         ...sx,
       }}
     >
