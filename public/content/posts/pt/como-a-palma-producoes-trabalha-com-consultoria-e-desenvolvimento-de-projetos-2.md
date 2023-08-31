@@ -1,5 +1,5 @@
 ---
-title: "Como a Palma Produções Trabalha com Consultoria e Desenvolvimento de Projetos"
+title: "2 - Como a Palma Produções Trabalha com Consultoria e Desenvolvimento de Projetos"
 description: "Descubra como a Palma Produções utiliza inovação, qualidade e visão única para oferecer serviços de consultoria e desenvolvimento de projetos impactantes."
 date: 2023-07-19 13:00:00 -0300
 author: Emanuela Palma

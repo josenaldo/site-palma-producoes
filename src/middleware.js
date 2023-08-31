@@ -10,7 +10,7 @@ acceptLanguage.languages(locales)
 export const config = {
   // matcher: '/:lng*'
   matcher: [
-    '/((?!api|_next/static|_next/image|images|videos|locales|content|flags|assets|favicon.ico|sw.js).*)',
+    '/((?!api|_next/static|_next/image|images|icons|videos|locales|content|flags|assets|favicon.ico|sw.js|manifest.json).*)',
   ],
 }
 
@@ -23,14 +23,15 @@ export function middleware(req) {
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))
   if (!lng) lng = defaultLocale
 
-  // Redirect if lng in path is not supported
   if (
     !locales.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !req.nextUrl.pathname.startsWith('/_next')
   ) {
-    return NextResponse.redirect(
-      new URL(`/${lng}${req.nextUrl.pathname}`, req.url)
-    )
+    let newUrl = `/${lng}${req.nextUrl.pathname}`
+
+    if (req.nextUrl.search) newUrl += req.nextUrl.search
+
+    return NextResponse.redirect(new URL(newUrl, req.url))
   }
 
   if (req.headers.has('referer')) {

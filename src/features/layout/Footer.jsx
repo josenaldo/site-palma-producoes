@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, IconButton, Typography } from '@mui/material'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 
 import { useTranslation } from '@/features/i18n'
@@ -14,7 +14,8 @@ export default function Footer() {
         display: 'flex',
         flexDirection: {
           xs: 'column',
-          sm: 'row',
+          sm: 'column',
+          md: 'row',
         },
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -62,6 +63,13 @@ export default function Footer() {
         }}
       >
         <Button
+          sx={{
+            display: {
+              xs: 'none',
+              sm: 'none',
+              md: 'flex',
+            },
+          }}
           color="secondary"
           size="small"
           endIcon={<ArrowUpwardIcon />}
@@ -71,6 +79,23 @@ export default function Footer() {
         >
           {t('common:footer.backToTop')}
         </Button>
+
+        <IconButton
+          sx={{
+            display: {
+              xs: 'flex',
+              sm: 'flex',
+              md: 'none',
+            },
+          }}
+          color="secondary"
+          size="small"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+          }}
+        >
+          <ArrowUpwardIcon />
+        </IconButton>
       </Box>
     </Box>
   )

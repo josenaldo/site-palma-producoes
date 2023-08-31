@@ -1,19 +1,10 @@
 {
   "hero": {
-    "title": "Transformando Ideias em __Realidade__",
-    "title1": "Transformando Ideias em ",
-    "title2": "Realidade",
-    "text": "A Palma Produções oferece produção de conteúdo audiovisual inovador, dando vida às suas ideias.",
-    "button": "Contate-nos",
-    "benefits": [
-      "Produção de conteúdo inovador",
-      "Equipe experiente de profissionais",
-      "Soluções personalizadas para suas necessidades"
-    ]
+    "title": "Transformando Ideias em Realidade",
+    "text": "",
+    "button": "Contate-nos"
   },
   "intro": {
-    "title": "Projetar e resignificar histórias",
-    "subtitle": "SAIBA COMO",
     "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE"
   },
   "who": {
@@ -24,7 +15,7 @@
 
       "**Investigar, conectar, cultivar, celebrar, projetar e contar histórias** que promovam o sentimento de pertencimento da nossa **brasilidade** e <mark>gerem **impacto positivo** no mundo</mark>. É o que nos motiva a atuar em processos criativos, estratégicos e colaborativos **<mark>- no universo audiovisual em ações multiplataformas -</mark> para dar luz ao proptagonismo de quem faz a história acontecer**."
     ],
-    "button": "Conhecer"
+    "button": "Conheça nosso time"
   },
   "video": {
     "video": "https://www.youtube.com/watch?v=Hj0btCi1GS8"
@@ -40,5 +31,9 @@
       "Nosso desejo é construir uma ponte entre a arte e o público, criando experiências que ressoem e façam a diferença. Queremos que cada imagem capturada, cada vídeo produzido e cada portfolio desenvolvido seja um reflexo do nosso compromisso com a excelência, a criatividade e a integridade. Nosso objetivo é não apenas atender às expectativas dos nossos clientes, mas superá-las, entregando trabalhos que se destacam pela qualidade, originalidade e impacto. Junte-se a nós nesta jornada de transformação e descubra o poder da narrativa visual com a Palma Produções."
     ]
   },
-  "testimonials": "Depoimentos"
+  "cta": {
+    "title": "Vamos criar algo incrível juntos!",
+    "text": "Nossa equipe está pronta para transformar suas ideias em realidade. Seja para produção audiovisual, eventos culturais ou artísticos, estamos aqui para oferecer experiências únicas e memoráveis.",
+    "button": "Entre em Contato para Fecharmos uma Parceria"
+  }
 }

@@ -35,7 +35,6 @@ export function getStaticPaths() {
   return newPathsObject
 }
 
-// TODO: refatorar getStaticProps
 export async function getStaticProps(ctx) {
   const i18nPropsFunc = makeStaticProps(['common', 'portfolio'])
   const { slug, locale } = ctx.params
@@ -61,26 +60,19 @@ export default function PortfolioPage({ portfolio }) {
       description={portfolio.description}
       image={portfolio.image}
     >
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: 4,
-        }}
-      >
-        <ContentPage
-          title={portfolio.title}
-          image={portfolio.image}
-          body={portfolio.body}
-          tags={portfolio.tags}
-          author={portfolio.author}
-          date={portfolio.date}
-          url={portfolio.url}
-          ns={['common', 'portfolio']}
-        />
-      </Container>
+      <ContentPage
+        title={portfolio.title}
+        titleBorderBottomColor="transparent"
+        image={portfolio.image}
+        showMainImage={portfolio.showMainImage}
+        mainImageFullWidth={portfolio.mainImageFullWidth}
+        body={portfolio.body}
+        tags={portfolio.tags}
+        author={portfolio.author}
+        date={portfolio.date}
+        url={portfolio.url}
+        ns={['common', 'portfolio']}
+      />
     </AppLayout>
   )
 }

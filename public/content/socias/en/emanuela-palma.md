@@ -1,6 +1,6 @@
 ---
 name: Emanuela Palma
-description: Partner - Journalist - Photographer - Documentarian
+description: Partner - Journalist
 image: "/images/content/socias/emanuela-palma.jpg"
 order: 1
 ---

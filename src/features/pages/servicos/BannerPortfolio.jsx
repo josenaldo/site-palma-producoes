@@ -20,6 +20,8 @@ export default function BannerPortfolio() {
         alt="Portfolio"
         width={1200}
         height={628}
+        aspectRatio={21 / 9}
+        cover
         sx={{
           filter: 'brightness(40%)',
           zIndex: -1,

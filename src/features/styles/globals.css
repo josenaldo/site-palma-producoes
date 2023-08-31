@@ -1,13 +1,13 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
-  --rotation-animation-speed: 2s;
+  /* --rotation-animation-speed: 2s;
   --rotation-animation-easing: linear;
   --stroke-animation-speed: 1.5s;
   --stroke-animation-easing: ease-in-out;
   --stroke-width: 3px;
   --stroke-start-dasharray: 1, 200;
-  --stroke-end-dasharray: 89, 200;
+  --stroke-end-dasharray: 89, 200; */
 }

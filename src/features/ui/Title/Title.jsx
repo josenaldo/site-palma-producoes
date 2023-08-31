@@ -7,6 +7,7 @@ export default function Title({
   color = 'text.primary',
   borderBottomColor = 'primary.main',
   sx = {},
+  textWrap = 'nowrap',
 }) {
   return (
     <Typography
@@ -18,6 +19,8 @@ export default function Title({
         borderBottom: `3px solid`,
         borderBottomColor: borderBottomColor,
         textAlign: 'center',
+        textWrap: textWrap,
+        whiteSpace: textWrap === 'nowrap' ? 'nowrap' : 'normal',
         ...sx,
       }}
     >

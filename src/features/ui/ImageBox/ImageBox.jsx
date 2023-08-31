@@ -1,7 +1,21 @@
 import { Box } from '@mui/material'
 import Image from 'next/image'
 
-export default function ImageBox({ src, alt, width, height, sx = {} }) {
+import { useImageSizes } from '@/features/hooks'
+
+export default function ImageBox({
+  src,
+  alt,
+  width,
+  height,
+  priority = false,
+  sx = {},
+  aspectRatio,
+  cover = false,
+  fullWidth = false,
+}) {
+  const sizes = useImageSizes(width)
+
   return (
     <Box
       sx={{
@@ -9,12 +23,25 @@ export default function ImageBox({ src, alt, width, height, sx = {} }) {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        aspectRatio: `${width}/${height}`,
-        width: '100%',
+        aspectRatio: aspectRatio ? aspectRatio : `${width}/${height}`,
+        width: fullWidth ? '100vw' : '100%',
+        maxWidth: fullWidth ? '100vw' : '100%',
+        marginLeft: fullWidth ? '-50vw' : '0',
+        left: fullWidth ? '50%' : '0',
         ...sx,
       }}
     >
-      <Image src={src} fill alt={alt} priority />
+      <Image
+        src={src}
+        fill
+        alt={alt}
+        priority={priority}
+        sizes={sizes}
+        style={{
+          objectFit: cover ? 'cover' : 'contain',
+          overflow: cover ? 'hidden' : 'visible',
+        }}
+      />
     </Box>
   )
 }

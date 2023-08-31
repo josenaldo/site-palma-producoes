@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { Box, Container } from '@mui/material'
 
 import {
+  ContentPageHeader,
   ContentCard,
   ContentImageCard,
   postContentService,
@@ -10,7 +11,6 @@ import {
 import { AppLayout } from '@/features/layout'
 import { useTranslation } from '@/features/i18n'
 import { getStaticPaths } from '@/features/i18n/server'
-import { PageHeader } from '@/features/pages'
 import { buildStaticProps } from '@/features/pages/server'
 import { Pagination } from '@/features/ui'
 
@@ -72,9 +72,9 @@ export default function MovimentosPage({
       t={t}
     >
       <Container>
-        <PageHeader
+        <ContentPageHeader
           title={page.title}
-          text={page.body.raw}
+          text={page.body}
           direction="column"
         />
 
@@ -116,7 +116,6 @@ function FirstTierHighlightPost({ t, post }) {
         key={post.slug}
         url={post.url}
         title={post.title}
-        description={post.description}
         image={post.image}
         tags={post.tags}
       />
@@ -142,7 +141,6 @@ function SecondTierHighlightPosts({ t, posts }) {
           key={post.slug}
           url={post.url}
           title={post.title}
-          description={post.description}
           image={post.image}
           tags={post.tags}
         />

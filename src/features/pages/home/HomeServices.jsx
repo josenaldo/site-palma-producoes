@@ -19,7 +19,7 @@ export default function HomeServices({ servicos }) {
     <Box
       component="section"
       sx={{
-        py: 5,
+        mt: 10,
       }}
     >
       <Container
@@ -27,12 +27,10 @@ export default function HomeServices({ servicos }) {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: 8,
+          justifyContent: 'center',
+          gap: 4,
         }}
       >
-        <Title variant="h3" borderBottomColor="transparent">
-          {t('home:services.title')}
-        </Title>
         <Box
           sx={{
             display: 'flex',
@@ -90,18 +88,38 @@ export default function HomeServices({ servicos }) {
           </Box>
         </Box>
 
-        <ButtonLink
-          href="/servicos"
-          variant="outlined"
-          color="dark"
-          size="large"
+        <Box
           sx={{
-            height: 'fit-content',
-            px: 4,
+            display: 'flex',
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
+            alignItems: {
+              xs: 'center',
+              md: 'center',
+            },
+            justifyContent: 'center',
+            gap: 4,
+            width: '100%',
           }}
         >
-          {t('home:services.button')}
-        </ButtonLink>
+          <Title variant="h3" borderBottomColor="transparent">
+            {t('home:services.title')}
+          </Title>
+          <ButtonLink
+            href="/servicos"
+            variant="outlined"
+            color="dark"
+            size="large"
+            sx={{
+              height: 'fit-content',
+              px: 4,
+            }}
+          >
+            {t('home:services.button')}
+          </ButtonLink>
+        </Box>
       </Container>
     </Box>
   )
@@ -135,6 +153,7 @@ function ServiceCard({ service, image, direction = 'left' }) {
           alignItems: 'center',
           textAlign: direction === 'left' ? 'left' : 'right',
           zIndex: 1,
+          maxWidth: '220px',
         }}
       >
         <Typography

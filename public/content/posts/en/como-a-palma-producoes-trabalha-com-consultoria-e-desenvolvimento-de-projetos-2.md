@@ -1,5 +1,5 @@
 ---
-title: "How Palma Produções Works with Consulting and Project Development"
+title: "2 - How Palma Produções Works with Consulting and Project Development"
 description:
   "Discover how Palma Produções uses innovation, quality, and a unique vision to provide impactful consulting and project development services."
 date: 2023-07-19 13:00:00 -0300

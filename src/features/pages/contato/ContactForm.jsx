@@ -4,8 +4,6 @@ import { Box, Button } from '@mui/material'
 import LoadingButton from '@mui/lab/LoadingButton'
 
 import axios from 'axios'
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import 'yup-phone-lite'
 
@@ -15,21 +13,21 @@ import { Notification, useNotification } from '@/features/notification'
 
 const defaultValues = {
   name: '',
-  phone: '',
+  phone: '+55',
   email: '',
   message: '',
 }
 
 export default function ContactForm() {
-  const { t } = useTranslation(['contato', 'common'])
+  const { t } = useTranslation(['common'])
   const [loading, setLoading] = useState(false)
   const { dispatch, setNotification, setErrorNotification, LEVELS } =
     useNotification()
 
-  const nameLabel = t('contato:form.name')
-  const phoneLabel = t('contato:form.phone')
-  const emailLabel = t('contato:form.email')
-  const messageLabel = t('contato:form.message')
+  const nameLabel = t('common:form.contato.name')
+  const phoneLabel = t('common:form.contato.phone')
+  const emailLabel = t('common:form.contato.email')
+  const messageLabel = t('common:form.contato.message')
 
   const validations = yup
     .object({
@@ -61,12 +59,6 @@ export default function ContactForm() {
     })
     .required()
 
-  // TODO: Mover reset para dentro do componente Form
-  const { reset, control } = useForm({
-    defaultValues,
-    resolver: yupResolver(validations),
-  })
-
   const onSubmit = async (data) => {
     setLoading(true)
 
@@ -75,15 +67,15 @@ export default function ContactForm() {
       dispatch(
         setNotification({
           type: LEVELS.SUCCESS,
-          message: t('contato:form.successMessage'),
-          details: t('contato:form.successDetails'),
+          message: t('common:form.contato.successMessage'),
+          details: t('common:form.contato.successDetails'),
         })
       )
     } catch (error) {
       dispatch(
         setErrorNotification({
-          message: t('contato:form.errorMessage'),
-          details: t('contato:form.errorDetails'),
+          message: t('common:form.contato.errorMessage'),
+          details: t('common:form.contato.errorDetails'),
           error,
         })
       )
@@ -123,14 +115,14 @@ export default function ContactForm() {
           id="name"
           type="text"
           name="name"
-          label={t('contato:form.name')}
+          label={t('common:form.contato.name')}
           fullWidth
           required
         />
         <FormInputPhone
           id="phone"
           name="phone"
-          label={t('contato:form.phone')}
+          label={t('common:form.contato.phone')}
           fullWidth
           required
         />
@@ -138,7 +130,7 @@ export default function ContactForm() {
           id="email"
           type="text"
           name="email"
-          label={t('contato:form.email')}
+          label={t('common:form.contato.email')}
           fullWidth
           required
         />
@@ -146,7 +138,7 @@ export default function ContactForm() {
           id="message"
           type="text"
           name="message"
-          label={t('contato:form.message')}
+          label={t('common:form.contato.message')}
           fullWidth
           required
           multiline
@@ -163,16 +155,16 @@ export default function ContactForm() {
         }}
       >
         <LoadingButton
-          loading={loading}
+          form="contactForm"
+          type="submit"
           variant="contained"
           color="primary"
-          type="submit"
-          form="contactForm"
+          loading={loading}
         >
-          {t('contato:form.send')}
+          {t('common:form.contato.send')}
         </LoadingButton>
-        <Button onClick={() => reset()} variant="outlined" color="grey">
-          {t('contato:form.reset')}
+        <Button form="contactForm" type="reset" variant="outlined" color="grey">
+          {t('common:form.contato.reset')}
         </Button>
       </Box>
     </Box>

@@ -17,6 +17,12 @@ const handler = async (req, res) => {
     return res.end(JSON.stringify([]))
   }
 
+  const pageIndexString = query.pageIndex || '1'
+  const pageIndex = parseInt(pageIndexString)
+
+  const itemsPerPageString = query.itemsPerPage || '10'
+  const itemsPerPage = parseInt(itemsPerPageString)
+
   try {
     const lunrIndex = lunr.Index.load(index)
     const results = lunrIndex.search(q)
@@ -30,7 +36,25 @@ const handler = async (req, res) => {
       )
     })
 
-    return res.end(JSON.stringify(documents))
+    const total = documents.length
+
+    const pageCount = Math.ceil(total / itemsPerPage)
+
+    const start = (pageIndex - 1) * itemsPerPage
+
+    const end = start + itemsPerPage
+
+    const resultsPage = documents.slice(start, end)
+
+    const result = {
+      meta: {
+        total,
+        pageCount,
+      },
+      data: resultsPage,
+    }
+
+    return res.end(JSON.stringify(result))
   } catch (error) {
     console.log(error)
     return res.status(error.status || 500).json(error)

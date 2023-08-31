@@ -3,8 +3,9 @@ import { Box } from '@mui/material'
 import { ContentBlock } from '@/features/content'
 import { Title } from '@/features/ui'
 
-export default function PageHeader({
+export default function ContentPageHeader({
   title,
+  titleTextWrap = 'nowrap',
   text,
   direction = 'row',
   borderBottomColor = 'primary.main',
@@ -19,7 +20,7 @@ export default function PageHeader({
         },
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 2,
+        gap: 4,
         mb: 6,
       }}
     >
@@ -33,7 +34,9 @@ export default function PageHeader({
           },
         }}
       >
-        <Title borderBottomColor={borderBottomColor}>{title}</Title>
+        <Title borderBottomColor={borderBottomColor} textWrap={titleTextWrap}>
+          {title}
+        </Title>
       </Box>
 
       {text && (
@@ -43,9 +46,10 @@ export default function PageHeader({
               xs: '100%',
               md: direction === 'row' ? '70%' : '100%',
             },
+            textAlign: 'justify',
           }}
         >
-          <ContentBlock content={text} />
+          <ContentBlock body={text} />
         </Box>
       )}
     </Box>

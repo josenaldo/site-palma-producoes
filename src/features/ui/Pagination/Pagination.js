@@ -8,6 +8,7 @@ export default function Pagination({
   siblingCount = 0,
   boundaryCount = 0,
   showEllipses = true,
+  py = 4,
 }) {
   if (!count) return null
 
@@ -18,7 +19,7 @@ export default function Pagination({
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        py: 4,
+        py: py,
       }}
     >
       <MuiPagination

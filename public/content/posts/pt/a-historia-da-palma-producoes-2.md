@@ -1,5 +1,5 @@
 ---
-title: "A História da Palma Produções"
+title: "2 - A História da Palma Produções"
 description:
   "Descubra a jornada da Palma Produções, uma empresa comprometida em criar projetos culturais e socioambientais impactantes."
 date: 2023-07-19 13:00:00 -0300

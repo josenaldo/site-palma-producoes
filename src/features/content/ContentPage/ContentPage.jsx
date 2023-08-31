@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 
 import {
   ContentAuthor,
@@ -19,23 +19,51 @@ export default function ContentPage({
   date,
   url,
   ns = ['common'],
+  mainImageFullWidth,
+  showMainImage = true,
 }) {
   const { t, isoLocale } = useTranslation(ns)
 
+  console.log('🔴 mainImageFullWidth ', mainImageFullWidth)
+  console.log('🔴 showMainImage ', showMainImage)
   return (
-    <Box>
-      <Box
+    <Box
+      sx={{
+        overflowX: 'hidden',
+      }}
+    >
+      {showMainImage && image && (
+        <Container disableGutters>
+          <ImageBox
+            src={image.url}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            priority
+            fullWidth={mainImageFullWidth}
+          />
+        </Container>
+      )}
+
+      <Container
         sx={{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          alignItems: 'center',
           gap: 2,
           width: '100%',
           mb: 4,
-          alignItems: 'center',
         }}
       >
-        <Title borderBottomColor={titleBorderBottomColor}>{title}</Title>
+        <Title
+          variant="h1"
+          componente="h1"
+          borderBottomColor={titleBorderBottomColor}
+          textWrap="wrap"
+        >
+          {title}
+        </Title>
         <Box
           sx={{
             display: 'flex',
@@ -49,18 +77,11 @@ export default function ContentPage({
           <ShareLink url={url} title={title} image={image.url} t={t} />
         </Box>
         <ContentTags tags={tags} backgroundColor="tertiary.main" />
-      </Box>
+      </Container>
 
-      <ImageBox
-        src={image.url}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
-      />
-
-      <Box>
-        <ContentBlock content={body.raw} />
-      </Box>
+      <Container>
+        <ContentBlock body={body} />
+      </Container>
     </Box>
   )
 }

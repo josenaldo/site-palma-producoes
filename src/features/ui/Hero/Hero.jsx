@@ -10,8 +10,10 @@ export default function Hero({
   text,
   textColor = 'text.light',
   textVariant = 'body1',
+  CTA = null,
   ctaText,
   ctaHref,
+  ctaVariant = 'contained',
   backgroundColor = 'rgba(255 255 255 / 10%)',
   ctaColor = 'primary',
   ctaTarget = '_self',
@@ -75,16 +77,23 @@ export default function Hero({
         >
           {text}
         </Typography>
-        <ButtonLink
-          variant="contained"
-          color={ctaColor}
-          size="large"
-          href={ctaHref}
-          target="_self"
-          rel={ctaTarget === '_blank' ? 'noopener noreferrer' : undefined}
-        >
-          {ctaText}
-        </ButtonLink>
+        {CTA ? (
+          <CTA />
+        ) : (
+          <ButtonLink
+            variant={ctaVariant}
+            color={ctaColor}
+            size="large"
+            href={ctaHref}
+            target="_self"
+            rel={ctaTarget === '_blank' ? 'noopener noreferrer' : undefined}
+            sx={{
+              textAlign: 'center',
+            }}
+          >
+            {ctaText}
+          </ButtonLink>
+        )}
       </Box>
     </Box>
   )

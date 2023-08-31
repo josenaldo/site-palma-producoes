@@ -2,15 +2,9 @@ import { useState } from 'react'
 
 import { Box, Card, CardContent, Typography } from '@mui/material'
 
-import { ImageBox, Link, Tag } from '@/features/ui'
+import { ImageBox, Link } from '@/features/ui'
 
-export default function ContentImageCard({
-  url,
-  title,
-  description,
-  tags,
-  image,
-}) {
+export default function ContentImageCard({ url, title, tags, image }) {
   const [elevation, setElevation] = useState(2)
   const [brightness, setBrightness] = useState(40)
 
@@ -51,6 +45,11 @@ export default function ContentImageCard({
           alt={image.alt}
           width={1200}
           height={628}
+          aspectRatio={{
+            xs: 1 / 1,
+            sm: 1200 / 628,
+          }}
+          cover
           sx={{
             filter: `brightness(${brightness}%)`,
             zIndex: 0,
@@ -73,34 +72,35 @@ export default function ContentImageCard({
               display: 'flex',
               flexDirection: 'column',
               gap: 1,
+              padding: 2,
             }}
           >
             <Typography variant="h5" component="h3" color="text.light">
               {title}
             </Typography>
+
             <Box
               sx={{
                 display: 'flex',
                 flexDirection: 'row',
                 flexWrap: 'wrap',
                 gap: 1,
+                color: 'text.light',
+                textTransform: 'uppercase',
+                '& :not(:last-child)': {
+                  paddingRight: 1,
+                  borderRight: '1px solid',
+                  borderColor: 'text.light',
+                },
               }}
             >
-              {tags && tags.map((tag) => <Tag key={tag} label={tag} />)}
+              {tags &&
+                tags.map((tag, index) => (
+                  <Typography variant="caption" key={tag}>
+                    {tag}
+                  </Typography>
+                ))}
             </Box>
-            <Typography
-              variant="caption"
-              color="text.light"
-              sx={{
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-                display: '-webkit-box',
-                WebkitLineClamp: '2',
-                WebkitBoxOrient: 'vertical',
-              }}
-            >
-              {description}
-            </Typography>
           </Box>
         </CardContent>
       </Card>

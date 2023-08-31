@@ -113,7 +113,7 @@ export default function Socias({ socias }) {
                 }}
               >
                 <ContentBlock
-                  content={socia.body.raw}
+                  body={socia.body}
                   components={{
                     p: ({ children }) => (
                       <Typography variant="body2" mb={2}>

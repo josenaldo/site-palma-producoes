@@ -1,10 +1,12 @@
 import { Container } from '@mui/material'
 
-
-import { sociaContentService, parceriaContentService } from '@/features/content'
+import {
+  ContentPageHeader,
+  sociaContentService,
+  parceriaContentService,
+} from '@/features/content'
 import { getStaticPaths } from '@/features/i18n/server'
 import { AppLayout } from '@/features/layout'
-import { PageHeader } from '@/features/pages'
 import { Parcerias, Socias } from '@/features/pages/quem-somos'
 import { buildStaticProps } from '@/features/pages/server'
 import { ImageBox } from '@/features/ui'
@@ -31,15 +33,17 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
       image={page.image}
     >
       <Container>
-        <PageHeader title={page.title} text={page.body.raw} />
+        <ContentPageHeader title={page.title} text={page.body} />
+      </Container>
+      <ImageBox
+        src={page.image.url}
+        alt={page.image.alt}
+        width={page.image.width}
+        height={page.image.height}
+        priority
+      />
 
-        <ImageBox
-          src={page.image.url}
-          alt={page.image.alt}
-          width={page.image.width}
-          height={page.image.height}
-        />
-
+      <Container>
         <Socias socias={socias} />
       </Container>
 

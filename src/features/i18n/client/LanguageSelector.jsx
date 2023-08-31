@@ -12,16 +12,17 @@ import {
   MenuItem,
 } from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language'
+import { useTranslation } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
-export default function LanguageSelector({ t }) {
+export default function LanguageSelector() {
+  const { t } = useTranslation(['common'])
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
-  // TODO: verificar se mudança de idioma respeita parametros da busca
   const handleChange = async (value) => {
     let pathname = router.pathname
 
@@ -36,6 +37,11 @@ export default function LanguageSelector({ t }) {
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
     })
+
+    const queryString = router.asPath.split('?')[1] || ''
+    if (queryString) {
+      newPathname += `?${queryString}`
+    }
 
     router.push(newPathname)
     handleClose()
@@ -86,7 +92,7 @@ export default function LanguageSelector({ t }) {
               />
             </ListItemIcon>
             <ListItemText>
-              {t(`common:languageSelector.${language}`, { ns: 'common' })}
+              {t('common:languageSelector.' + language)}
             </ListItemText>
           </MenuItem>
         ))}

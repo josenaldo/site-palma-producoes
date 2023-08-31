@@ -4,7 +4,7 @@ import { useTranslation } from '@/features/i18n'
 import { SearchResult } from '@/features/search'
 
 export default function SearchResults({ results }) {
-  const { t } = useTranslation(['common', 'pesquisa'])
+  const { t } = useTranslation(['common'])
 
   return (
     <Box

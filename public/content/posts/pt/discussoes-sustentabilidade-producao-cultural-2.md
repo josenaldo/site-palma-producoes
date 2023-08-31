@@ -1,5 +1,5 @@
 ---
-title: Discussões sobre Sustentabilidade na Produção Cultural
+title: 2 - Discussões sobre Sustentabilidade na Produção Cultural
 description: "Explorando o papel da sustentabilidade na produção cultural e seu impacto no meio ambiente e na sociedade."
 date: 2023-07-19 13:00:00 -0300
 author: Emanuela Palma

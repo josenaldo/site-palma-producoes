@@ -1,6 +1,6 @@
 ---
 name: Bia Herbst
-description: Sócia - Fotógrafa - Videomaker - Produtora Cultural
+description: Sócia - Fotógrafa
 image: "/images/content/socias/bia-herbst.jpg"
 order: 2
 ---

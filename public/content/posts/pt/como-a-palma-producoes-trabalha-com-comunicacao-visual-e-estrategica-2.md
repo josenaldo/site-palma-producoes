@@ -1,5 +1,5 @@
 ---
-title: "Como a Palma Produções Trabalha com Comunicação Visual e Estratégica"
+title: "2 - Como a Palma Produções Trabalha com Comunicação Visual e Estratégica"
 description: "Descubra como a Palma Produções combina criatividade, pensamento estratégico e expertise em comunicação visual para fornecer soluções impactantes para sua marca."
 date: 2023-07-19 13:00:00 -0300
 author: Emanuela Palma

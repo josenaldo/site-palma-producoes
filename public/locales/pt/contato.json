@@ -1,20 +1,9 @@
 {
   "hero": {
     "title": "Tem um projeto em mente e quer __realizá-lo__ conosco?",
-    "text": "Nos conte sobre ele e preencha o formulário abaixo!",
+    "text": "NOS CONTE SOBRE ELE E PREENCHA O FORMULÁRIO ABAIXO!",
     "ctaText": "Preencher Formulário",
-    "ctaHref": "/contact"
-  },
-  "form": {
-    "name": "Nome",
-    "phone": "Telefone",
-    "email": "E-mail",
-    "message": "Mensagem",
-    "send": "Enviar",
-    "reset": "Limpar",
-    "successMessage": "Sucesso: Mensagem enviada!",
-    "successDetails": "Obrigado por entrar em contato conosco, em breve retornaremos sua mensagem.",
-    "errorMessage": "Erro: Mensagem não enviada!",
-    "errorDetails": "Ocorreu um erro ao enviar sua mensagem, por favor tente novamente mais tarde."
+    "ctaHref": "/contact",
+    "ctaVariant": "outlined"
   }
 }

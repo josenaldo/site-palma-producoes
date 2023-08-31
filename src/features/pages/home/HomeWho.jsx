@@ -4,9 +4,11 @@ import Image from 'next/image'
 
 import { useTranslation } from '@/features/i18n'
 import { ButtonLink, Title } from '@/features/ui'
+import { useImageSizes } from '@/features/hooks'
 
 export default function HomeWho() {
   const { t } = useTranslation(['common', 'home'])
+  const impactSizes = useImageSizes(120)
 
   const texts = t('home:who.text', {
     returnObjects: true,
@@ -17,7 +19,7 @@ export default function HomeWho() {
     <Box
       component="section"
       sx={{
-        py: 5,
+        mt: 10,
       }}
     >
       <Container
@@ -70,7 +72,12 @@ export default function HomeWho() {
                 },
               }}
             >
-              <Image src={t('home:who.impact')} alt="Impact" fill />
+              <Image
+                src={t('home:who.impact')}
+                alt="Impact"
+                fill
+                sizes={impactSizes}
+              />
             </Box>
           </Box>
 
@@ -96,7 +103,7 @@ export default function HomeWho() {
               {texts.map((text, index) => (
                 <Typography
                   key={`home:who.text.${index}`}
-                  sx={{ fontSize: 'inherit' }}
+                  sx={{ fontSize: 'inherit', textAlign: 'justify' }}
                 >
                   {text}
                 </Typography>

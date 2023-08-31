@@ -4,6 +4,7 @@ import { getStaticPaths } from '@/features/i18n/server'
 
 import { AppLayout } from '@/features/layout'
 import {
+  HomeCTA,
   HomeHero,
   HomeIntro,
   HomeServices,
@@ -51,6 +52,7 @@ export default function HomePage({ page, depoimentos, servicos }) {
         <HomeServices servicos={servicos} />
         <HomeTestimonials depoimentos={depoimentos} />
         <HomeWish />
+        <HomeCTA />
       </Stack>
     </AppLayout>
   )

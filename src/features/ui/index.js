@@ -1,14 +1,14 @@
 export { BannerBox } from './BannerBox'
 
-export { Blockquote } from './Blockquote'
-
 export { ButtonLink } from './ButtonLink'
 
-export { Code } from './Code'
+export { Carousel } from './Carousel'
 
 export { ContactLinks } from './ContactLinks'
 
 export { ImageBox } from './ImageBox'
+
+export { ImageFallback } from './ImageFallback'
 
 export { Hero } from './Hero'
 
@@ -22,8 +22,8 @@ export { ShareLink } from './ShareLink'
 
 export { SocialLinks } from './SocialLinks'
 
-export { YoutubeVideo } from './YoutubeVideo'
-
 export { Tag } from './Tag'
 
 export { Title } from './Title'
+
+export { YoutubeVideo } from './YoutubeVideo'

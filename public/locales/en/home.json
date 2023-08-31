@@ -1,19 +1,10 @@
 {
   "hero": {
-    "title": "Transforming Ideas into __Reality__",
-    "title1": "Transforming Ideas into ",
-    "title2": "Reality",
-    "text": "Palma Produções offers innovative audiovisual content production, bringing your ideas to life.",
-    "button": "Contact Us",
-    "benefits": [
-      "Innovative content production",
-      "Experienced team of professionals",
-      "Custom solutions for your needs"
-    ]
+    "title": "Transforming Ideas into Reality",
+    "text": "",
+    "button": "Contact Us"
   },
   "intro": {
-    "title": "Design and reframe stories",
-    "subtitle": "KNOW HOW",
     "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE"
   },
   "who": {
@@ -24,7 +15,7 @@
 
       "**Investigating, connecting, cultivating, celebrating, projecting, and telling stories** that promote a sense of belonging to our **Brazilian identity** and  <mark>generate **positive impact** in the world</mark>. This is what motivates us to work in creative, strategic, and collaborative processes **<mark>- in the audiovisual universe and multi-platform actions -</mark> to shed light on the protagonism of those who make history happen**."
     ],
-    "button": "Know"
+    "button": "Know our Team"
   },
   "video": {
     "video": "https://www.youtube.com/watch?v=Hj0btCi1GS8"
@@ -40,5 +31,9 @@
       "Our desire is to build a bridge between art and the audience, creating experiences that resonate and make a difference. We want every captured image, every produced video, and every developed project to be a reflection of our commitment to excellence, creativity, and integrity. Our goal is not only to meet our clients' expectations but to exceed them, delivering works that stand out for their quality, originality, and impact. Join us on this journey of transformation and discover the power of visual storytelling with Palma Produçõess."
     ]
   },
-  "testimonials": "Testimonials"
+  "cta": {
+    "title": "Let's create something amazing together!",
+    "text": "Our team is ready to turn your ideas into reality. Whether it's audiovisual production, cultural or artistic events, we're here to provide unique and memorable experiences.",
+    "button": "Contact Us to Seal the Partnership"
+  }
 }

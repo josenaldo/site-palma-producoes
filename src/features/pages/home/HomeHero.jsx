@@ -1,4 +1,5 @@
-import { Box, Container } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined'
 
 import { useTranslation } from '@/features/i18n'
 import { Hero } from '@/features/ui'
@@ -9,6 +10,7 @@ export default function HomeHero() {
   return (
     <Box
       component="section"
+      id="homeHero"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -48,12 +50,30 @@ export default function HomeHero() {
           titleVariant="h2"
           text={t('home:hero.text')}
           textVariant="h5"
-          ctaColor="primary"
-          ctaText={t('home:hero.button')}
-          ctaHref="/contato"
-          noPadding
+          CTA={HomeHeroCTA}
         />
       </Container>
     </Box>
+  )
+}
+
+function HomeHeroCTA() {
+  return (
+    <Button
+      color="light"
+      onClick={() => {
+        const homeIntro = document.getElementById('homeIntro')
+        if (homeIntro) {
+          homeIntro.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }}
+    >
+      <KeyboardArrowDownOutlinedIcon
+        sx={{
+          fontSize: '6rem',
+          color: 'text.light',
+        }}
+      />
+    </Button>
   )
 }

@@ -91,8 +91,6 @@ export function useSetErrorNotification() {
     details,
     timeoutInSeconds = ERROR_NOTIFICATION_TIMEOUT,
   }) => {
-    console.log('notificationValue', notificationValue)
-
     if (notificationValue.timeoutId) {
       clearTimeout(notificationValue.timeoutId)
     }

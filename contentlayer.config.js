@@ -4,6 +4,26 @@ import {
   defineNestedType,
 } from 'contentlayer/source-files'
 
+import remarkGfm from 'remark-gfm'
+import remarkUnwrapImages from 'remark-unwrap-images'
+
+import externalLinks from 'rehype-external-links'
+import rehypePrism from 'rehype-prism-plus'
+
+const remarkPlugins = [
+  remarkGfm,
+  remarkUnwrapImages,
+  [
+    externalLinks,
+    {
+      target: '_blank',
+      rel: ['nofollow', 'noopener', 'noreferrer'],
+    },
+  ],
+]
+
+const rehypePlugins = [rehypePrism]
+
 function resolveSlug(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
 
@@ -61,6 +81,7 @@ const Image = defineNestedType(() => ({
 export const Page = defineDocumentType(() => ({
   name: 'Page',
   filePathPattern: `pages/**/*.md`,
+  contentType: 'mdx',
   fields: {
     title: {
       type: 'string',
@@ -75,6 +96,16 @@ export const Page = defineDocumentType(() => ({
     image: {
       type: 'nested',
       of: Image,
+    },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The image full width of the page',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
     },
   },
   computedFields: {
@@ -96,6 +127,7 @@ export const Page = defineDocumentType(() => ({
 export const Socia = defineDocumentType(() => ({
   name: 'Socia',
   filePathPattern: `socias/**/*.md`,
+  contentType: 'mdx',
   fields: {
     name: {
       type: 'string',
@@ -137,6 +169,7 @@ export const Socia = defineDocumentType(() => ({
 export const Parceria = defineDocumentType(() => ({
   name: 'Parceria',
   filePathPattern: `parcerias/**/*.md`,
+  contentType: 'mdx',
   fields: {
     name: {
       type: 'string',
@@ -178,6 +211,7 @@ export const Parceria = defineDocumentType(() => ({
 export const Servico = defineDocumentType(() => ({
   name: 'Servico',
   filePathPattern: `servicos/**/*.md`,
+  contentType: 'mdx',
   fields: {
     id: {
       type: 'number',
@@ -219,6 +253,7 @@ export const Servico = defineDocumentType(() => ({
 const Depoimento = defineDocumentType(() => ({
   name: 'Depoimento',
   filePathPattern: `depoimentos/**/*.md`,
+  contentType: 'mdx',
   fields: {
     name: {
       type: 'string',
@@ -259,6 +294,7 @@ const Depoimento = defineDocumentType(() => ({
 export const PortfolioItem = defineDocumentType(() => ({
   name: 'PortfolioItem',
   filePathPattern: `portfolio/**/*.md`,
+  contentType: 'mdx',
   fields: {
     id: {
       type: 'number',
@@ -290,6 +326,16 @@ export const PortfolioItem = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The image full width of the PortfolioItem',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
+    },
   },
   computedFields: {
     url: {
@@ -310,6 +356,7 @@ export const PortfolioItem = defineDocumentType(() => ({
 export const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: `posts/**/*.md`,
+  contentType: 'mdx',
   fields: {
     title: {
       type: 'string',
@@ -346,6 +393,16 @@ export const Post = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
+    mainImageFullWidth: {
+      type: 'boolean',
+      description: 'The main image full width of the Post',
+      defaultValue: true,
+    },
+    showMainImage: {
+      type: 'boolean',
+      description: 'Show main image of the PortfolioItem',
+      defaultValue: true,
+    },
   },
   computedFields: {
     url: {
@@ -365,6 +422,11 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'public/content',
+  contentDirExclude: ['./data'],
+  mdx: {
+    remarkPlugins: remarkPlugins,
+    rehypePlugins: rehypePlugins,
+  },
   documentTypes: [
     Page,
     Socia,
