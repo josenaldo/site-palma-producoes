@@ -27,7 +27,7 @@ export default function ContactHero() {
         text={t('contato:hero.text')}
         textVariant="body1"
         textColor="text.dark"
-        ctaColor="primary"
+        ctaColor="dark"
         ctaText={t('contato:hero.ctaText')}
         ctaHref={t('contato:hero.ctaHref')}
         ctaVariant={t('contato:hero.ctaVariant', 'outlined')}
