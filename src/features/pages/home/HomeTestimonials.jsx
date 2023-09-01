@@ -12,7 +12,7 @@ export default function HomeTestimonials({ depoimentos }) {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        mt: 10,
+        my: 10,
         width: '100%',
         gap: 4,
       }}

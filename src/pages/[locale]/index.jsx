@@ -46,12 +46,12 @@ export default function HomePage({ page, depoimentos, servicos }) {
     >
       <Stack>
         <HomeHero />
-        <HomeIntro />
         <HomeWho />
-        <HomeVideo />
+        <HomeIntro />
         <HomeServices servicos={servicos} />
+        <HomeVideo />
         <HomeTestimonials depoimentos={depoimentos} />
-        <HomeWish />
+        {/* <HomeWish /> */}
         <HomeCTA />
       </Stack>
     </AppLayout>
