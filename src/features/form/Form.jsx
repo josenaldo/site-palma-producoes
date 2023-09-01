@@ -29,8 +29,7 @@ export default function Form({
   }
 
   const submitForm = (data) => {
-    onSubmit(data)
-    reset(defaultValues)
+    onSubmit(data, reset)
   }
 
   return (

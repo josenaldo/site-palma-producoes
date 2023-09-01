@@ -59,7 +59,7 @@ export default function ContactForm() {
     })
     .required()
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data, reset) => {
     setLoading(true)
 
     try {
@@ -71,6 +71,7 @@ export default function ContactForm() {
           details: t('common:form.contato.successDetails'),
         })
       )
+      reset(defaultValues)
     } catch (error) {
       dispatch(
         setErrorNotification({
