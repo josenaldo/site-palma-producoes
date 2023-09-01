@@ -29,6 +29,7 @@ export default async function handler(req, res) {
   const html = render(contactEmail)
 
   await sendEmail({
+    from: email,
     to: process.env.SMTP_EMAIL_TO,
     subject: 'Palma - Contato',
     html,
