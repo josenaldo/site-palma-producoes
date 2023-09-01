@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 import { Box } from '@mui/material'
 
 import { contactLinks, socialLinks } from '@/data'
-import { Link } from '@/features/ui'
+import { ButtonLink, Link } from '@/features/ui'
 
 export default function ContactList() {
   const links = useMemo(() => [...contactLinks, ...socialLinks], [])
@@ -19,10 +19,11 @@ export default function ContactList() {
       }}
     >
       {links.map((link) => (
-        <Link
+        <ButtonLink
           key={link.title}
           href={link.href}
-          color="text.dark"
+          color="dark"
+          variant="outlined"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -37,7 +38,7 @@ export default function ContactList() {
         >
           <link.icon />
           {link.text}
-        </Link>
+        </ButtonLink>
       ))}
     </Box>
   )
