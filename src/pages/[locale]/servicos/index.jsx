@@ -37,6 +37,9 @@ export default function ServicosPage({ page, servicos }) {
         alt={page.image.alt}
         width={page.image.width}
         height={page.image.height}
+        aspectRatio="21/9"
+        cover
+        fullWidth
       />
 
       <Container>

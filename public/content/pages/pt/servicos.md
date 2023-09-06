@@ -9,4 +9,8 @@ image:
   height: 628
 ---
 
-Na **Palma Produções**, transformamos ideias em realidade através de uma variedade de serviços. Nossa equipe de profissionais experientes está pronta para ajudá-lo a alcançar seus objetivos. Oferecemos **consultoria em inovação**, ajudando a desenvolver projetos que vão além do convencional. Nossa expertise em **comunicação visual e estratégica** permite criar mensagens impactantes e eficazes. Somos especialistas em **criação de conteúdo audiovisual**, produzindo materiais que capturam a atenção e comunicam sua mensagem de forma clara e envolvente. Além disso, nossa experiência em **produção cultural** nos permite criar experiências memoráveis que conectam pessoas e ideias.
+A Palma Produções atua em **projetos de impacto *na área cultural e socioambiental***, com lentes focadas em soluções e narrativas que valorizam as necessidades, a memória e a diversidade cultural brasileira.
+
+***Investigar, conectar, cultivar, celebrar, projetar e contar histórias*** que promovam o sentimento de pertencimento da nossa ***brasilidade*** e gerem impacto positivo no mundo.
+
+É o que nos motiva a atuar em processos criativos, estratégicos e colaborativos - no universo audiovisual e em ações multiplataformas - ***para dar luz ao protagonismo de quem faz a história acontecer***.
