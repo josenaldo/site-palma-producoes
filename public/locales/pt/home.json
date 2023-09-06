@@ -5,15 +5,18 @@
     "button": "Contate-nos"
   },
   "intro": {
-    "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE"
+    "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE",
+    "text": "Que satisfação receber você por aqui. Na PALMA, o Rio de Janeiro encontra o mundo, a cultura se integra à natureza e as histórias se tornam pontes para um futuro mais sustentável."
   },
   "who": {
     "impact": "/images/home/impacto.png",
     "title": "Quem faz a Palma",
     "text": [
-      "A palma produções atua em **projetos de impacto** na área cultural e socioambiental, com lentes focadas em **soluções narrativas** que valorizam a **memória e a diversidade cultural brasileira**.",
+      "Na PALMA PRODUÇÕES, o Brasil ganha vida em histórias e a terra é amada em cada frame. Nossos olhos brilham com a oportunidade de trazer para o mundo narrativas que promovam o sentimento de pertencimento da nossa brasilidade ao valorizar a memória e a identidade, e inspirar práticas sustentáveis para um amanhã desejável.",
 
-      "**Investigar, conectar, cultivar, celebrar, projetar e contar histórias** que promovam o sentimento de pertencimento da nossa **brasilidade** e <mark>gerem **impacto positivo** no mundo</mark>. É o que nos motiva a atuar em processos criativos, estratégicos e colaborativos **<mark>- no universo audiovisual em ações multiplataformas -</mark> para dar luz ao proptagonismo de quem faz a história acontecer**."
+      "Nossa missão é conectar expressão artística e cultural com a defesa dos direitos humanos e da sustentabilidade do planeta. Nossos valores são enraizados na diversidade, inclusão, responsabilidade social e ambiental, criando uma sinergia única entre criatividade e impacto positivo.",
+
+      "É o que nos motiva a atuar em processos criativos, estratégicos e colaborativos - unindo inovação, comunicação e sustentabilidade - **para dar luz ao protagonismo de quem faz a história acontecer.**"
     ],
     "button": "Conheça nosso time"
   },
@@ -24,16 +27,10 @@
     "title": "O que fazemos",
     "button": "Conheça nossos Serviços"
   },
-  "wish": {
-    "title": "O que desejamos",
-    "text": [
-      "No coração da Palma Produções, reside um desejo profundo de criar, inovar e transformar. Queremos ir além da produção de conteúdo audiovisual e consultoria em projetos; aspiramos a ser catalisadores de mudanças positivas na indústria cultural. Nossa missão é projetar e resignificar histórias, dando vida a narrativas que inspiram, educam e provocam reflexões. Acreditamos que cada portfolio é uma oportunidade para desafiar o status quo, promover a diversidade e contribuir para uma sociedade mais inclusiva e justa.",
-      "Nosso desejo é construir uma ponte entre a arte e o público, criando experiências que ressoem e façam a diferença. Queremos que cada imagem capturada, cada vídeo produzido e cada portfolio desenvolvido seja um reflexo do nosso compromisso com a excelência, a criatividade e a integridade. Nosso objetivo é não apenas atender às expectativas dos nossos clientes, mas superá-las, entregando trabalhos que se destacam pela qualidade, originalidade e impacto. Junte-se a nós nesta jornada de transformação e descubra o poder da narrativa visual com a Palma Produções."
-    ]
-  },
+
   "cta": {
     "title": "Vamos criar algo incrível juntos!",
-    "text": "",
+    "text": "Junte-se a nós nessa jornada, onde cada imagem e cada palavra contam, onde nossa cultura se enraíza e nossa conexão com a Mãe Terra nos impulsiona.",
     "button": "Entre em Contato para Fecharmos uma Parceria"
   }
 }

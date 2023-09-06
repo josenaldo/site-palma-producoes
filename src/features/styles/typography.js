@@ -52,6 +52,10 @@ const typography = {
   h6: {
     fontFamily: bebasKai.style.fontFamily,
   },
+  body3: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1.2rem',
+  },
 }
 
 export { titleFont, textFont }

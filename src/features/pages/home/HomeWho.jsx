@@ -97,13 +97,13 @@ export default function HomeWho() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 4,
-                fontSize: '1.2rem',
               }}
             >
               {texts.map((text, index) => (
                 <Typography
                   key={`home:who.text.${index}`}
-                  sx={{ fontSize: 'inherit', textAlign: 'justify' }}
+                  variant="body3"
+                  sx={{ textAlign: 'justify' }}
                 >
                   {text}
                 </Typography>
