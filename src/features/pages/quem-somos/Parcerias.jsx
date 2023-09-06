@@ -12,7 +12,7 @@ export default function Parcerias({ parcerias }) {
       sx={{
         gap: 2,
         backgroundColor: 'surfice.lighter',
-        py: 5,
+        py: 10,
       }}
     >
       <Container
@@ -36,11 +36,7 @@ export default function Parcerias({ parcerias }) {
       <Container
         sx={{
           display: 'grid',
-          gridTemplateColumns: {
-            xs: '1fr',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
-          },
+          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
           gap: 2,
         }}
       >

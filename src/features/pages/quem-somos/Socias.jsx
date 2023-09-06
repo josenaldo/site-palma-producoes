@@ -91,7 +91,7 @@ export default function Socias({ socias }) {
                   sx={{
                     display: 'inline-block',
                     width: '100%',
-                    borderBottom: '5px solid',
+                    borderBottom: '3px solid',
                     borderColor: 'primary.main',
                     textAlign: {
                       xs: 'center',

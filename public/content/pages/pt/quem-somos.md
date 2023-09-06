@@ -5,8 +5,12 @@ description:
 image:
   url: "/images/content/pages/quem-somos.jpg"
   alt: "Palma Produções - Quem Somos"
-  width: 1200
-  height: 628
+  width: 1920
+  height: 822
 ---
 
-A **Palma Produções** é uma produtora de impacto cultural e socioambiental, dedicada a projetos que valorizam a **memória** e a **diversidade cultural brasileira**. Nossa missão é investigar, conectar, cultivar e celebrar histórias que promovem o sentimento de **pertencimento** à nossa brasilidade, gerando **impacto positivo** no mundo. Nosso trabalho é guiado por processos criativos, estratégicos e colaborativos, tanto no universo audiovisual quanto em ações multiplataformas. Nosso objetivo é dar luz ao **protagonismo** de quem faz a história acontecer. Na Palma Produções, acreditamos que cada história tem o poder de gerar mudanças significativas e duradouras.
+Um encontro de almas unidas pelo propósito, pela autenticidade e pela busca constante de um mundo onde as histórias contam, a cultura floresce e a sustentabilidade ecoa. Junte-se a nós nessa jornada de realizações humanizadas, onde cada passo é uma contribuição para a construção de um planeta mais consciente, harmonioso e conectado.
+
+"Quem Faz a Palma"
+
+Em meio a uma sociedade em constante movimento, três almas resilientes e apaixonadas emergiram como as forças motrizes por trás da Palma Produções. Alexandra, Bia e Emanuela: três mulheres extraordinárias, cada uma com sua história e paixões únicas, mas unidas por uma visão coletiva que transcende o comum.

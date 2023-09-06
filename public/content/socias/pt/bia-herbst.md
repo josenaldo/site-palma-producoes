@@ -5,6 +5,6 @@ image: "/images/content/socias/bia-herbst.jpg"
 order: 2
 ---
 
-Bia Herbst é uma profissional multifacetada que combina suas habilidades em publicidade, marketing, fotografia, cinematografia e produção cultural para criar soluções criativas e inovadoras. Sua formação diversificada e experiência nas indústrias de comunicação, mídia e artes a tornam capaz de abordar desafios de uma perspectiva única e holística. Bia é graduada em Publicidade e Propaganda, e suas habilidades foram aprimoradas por meio de estudos e trabalho com renomados profissionais do setor, como Greice Rosa e Marco Antonio Portela.
+Publicitária, fotógrafa, amante de cinema e de viagens, Bia Herbst já trabalhou em diversos setores profissionais. Desde o livreiro, em agência de publicidade, de entretenimento, especializou-se em gestão de marketing de luxo, assistiu prestigiados fotógrafos brasileiros e italianos, fez a fotografia do documentário Mestre Sirso.
 
-Dividindo seu tempo entre o Brasil e a Itália, Bia Herbst tem se destacado como profissional de marketing e produtora cultural. Seu compromisso em capturar a efemeridade da vida e a beleza do mundo ao seu redor é evidente em todas as suas atividades profissionais, incluindo sua carreira como fotógrafa e cinematógrafa. Seu profissionalismo demonstra a versatilidade e paixão que ela traz para cada portfolio em que se envolve.
+Em suas andanças pelo mundo, teve uma epifania. Enquanto orgulhava-se em contar as maravilhas do Brasil, percebeu que gostaria de conhecer ainda mais a cultura brasileira e mostrar a todos o seu enorme potencial cultural e turístico. Assim, propôs às suas amigas Emanuela Palma e Alexandra Karmirian a unirem seus talentos para juntas ampliarem o ramo de atuação da Palma Produções.
