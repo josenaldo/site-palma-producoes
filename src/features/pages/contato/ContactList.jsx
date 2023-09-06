@@ -15,14 +15,14 @@ export default function ContactList() {
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'center',
-        gap: 2,
+        gap: 3,
       }}
     >
       {links.map((link) => (
-        <ButtonLink
+        <Link
           key={link.title}
           href={link.href}
-          color="dark"
+          color="dark.main"
           variant="outlined"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function ContactList() {
         >
           <link.icon />
           {link.text}
-        </ButtonLink>
+        </Link>
       ))}
     </Box>
   )
