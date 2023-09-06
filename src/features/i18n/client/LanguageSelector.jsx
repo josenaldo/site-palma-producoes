@@ -17,7 +17,7 @@ import { useTranslation } from '@/features/i18n'
 const languages = ['pt', 'en']
 
 export default function LanguageSelector() {
-  const { t } = useTranslation(['common'])
+  const { t, locale } = useTranslation(['common'])
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -62,12 +62,19 @@ export default function LanguageSelector() {
     >
       <Button
         id="basic-button"
-        variant="outlined"
+        variant="text"
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        startIcon={<LanguageIcon />}
+        startIcon={
+          <Image
+            src={`/flags/${locale}.svg`}
+            width={20}
+            height={20}
+            alt={t(locale)}
+          />
+        }
       >
         {t('common:languageSelector.language')}
       </Button>

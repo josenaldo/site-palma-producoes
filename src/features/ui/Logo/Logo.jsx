@@ -20,12 +20,18 @@ const logos = {
 export default function Logo({
   color = 'white',
   type = 'vertical',
-  height = 80,
+  height = 60,
 }) {
   const src = logos[color][type]
 
   return (
-    <Link href="/">
+    <Link
+      href="/"
+      sx={{
+        lineHeight: '0',
+        letterSpacing: '0',
+      }}
+    >
       <Image src={src} alt="Logo" priority height={height} />
     </Link>
   )

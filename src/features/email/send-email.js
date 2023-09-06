@@ -9,8 +9,6 @@ const smtpOptions = {
     pass: process.env.SMTP_PASSWORD,
   },
 }
-console.log('🔴🔴 HOST', smtpOptions.host)
-console.log('🔴🔴 PORT', smtpOptions.port)
 
 export const sendEmail = async (data) => {
   const transporter = nodemailer.createTransport({

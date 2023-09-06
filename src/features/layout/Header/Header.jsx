@@ -42,14 +42,12 @@ export default function Header({ color, ...props }) {
       color={elevated ? 'white' : 'transparent'}
       sx={{
         position: isHome ? 'fixed' : 'sticky',
-        px: {
-          xs: 0,
-          md: 3,
-        },
         zIndex: 1000,
-        py: 2,
+        px: 0,
+        py: 1,
         mb: 2,
       }}
+      noGutters
     >
       <Container
         sx={{
@@ -57,7 +55,10 @@ export default function Header({ color, ...props }) {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
+          width: '100%',
         }}
+        noGutters
+        // maxWidth="lg"
       >
         <Box
           sx={{

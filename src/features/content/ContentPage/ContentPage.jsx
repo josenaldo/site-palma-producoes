@@ -24,8 +24,6 @@ export default function ContentPage({
 }) {
   const { t, isoLocale } = useTranslation(ns)
 
-  console.log('🔴 mainImageFullWidth ', mainImageFullWidth)
-  console.log('🔴 showMainImage ', showMainImage)
   return (
     <Box
       sx={{
