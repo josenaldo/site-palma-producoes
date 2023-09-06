@@ -41,6 +41,9 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
         width={page.image.width}
         height={page.image.height}
         priority
+        aspectRatio="21/9"
+        fullWidth
+        cover
       />
 
       <Container>
