@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 
-export default function Blockquote({ children }) {
+export default function BlockBlockquote({ children }) {
   return (
     <Box
       sx={{

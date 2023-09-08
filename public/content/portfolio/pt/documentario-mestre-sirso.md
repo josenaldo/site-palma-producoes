@@ -1,7 +1,7 @@
 ---
 id: 1
 highlight: true
-title: "Mestre Sirso: quando o mundo é silêncio a vibração é mestre"
+title: "Mestre Sirso"
 tags:
   - Documentário
   - Produção Cultural
@@ -13,16 +13,23 @@ image:
   alt: Documentário “Mestre Sirso"
   width: 1200
   height: 628
-mainImageFullWidth: true
-showMainImage: true
+
 ---
 
+<Titulo />
+
+<Tags />
+
+<RedesSociais
+  facebook="https://www.facebook.com/mestresirsofilme/"
+  instagram="https://www.instagram.com/mestresirsofilme/"
+  youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
+
+<Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8" aspectRatio="21/9" fullWidth cover/>
 
 Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas.
 
-<Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8"/>
-
-## Sinopse
+## Sinopse ddd
 
 "Mestre Sirso: quando o mundo é silêncio a vibração é mestre" narra a história fascinante de Mestre Sirso, um homem surdo e negro que protagoniza uma emocionante jornada de resistência na luta por direitos. Morador da periferia de Cascavel, no Paraná, Sirso tem sua audição comprometida aos quatro anos de idade, em 1974, vítima da epidemia de meningite que assolou o Brasil, uma tragédia negada pelo governo da ditadura militar.
 

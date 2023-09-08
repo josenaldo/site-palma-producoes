@@ -3,7 +3,7 @@ import { Box, Chip, TextField } from '@mui/material'
 
 import { Pagination } from '@/features/ui'
 
-export default function ChipList({ items, label = 'Filter', ...props }) {
+export default function BlockChipList({ items, label = 'Filter', ...props }) {
   const [filter, setFilter] = useState('')
 
   const [pageIndex, setPageIndex] = useState(1)

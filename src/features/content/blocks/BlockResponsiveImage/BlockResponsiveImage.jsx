@@ -9,7 +9,7 @@ import { ImageBox } from '@/features/ui'
  * @param {*} props
  * @returns
  */
-export default function ResponsiveImage(props) {
+export default function BlockResponsiveImage(props) {
   const alt = props.alt?.replace(/\[[^\]]*\]/g, '').trim()
   const metaSize = props.alt?.match(/\[([^\]]+)\]/g)
 

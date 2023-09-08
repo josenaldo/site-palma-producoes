@@ -1,13 +1,25 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Divider, Typography } from '@mui/material'
+
+import { useTranslation } from '@/features/i18n'
+
+import { useMDXComponent } from 'next-contentlayer/hooks'
+
+import { Link } from '@/features/ui'
 
 import {
-  ContentAuthor,
-  ContentBlock,
-  ContentDate,
-  ContentTags,
-} from '@/features/content'
-import { ImageBox, ShareLink, Title } from '@/features/ui'
-import { useTranslation } from '@/features/i18n'
+  BlockBlockquote,
+  BlockCarousel,
+  BlockChipList,
+  BlockCode,
+  BlockMainImage,
+  BlockResponsiveImage,
+  BlockSocialBar,
+  BlockYoutube,
+  BlockTags,
+  BlockTitle,
+} from '@/features/content/blocks'
+
+import styles from './ContentPage.module.css'
 
 export default function ContentPage({
   title,
@@ -19,66 +31,49 @@ export default function ContentPage({
   date,
   url,
   ns = ['common'],
-  mainImageFullWidth,
-  showMainImage = true,
+  components = {},
 }) {
   const { t, isoLocale } = useTranslation(ns)
 
+  const contentBody = body?.code || body?.html || body?.raw || body
+
+  const MDXContent = useMDXComponent(contentBody)
+
+  const comp = {
+    h1: (props) => <Typography component="h1" variant="h1" {...props} />,
+    h2: (props) => <Typography component="h2" variant="h2" {...props} />,
+    h3: (props) => <Typography component="h3" variant="h3" {...props} />,
+    h4: (props) => <Typography component="h4" variant="h4" {...props} />,
+    h5: (props) => <Typography component="h5" variant="h5" {...props} />,
+    h6: (props) => <Typography component="h6" variant="h6" {...props} />,
+    a: Link,
+    hr: Divider,
+    img: BlockResponsiveImage,
+    pre: BlockCode,
+    blockquote: BlockBlockquote,
+
+    // Custom tags
+    Carrossel: BlockCarousel,
+    ImagemPrincipal: (props) => <BlockMainImage image={image} />,
+    Lista: BlockChipList,
+    RedesSociais: (props) => <BlockSocialBar {...props} />,
+    Tags: (props) => <BlockTags tags={tags} />,
+    Titulo: (props) => (
+      <BlockTitle
+        title={title}
+        titleBorderBottomColor={titleBorderBottomColor}
+      />
+    ),
+    Youtube: (props) => <BlockYoutube {...props} />,
+    ...components,
+  }
+
   return (
-    <Box
-      sx={{
-        overflowX: 'hidden',
-      }}
-    >
-      {showMainImage && image && (
-        <Container disableGutters>
-          <ImageBox
-            src={image.url}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-            priority
-            fullWidth={mainImageFullWidth}
-          />
-        </Container>
-      )}
-
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: 2,
-          width: '100%',
-          mb: 4,
-        }}
-      >
-        <Title
-          variant="h1"
-          componente="h1"
-          borderBottomColor={titleBorderBottomColor}
-          textWrap="wrap"
-        >
-          {title}
-        </Title>
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: 1,
-          }}
-        >
-          <ContentAuthor author={author} />
-          <ContentDate date={date} isoLocale={isoLocale} />
-          <ShareLink url={url} title={title} image={image.url} t={t} />
-        </Box>
-        <ContentTags tags={tags} backgroundColor="tertiary.main" />
-      </Container>
-
+    <Box>
       <Container>
-        <ContentBlock body={body} />
+        <Box className={styles.markdownBody}>
+          <MDXContent components={comp} />
+        </Box>
       </Container>
     </Box>
   )

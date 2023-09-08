@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
-export default function Code({ children }) {
+export default function BlockCode({ children }) {
   return (
     <Box
       className="remark-highlight"

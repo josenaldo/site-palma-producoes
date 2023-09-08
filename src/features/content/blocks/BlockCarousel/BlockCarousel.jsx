@@ -1,7 +1,7 @@
 import { Carousel } from '@/features/ui'
 import React from 'react'
 
-export default function Carrossel({ children, ...props }) {
+export default function BlockCarousel({ children, ...props }) {
   const cleanedChildren = React.Children.toArray(children).filter((child) => {
     return child !== '\n' && child !== ' '
   })

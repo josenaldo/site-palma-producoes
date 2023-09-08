@@ -1,6 +1,19 @@
-export { ResponsiveImage } from './ResponsiveImage'
-export { Blockquote } from './Blockquote'
-export { Code } from './Code'
-export { Youtube } from './Youtube'
-export { Carrossel } from './Carrossel'
-export { ChipList } from './ChipList'
+export { BlockBlockquote } from './BlockBlockquote'
+
+export { BlockCarousel } from './BlockCarousel'
+
+export { BlockChipList } from './BlockChipList'
+
+export { BlockCode } from './BlockCode'
+
+export { BlockMainImage } from './BlockMainImage'
+
+export { BlockResponsiveImage } from './BlockResponsiveImage'
+
+export { BlockSocialBar } from './BlockSocialBar'
+
+export { BlockTags } from './BlockTags'
+
+export { BlockYoutube } from './BlockYoutube'
+
+export { BlockTitle } from './BlockTitle'
