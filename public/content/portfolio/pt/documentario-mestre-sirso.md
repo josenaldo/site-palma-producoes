@@ -132,6 +132,12 @@ Audiodescrição **FELIPE MIANES**, Intérprete de Libras **MIKE DIANO**, Legend
 
 ## Exibições
 
+**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+
+**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+
+**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+
 ## Benfeitores
 
 import benfeitores from '../../data/benfeitores.json'
