@@ -8,6 +8,7 @@ export default function Title({
   borderBottomColor = 'primary.main',
   sx = {},
   textWrap = 'nowrap',
+  ...otherProps
 }) {
   return (
     <Typography
@@ -23,6 +24,7 @@ export default function Title({
         whiteSpace: textWrap === 'nowrap' ? 'nowrap' : 'normal',
         ...sx,
       }}
+      {...otherProps}
     >
       {children}
     </Typography>

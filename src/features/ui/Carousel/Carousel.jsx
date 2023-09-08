@@ -1,6 +1,5 @@
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import StarIcon from '@mui/icons-material/Star'
 
 import MuiCarousel from 'react-material-ui-carousel'
 
@@ -11,7 +10,6 @@ export default function Carousel({ children }) {
       PrevIcon={<ChevronLeftIcon sx={{ fontSize: '2.5rem' }} />}
       NextIcon={<ChevronRightIcon sx={{ fontSize: '2.5rem' }} />}
       navButtonsAlwaysVisible={true}
-      // IndicatorIcon={<StarIcon />}
       indicatorContainerProps={{
         style: {
           paddingTop: '10px',

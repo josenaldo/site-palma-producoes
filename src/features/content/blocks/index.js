@@ -14,6 +14,8 @@ export { BlockSocialBar } from './BlockSocialBar'
 
 export { BlockTags } from './BlockTags'
 
+export { BlockToc } from './BlockToc'
+
 export { BlockYoutube } from './BlockYoutube'
 
 export { BlockTitle } from './BlockTitle'

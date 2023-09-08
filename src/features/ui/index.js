@@ -1,3 +1,5 @@
+export { AnchoredTitle } from './AnchoredTitle'
+
 export { BannerBox } from './BannerBox'
 
 export { ButtonLink } from './ButtonLink'

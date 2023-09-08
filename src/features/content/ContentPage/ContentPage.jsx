@@ -4,7 +4,7 @@ import { useTranslation } from '@/features/i18n'
 
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
-import { Link } from '@/features/ui'
+import { AnchoredTitle, Link } from '@/features/ui'
 
 import {
   BlockBlockquote,
@@ -17,6 +17,7 @@ import {
   BlockYoutube,
   BlockTags,
   BlockTitle,
+  BlockToc,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -40,12 +41,12 @@ export default function ContentPage({
   const MDXContent = useMDXComponent(contentBody)
 
   const comp = {
-    h1: (props) => <Typography component="h1" variant="h1" {...props} />,
-    h2: (props) => <Typography component="h2" variant="h2" {...props} />,
-    h3: (props) => <Typography component="h3" variant="h3" {...props} />,
-    h4: (props) => <Typography component="h4" variant="h4" {...props} />,
-    h5: (props) => <Typography component="h5" variant="h5" {...props} />,
-    h6: (props) => <Typography component="h6" variant="h6" {...props} />,
+    h1: (props) => <Typography component="h1" variant="h2" {...props} />,
+    h2: (props) => <AnchoredTitle component="h2" variant="h3" {...props} />,
+    h3: (props) => <AnchoredTitle component="h3" variant="h4" {...props} />,
+    h4: (props) => <AnchoredTitle component="h4" variant="h5" {...props} />,
+    h5: (props) => <AnchoredTitle component="h5" variant="h6" {...props} />,
+    h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
     a: Link,
     hr: Divider,
     img: BlockResponsiveImage,
@@ -66,6 +67,7 @@ export default function ContentPage({
     ),
     Youtube: (props) => <BlockYoutube {...props} />,
     ...components,
+    Toc: BlockToc,
   }
 
   return (
