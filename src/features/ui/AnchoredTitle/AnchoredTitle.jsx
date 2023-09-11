@@ -19,6 +19,7 @@ export default function AnchoredTitle({
       {...otherProps}
       sx={{
         scrollMarginTop: '150px',
+        mb: 2,
         ...otherProps.sx,
       }}
     >
