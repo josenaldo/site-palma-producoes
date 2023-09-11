@@ -47,7 +47,6 @@ export default function Header({ color, ...props }) {
         py: 1,
         mb: 2,
       }}
-      noGutters
     >
       <Container
         sx={{
@@ -57,8 +56,6 @@ export default function Header({ color, ...props }) {
           justifyContent: 'space-between',
           width: '100%',
         }}
-        noGutters
-        // maxWidth="lg"
       >
         <Box
           sx={{
