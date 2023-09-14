@@ -15,7 +15,7 @@ export default function BlockPartnershipItem({
         alignItems: 'center',
         justifyContent: 'center',
         gap: '1rem',
-        padding: 2,
+        py: 2,
         backgroundColor: 'grey.100',
       }}
     >
