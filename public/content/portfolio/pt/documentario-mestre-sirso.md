@@ -45,16 +45,15 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
 
 <Carrossel items="3">
 
-  ![Capa](/images/content/portfolio/documentario-mestre-sirso/capa.jpg)
+  ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
 
-  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel.jpg)
+  ![Carrossel Sinopse 2](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-02.jpg)
 
 </Carrossel>
 
-**DOCUMENTÁRIO**:
+**DOCUMENTÁRIO**
 
-- Ano: 2021
-- Tempo: 68 min
+- 2021 / 68 min
 
 **PRODUTORAS**
 
@@ -67,7 +66,7 @@ O filme propõe ao espectador uma imersão no universo de uma pessoa com defici�
 
 Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
 
->>> Galeria com duas fotos, uma quadrada e uma retangular
+![Foto1](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
 
 A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
 
@@ -78,6 +77,14 @@ A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e
   ![Foto2](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-02.jpg)
 
   ![Foto3](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-03.jpg)
+
+  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-04.jpg)
+
+  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-05.jpg)
+
+  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-06.jpg)
+
+  ![Foto7](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-07.jpg)
 
 </Carrossel>
 
@@ -110,7 +117,75 @@ O filme foi produzido com todos os recursos de acessibilidade e a versão oficia
 
 ## Parcerias
 
-> PArceiros
+<Parcerias titulo="Produção">
+  <Parceria
+    parceiro="Palma Produções"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-producao-palma.png"
+    url="https://palmaproducoes.com.br"/>
+
+  <Parceria
+    parceiro="Carnavalle"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-producao-carnavalle.png"
+    url=""/>
+</Parcerias>
+
+<Parcerias titulo="Realização">
+  <Parceria
+    parceiro="Capoeira Arte Luta"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-realizacao-capoeira-arte-luta.png"
+    url=""/>
+</Parcerias>
+
+<Parcerias titulo="Co-idealização">
+  <Parceria
+    parceiro="Benfeitoria"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-coidealizacao-benfeitoria.png"
+    url=""/>
+  <Parceria parceiro="Sitawi"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-coidealizacao-sitawi.png"
+    url=""/>
+</Parcerias>
+
+<Parcerias titulo="Apoio">
+  <Parceria
+    parceiro="BNDES"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoio-bndes.png"
+    url=""/>
+</Parcerias>
+
+<Parcerias titulo="Apoiadores">
+  <Parceria
+    parceiro="Raça Livre Produções"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-reca-livre.png"
+    url="" />
+  <Parceria
+    parceiro="Biomob"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-biomob.png"
+    url="" />
+  <Parceria
+    parceiro="Perspective Fund"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-perspective-fund.png"
+    url="" />
+  <Parceria
+    parceiro="FAPAN"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-fapan.png"
+    url="" />
+  <Parceria
+    parceiro="APAN"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-apan.png"
+    url="" />
+  <Parceria
+    parceiro="Prefeitura de Cascavel"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-prefeitura-cascavel.png"
+    url="" />
+  <Parceria
+    parceiro="Gráfica Assoeste"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-assoeste.png"
+    url="" />
+  <Parceria
+    parceiro="Unioeste"
+    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-unioeste.png" />
+</Parcerias>
 
 ## Benfeitores
 
@@ -120,11 +195,37 @@ import benfeitores from '../../data/benfeitores.json'
 
 ## Exibições
 
-**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+### 2022
 
-**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+**02/12/2022** Museu da Memória Rondoniense - | Porto Velho/RO| 19h
 
-**09/10/2023** Mudeu de arte Moderna | MAn | RJ - às 14 horas
+**29/11/2022** Auditório do IFRO | Porto Velho/RO| 15h
+
+**30/11/2022** Anfiteatro da Reitoria UFPR | Curitiba/PR| 19h
+
+**23 a 27/11/2022** Festival Internacional de Cinema Pan-Africano de Luanda |Angola|
+
+**23/11/2022** Instituto Nacional de Educação de Surdos - INES | RJ| 19h
+
+**18 E 19/11/2022** Cine CECA - Unioeste  | Cascavel/PR| 19h e 17h
+
+**13/11/2022** Quilombo da Gamboa  | RJ| 19h
+
+**11/11/2022** CIEP Burle Marx  | Guaratiba/RJ | 19h
+
+**22/08 a 03/09/2022** Mostra de Filmes Etnográficos Prêmio Pierre Verger | online |
+
+**19 a 23/05/2022** BEIRA Festival de Cinema de Porto Velho | online |
+
+**08/04/2022** Cinemateca do Museu de Arte Moderna - MAM | RJ| 19 horas
+
+### 2021
+
+**30/11/2021** VII Festival UNIR Arte e Cultura | online | 17h
+
+**28/11/2021** Exibição para Benfeitores | online |  19h30
+
+**30/10/2021** Centro Cultural Gilberto Mayer | Cascavel/PR | 19h30
 
 ## Divulgação
 

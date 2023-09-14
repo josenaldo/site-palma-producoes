@@ -1,5 +1,5 @@
 import { Title } from '@/features/ui/Title'
-import { Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import slugify from 'slugify'
 
 export default function AnchoredTitle({
@@ -11,19 +11,28 @@ export default function AnchoredTitle({
   const slug = slugify(children, { lower: true })
 
   return (
-    <Title
-      className="anchor-title"
+    <Box
       id={slug}
-      component={component}
-      variant={variant}
-      {...otherProps}
       sx={{
-        scrollMarginTop: '150px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        mt: 4,
         mb: 2,
-        ...otherProps.sx,
+        scrollMarginTop: '150px',
       }}
     >
-      {children}
-    </Title>
+      <Title
+        className="anchor-title"
+        component={component}
+        variant={variant}
+        {...otherProps}
+        sx={{
+          ...otherProps.sx,
+        }}
+      >
+        {children}
+      </Title>
+    </Box>
   )
 }

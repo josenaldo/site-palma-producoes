@@ -18,6 +18,8 @@ import {
   BlockTags,
   BlockTitle,
   BlockToc,
+  BlockPartnerships,
+  BlockPartnershipItem,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -57,6 +59,8 @@ export default function ContentPage({
     Carrossel: BlockCarousel,
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
+    Parcerias: BlockPartnerships,
+    Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
     Tags: (props) => <BlockTags tags={tags} />,
     Titulo: (props) => (
