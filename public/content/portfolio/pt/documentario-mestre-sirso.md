@@ -43,7 +43,7 @@ image:
 
 Mestre Sirso é um homem surdo, negro, que revela uma história de resistência na luta por direitos. Morador da periferia de Cascavel, no Paraná, Sirso perde a audição aos quatro anos de idade, em 1974. Ele é uma das vítimas da epidemia de meningite, negada pelo governo da ditadura militar. A vida se ressignifica quando ele encontra Mestrinho, entra na roda de Capoeira, sente a vibração do som do berimbau, rompe o silêncio e torna-se Mestre. Na roda da vida a luta por inclusão continua.
 
-<Carrossel items="3">
+<Carrossel>
 
   ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
 
@@ -197,33 +197,33 @@ import benfeitores from '../../data/benfeitores.json'
 
 ### 2022
 
-**02/12/2022** Museu da Memória Rondoniense - | Porto Velho/RO| 19h
+**02/12/2022** Museu da Memória Rondoniense | Porto Velho/RO | 19h
 
-**29/11/2022** Auditório do IFRO | Porto Velho/RO| 15h
+**29/11/2022** Auditório do IFRO | Porto Velho/RO | 15h
 
-**30/11/2022** Anfiteatro da Reitoria UFPR | Curitiba/PR| 19h
+**30/11/2022** Anfiteatro da Reitoria UFPR | Curitiba/PR | 19h
 
-**23 a 27/11/2022** Festival Internacional de Cinema Pan-Africano de Luanda |Angola|
+**23 a 27/11/2022** Festival Internacional de Cinema Pan-Africano de Luanda |Angola
 
-**23/11/2022** Instituto Nacional de Educação de Surdos - INES | RJ| 19h
+**23/11/2022** Instituto Nacional de Educação de Surdos - INES | RJ | 19h
 
-**18 E 19/11/2022** Cine CECA - Unioeste  | Cascavel/PR| 19h e 17h
+**18 E 19/11/2022** Cine CECA - Unioeste  | Cascavel/PR | 19h e 17h
 
-**13/11/2022** Quilombo da Gamboa  | RJ| 19h
+**13/11/2022** Quilombo da Gamboa | RJ | 19h
 
-**11/11/2022** CIEP Burle Marx  | Guaratiba/RJ | 19h
+**11/11/2022** CIEP Burle Marx | Guaratiba/RJ | 19h
 
-**22/08 a 03/09/2022** Mostra de Filmes Etnográficos Prêmio Pierre Verger | online |
+**22/08 a 03/09/2022** Mostra de Filmes Etnográficos Prêmio Pierre Verger | Online
 
-**19 a 23/05/2022** BEIRA Festival de Cinema de Porto Velho | online |
+**19 a 23/05/2022** BEIRA Festival de Cinema de Porto Velho | Online
 
-**08/04/2022** Cinemateca do Museu de Arte Moderna - MAM | RJ| 19 horas
+**08/04/2022** Cinemateca do Museu de Arte Moderna - MAM | RJ | 19 horas
 
 ### 2021
 
-**30/11/2021** VII Festival UNIR Arte e Cultura | online | 17h
+**30/11/2021** VII Festival UNIR Arte e Cultura | Online | 17h
 
-**28/11/2021** Exibição para Benfeitores | online |  19h30
+**28/11/2021** Exibição para Benfeitores | Online |  19h30
 
 **30/10/2021** Centro Cultural Gilberto Mayer | Cascavel/PR | 19h30
 
