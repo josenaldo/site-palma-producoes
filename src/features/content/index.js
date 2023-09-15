@@ -4,7 +4,6 @@ export { ContentCard } from './ContentCard'
 export { ContentDate } from './ContentDate'
 export { ContentImageCard } from './ContentImageCard'
 export { ContentPage } from './ContentPage'
-export { ContentTags } from './ContentTags'
 export { ContentPageHeader } from './ContentPageHeader'
 
 export { pagesContentService } from './services'

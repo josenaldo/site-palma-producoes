@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { Box, Card, CardContent, Typography } from '@mui/material'
 
-import { ImageBox, Link } from '@/features/ui'
+import { ImageBox, Link, Tags } from '@/features/ui'
 
 export default function ContentImageCard({ url, title, tags, image }) {
   const [elevation, setElevation] = useState(2)
@@ -46,7 +46,7 @@ export default function ContentImageCard({ url, title, tags, image }) {
           width={1200}
           height={628}
           aspectRatio={{
-            xs: 1 / 1,
+            xs: 16 / 9,
             sm: 1200 / 628,
           }}
           cover
@@ -72,7 +72,10 @@ export default function ContentImageCard({ url, title, tags, image }) {
               display: 'flex',
               flexDirection: 'column',
               gap: 1,
-              padding: 2,
+              padding: {
+                xs: 0,
+                sm: 2,
+              },
             }}
           >
             <Typography variant="h5" component="h3" color="text.light">
@@ -94,12 +97,7 @@ export default function ContentImageCard({ url, title, tags, image }) {
                 },
               }}
             >
-              {tags &&
-                tags.map((tag, index) => (
-                  <Typography variant="caption" key={tag}>
-                    {tag}
-                  </Typography>
-                ))}
+              {tags && <Tags tags={tags} />}
             </Box>
           </Box>
         </CardContent>

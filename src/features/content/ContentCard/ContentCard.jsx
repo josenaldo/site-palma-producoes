@@ -9,9 +9,9 @@ import {
   Typography,
 } from '@mui/material'
 
-import { ContentTags, ContentAuthor, ContentDate } from '@/features/content'
+import { ContentAuthor, ContentDate } from '@/features/content'
 import { useTranslation } from '@/features/i18n'
-import { ButtonLink, ImageBox, Link, ShareLink } from '@/features/ui'
+import { ButtonLink, ImageBox, Link, ShareLink, Tags } from '@/features/ui'
 
 export default function ContentCard({
   url,
@@ -98,7 +98,7 @@ export default function ContentCard({
         </Box>
 
         <Typography variant="body1">{description}</Typography>
-        <ContentTags tags={tags} backgroundColor="tertiary.main" />
+        <Tags tags={tags} color="grey.500" />
       </CardContent>
       <CardActions
         sx={{

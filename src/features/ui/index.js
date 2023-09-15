@@ -24,7 +24,7 @@ export { ShareLink } from './ShareLink'
 
 export { SocialLinks } from './SocialLinks'
 
-export { Tag } from './Tag'
+export { Tags } from './Tags'
 
 export { Title } from './Title'
 
