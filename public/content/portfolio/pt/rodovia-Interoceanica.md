@@ -9,7 +9,7 @@ tags:
 description:
   "Esta obra faz um mergulho profundo na construção da Interoceânica, uma audaciosa empreitada que conecta o Brasil ao Pacífico por meio do território peruano."
 image:
-  url: /images/content/portfolio/rodovia-Interoceanica/capa.jpg
+  url: /images/content/portfolio/rodovia-interoceanica/capa.jpg
   alt: "Rodovia Interoceânica: da Amazônia ao Pacífico"
   width: 1200
   height: 628
@@ -50,19 +50,19 @@ Desde a sua idealização, o projeto desta rodovia almejava muito mais do que co
 
 <Carrossel>
 
-  ![Carrossel projeto 1](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-01.jpg)
+  ![Carrossel projeto 1](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-01.jpg)
 
-  ![Carrossel projeto 2](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-02.jpg)
+  ![Carrossel projeto 2](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-02.jpg)
 
-  ![Carrossel projeto 3](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-03.jpg)
+  ![Carrossel projeto 3](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-03.jpg)
 
-  ![Carrossel projeto 4](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-04.jpg)
+  ![Carrossel projeto 4](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-04.jpg)
 
-  ![Carrossel projeto 5](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-05.jpg)
+  ![Carrossel projeto 5](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-05.jpg)
 
-  ![Carrossel projeto 6](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-06.jpg)
+  ![Carrossel projeto 6](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-06.jpg)
 
-  ![Carrossel projeto 7](/images/content/portfolio/rodovia-Interoceanica/projeto-carrossel-07.jpg)
+  ![Carrossel projeto 7](/images/content/portfolio/rodovia-interoceanica/projeto-carrossel-07.jpg)
 
 </Carrossel>
 
