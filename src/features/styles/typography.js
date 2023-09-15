@@ -28,6 +28,10 @@ const textFont = workSans
 
 const typography = {
   fontFamily: workSans.style.fontFamily,
+  fontWeightLight: 200,
+  fontWeightRegular: 300,
+  fontWeightMedium: 500,
+  fontWeightBold: 700,
 
   h1: {
     fontFamily: bebasKai.style.fontFamily,
