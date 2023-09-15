@@ -10,15 +10,23 @@ export default function BlockPartnerships({ children, titulo, ...props }) {
         justifyContent: 'center',
         gap: 1,
         width: '100%',
-        mt: 4,
+        my: 4,
       }}
     >
-      <Typography variant="h5">{titulo}</Typography>
+      {titulo && <Typography variant="h5">{titulo}</Typography>}
+
       <Box
         sx={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: 2,
+          display: 'flex',
+          flexDirection: {
+            xs: 'column',
+            sm: 'row',
+          },
+          flexWrap: 'wrap',
+          gap: {
+            xs: 2,
+            sm: 4,
+          },
           alignItems: 'space-between',
           justifyContent: 'center',
           width: '100%',

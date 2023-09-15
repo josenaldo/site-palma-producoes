@@ -36,7 +36,6 @@ Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resili
 - O Filme
 - Equipe
 - Projeto
-- Parcerias
 - Benfeitores
 - Exibições
 - Divulgação
@@ -64,63 +63,6 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
 - Palma Produções
 - Carnevale Produções
 
-## O filme
-
-O filme propõe ao espectador uma imersão no universo de uma pessoa com deficiência auditiva, a partir da narrativa que marca a experiência sensorial de Sirso por meio da vibração do som na relação com a Capoeira. A história de Sirso faz um mergulho no Brasil profundo. Lança luz aos desafios do processo de inclusão no Brasil e apresenta a potência da Capoeira como arte, educação, processo terapêutico e luta, não apenas na Roda, mas na resistência às várias formas de preconceito contra as pessoas negras.
-
-Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
-
-![Foto1 [1200x628] [aspect-ratio: 21/9] [fullwidth] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
-
-A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
-
-<Carrossel items="3">
-
-  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-01.jpg)
-
-  ![Foto2](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-02.jpg)
-
-  ![Foto3](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-03.jpg)
-
-  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-04.jpg)
-
-  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-05.jpg)
-
-  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-06.jpg)
-
-  ![Foto7](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-07.jpg)
-
-</Carrossel>
-
-## Equipe
-
-Direção **EMANUELA PALMA**, Produção Executiva **EMANUELA PALMA E LEO CARNEVALE**, Roteiro **GESLLINE BRAGA**, Direção de Fotografia **BIA HERBSTRITH**, Montagem **THAIS INÁCIO E CRISTIANO REQUIÃO**, Consultoria de montagem **GIOVANNA GIOVANINI**, Edição de som e mixagem **RODRIGO BOECKER**, Trilha sonora **FÁBIO BARBOSA E ALISSON SANTOS**, Correção de cor **CRISTIANO REQUIÃO**, Pesquisa **EMANUELA PALMA E GESLLINE BRAGA**, Design **ALÉ KARMIRIAN E BIA HERBSTRITH**, Assistência de produção **MARCELLA LUCAS, ANDRESSA SCARDUA E VAGNER RODRIGUES**, Assistência de Câmera **MARYAH PASQUINI, EDERSON BASTIANI E JOSÉ CARLOS SANTANA**, Recursos de Acessibilidade **RAÇA LIVRE PRODUÇÕES**, Roteiro e Narração da Audiodescrição **SERGINHO MELO**, Consultoria de
-Audiodescrição **FELIPE MIANES**, Intérprete de Libras **MIKE DIANO**, Legendagem Descritiva **ALESSANDRA DA ROSA PINHO**, Tradução inglês **LARISSA GUIMARÃES**, Tradução espanhol **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA E CAMILA QUINTERO OSES**.
-
-## Projeto
-
-A transformação de uma realidade é um projeto de longo prazo que exige o apoio de vários atores sociais. Na Capoeira Mestre Sirso encontrou uma ferramenta de inclusão, por meio do Mestre Mestrinho. Neste documentário damos visibilidade ao protagonismo de um homem negro e surdo, e  lançamos luz  à responsabilidade social de cada um de nós nessa rede que pode contribuir para que a pessoa com deficiência conquiste o espaço que lhe pertence.
-
-<Carrossel>
-
-  ![Projeto 01](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-01.jpg)
-
-  ![Projeto 02](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-02.jpg)
-
-  ![Projeto 03](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-03.jpg)
-
-  ![Projeto 04](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-04.jpg)
-
-  ![Projeto 05](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-05.jpg)
-
-</Carrossel>
-
-Para retratar essa história, a PALMA começa a produção de forma independente, em 2016. Contemplado no Programa Machfunding BNDES + Patrimônio Cultural para realizar um financiamento coletivo, em 2021, o projeto é finalizado com apoio de mais de 500 benfeitores, que mesmo no auge da pandemia, viram a necessidade de apoiar essa produção que traz um tema tão relevante à sociedade.
-
-O filme foi produzido com todos os recursos de acessibilidade e a versão oficial é exibida com a janela de libras, além de ter versões legendas em inglês e espanhol.
-
-## Parcerias
-
 <Parcerias titulo="Produção">
   <Parceria
     parceiro="Palma Produções"
@@ -130,7 +72,7 @@ O filme foi produzido com todos os recursos de acessibilidade e a versão oficia
   <Parceria
     parceiro="Carnavalle"
     logo="/images/content/portfolio/documentario-mestre-sirso/logo-producao-carnavalle.png"
-    url=""/>
+    url="https://www.instagram.com/carnevaleproducoes/"/>
 </Parcerias>
 
 <Parcerias titulo="Realização">
@@ -190,6 +132,61 @@ O filme foi produzido com todos os recursos de acessibilidade e a versão oficia
     parceiro="Unioeste"
     logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-unioeste.png" />
 </Parcerias>
+
+## O filme
+
+O filme propõe ao espectador uma imersão no universo de uma pessoa com deficiência auditiva, a partir da narrativa que marca a experiência sensorial de Sirso por meio da vibração do som na relação com a Capoeira. A história de Sirso faz um mergulho no Brasil profundo. Lança luz aos desafios do processo de inclusão no Brasil e apresenta a potência da Capoeira como arte, educação, processo terapêutico e luta, não apenas na Roda, mas na resistência às várias formas de preconceito contra as pessoas negras.
+
+Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
+
+![Foto1 [1200x628] [aspect-ratio: 21/9] [fullwidth] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
+
+A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
+
+<Carrossel items="3">
+
+  ![Foto1](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-01.jpg)
+
+  ![Foto2](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-02.jpg)
+
+  ![Foto3](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-03.jpg)
+
+  ![Foto4](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-04.jpg)
+
+  ![Foto5](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-05.jpg)
+
+  ![Foto6](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-06.jpg)
+
+  ![Foto7](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-07.jpg)
+
+</Carrossel>
+
+## Equipe
+
+Direção **EMANUELA PALMA**, Produção Executiva **EMANUELA PALMA E LEO CARNEVALE**, Roteiro **GESLLINE BRAGA**, Direção de Fotografia **BIA HERBSTRITH**, Montagem **THAIS INÁCIO E CRISTIANO REQUIÃO**, Consultoria de montagem **GIOVANNA GIOVANINI**, Edição de som e mixagem **RODRIGO BOECKER**, Trilha sonora **FÁBIO BARBOSA E ALISSON SANTOS**, Correção de cor **CRISTIANO REQUIÃO**, Pesquisa **EMANUELA PALMA E GESLLINE BRAGA**, Design **ALÉ KARMIRIAN E BIA HERBSTRITH**, Assistência de produção **MARCELLA LUCAS, ANDRESSA SCARDUA E VAGNER RODRIGUES**, Assistência de Câmera **MARYAH PASQUINI, EDERSON BASTIANI E JOSÉ CARLOS SANTANA**, Recursos de Acessibilidade **RAÇA LIVRE PRODUÇÕES**, Roteiro e Narração da Audiodescrição **SERGINHO MELO**, Consultoria de
+Audiodescrição **FELIPE MIANES**, Intérprete de Libras **MIKE DIANO**, Legendagem Descritiva **ALESSANDRA DA ROSA PINHO**, Tradução inglês **LARISSA GUIMARÃES**, Tradução espanhol **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA E CAMILA QUINTERO OSES**.
+
+## Projeto
+
+A transformação de uma realidade é um projeto de longo prazo que exige o apoio de vários atores sociais. Na Capoeira Mestre Sirso encontrou uma ferramenta de inclusão, por meio do Mestre Mestrinho. Neste documentário damos visibilidade ao protagonismo de um homem negro e surdo, e  lançamos luz  à responsabilidade social de cada um de nós nessa rede que pode contribuir para que a pessoa com deficiência conquiste o espaço que lhe pertence.
+
+<Carrossel>
+
+  ![Projeto 01](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-01.jpg)
+
+  ![Projeto 02](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-02.jpg)
+
+  ![Projeto 03](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-03.jpg)
+
+  ![Projeto 04](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-04.jpg)
+
+  ![Projeto 05](/images/content/portfolio/documentario-mestre-sirso/projeto-carrossel-05.jpg)
+
+</Carrossel>
+
+Para retratar essa história, a PALMA começa a produção de forma independente, em 2016. Contemplado no Programa Machfunding BNDES + Patrimônio Cultural para realizar um financiamento coletivo, em 2021, o projeto é finalizado com apoio de mais de 500 benfeitores, que mesmo no auge da pandemia, viram a necessidade de apoiar essa produção que traz um tema tão relevante à sociedade.
+
+O filme foi produzido com todos os recursos de acessibilidade e a versão oficial é exibida com a janela de libras, além de ter versões legendas em inglês e espanhol.
 
 ## Benfeitores
 

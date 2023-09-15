@@ -1,0 +1,8 @@
+.partnerLink:hover img {
+  text-decoration: none;
+  filter: opacity(50%);
+}
+
+.partnerLink:active img {
+  filter: opacity(80%);
+}

@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import styles from './BlockPartnershipItem.module.css'
+
 export default function BlockPartnershipItem({
   parceiro = '',
   logo,
-  url = '#',
+  url = null,
 }) {
   return (
     <Box
@@ -15,13 +17,20 @@ export default function BlockPartnershipItem({
         alignItems: 'center',
         justifyContent: 'center',
         gap: '1rem',
-        py: 2,
-        backgroundColor: 'grey.100',
       }}
     >
-      <Link href={url || '#'} target="_blank" rel="noopener noreferrer">
-        <Image src={logo} alt={parceiro} height={85} width={200} />
-      </Link>
+      {url ? (
+        <Link
+          href={url || '#'}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.partnerLink}
+        >
+          <Image src={logo} alt={parceiro} width={150} height={64} />
+        </Link>
+      ) : (
+        <Image src={logo} alt={parceiro} width={150} height={64} />
+      )}
     </Box>
   )
 }
