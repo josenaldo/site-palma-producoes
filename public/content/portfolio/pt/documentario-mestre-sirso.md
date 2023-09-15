@@ -27,6 +27,10 @@ image:
 
 <Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8" aspectRatio="21/9" fullWidth cover/>
 
+<Resumo>
+Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas.
+</Resumo>
+
 <Toc>
 - Sinopse
 - O Filme

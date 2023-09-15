@@ -1,3 +1,5 @@
+export { BlockAbstract } from './BlockAbstract'
+
 export { BlockBlockquote } from './BlockBlockquote'
 
 export { BlockCarousel } from './BlockCarousel'

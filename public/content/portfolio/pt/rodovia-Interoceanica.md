@@ -26,6 +26,10 @@ image:
 
 <Youtube url="https://www.youtube.com/watch?v=XCVJoStoPGk" aspectRatio="21/9" fullWidth cover/>
 
+<Resumo>
+Esta obra faz um mergulho profundo na construção da Interoceânica, uma audaciosa empreitada que conecta o Brasil ao Pacífico por meio do território peruano. Coisa e tal.
+</Resumo>
+
 <Toc>
 - Sinopse
 - Projeto

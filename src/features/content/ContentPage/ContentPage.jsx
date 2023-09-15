@@ -21,6 +21,7 @@ import {
   BlockPartnerships,
   BlockPartnershipItem,
   BlockMore,
+  BlockAbstract,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -64,6 +65,7 @@ export default function ContentPage({
     Parcerias: BlockPartnerships,
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
+    Resumo: BlockAbstract,
     Tags: (props) => <BlockTags tags={tags} />,
     Titulo: (props) => (
       <BlockTitle
@@ -75,26 +77,6 @@ export default function ContentPage({
     Youtube: (props) => <BlockYoutube {...props} />,
     ...components,
     Toc: BlockToc,
-    //LogLIne /  Resumo
-    Box: (props) => (
-      <Box
-        {...props}
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          px: {
-            xs: 2,
-            sm: 10,
-            md: 18,
-            lg: 25,
-          },
-
-          textAlign: 'center',
-        }}
-      />
-    ),
   }
 
   return (
