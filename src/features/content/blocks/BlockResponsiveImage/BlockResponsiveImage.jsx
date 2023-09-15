@@ -22,7 +22,7 @@ export default function BlockResponsiveImage(props) {
   const isPriority = props.alt?.toLowerCase().includes('[priority]')
   const hasCaption = props.alt?.toLowerCase().includes('[caption:')
   const caption = props.alt?.match(/\[caption: (.*?)\]/)?.pop()
-  const fullWidth = props.alt?.match(/\[full-width\]/)?.pop() ? true : false
+  const fullWidth = props.alt?.match(/\[fullwidth\]/)?.pop() ? true : false
   const aspectRatio = props.alt?.match(/\[aspect-ratio: (.*?)\]/)?.pop() || null
 
   return (

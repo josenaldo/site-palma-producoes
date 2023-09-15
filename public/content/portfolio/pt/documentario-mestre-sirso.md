@@ -16,7 +16,7 @@ image:
 
 ---
 
-<Titulo />
+<Titulo subtitulo="Quando o Mundo é Silêncio, a Vibração é Mestre."/>
 
 <Tags />
 
@@ -66,7 +66,7 @@ O filme propõe ao espectador uma imersão no universo de uma pessoa com defici�
 
 Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
 
-![Foto1](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
+![Foto1 [1200x628] [aspect-ratio: 21/9] [fullwidth] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
 
 A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
 
@@ -207,6 +207,8 @@ import benfeitores from '../../data/benfeitores.json'
 
 **23/11/2022** Instituto Nacional de Educação de Surdos - INES | RJ | 19h
 
+<Mais>
+
 **18 E 19/11/2022** Cine CECA - Unioeste  | Cascavel/PR | 19h e 17h
 
 **13/11/2022** Quilombo da Gamboa | RJ | 19h
@@ -226,6 +228,8 @@ import benfeitores from '../../data/benfeitores.json'
 **28/11/2021** Exibição para Benfeitores | Online |  19h30
 
 **30/10/2021** Centro Cultural Gilberto Mayer | Cascavel/PR | 19h30
+
+</Mais>
 
 ## Divulgação
 

@@ -8,6 +8,8 @@ export { BlockCode } from './BlockCode'
 
 export { BlockMainImage } from './BlockMainImage'
 
+export { BlockMore } from './BlockMore'
+
 export { BlockPartnerships } from './BlockPartnerships'
 
 export { BlockPartnershipItem } from './BlockPartnerships'

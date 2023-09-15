@@ -20,6 +20,7 @@ import {
   BlockToc,
   BlockPartnerships,
   BlockPartnershipItem,
+  BlockMore,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -59,6 +60,7 @@ export default function ContentPage({
     Carrossel: BlockCarousel,
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
+    Mais: BlockMore,
     Parcerias: BlockPartnerships,
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
@@ -66,12 +68,33 @@ export default function ContentPage({
     Titulo: (props) => (
       <BlockTitle
         title={title}
+        subtitle={props.subtitulo}
         titleBorderBottomColor={titleBorderBottomColor}
       />
     ),
     Youtube: (props) => <BlockYoutube {...props} />,
     ...components,
     Toc: BlockToc,
+    //LogLIne /  Resumo
+    Box: (props) => (
+      <Box
+        {...props}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          px: {
+            xs: 2,
+            sm: 10,
+            md: 18,
+            lg: 25,
+          },
+
+          textAlign: 'center',
+        }}
+      />
+    ),
   }
 
   return (

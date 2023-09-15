@@ -17,13 +17,23 @@ export default function BlockTags({ tags }) {
           '& :not(:last-child)': {
             paddingRight: 1,
             borderRight: '1px solid',
-            borderColor: 'text.dark',
+            borderColor: 'grey.500',
           },
         }}
       >
         {tags &&
           tags.map((tag) => (
-            <Typography variant="caption" key={tag}>
+            <Typography
+              variant="caption"
+              key={tag}
+              sx={{
+                textTransform: 'uppercase',
+                // textTransform: 'capitalize',
+                color: 'grey.500',
+                fontSize: '0.7rem',
+                lineHeight: '0.7rem',
+              }}
+            >
               {tag}
             </Typography>
           ))}

@@ -1,8 +1,9 @@
 import { Title } from '@/features/ui'
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 export default function BlockTitle({
   title,
+  subtitle = null,
   titleBorderBottomColor = 'primary.main',
 }) {
   return (
@@ -14,6 +15,7 @@ export default function BlockTitle({
         justifyContent: 'center',
         textAlign: 'center',
         mb: 4,
+        gap: 4,
       }}
     >
       <Title
@@ -24,6 +26,17 @@ export default function BlockTitle({
       >
         {title}
       </Title>
+      {subtitle && (
+        <Typography
+          variant="body1"
+          sx={{
+            textTransform: 'uppercase',
+            fontWeight: '500',
+          }}
+        >
+          {subtitle}
+        </Typography>
+      )}
     </Box>
   )
 }
