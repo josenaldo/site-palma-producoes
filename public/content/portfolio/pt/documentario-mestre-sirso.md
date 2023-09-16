@@ -66,71 +66,71 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
 <Parcerias titulo="Produção">
   <Parceria
     parceiro="Palma Produções"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-producao-palma.png"
+    logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
     url="https://palmaproducoes.com.br"/>
 
   <Parceria
     parceiro="Carnavalle"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-producao-carnavalle.png"
+    logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
     url="https://www.instagram.com/carnevaleproducoes/"/>
 </Parcerias>
 
 <Parcerias titulo="Realização">
   <Parceria
     parceiro="Capoeira Arte Luta"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-realizacao-capoeira-arte-luta.png"
+    logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
     url=""/>
 </Parcerias>
 
 <Parcerias titulo="Co-idealização">
   <Parceria
     parceiro="Benfeitoria"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-coidealizacao-benfeitoria.png"
+    logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
     url=""/>
   <Parceria parceiro="Sitawi"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-coidealizacao-sitawi.png"
+    logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
     url=""/>
 </Parcerias>
 
 <Parcerias titulo="Apoio">
   <Parceria
     parceiro="BNDES"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoio-bndes.png"
+    logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
     url=""/>
 </Parcerias>
 
 <Parcerias titulo="Apoiadores">
   <Parceria
     parceiro="Raça Livre Produções"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-reca-livre.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
     url="" />
   <Parceria
     parceiro="Biomob"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-biomob.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
     url="" />
   <Parceria
     parceiro="Perspective Fund"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-perspective-fund.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
     url="" />
   <Parceria
     parceiro="FAPAN"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-fapan.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
     url="" />
   <Parceria
     parceiro="APAN"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-apan.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
     url="" />
   <Parceria
     parceiro="Prefeitura de Cascavel"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-prefeitura-cascavel.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
     url="" />
   <Parceria
     parceiro="Gráfica Assoeste"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-assoeste.png"
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
     url="" />
   <Parceria
     parceiro="Unioeste"
-    logo="/images/content/portfolio/documentario-mestre-sirso/logo-apoiadores-unioeste.png" />
+    logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
 </Parcerias>
 
 ## O filme
@@ -139,7 +139,7 @@ O filme propõe ao espectador uma imersão no universo de uma pessoa com defici�
 
 Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
 
-![Foto1 [1200x628] [aspect-ratio: 21/9] [fullwidth] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
+![Foto1 [1200x628] [aspect-ratio: 21/9] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
 
 A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
 

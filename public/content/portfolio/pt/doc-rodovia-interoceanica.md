@@ -44,6 +44,12 @@ O documentário oferece um olhar atento sobre as expectativas das comunidades lo
 - Produtoras: Palma Produções
 - Classificação: LIVRE
 
+<Parcerias titulo="Apoio">
+  <Parceria
+    parceiro="Avina"
+    logo="/images/content/portfolio-parceiros/logo-avina.png"/>
+</Parcerias>
+
 ## Projeto
 
 O documentário “Rodovia Interoceânica: da Amazônia ao Pacífico” foi produzido em 2009, com direção de Emanuela Palma, Laelho Barroso e Simone Norberto. O projeto é fruto da necessidade de abordar a integração entre dois países, que historicamente viveram isolados, embora estejam geograficamente conectados. A realização deste documentário tornou-se possível por meio da  bolsa de investigação jornalística da Fundação Avina.
