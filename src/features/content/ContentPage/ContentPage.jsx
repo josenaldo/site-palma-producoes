@@ -22,6 +22,7 @@ import {
   BlockPartnershipItem,
   BlockMore,
   BlockAbstract,
+  BlockShareButton,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -58,6 +59,15 @@ export default function ContentPage({
     blockquote: BlockBlockquote,
 
     // Custom tags
+    BotaoCompartilhar: ({ tipo = 'icon', cor = 'tertiary' }) => (
+      <BlockShareButton
+        url={url}
+        title={title}
+        image={image}
+        type={tipo}
+        color={cor}
+      />
+    ),
     Carrossel: BlockCarousel,
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,

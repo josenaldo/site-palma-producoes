@@ -18,6 +18,8 @@ export { BlockPartnershipItem } from './BlockPartnerships'
 
 export { BlockResponsiveImage } from './BlockResponsiveImage'
 
+export { BlockShareButton } from './BlockShareButton'
+
 export { BlockSocialBar } from './BlockSocialBar'
 
 export { BlockTags } from './BlockTags'

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, IconButton } from '@mui/material'
+import { Box, Button, IconButton } from '@mui/material'
 import ShareIcon from '@mui/icons-material/Share'
 
 import ShareDialog from './ShareDialog'
@@ -11,7 +11,9 @@ export default function ShareLink({
   url,
   image,
   color = 'secondary',
+  type = 'icon',
 }) {
+  const { t } = useTranslation(['common'])
   const [open, setOpen] = useState(false)
   const [isNativeShare, setNativeShare] = useState(false)
 
@@ -62,9 +64,22 @@ export default function ShareLink({
 
   return (
     <Box>
-      <IconButton onClick={handleOnClick} color={color} variant="contained">
-        <ShareIcon />
-      </IconButton>
+      {type === 'icon' && (
+        <IconButton onClick={handleOnClick} color={color} variant="contained">
+          <ShareIcon />
+        </IconButton>
+      )}
+
+      {type === 'button' && (
+        <Button
+          onClick={handleOnClick}
+          color={color}
+          variant="outlined"
+          startIcon={<ShareIcon />}
+        >
+          {t('common:share.button')}
+        </Button>
+      )}
 
       {!isNativeShare && (
         <ShareDialog

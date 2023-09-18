@@ -24,6 +24,8 @@ image:
   instagram="https://www.instagram.com/mestresirsofilme/"
   youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
 
+<BotaoCompartilhar />
+
 <Youtube url="https://www.youtube.com/watch?v=XCVJoStoPGk" aspectRatio="21/9" fullWidth cover/>
 
 <Resumo>
@@ -77,3 +79,5 @@ Desde a sua idealização, o projeto desta rodovia almejava muito mais do que co
 </Carrossel>
 
 Os entrevistados, incluindo engenheiros, moradores locais, ambientalistas e líderes comunitários, oferecem perspectivas que enriquecem a narrativa do documentário. À medida que os depoimentos se entrelaçam, o filme nos leva a uma jornada que vai além das máquinas e das estruturas de concreto, explorando o potencial turístico e econômico, ao mesmo tempo que aborda as complexidades desse grande empreendimento
+
+<BotaoCompartilhar tipo="button" cor="primary"/>

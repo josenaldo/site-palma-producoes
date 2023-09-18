@@ -23,7 +23,8 @@
   },
   "share": {
     "title": "Share Palma",
-    "text": "Thank you!"
+    "text": "Thank you!",
+    "button": "Share"
   },
   "form": {
     "error": {

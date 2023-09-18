@@ -23,7 +23,8 @@
   },
   "share": {
     "title": "Compartilhe a Palma",
-    "text": "Obrigado!"
+    "text": "Obrigado!",
+    "button": "Compartilhar"
   },
   "form": {
     "error": {
