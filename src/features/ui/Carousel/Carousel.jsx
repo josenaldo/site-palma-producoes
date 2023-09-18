@@ -73,10 +73,9 @@ export default function Carousel({ slidesPerView = 1, children }) {
           delay: 5000,
           pauseOnMouseEnter: true,
         }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
         autoHeight
         loop
+        // loop={slidesPerView === 1}
       >
         {arrayChildren.map((child) => (
           <SwiperSlide key={child.id}>{child}</SwiperSlide>

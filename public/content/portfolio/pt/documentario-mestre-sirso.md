@@ -232,6 +232,21 @@ import benfeitores from '../../data/benfeitores.json'
 
 </Mais>
 
+<CarrosselTriplo>
+
+  ![Pré Estreia Cascavel [caption: Pré-estreia Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-pre-restreia-cascavel.jpg)
+
+  ![Quilombo da Gamboa [caption: Quilombo da Gamboa]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-quilombi-da-gamboa.jpg)
+
+  ![CineCeca Cascavel [caption: CineCeca Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-cinececa-cascavel.jpg)
+
+  ![Pré Estreia Cascavel [caption: Pré-estreia Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-pre-restreia-cascavel.jpg)
+
+  ![Quilombo da Gamboa [caption: Quilombo da Gamboa]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-quilombi-da-gamboa.jpg)
+
+  ![CineCeca Cascavel [caption: CineCeca Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-cinececa-cascavel.jpg)
+</CarrosselTriplo>
+
 ## Divulgação
 
 ![Cartaz do filme [1200x1697] [caption: Cartaz do filme] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
