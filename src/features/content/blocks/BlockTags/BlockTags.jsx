@@ -28,7 +28,6 @@ export default function BlockTags({ tags }) {
               key={tag}
               sx={{
                 textTransform: 'uppercase',
-                // textTransform: 'capitalize',
                 color: 'grey.500',
                 fontSize: '0.7rem',
                 lineHeight: '0.7rem',

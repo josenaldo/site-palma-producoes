@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 
-export default function Tags({ tags, color = 'grey.400' }) {
+export default function Tags({ tags, color = 'grey.500' }) {
   return (
     <Box
       sx={{
