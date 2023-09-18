@@ -1,9 +1,5 @@
 import { Box, Card, CardContent, Container, Typography } from '@mui/material'
-import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import StarIcon from '@mui/icons-material/Star'
-
-import Carousel from 'react-material-ui-carousel'
+import { Carousel } from '@/features/ui'
 
 export default function HomeTestimonials({ depoimentos }) {
   return (
@@ -17,26 +13,7 @@ export default function HomeTestimonials({ depoimentos }) {
         gap: 4,
       }}
     >
-      <Carousel
-        interval={8000}
-        PrevIcon={<ChevronLeftIcon sx={{ fontSize: '2.5rem' }} />}
-        NextIcon={<ChevronRightIcon sx={{ fontSize: '2.5rem' }} />}
-        navButtonsAlwaysVisible={true}
-        IndicatorIcon={<StarIcon />}
-        sx={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-        navButtonsProps={{
-          style: {
-            backgroundColor: 'rgb(0 0 0 / 5%)',
-            color: 'black',
-          },
-        }}
-      >
+      <Carousel>
         {depoimentos.map((depoimento) => (
           <TestimonialCard key={depoimento.url} testimonial={depoimento} />
         ))}
