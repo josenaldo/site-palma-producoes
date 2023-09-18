@@ -57,6 +57,20 @@ export default function ContentPage({
     img: BlockResponsiveImage,
     pre: BlockCode,
     blockquote: BlockBlockquote,
+    p: (props) => (
+      <Typography
+        component="p"
+        variant="body1"
+        sx={{
+          textAlign: {
+            xs: 'justify',
+            sm: 'justify',
+            md: 'left',
+          },
+        }}
+        {...props}
+      />
+    ),
 
     // Custom tags
     BotaoCompartilhar: ({ tipo = 'icon', cor = 'tertiary' }) => (

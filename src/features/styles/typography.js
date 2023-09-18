@@ -1,5 +1,3 @@
-import { be } from 'date-fns/locale'
-import { Bebas_Neue, Work_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const bebasKai = localFont({
