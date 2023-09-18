@@ -2,7 +2,13 @@ import React from 'react'
 import { Box, useTheme } from '@mui/material'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules'
+import {
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+} from 'swiper/modules'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -10,7 +16,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
-export default function Carousel({ children }) {
+export default function Carousel({ slidesPerView = 1, children }) {
   const theme = useTheme()
 
   const arrayChildren = React.Children.toArray(children)
@@ -43,9 +49,18 @@ export default function Carousel({ children }) {
           'padding-bottom': 'var(--add-bottom)',
         }}
         // install Swiper modules
-        modules={[Navigation, Pagination, A11y, Autoplay]}
-        spaceBetween={50}
-        slidesPerView={1}
+        modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
+        effect={slidesPerView === 1 ? null : 'coverflow'}
+        centeredSlides={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 10,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        spaceBetween={slidesPerView === 1 ? 20 : 5}
+        slidesPerView={slidesPerView}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

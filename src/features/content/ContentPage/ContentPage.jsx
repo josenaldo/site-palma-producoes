@@ -23,6 +23,7 @@ import {
   BlockMore,
   BlockAbstract,
   BlockShareButton,
+  BlockTripleCarousel,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -83,6 +84,7 @@ export default function ContentPage({
       />
     ),
     Carrossel: BlockCarousel,
+    CarrosselTriplo: BlockTripleCarousel,
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
     Mais: BlockMore,

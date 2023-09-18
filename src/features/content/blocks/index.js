@@ -26,6 +26,8 @@ export { BlockTags } from './BlockTags'
 
 export { BlockToc } from './BlockToc'
 
+export { BlockTripleCarousel } from './BlockTripleCarousel'
+
 export { BlockYoutube } from './BlockYoutube'
 
 export { BlockTitle } from './BlockTitle'

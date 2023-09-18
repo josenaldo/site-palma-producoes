@@ -143,7 +143,7 @@ Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafric
 
 A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
 
-<Carrossel items="3">
+<CarrosselTriplo>
 
   ![Foto1](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-01.jpg)
 
@@ -159,7 +159,7 @@ A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e
 
   ![Foto7](/images/content/portfolio/documentario-mestre-sirso/filme-carrossel-07.jpg)
 
-</Carrossel>
+</CarrosselTriplo>
 
 ## Equipe
 
