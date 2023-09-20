@@ -14,6 +14,7 @@ export default function ImageBox({
   cover = false,
   fullWidth = false,
   imageStyle = {},
+  onClick = () => {},
 }) {
   const sizes = useImageSizes(width)
 
@@ -31,6 +32,7 @@ export default function ImageBox({
         left: fullWidth ? '50%' : '0',
         ...sx,
       }}
+      onClick={onClick}
     >
       <Image
         src={src}

@@ -14,6 +14,8 @@ export { ImageFallback } from './ImageFallback'
 
 export { Hero } from './Hero'
 
+export { LightBox } from './LightBox'
+
 export { Link } from './Link'
 
 export { Logo } from './Logo'

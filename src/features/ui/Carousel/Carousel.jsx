@@ -21,6 +21,10 @@ export default function Carousel({ slidesPerView = 1, children }) {
 
   const arrayChildren = React.Children.toArray(children)
 
+  const slides = React.Children.toArray(
+    arrayChildren.map((child, index) => <SwiperSlide>{child}</SwiperSlide>)
+  )
+
   return (
     <Box
       className="swiper-container"
@@ -75,9 +79,7 @@ export default function Carousel({ slidesPerView = 1, children }) {
         autoHeight
         loop
       >
-        {arrayChildren.map((child) => (
-          <SwiperSlide key={child.id}>{child}</SwiperSlide>
-        ))}
+        {slides}
         <NavigationButton className="swiper-button-next"></NavigationButton>
 
         <NavigationButton className="swiper-button-prev"></NavigationButton>

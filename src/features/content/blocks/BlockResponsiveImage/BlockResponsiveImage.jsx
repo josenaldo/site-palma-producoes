@@ -1,5 +1,7 @@
 import { Box, Typography } from '@mui/material'
-import { ImageBox } from '@/features/ui'
+
+import { ImageBox, LightBox } from '@/features/ui'
+import { useState } from 'react'
 
 /**
  * Componente que insira imagens no conteúdo markdown e informe as dimensões da imagem.
@@ -19,11 +21,13 @@ export default function BlockResponsiveImage(props) {
   const width = metaWidth ? metaWidth[1] : '1000'
   const height = metaHeight ? metaHeight[1] : '500'
 
-  const isPriority = props.alt?.toLowerCase().includes('[priority]')
+  const isPriority = props.alt?.toLowerCase().includes('[priority]') || false
   const hasCaption = props.alt?.toLowerCase().includes('[caption:')
   const caption = props.alt?.match(/\[caption: (.*?)\]/)?.pop()
   const fullWidth = props.alt?.match(/\[fullwidth\]/)?.pop() ? true : false
   const aspectRatio = props.alt?.match(/\[aspect-ratio: (.*?)\]/)?.pop() || null
+
+  const [open, setOpen] = useState(false)
 
   return (
     <Box
@@ -42,20 +46,18 @@ export default function BlockResponsiveImage(props) {
         overflow: 'hidden',
       }}
     >
-      <a href={props.src} target="_blank" rel="noopener noreferrer">
-        <ImageBox
-          src={props.src}
-          alt={alt}
-          width={width}
-          height={height}
-          priority={isPriority}
-          aspectRatio={aspectRatio}
-          // cover={aspectRatio ? true : false}
-          cover
-          fullWidth={fullWidth}
-          imageStyle={{}}
-        />
-      </a>
+      <ImageBox
+        src={props.src}
+        alt={alt}
+        width={width}
+        height={height}
+        priority={isPriority}
+        aspectRatio={aspectRatio}
+        cover
+        fullWidth={fullWidth}
+        imageStyle={{}}
+        onClick={() => setOpen(true)}
+      />
 
       {hasCaption && (
         <Box
@@ -71,6 +73,17 @@ export default function BlockResponsiveImage(props) {
           </Typography>
         </Box>
       )}
+
+      <LightBox
+        src={props.src}
+        width={width}
+        height={height}
+        alt={alt}
+        aspectRatio={aspectRatio}
+        open={open}
+        onClose={() => setOpen(false)}
+        caption={caption}
+      />
     </Box>
   )
 }
