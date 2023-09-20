@@ -8,6 +8,8 @@ export { BlockChipList } from './BlockChipList'
 
 export { BlockCode } from './BlockCode'
 
+export { BlockColumns } from './BlockColumns'
+
 export { BlockMainImage } from './BlockMainImage'
 
 export { BlockMore } from './BlockMore'

@@ -46,22 +46,25 @@ Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resili
 
 Mestre Sirso é um homem surdo, negro, que revela uma história de resistência na luta por direitos. Morador da periferia de Cascavel, no Paraná, Sirso perde a audição aos quatro anos de idade, em 1974. Ele é uma das vítimas da epidemia de meningite, negada pelo governo da ditadura militar. A vida se ressignifica quando ele encontra Mestrinho, entra na roda de Capoeira, sente a vibração do som do berimbau, rompe o silêncio e torna-se Mestre. Na roda da vida a luta por inclusão continua.
 
-<Carrossel>
+<Colunas formato="3|1">
+  <Caixa>
+    <Carrossel>
+    ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
+    ![Carrossel Sinopse 2](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-02.jpg)
+    </Carrossel>
+  </Caixa>
 
-  ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
+  <Caixa>
+    **DOCUMENTÁRIO**
 
-  ![Carrossel Sinopse 2](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-02.jpg)
+    - 2021 / 68 min
 
-</Carrossel>
+    **PRODUTORAS**
 
-**DOCUMENTÁRIO**
-
-- 2021 / 68 min
-
-**PRODUTORAS**
-
-- Palma Produções
-- Carnevale Produções
+    - Palma Produções
+    - Carnevale Produções
+  </Caixa>
+</Colunas>
 
 <Parcerias titulo="Produção">
   <Parceria

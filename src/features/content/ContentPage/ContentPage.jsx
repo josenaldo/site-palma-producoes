@@ -24,6 +24,7 @@ import {
   BlockAbstract,
   BlockShareButton,
   BlockTripleCarousel,
+  BlockColumns,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -85,6 +86,26 @@ export default function ContentPage({
     ),
     Carrossel: BlockCarousel,
     CarrosselTriplo: BlockTripleCarousel,
+    Caixa: (props) => (
+      <Box
+        sx={{
+          p: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          maxWidth: '100%',
+          width: '100%',
+          height: '100%',
+          maxHeight: '100%',
+          overflow: 'hidden',
+        }}
+        {...props}
+      />
+    ),
+    Colunas: ({ formato = '1|1', ...props }) => (
+      <BlockColumns format={formato} {...props} />
+    ),
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
     Mais: BlockMore,

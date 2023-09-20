@@ -30,7 +30,9 @@ export default function Carousel({ slidesPerView = 1, children }) {
       className="swiper-container"
       sx={{
         width: '100%',
+        maxWidth: '100%',
         py: 4,
+        position: 'relative',
       }}
     >
       <Swiper
