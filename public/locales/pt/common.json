@@ -15,7 +15,9 @@
   },
   "button": {
     "showMore": "Mostrar mais",
-    "showLess": "Mostrar menos"
+    "showLess": "Mostrar menos",
+    "more": "Mais",
+    "less": "Menos"
   },
   "footer": {
     "copyright": "2023 PALMAS PRODUÇÕES. DIREITOS RESERVADOS.",
