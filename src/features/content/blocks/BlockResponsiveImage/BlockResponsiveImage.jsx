@@ -32,6 +32,14 @@ export default function BlockResponsiveImage(props) {
         flexDirection: 'column',
         justifyContent: 'center',
         width: '100%',
+        borderRadius: {
+          xs: '5px',
+          sm: '7.5px',
+          md: '10px',
+          lg: '12.5px',
+          xl: '15px',
+        },
+        overflow: 'hidden',
       }}
     >
       <a href={props.src} target="_blank" rel="noopener noreferrer">
@@ -42,8 +50,10 @@ export default function BlockResponsiveImage(props) {
           height={height}
           priority={isPriority}
           aspectRatio={aspectRatio}
-          cover={aspectRatio ? true : false}
+          // cover={aspectRatio ? true : false}
+          cover
           fullWidth={fullWidth}
+          imageStyle={{}}
         />
       </a>
 

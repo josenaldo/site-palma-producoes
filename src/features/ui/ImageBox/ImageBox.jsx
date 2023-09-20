@@ -13,6 +13,7 @@ export default function ImageBox({
   aspectRatio,
   cover = false,
   fullWidth = false,
+  imageStyle = {},
 }) {
   const sizes = useImageSizes(width)
 
@@ -40,6 +41,7 @@ export default function ImageBox({
         style={{
           objectFit: cover ? 'cover' : 'contain',
           overflow: cover ? 'hidden' : 'visible',
+          ...imageStyle,
         }}
       />
     </Box>

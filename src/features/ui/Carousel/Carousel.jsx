@@ -48,16 +48,15 @@ export default function Carousel({ slidesPerView = 1, children }) {
           '--swiper-pagination-bullet-vertical-gap': '6px',
           'padding-bottom': 'var(--add-bottom)',
         }}
-        // install Swiper modules
         modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
         effect={slidesPerView === 1 ? null : 'coverflow'}
         centeredSlides={true}
         coverflowEffect={{
-          rotate: 50,
-          stretch: 10,
+          rotate: 45,
+          stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         spaceBetween={slidesPerView === 1 ? 20 : 5}
         slidesPerView={slidesPerView}
@@ -75,12 +74,10 @@ export default function Carousel({ slidesPerView = 1, children }) {
         }}
         autoHeight
         loop
-        // loop={slidesPerView === 1}
       >
         {arrayChildren.map((child) => (
           <SwiperSlide key={child.id}>{child}</SwiperSlide>
         ))}
-        {/* <Box className={styles.swiperPagination}></Box> */}
         <NavigationButton className="swiper-button-next"></NavigationButton>
 
         <NavigationButton className="swiper-button-prev"></NavigationButton>
