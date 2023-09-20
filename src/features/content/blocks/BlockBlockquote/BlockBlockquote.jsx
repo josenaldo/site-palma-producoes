@@ -5,8 +5,8 @@ export default function BlockBlockquote({ children }) {
     <Box
       sx={{
         display: 'flex',
-        bgcolor: 'background.quote',
-        color: 'text.quote',
+        color: 'text.secondary',
+        my: 3,
         py: 1,
         px: 3,
         borderRadius: 2,
