@@ -3,11 +3,11 @@ id: 1
 highlight: true
 title: "Mestre Sirso"
 tags:
-  - Documentário
-  - Produção Cultural
-  - Fotografia
+  - Documentary
+  - Cultural Production
+  - Photography
 description:
-  "Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas."
+  "Discover the inspiring story of Mestre Sirso, a deaf, black, and resilient man who found in Capoeira the vibration to break the silence and redefine lives."
 image:
   url: /images/content/portfolio/documentario-mestre-sirso/capa.jpg
   alt: Documentário “Mestre Sirso"
@@ -28,42 +28,45 @@ image:
 <Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8" aspectRatio="21/9" fullWidth cover/>
 
 <Resumo>
-Conheça a história inspiradora de Mestre Sirso, um homem surdo, negro e resiliente, que encontrou na Capoeira a vibração para romper o silêncio e ressignificar vidas.
+Discover the inspiring story of Mestre Sirso, a deaf, black, and resilient man who found in Capoeira the vibration to break the silence and redefine lives.
 </Resumo>
 
 <Toc>
-- Sinopse
-- O Filme
-- Equipe
-- Projeto
-- Benfeitores
-- Exibições
-- Divulgação
+- Synopsis
+- The Movie
+- Team
+- Project
+- Benefactors
+- Screenings
+- Promotion
 - Clippings
 </Toc>
 
-## Sinopse
+## Synopsis
 
-Mestre Sirso é um homem surdo, negro, que revela uma história de resistência na luta por direitos. Morador da periferia de Cascavel, no Paraná, Sirso perde a audição aos quatro anos de idade, em 1974. Ele é uma das vítimas da epidemia de meningite, negada pelo governo da ditadura militar. A vida se ressignifica quando ele encontra Mestrinho, entra na roda de Capoeira, sente a vibração do som do berimbau, rompe o silêncio e torna-se Mestre. Na roda da vida a luta por inclusão continua.
+Master Sirso is a deaf, Black man who reveals a story of resilience in the fight for rights. A resident of the outskirts of Cascavel, Paraná, Sirso loses his hearing at the age of four in 1974. He is one of the victims of the meningitis epidemic, denied by the government of the military dictatorship. Life takes on new meaning when he meets Mestrinho, joins the Capoeira circle, feels the vibration of the berimbau's sound, breaks the silence, and becomes a Master. In the circle of life, the fight for inclusion continues.
 
-<Carrossel>
+<Colunas formato="3|1">
+  <Caixa>
+    <Carrossel>
+    ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
+    ![Carrossel Sinopse 2](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-02.jpg)
+    </Carrossel>
+  </Caixa>
 
-  ![Carrossel Sinopse 1](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-01.jpg)
+  <Caixa>
+    **DOCUMENTARY**
 
-  ![Carrossel Sinopse 2](/images/content/portfolio/documentario-mestre-sirso/sinopse-carrossel-02.jpg)
+    - 2021 / 68 min
 
-</Carrossel>
+    **PRODUCTION COMPANIES**
 
-**DOCUMENTÁRIO**
+    - Palma Produções
+    - Carnevale Produções
+  </Caixa>
+</Colunas>
 
-- 2021 / 68 min
-
-**PRODUTORAS**
-
-- Palma Produções
-- Carnevale Produções
-
-<Parcerias titulo="Produção">
+<Parcerias titulo="Production">
   <Parceria
     parceiro="Palma Produções"
     logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
@@ -75,14 +78,14 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
     url="https://www.instagram.com/carnevaleproducoes/"/>
 </Parcerias>
 
-<Parcerias titulo="Realização">
+<Parcerias titulo="Realization">
   <Parceria
     parceiro="Capoeira Arte Luta"
     logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
     url=""/>
 </Parcerias>
 
-<Parcerias titulo="Co-idealização">
+<Parcerias titulo="Co-ideation">
   <Parceria
     parceiro="Benfeitoria"
     logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
@@ -92,14 +95,14 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
     url=""/>
 </Parcerias>
 
-<Parcerias titulo="Apoio">
+<Parcerias titulo="Support">
   <Parceria
     parceiro="BNDES"
     logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
     url=""/>
 </Parcerias>
 
-<Parcerias titulo="Apoiadores">
+<Parcerias titulo="Supporters">
   <Parceria
     parceiro="Raça Livre Produções"
     logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
@@ -133,15 +136,15 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
     logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
 </Parcerias>
 
-## O filme
+## The Movie
 
-O filme propõe ao espectador uma imersão no universo de uma pessoa com deficiência auditiva, a partir da narrativa que marca a experiência sensorial de Sirso por meio da vibração do som na relação com a Capoeira. A história de Sirso faz um mergulho no Brasil profundo. Lança luz aos desafios do processo de inclusão no Brasil e apresenta a potência da Capoeira como arte, educação, processo terapêutico e luta, não apenas na Roda, mas na resistência às várias formas de preconceito contra as pessoas negras.
+The film offers the viewer an immersion into the world of a person with hearing impairment through a narrative that highlights Sirso's sensory experience, particularly the vibration of sound in his relationship with Capoeira. Sirso's story takes a deep dive into the heart of Brazil. It sheds light on the challenges of the inclusion process in Brazil and showcases the potency of Capoeira as art, education, a therapeutic process, and a form of resistance. This goes beyond the circle (Roda) and extends to the broader struggle against various forms of prejudice faced by Black individuals.
 
-Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
+Completed in 2021, the film premiered at the International Pan-African Film Festival in Luanda in 2022. In the same year, it was selected for the Ethnographic Film Showcase of the Pierre Verger Award.
 
 ![Foto1 [1200x628] [aspect-ratio: 21/9] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
 
-A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
+The documentary is directed by Emanuela Palma, with a screenplay by anthropologist and documentary filmmaker Geslline Giovana Braga.
 
 <CarrosselTriplo>
 
@@ -161,14 +164,32 @@ A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e
 
 </CarrosselTriplo>
 
-## Equipe
+## Team
 
-Direção **EMANUELA PALMA**, Produção Executiva **EMANUELA PALMA E LEO CARNEVALE**, Roteiro **GESLLINE BRAGA**, Direção de Fotografia **BIA HERBSTRITH**, Montagem **THAIS INÁCIO E CRISTIANO REQUIÃO**, Consultoria de montagem **GIOVANNA GIOVANINI**, Edição de som e mixagem **RODRIGO BOECKER**, Trilha sonora **FÁBIO BARBOSA E ALISSON SANTOS**, Correção de cor **CRISTIANO REQUIÃO**, Pesquisa **EMANUELA PALMA E GESLLINE BRAGA**, Design **ALÉ KARMIRIAN E BIA HERBSTRITH**, Assistência de produção **MARCELLA LUCAS, ANDRESSA SCARDUA E VAGNER RODRIGUES**, Assistência de Câmera **MARYAH PASQUINI, EDERSON BASTIANI E JOSÉ CARLOS SANTANA**, Recursos de Acessibilidade **RAÇA LIVRE PRODUÇÕES**, Roteiro e Narração da Audiodescrição **SERGINHO MELO**, Consultoria de
-Audiodescrição **FELIPE MIANES**, Intérprete de Libras **MIKE DIANO**, Legendagem Descritiva **ALESSANDRA DA ROSA PINHO**, Tradução inglês **LARISSA GUIMARÃES**, Tradução espanhol **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA E CAMILA QUINTERO OSES**.
+Direction: **EMANUELA PALMA**
+Executive Production: **EMANUELA PALMA AND LEO CARNEVALE**
+Screenplay: **GESLLINE BRAGA**
+Director of Photography: **BIA HERBSTRITH**
+Editing: **THAIS INÁCIO AND CRISTIANO REQUIÃO**
+Editing Consultancy: **GIOVANNA GIOVANINI**
+Sound Editing and Mixing: **RODRIGO BOECKER**
+Soundtrack: **FÁBIO BARBOSA AND ALISSON SANTOS**
+Color Correction: **CRISTIANO REQUIÃO**
+Research: **EMANUELA PALMA AND GESLLINE BRAGA**
+Design: **ALÉ KARMIRIAN AND BIA HERBSTRITH**
+Production Assistance: **MARCELLA LUCAS, ANDRESSA SCARDUA, AND VAGNER RODRIGUES**
+Camera Assistance: **MARYAH PASQUINI, EDERSON BASTIANI, AND JOSÉ CARLOS SANTANA**
+Accessibility Resources: **RAÇA LIVRE PRODUÇÕES**
+Script and Audio Description Narration: **SERGINHO MELO**
+Audio Description Consultancy: **FELIPE MIANES**
+Sign Language Interpreter: **MIKE DIANO**
+Descriptive Subtitling: **ALESSANDRA DA ROSA PINHO**
+English Translation: **LARISSA GUIMARÃES**
+Spanish Translation: **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA, AND CAMILA QUINTERO OSES**
 
-## Projeto
+## Project
 
-A transformação de uma realidade é um projeto de longo prazo que exige o apoio de vários atores sociais. Na Capoeira Mestre Sirso encontrou uma ferramenta de inclusão, por meio do Mestre Mestrinho. Neste documentário damos visibilidade ao protagonismo de um homem negro e surdo, e  lançamos luz  à responsabilidade social de cada um de nós nessa rede que pode contribuir para que a pessoa com deficiência conquiste o espaço que lhe pertence.
+The transformation of a reality is a long-term project that requires the support of various social actors. In Capoeira, Master Sirso found an inclusion tool through Master Mestrinho. In this documentary, we give visibility to the protagonism of a black and deaf man and shed light on the social responsibility of each one of us in this network that can contribute to people with disabilities gaining the space that belongs to them.
 
 <Carrossel>
 
@@ -184,17 +205,17 @@ A transformação de uma realidade é um projeto de longo prazo que exige o apoi
 
 </Carrossel>
 
-Para retratar essa história, a PALMA começa a produção de forma independente, em 2016. Contemplado no Programa Machfunding BNDES + Patrimônio Cultural para realizar um financiamento coletivo, em 2021, o projeto é finalizado com apoio de mais de 500 benfeitores, que mesmo no auge da pandemia, viram a necessidade de apoiar essa produção que traz um tema tão relevante à sociedade.
+To depict this story, PALMA began production independently in 2016. Awarded the BNDES + Cultural Heritage Machfunding Program to conduct crowdfunding in 2021, the project was completed with the support of more than 500 benefactors, who, even in the midst of the pandemic, saw the need to support this production addressing such a relevant topic to society.
 
-O filme foi produzido com todos os recursos de acessibilidade e a versão oficial é exibida com a janela de libras, além de ter versões legendas em inglês e espanhol.
+The film was produced with all accessibility features, and the official version is displayed with the sign language window, in addition to having English and Spanish subtitles versions.
 
-## Benfeitores
+## Benefactors
 
 import benfeitores from '../../data/benfeitores.json'
 
-<Lista items={benfeitores} label="Pesquisa seu nome" />
+<Lista items={benfeitores} label="Search your name" />
 
-## Exibições
+## Screenings
 
 ### 2022
 
@@ -232,9 +253,24 @@ import benfeitores from '../../data/benfeitores.json'
 
 </Mais>
 
-## Divulgação
+<CarrosselTriplo>
 
-![Cartaz do filme [1200x1697] [caption: Cartaz do filme] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
+  ![Pré Estreia Cascavel [caption: Pré-estreia Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-pre-restreia-cascavel.jpg)
+
+  ![Quilombo da Gamboa [caption: Quilombo da Gamboa]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-quilombi-da-gamboa.jpg)
+
+  ![CineCeca Cascavel [caption: CineCeca Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-cinececa-cascavel.jpg)
+
+  ![Pré Estreia Cascavel [caption: Pré-estreia Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-pre-restreia-cascavel.jpg)
+
+  ![Quilombo da Gamboa [caption: Quilombo da Gamboa]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-quilombi-da-gamboa.jpg)
+
+  ![CineCeca Cascavel [caption: CineCeca Cascavel]](/images/content/portfolio/documentario-mestre-sirso/exibicoes-cinececa-cascavel.jpg)
+</CarrosselTriplo>
+
+## Promotion
+
+![Movie poster [1200x1697] [caption: Movie poster] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
 
 ## Clippings
 
@@ -244,56 +280,51 @@ import benfeitores from '../../data/benfeitores.json'
   - Luanda International Pan-African Film Festival (LUANDA PAFF) 2022
 
 - [Gente de Opinião: Documentário que retrata desafios da vida de capoeirista surdo e negro estreia em Porto Velho](https://www.gentedeopiniao.com.br/cultura/documentario-que-retrata-desafios-da-vida-de-capoeirista-surdo-e-negro-estreia-em-porto-velho)
-  - Estreia do filme em Porto Velho
+  - Premiere of the film in Porto Velho
 
 - [Pratas da Casa: #73 EMANUELA PALMA - PRODUTORA FILME MESTRE SIRSO - PRATAS DA CASA 30/11/2022](https://rovivotv.rondoniaovivo.com/video/73-emanuela-palma-produtora-filme-mestre-sirso-pratas-da-casa-30112022/3063/)
-  - Entrevista sobre a estreia do filme em Porto Velho
+  - Interview about the film premiere in Porto Velho
 
 - [Exibição do filme em PVH em parceria com a UNIR](https://www.unir.br/evento/exibir/94#)
-  - Release divulgado no site oficial da Universidade Federal de Rondônia
+  - Press release posted on the official website of the Federal University of Rondônia
 
 - [Site oficial do Prêmio Pierre Verger](https://www.ppv2022.abant.org.br/conteudo/view?ID_CONTEUDO=931)
-  - Apresentação do filme, roteirista e diretora
+  - Presentation of the film, screenwriter, and director
 
 - [Artigo publicado no acervo do Arquivo Nacional](https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/revista-arquivo-em-cartaz_filme-etnografico_2022.pdf)
-  - Artigo está entre as páginas 150 e 159, de autoria da roteirista do filme, antropóloga Geslline Braga.
+  - The article is between pages 150 and 159, authored by the film's screenwriter, anthropologist Geslline Braga.
 
 - [G1 RPC Paraná: Documentário que retrata desafios da vida de capoeirista negro e surdo de Cascavel é destaque em premiação nacional](https://g1.globo.com/pr/parana/noticia/2022/08/27/documentario-que-retrata-desafios-da-vida-de-capoeirista-negro-e-surdo-de-cascavel-e-destaque-em-premiacao-nacional.ghtml)
-  - Reportagem sobre a seleção do filme para o prêmio Pierre Verger
+  - Article about the film's selection for the Pierre Verger Award.
 
 - [Revista Aldeia: “Mestre Sirso” concorre ao Prêmio Pierre Verger 2022](https://revistaaldeia.com.br/materia/2375/mestre-sirso-concorre%C2%A0ao-premio-pierre-verger-2022)
-  - Reportagem sobre a seleção do filme para o prêmio Pierre Verger
+  - Article about the film's selection for the Pierre Verger Award.
 
 - [Revista Aldeia: Mestre Sirso leva Cascavel para o mundo](https://revistaaldeia.com.br/materia/2144/mestre-sirso-leva-cascavel-para-o-mundo)
-  - Reportagem sobre pré-lançamento e finalização do filme.
+  - Article about the film's pre-release and completion.
 
 ### 2020
 
 - [Matchfunding BNDES+ Patrimônio Cultural](https://www.bndes.gov.br/wps/portal/site/home/desenvolvimento-sustentavel/parcerias/matchfunding-bndes-mais-patrimonio-cultural)
-  - Divulgação dos projetos selecionados no Matchfunding BNDES
+  - Announcement of the projects selected for Matchfunding BNDES.
 
 - [Revista Museu: 02/10/2020 - Programa de matchfunding do BNDES define 24 projetos para campanha de financiamento coletivo](https://www.revistamuseu.com.br/site/br/noticias/nacionais/9606-02-10-2020-programa-de-matchfunding-do-bndes-define-24-projetos-para-campanha-de-financiamento-coletivo.html)
-  - Divulga os selecionados no Matchfunding BNDES
+  - Announcement of the selected projects in the BNDES Matchfunding program
 
 - [Campanha no site Benfeitoria](https://benfeitoria.com/projeto/mestresirsofilme)
-  - Acesso à página da Campanha de Financiamento Coletivo
+  - Access to the Crowdfunding Campaign Page.
 
 - [Revista Reação: Mestre Sirso: documentário sobre um homem negro, surdo, que encontra na Roda de Capoeira a vibração para romper seu silêncio e ressignificar a vida](https://revistareacao.com.br/mestre-sirso-documentario-sobre-um-homem-negro-surdo-que-encontra-na-roda-de-capoeira-a-vibracao-para-romper-seu-silencio-e-ressignificar-a-vida/)
-  - Reportagem sobre a Campanha de Financiamento Coletivo
+  - News Article About the Crowdfunding Campaign
 
 - [Jornal Rondônia: Mestre Sirso: Quando O Mundo É Silêncio A Vibração É Mestre, De Emanuela Palma](https://jornalrondonia.com.br/cultura/mestre-sirso-quando-o-mundo-e-silencio-a-vibracao-e-mestre-de-emanuela-palma/)
-  - Reportagem sobre a Campanha de Financiamento Coletivo
+  - News Article About the Crowdfunding Campaign
 
 ### Outros Links
 
-- [Embauba Play  - Perfil da diretora](https://embaubaplay.com/diretor_s/emanuela-palma/)
-  - Bio da diretora
+- [Embauba Play  - Director's Bio](https://embaubaplay.com/diretor_s/emanuela-palma/)
+  - Director's Bio
 
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
-- [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
-  - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema
-
-- [Página do projeto no Youtube](https://www.youtube.com/@MSFCAP)
-
-- [Facebook do Filme](https://www.facebook.com/mestresirsofilme/)
+- [FIMCINE - Selection for Mentoring at the International Women in Film Festival](https://fimcine.com.br/br/lista/mentorias)

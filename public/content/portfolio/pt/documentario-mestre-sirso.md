@@ -166,8 +166,27 @@ A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e
 
 ## Equipe
 
-Direção **EMANUELA PALMA**, Produção Executiva **EMANUELA PALMA E LEO CARNEVALE**, Roteiro **GESLLINE BRAGA**, Direção de Fotografia **BIA HERBSTRITH**, Montagem **THAIS INÁCIO E CRISTIANO REQUIÃO**, Consultoria de montagem **GIOVANNA GIOVANINI**, Edição de som e mixagem **RODRIGO BOECKER**, Trilha sonora **FÁBIO BARBOSA E ALISSON SANTOS**, Correção de cor **CRISTIANO REQUIÃO**, Pesquisa **EMANUELA PALMA E GESLLINE BRAGA**, Design **ALÉ KARMIRIAN E BIA HERBSTRITH**, Assistência de produção **MARCELLA LUCAS, ANDRESSA SCARDUA E VAGNER RODRIGUES**, Assistência de Câmera **MARYAH PASQUINI, EDERSON BASTIANI E JOSÉ CARLOS SANTANA**, Recursos de Acessibilidade **RAÇA LIVRE PRODUÇÕES**, Roteiro e Narração da Audiodescrição **SERGINHO MELO**, Consultoria de
-Audiodescrição **FELIPE MIANES**, Intérprete de Libras **MIKE DIANO**, Legendagem Descritiva **ALESSANDRA DA ROSA PINHO**, Tradução inglês **LARISSA GUIMARÃES**, Tradução espanhol **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA E CAMILA QUINTERO OSES**.
+Direção **EMANUELA PALMA**,
+Produção Executiva **EMANUELA PALMA E LEO CARNEVALE**,
+Roteiro **GESLLINE BRAGA**,
+Direção de Fotografia **BIA HERBSTRITH**,
+Montagem **THAIS INÁCIO E CRISTIANO REQUIÃO**,
+Consultoria de montagem **GIOVANNA GIOVANINI**,
+Edição de som e mixagem **RODRIGO BOECKER**,
+Trilha sonora **FÁBIO BARBOSA E ALISSON SANTOS**,
+Correção de cor **CRISTIANO REQUIÃO**,
+Pesquisa **EMANUELA PALMA E GESLLINE BRAGA**,
+Design **ALÉ KARMIRIAN E BIA HERBSTRITH**,
+Assistência de produção **MARCELLA LUCAS, ANDRESSA SCARDUA E VAGNER RODRIGUES**,
+Assistência de Câmera **MARYAH PASQUINI, EDERSON BASTIANI E JOSÉ CARLOS SANTANA**,
+Recursos de Acessibilidade **RAÇA LIVRE PRODUÇÕES**,
+Roteiro e Narração da Audiodescrição **SERGINHO MELO**,
+Consultoria de
+Audiodescrição **FELIPE MIANES**,
+Intérprete de Libras **MIKE DIANO**,
+Legendagem Descritiva **ALESSANDRA DA ROSA PINHO**,
+Tradução inglês **LARISSA GUIMARÃES**,
+Tradução espanhol **NYLCÉA THEREZA DE SIQUEIRA PEDRA, BRUNO BEZERRA E CAMILA QUINTERO OSES**.
 
 ## Projeto
 
@@ -310,8 +329,3 @@ import benfeitores from '../../data/benfeitores.json'
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
 - [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
-  - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema
-
-- [Página do projeto no Youtube](https://www.youtube.com/@MSFCAP)
-
-- [Facebook do Filme](https://www.facebook.com/mestresirsofilme/)

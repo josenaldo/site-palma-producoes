@@ -9,7 +9,7 @@ tags:
 description:
   "Palma Produções produced 'Palhaço Afonso Xodó, Banda Rio and Guests', celebrating culture and joy."
 image:
-  url: /images/content/portfolio/palhaco-afonso-xodo.jpg
+  url: /images/content/portfolio/palhaco-afonso-xodo/capa.jpg
   alt: Clown Afonso Xodó, Rio Band and Guests
   width: 1200
   height: 628
