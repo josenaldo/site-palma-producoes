@@ -64,6 +64,7 @@ export default function LanguageSelector() {
 
   return (
     <Box
+      key={router.asPath}
       sx={{
         py: 1,
       }}
