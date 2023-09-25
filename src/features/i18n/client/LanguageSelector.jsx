@@ -11,7 +11,6 @@ import {
   Menu,
   MenuItem,
 } from '@mui/material'
-import LanguageIcon from '@mui/icons-material/Language'
 import { useTranslation } from '@/features/i18n'
 
 const languages = ['pt', 'en']
@@ -33,6 +32,9 @@ export default function LanguageSelector() {
 
     let newPathname = pathname
     const queryKeys = Object.keys(newQuery)
+
+    console.log('🔴 queryKeys', queryKeys)
+    console.log('🔴 newQuery', newQuery)
 
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)

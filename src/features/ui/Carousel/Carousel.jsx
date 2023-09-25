@@ -52,7 +52,7 @@ export default function Carousel({ slidesPerView = 1, children }) {
           '--swiper-pagination-bullet-opacity': '1',
           '--swiper-pagination-bullet-horizontal-gap': '4px',
           '--swiper-pagination-bullet-vertical-gap': '6px',
-          'padding-bottom': 'var(--add-bottom)',
+          paddingBottom: 'var(--add-bottom)',
         }}
         modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
         effect={slidesPerView === 1 ? null : 'coverflow'}
