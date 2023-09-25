@@ -23,6 +23,10 @@ export default function LanguageSelector() {
   const open = Boolean(anchorEl)
 
   const handleChange = async (value) => {
+    if (!router.isReady) {
+      return null
+    }
+
     let pathname = router.pathname
 
     const newQuery = {
@@ -33,6 +37,8 @@ export default function LanguageSelector() {
     let newPathname = pathname
     const queryKeys = Object.keys(newQuery)
 
+    console.log('🔴 router.query', router.query)
+    console.log('🔴 pathname', pathname)
     console.log('🔴 queryKeys', queryKeys)
     console.log('🔴 newQuery', newQuery)
 
