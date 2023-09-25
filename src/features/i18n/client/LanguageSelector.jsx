@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -19,25 +19,13 @@ const languages = ['pt', 'en']
 export default function LanguageSelector() {
   const { t, locale } = useTranslation(['common'])
   const router = useRouter()
-  const [query, setQuery] = React.useState(router.query)
-
-  console.log('🔴 router', router.query)
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
-  React.useEffect(() => {
-    if (!router.isReady) {
-      return null
-    }
-
-    if (!router.query.locale) {
-      return null
-    }
-
-    setQuery(router.query)
-    console.log('🔴 setting router.query', router.query)
-  }, [router.query, router.isReady])
+  useEffect(() => {
+    console.log('🔴 router.query', router.query)
+  }, [router.query])
 
   const handleChange = async (value) => {
     if (!router.isReady) {
@@ -45,13 +33,12 @@ export default function LanguageSelector() {
     }
 
     let pathname = router.pathname
+    let newPathname = pathname
 
     const newQuery = {
-      ...query,
+      ...router.query,
       locale: value,
     }
-
-    let newPathname = pathname
     const queryKeys = Object.keys(newQuery)
 
     queryKeys.forEach((key) => {
@@ -63,6 +50,7 @@ export default function LanguageSelector() {
       newPathname += `?${queryString}`
     }
     console.log('🔴 new pathname', newPathname)
+
     router.push(newPathname)
     handleClose()
   }
