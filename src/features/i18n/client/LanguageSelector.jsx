@@ -18,6 +18,7 @@ const languages = ['pt', 'en']
 export default function LanguageSelector() {
   const { t, locale } = useTranslation(['common'])
   const router = useRouter()
+  console.log('🔴 router', router.query)
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
@@ -36,11 +37,6 @@ export default function LanguageSelector() {
 
     let newPathname = pathname
     const queryKeys = Object.keys(newQuery)
-
-    console.log('🔴 router.query', router.query)
-    console.log('🔴 pathname', pathname)
-    console.log('🔴 queryKeys', queryKeys)
-    console.log('🔴 newQuery', newQuery)
 
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
@@ -62,11 +58,16 @@ export default function LanguageSelector() {
     setAnchorEl(null)
   }
 
+  if (!router.isReady) {
+    return null
+  }
+
   return (
     <Box
       sx={{
         py: 1,
       }}
+      suppressHydrationWarning
     >
       <Button
         id="basic-button"
