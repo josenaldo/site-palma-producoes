@@ -21,13 +21,17 @@ export default function LanguageSelector() {
   const router = useRouter()
   const [query, setQuery] = React.useState(router.query)
 
-  console.log('router', router.query)
+  console.log('🔴 router', router.query)
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
   React.useEffect(() => {
     if (!router.isReady) {
+      return null
+    }
+
+    if (!router.query.locale) {
       return null
     }
 
