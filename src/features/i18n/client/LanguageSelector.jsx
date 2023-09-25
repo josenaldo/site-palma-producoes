@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -12,7 +12,6 @@ import {
   MenuItem,
 } from '@mui/material'
 import { useTranslation } from '@/features/i18n'
-import { set } from 'date-fns'
 
 const languages = ['pt', 'en']
 
@@ -23,22 +22,7 @@ export default function LanguageSelector() {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
-  const [query, setQuery] = React.useState({ locale: locale })
-
-  useEffect(() => {
-    if (!router.isReady) {
-      console.log('🔴 not ready. router.query:', router.query)
-      console.log('🔴query:', query)
-      return null
-    }
-
-    setQuery(router.query)
-    console.log('🔴 ready! router.query', router.query)
-    console.log('🔴query:', query)
-  }, [router.query, router.isReady])
-
   const handleChange = async (value) => {
-    let pathname = router.pathname
     let newPathname = router.pathname
 
     const newQuery = {
@@ -56,8 +40,6 @@ export default function LanguageSelector() {
       newPathname += `?${queryString}`
     }
     console.log('🔴 new pathname', newPathname)
-
-    // router.push(newPathname)
 
     window.location.assign(newPathname)
 
@@ -87,7 +69,7 @@ export default function LanguageSelector() {
         onClick={handleClick}
         startIcon={
           <Image
-            src={`/flags/${locale}.svg`}
+            src={`/flags/${t('common:languageSelector.flag')}.svg`}
             width={20}
             height={20}
             alt={t(locale)}

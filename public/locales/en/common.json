@@ -2,7 +2,8 @@
   "languageSelector": {
     "language": "English (US)",
     "pt": "Portuguese (BR)",
-    "en": "English (US)"
+    "en": "English (US)",
+    "flag": "en"
   },
   "menu": {
     "home": "Home",
