@@ -12,16 +12,28 @@ import {
   MenuItem,
 } from '@mui/material'
 import { useTranslation } from '@/features/i18n'
+import { set } from 'date-fns'
 
 const languages = ['pt', 'en']
 
 export default function LanguageSelector() {
   const { t, locale } = useTranslation(['common'])
   const router = useRouter()
-  console.log('🔴 router', router.query)
+  const [query, setQuery] = React.useState(router.query)
+
+  console.log('router', router.query)
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
+
+  React.useEffect(() => {
+    if (!router.isReady) {
+      return null
+    }
+
+    setQuery(router.query)
+    console.log('🔴 setting router.query', router.query)
+  }, [router.query, router.isReady])
 
   const handleChange = async (value) => {
     if (!router.isReady) {
@@ -31,7 +43,7 @@ export default function LanguageSelector() {
     let pathname = router.pathname
 
     const newQuery = {
-      ...router.query,
+      ...query,
       locale: value,
     }
 
@@ -46,7 +58,7 @@ export default function LanguageSelector() {
     if (queryString) {
       newPathname += `?${queryString}`
     }
-
+    console.log('🔴 new pathname', newPathname)
     router.push(newPathname)
     handleClose()
   }
@@ -58,16 +70,11 @@ export default function LanguageSelector() {
     setAnchorEl(null)
   }
 
-  if (!router.isReady) {
-    return null
-  }
-
   return (
     <Box
       sx={{
         py: 1,
       }}
-      suppressHydrationWarning
     >
       <Button
         id="basic-button"
