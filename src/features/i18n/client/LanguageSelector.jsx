@@ -28,10 +28,6 @@ export default function LanguageSelector() {
   }, [router.query])
 
   const handleChange = async (value) => {
-    if (!router.isReady) {
-      return null
-    }
-
     let pathname = router.pathname
     let newPathname = pathname
 
