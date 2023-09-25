@@ -38,34 +38,29 @@ export default function LanguageSelector() {
   }, [router.query, router.isReady])
 
   const handleChange = async (value) => {
-    // let pathname = router.pathname
-    // let newPathname = router.pathname
+    let pathname = router.pathname
+    let newPathname = router.pathname
 
-    // const newQuery = {
-    //   ...router.query,
-    //   locale: value,
-    // }
-    // const queryKeys = Object.keys(newQuery)
+    const newQuery = {
+      ...router.query,
+      locale: value,
+    }
+    const queryKeys = Object.keys(newQuery)
 
-    // queryKeys.forEach((key) => {
-    //   newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
-    // })
-
-    // const queryString = router.asPath.split('?')[1] || ''
-    // if (queryString) {
-    //   newPathname += `?${queryString}`
-    // }
-    // console.log('🔴 new pathname', newPathname)
-
-    // router.push({
-    //   pathname: pathName,
-    //   query: newQuery,
-    // })
-
-    router.push({
-      href: './',
-      query: { ...router.query, locale: value },
+    queryKeys.forEach((key) => {
+      newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
     })
+
+    const queryString = router.asPath.split('?')[1] || ''
+    if (queryString) {
+      newPathname += `?${queryString}`
+    }
+    console.log('🔴 new pathname', newPathname)
+
+    // router.push(newPathname)
+
+    window.location.assign(newPathname)
+
     handleClose()
   }
 
