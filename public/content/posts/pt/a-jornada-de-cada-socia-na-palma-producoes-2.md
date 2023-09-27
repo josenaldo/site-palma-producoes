@@ -2,7 +2,6 @@
 title: "2 - A Jornada de Cada Sócia na Palma Produções"
 description: "Conheça a jornada inspiradora das sócias da Palma Produções e como suas experiências moldaram a empresa."
 date: "2023-07-19 13:00:00 -0300"
-author: "Emanuela Palma"
 image:
   url: "/images/content/posts/a-jornada-de-cada-socia-na-palma-producoes.jpg"
   alt: "Sócias da Palma Produções"

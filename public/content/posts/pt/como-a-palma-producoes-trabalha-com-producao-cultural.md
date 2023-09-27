@@ -2,7 +2,6 @@
 title: "Como a Palma Produções Trabalha com Produção Cultural"
 description: "Descubra como a Palma Produções colabora com artistas e organizações culturais para dar vida a projetos culturais inovadores e impactantes."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-producao-cultural.jpg
   alt: "Equipe da Palma Produções trabalhando em produção cultural"

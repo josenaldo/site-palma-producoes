@@ -3,7 +3,6 @@ title: "2 - The Story of Palma Productions"
 description:
   "Discover the journey of Palma Productions, a company committed to creating impactful cultural and socio-environmental projects."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
 image:
   url: /images/content/posts/a-historia-da-palma-producoes.jpg
   alt: "The Story of Palma Productions"

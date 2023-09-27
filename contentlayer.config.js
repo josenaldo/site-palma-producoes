@@ -333,6 +333,47 @@ export const PortfolioItem = defineDocumentType(() => ({
   },
 }))
 
+const Categoria = defineDocumentType(() => ({
+  name: 'Categoria',
+  filePathPattern: `categorias/**/*.md`,
+  contentType: 'mdx',
+  fields: {
+    order: {
+      type: 'number',
+      description: 'The order of the category',
+      required: true,
+    },
+    name: {
+      type: 'string',
+      description: 'The name of the category',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      description: 'The description of the category',
+      required: true,
+    },
+    image: {
+      type: 'nested',
+      of: Image,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => resolveUrl(doc, 'categorias', 'movimentos'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) => resolveLocale(doc, 'categorias'),
+    },
+    slug: {
+      type: 'string',
+      resolve: (doc) => resolveSlug(doc, 'categorias'),
+    },
+  },
+}))
+
 export const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: `posts/**/*.md`,
@@ -351,11 +392,6 @@ export const Post = defineDocumentType(() => ({
     date: {
       type: 'date',
       description: 'The date of the post',
-      required: true,
-    },
-    author: {
-      type: 'string',
-      description: 'The author of the post',
       required: true,
     },
     category: {
@@ -404,6 +440,7 @@ export default makeSource({
     Servico,
     Depoimento,
     PortfolioItem,
+    Categoria,
     Post,
   ],
 })

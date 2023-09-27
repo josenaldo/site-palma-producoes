@@ -12,14 +12,45 @@ import {
 } from '@/features/content'
 import { AppLayout } from '@/features/layout'
 import { useTranslation } from '@/features/i18n'
-import { getStaticPaths } from '@/features/i18n/server'
+import { getStaticPaths as i18nGetStaticPaths } from '@/features/i18n/server'
 import { buildStaticProps } from '@/features/pages/server'
 import { Pagination } from '@/features/ui'
+
+export function getStaticPaths() {
+  const i18nPaths = i18nGetStaticPaths()
+  const posts = postContentService.getAllPosts('pt')
+  const categories = categoriaContentService.getAllCategorias('pt')
+
+  const paths = []
+
+  categories.map((categoria) => {
+    const p = i18nPaths.paths.map((path) => {
+      const { locale } = path.params
+
+      return {
+        params: {
+          locale,
+          category: categoria.slug,
+        },
+      }
+    })
+
+    paths.push(...p)
+  })
+
+  const newPathsObject = {
+    ...i18nPaths,
+    paths: paths,
+  }
+
+  return newPathsObject
+}
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await buildStaticProps(params, 'movimentos')
 
   const locale = params?.locale || 'pt'
+  const category = params?.category || 'movimentos'
 
   const startPage = 1
   const itemsPerPage = process.env.NEXT_PUBLIC_DEFAULT_PAGE_SIZE || 10
@@ -31,17 +62,17 @@ export async function getStaticProps({ params }) {
   propsWrapper.props.pageCount = pageCount
   propsWrapper.props.posts = posts
   propsWrapper.props.categorias = categorias
+  propsWrapper.props.category = category
 
   return propsWrapper
 }
-
-export { getStaticPaths }
 
 export default function MovimentosPage({
   page,
   itemsPerPage,
   posts,
   categorias,
+  category,
   pageCount,
 }) {
   const { t, isoLocale, locale } = useTranslation(['common', 'movimentos'])
@@ -100,7 +131,7 @@ export default function MovimentosPage({
               url={categoria.url}
               image={categoria.image}
               key={categoria.slug}
-              isActive={categoria.slug === 'movimentos'}
+              isActive={categoria.slug === category}
             />
           ))}
         </Box>

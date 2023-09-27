@@ -2,7 +2,6 @@
 title: "2 - The Journey of Each Partner at Palma Productions"
 description: "Get to know the inspiring journey of the partners at Palma Productions and how their experiences have shaped the company."
 date: "2023-07-19 13:00:00 -0300"
-author: "Emanuela Palma"
 image:
   url: "/images/content/posts/a-jornada-de-cada-socia-na-palma-producoes.jpg"
   alt: "Partners at Palma Productions"
