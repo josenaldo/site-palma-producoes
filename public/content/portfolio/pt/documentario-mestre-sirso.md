@@ -66,76 +66,6 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
   </Caixa>
 </Colunas>
 
-<Parcerias titulo="Produção">
-  <Parceria
-    parceiro="Palma Produções"
-    logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
-    url="https://palmaproducoes.com.br"/>
-
-  <Parceria
-    parceiro="Carnavalle"
-    logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
-    url="https://www.instagram.com/carnevaleproducoes/"/>
-</Parcerias>
-
-<Parcerias titulo="Realização">
-  <Parceria
-    parceiro="Capoeira Arte Luta"
-    logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Co-idealização">
-  <Parceria
-    parceiro="Benfeitoria"
-    logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
-    url=""/>
-  <Parceria parceiro="Sitawi"
-    logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Apoio">
-  <Parceria
-    parceiro="BNDES"
-    logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Apoiadores">
-  <Parceria
-    parceiro="Raça Livre Produções"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
-    url="" />
-  <Parceria
-    parceiro="Biomob"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
-    url="" />
-  <Parceria
-    parceiro="Perspective Fund"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
-    url="" />
-  <Parceria
-    parceiro="FAPAN"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
-    url="" />
-  <Parceria
-    parceiro="APAN"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
-    url="" />
-  <Parceria
-    parceiro="Prefeitura de Cascavel"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
-    url="" />
-  <Parceria
-    parceiro="Gráfica Assoeste"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
-    url="" />
-  <Parceria
-    parceiro="Unioeste"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
-</Parcerias>
-
 ## O filme
 
 O filme propõe ao espectador uma imersão no universo de uma pessoa com deficiência auditiva, a partir da narrativa que marca a experiência sensorial de Sirso por meio da vibração do som na relação com a Capoeira. A história de Sirso faz um mergulho no Brasil profundo. Lança luz aos desafios do processo de inclusão no Brasil e apresenta a potência da Capoeira como arte, educação, processo terapêutico e luta, não apenas na Roda, mas na resistência às várias formas de preconceito contra as pessoas negras.
@@ -329,3 +259,78 @@ import benfeitores from '../../data/benfeitores.json'
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
 - [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
+
+<Faixa cor='surfice.lighter'>
+  <Parcerias titulo="Produção">
+    <Parceria
+      parceiro="Palma Produções"
+      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      url="https://palmaproducoes.com.br"/>
+
+    <Parceria
+      parceiro="Carnavalle"
+      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      url="https://www.instagram.com/carnevaleproducoes/"/>
+  </Parcerias>
+
+  <Colunas formato="1|1|1">
+    <Parcerias titulo="Realização">
+      <Parceria
+        parceiro="Capoeira Arte Luta"
+        logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
+        url=""/>
+    </Parcerias>
+
+    <Parcerias titulo="Co-idealização">
+      <Parceria
+        parceiro="Benfeitoria"
+        logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
+        url=""/>
+
+      <Parceria parceiro="Sitawi"
+        logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
+        url=""/>
+    </Parcerias>
+
+    <Parcerias titulo="Apoio">
+      <Parceria
+        parceiro="BNDES"
+        logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
+        url=""/>
+    </Parcerias>
+  </Colunas>
+
+  <Parcerias titulo="Apoiadores">
+    <Parceria
+      parceiro="Raça Livre Produções"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
+      url="" />
+    <Parceria
+      parceiro="Biomob"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
+      url="" />
+    <Parceria
+      parceiro="Perspective Fund"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
+      url="" />
+    <Parceria
+      parceiro="FAPAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
+      url="" />
+    <Parceria
+      parceiro="APAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
+      url="" />
+    <Parceria
+      parceiro="Prefeitura de Cascavel"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
+      url="" />
+    <Parceria
+      parceiro="Gráfica Assoeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
+      url="" />
+    <Parceria
+      parceiro="Unioeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
+  </Parcerias>
+</Faixa>

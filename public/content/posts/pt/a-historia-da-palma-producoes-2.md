@@ -8,7 +8,7 @@ image:
   alt: "A História da Palma Produções"
   width: 1200
   height: 628
-category: Empresa
+category: movements
 tags:
   - História da Empresa
   - Palma Produções

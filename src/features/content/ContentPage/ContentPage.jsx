@@ -103,8 +103,41 @@ export default function ContentPage({
         {...props}
       />
     ),
+
     Colunas: ({ formato = '1|1', ...props }) => (
       <BlockColumns format={formato} {...props} />
+    ),
+    Faixa: ({ cor, children, ...props }) => (
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          overflow: 'hidden',
+          backgroundColor: cor || 'transparent',
+          position: 'relative',
+          width: '100vw',
+          position: 'relative',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
+        }}
+        {...props}
+      >
+        <Container
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            py: 4,
+          }}
+        >
+          {children}
+        </Container>
+      </Box>
     ),
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
@@ -127,7 +160,11 @@ export default function ContentPage({
   }
 
   return (
-    <Box>
+    <Box
+      sx={{
+        overflowX: 'hidden',
+      }}
+    >
       <Container>
         <Box className={styles.markdownBody}>
           <MDXContent components={comp} />
