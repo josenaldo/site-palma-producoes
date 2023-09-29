@@ -17,10 +17,11 @@ export default function Socias({ socias }) {
           display: 'grid',
           gridTemplateColumns: {
             xs: '1fr',
-            sm: 'repeat(3, 1fr)',
+            sm: '1fr 1fr',
           },
           gap: 2,
           mt: 4,
+          padding: 5,
         }}
       >
         {socias.map((socia) => (
@@ -82,7 +83,11 @@ export default function Socias({ socias }) {
                     md: 8,
                   },
                   display: 'flex',
-                  justifyContent: 'flex-end',
+                  justifyContent: {
+                    xs: 'center',
+                    md: 'flex-end',
+                  },
+
                   alignItems: 'center',
                 }}
               >
@@ -90,13 +95,8 @@ export default function Socias({ socias }) {
                   variant="h4"
                   sx={{
                     display: 'inline-block',
-                    width: '100%',
                     borderBottom: '3px solid',
                     borderColor: 'primary.main',
-                    textAlign: {
-                      xs: 'center',
-                      md: 'right',
-                    },
                   }}
                 >
                   {socia.name}
