@@ -2,6 +2,7 @@
 title: "How Palma Produções Works with Visual Communication and Strategy"
 description: "Discover how Palma Produções combines creativity, strategic thinking, and visual communication expertise to deliver impactful solutions for your brand."
 date: 2023-07-19 13:00:00 -0300
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-comunicacao-visual-e-estrategica.jpg
   alt: "Palma Produções team working on visual communication"

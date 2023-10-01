@@ -1,3 +1,5 @@
+// import { dark } from '@mui/material/styles/createPalette'
+
 export const primary = {
   50: '#f0f5e8',
   100: '#d9e6c5',
@@ -97,6 +99,7 @@ const palette = {
     main: primary[500],
     dark: primary[700],
     darker: primary[900],
+    contrastText: grey[900],
   },
   secondary: {
     lighter: secondary[100],
@@ -104,6 +107,7 @@ const palette = {
     main: secondary[500],
     dark: secondary[700],
     darker: secondary[900],
+    contrastText: grey[900],
   },
   tertiary: {
     lighter: tertiary[100],
@@ -111,6 +115,7 @@ const palette = {
     main: tertiary[500],
     dark: tertiary[700],
     darker: tertiary[900],
+    contrastText: grey[50],
   },
   quaternary: {
     lighter: quaternary[100],
@@ -118,6 +123,7 @@ const palette = {
     main: quaternary[500],
     dark: quaternary[700],
     darker: quaternary[900],
+    contrastText: grey[50],
   },
   grey: {
     lighter: grey[100],

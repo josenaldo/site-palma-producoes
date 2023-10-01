@@ -10,7 +10,7 @@
     "about": "Quem Somos",
     "services": "Serviços",
     "portfolio": "Portfolio",
-    "moviments": "Movimentos",
+    "blog": "Blog",
     "search": "Pesquisa",
     "contact": "Contato"
   },
@@ -81,7 +81,7 @@
     "results": {
       "types": {
         "Page": "Página",
-        "Post": "Movimento",
+        "Post": "Blog",
         "PortfolioItem": "Portfólio"
       }
     }

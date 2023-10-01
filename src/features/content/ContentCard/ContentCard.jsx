@@ -6,6 +6,7 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Chip,
   Typography,
 } from '@mui/material'
 
@@ -25,23 +26,28 @@ export default function ContentCard({
   const { t, isoLocale } = useTranslation(['common'])
 
   const [brightness, setBrightness] = useState(40)
+  const [elevation, setElevation] = useState(0)
 
   if (!t) return null
 
   return (
     <Card
-      elevation={0}
+      elevation={elevation}
+      // variant="outlined"
       sx={{
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         borderRadius: 4,
+        backgroundColor: 'grey.50',
       }}
       onMouseOver={(e) => {
         setBrightness(60)
+        setElevation(2)
       }}
       onMouseOut={(e) => {
         setBrightness(40)
+        setElevation(0)
       }}
       onClick={(e) => {
         const oldBrightness = brightness
@@ -78,14 +84,10 @@ export default function ContentCard({
           display: 'flex',
           flexDirection: 'column',
           width: '100%',
-          gap: 2,
+          gap: 1,
           flexGrow: 1,
         }}
       >
-        <Typography variant="h5" component="h3" color="primary.main">
-          {title}
-        </Typography>
-
         <Box
           sx={{
             display: 'flex',
@@ -97,8 +99,23 @@ export default function ContentCard({
           <ContentDate date={date} isoLocale={isoLocale} />
         </Box>
 
-        <Typography variant="body1">{description}</Typography>
-        <Tags tags={tags} color="grey.500" />
+        <Typography variant="h5" component="h3" color="primary.main">
+          {title}
+        </Typography>
+
+        <Typography variant="body3">{description}</Typography>
+
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 1,
+            flexWrap: 'wrap',
+          }}
+        >
+          {tags.map((tag) => (
+            <Chip key={tag} label={tag} size="small" color="tertiary" />
+          ))}
+        </Box>
       </CardContent>
       <CardActions
         sx={{

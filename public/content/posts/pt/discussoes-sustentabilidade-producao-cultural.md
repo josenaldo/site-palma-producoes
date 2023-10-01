@@ -2,6 +2,7 @@
 title: Discussões sobre Sustentabilidade na Produção Cultural
 description: "Explorando o papel da sustentabilidade na produção cultural e seu impacto no meio ambiente e na sociedade."
 date: 2023-07-19 13:00:00 -0300
+author: Palma Produções
 image:
   url: /images/content/posts/discussoes-sustentabilidade-producao-cultural.jpg
   alt: Discussões sobre Sustentabilidade na Produção Cultural

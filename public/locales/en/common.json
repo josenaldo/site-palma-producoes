@@ -10,7 +10,7 @@
     "about": "Who we are",
     "services": "Services",
     "portfolio": "Portfolio",
-    "moviments": "Movements",
+    "blog": "Blog",
     "search": "Search",
     "contact": "Contact"
   },
@@ -80,7 +80,7 @@
     "results": {
       "types": {
         "Page": "Page",
-        "Post": "Moviment",
+        "Post": "Blog",
         "PortfolioItem": "Portfolio"
       }
     }

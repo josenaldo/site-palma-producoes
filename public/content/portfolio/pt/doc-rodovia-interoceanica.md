@@ -17,7 +17,7 @@ image:
 
 <Titulo />
 
-<Tags />
+<Tags size="medium"/>
 
 <RedesSociais
   facebook="https://www.facebook.com/mestresirsofilme/"

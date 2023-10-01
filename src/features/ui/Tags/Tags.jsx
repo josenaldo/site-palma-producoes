@@ -1,6 +1,21 @@
 import { Box, Typography } from '@mui/material'
 
-export default function Tags({ tags, color = 'grey.500' }) {
+const sizeVariantes = {
+  small: 'caption',
+  medium: 'body2',
+  large: 'body1',
+  extralarge: 'body3',
+}
+
+export default function Tags({
+  tags,
+  color = 'grey.600',
+  onlyFirstTag = false,
+  size = 'small',
+}) {
+  const tagsToShow = onlyFirstTag ? tags.slice(0, 1) : tags
+  const variant = sizeVariantes[size] || sizeVariantes.small
+
   return (
     <Box
       sx={{
@@ -11,6 +26,7 @@ export default function Tags({ tags, color = 'grey.500' }) {
         gap: 1,
         color: color,
         textTransform: 'uppercase',
+
         '& :not(:last-child)': {
           paddingRight: 1,
           borderRight: '1px solid',
@@ -18,9 +34,9 @@ export default function Tags({ tags, color = 'grey.500' }) {
         },
       }}
     >
-      {tags &&
-        tags.map((tag, index) => (
-          <Typography variant="caption" key={tag}>
+      {tagsToShow &&
+        tagsToShow.map((tag, index) => (
+          <Typography variant={variant} key={tag} fontWeight={500}>
             {tag}
           </Typography>
         ))}

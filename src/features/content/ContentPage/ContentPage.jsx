@@ -146,7 +146,9 @@ export default function ContentPage({
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
     Resumo: BlockAbstract,
-    Tags: (props) => <BlockTags tags={tags} />,
+    Tags: ({ size = 'small', ...props }) => (
+      <BlockTags tags={tags} size={size} />
+    ),
     Titulo: (props) => (
       <BlockTitle
         title={title}

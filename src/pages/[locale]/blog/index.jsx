@@ -8,7 +8,6 @@ import {
   ContentImageCard,
   ContentCategoryCard,
   postContentService,
-  categoriaContentService,
 } from '@/features/content'
 import { AppLayout } from '@/features/layout'
 import { useTranslation } from '@/features/i18n'
@@ -17,7 +16,7 @@ import { buildStaticProps } from '@/features/pages/server'
 import { Pagination } from '@/features/ui'
 
 export async function getStaticProps({ params }) {
-  const propsWrapper = await buildStaticProps(params, 'movimentos')
+  const propsWrapper = await buildStaticProps(params, 'blog')
 
   const locale = params?.locale || 'pt'
 
@@ -25,32 +24,25 @@ export async function getStaticProps({ params }) {
   const itemsPerPage = process.env.NEXT_PUBLIC_DEFAULT_PAGE_SIZE || 10
   const pageCount = postContentService.getPostsPageCount(locale, itemsPerPage)
   const posts = postContentService.getPosts(locale, startPage, itemsPerPage)
-  const categorias = categoriaContentService.getAllCategorias(locale)
 
   propsWrapper.props.itemsPerPage = itemsPerPage
   propsWrapper.props.pageCount = pageCount
   propsWrapper.props.posts = posts
-  propsWrapper.props.categorias = categorias
 
   return propsWrapper
 }
 
 export { getStaticPaths }
 
-export default function MovimentosPage({
-  page,
-  itemsPerPage,
-  posts,
-  categorias,
-  pageCount,
-}) {
-  const { t, isoLocale, locale } = useTranslation(['common', 'movimentos'])
+export default function BlogPage({ page, itemsPerPage, posts, pageCount }) {
+  console.log('posts', posts)
+  const { t, isoLocale, locale } = useTranslation(['common'])
 
   const [pageIndex, setPageIndex] = useState(1)
   const [loading, setLoading] = useState(false)
   const [postsToShow, setPostsToShow] = useState(posts)
 
-  const startOfNotHighlighted = pageIndex !== 1 ? 0 : 5
+  // const startOfNotHighlighted = pageIndex !== 1 ? 0 : 5
 
   const handleChangePage = (event, value) => {
     setLoading(true)
@@ -82,45 +74,44 @@ export default function MovimentosPage({
           text={page.body}
           direction="column"
         />
-
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: 2,
-            my: 4,
+            gridAutoColumns: '1fr',
+            gap: 4,
+            '& :first-child': {
+              gridColumn: {
+                xs: 'span 1',
+                md: 'span 2',
+              },
+              gridRow: {
+                xs: 'span 1',
+                md: 'span 2',
+              },
+            },
+
+            '& :nth-child(2n):last-child': {
+              gridColumn: {
+                xs: 'span 1',
+                md: 'span 2',
+              },
+            },
           }}
         >
-          {categorias.map((categoria) => (
-            <ContentCategoryCard
-              name={categoria.name}
-              url={categoria.url}
-              image={categoria.image}
-              key={categoria.slug}
-              isActive={categoria.slug === 'movimentos'}
+          {postsToShow.map((post) => (
+            <ContentCard
+              key={post.slug}
+              url={post.url}
+              title={post.title}
+              description={post.description}
+              image={post.image}
+              tags={post.tags}
+              date={post.date}
+              author={post.author}
+              isoLocale={isoLocale}
             />
           ))}
         </Box>
-
-        {pageIndex === 1 && postsToShow.length > 0 && (
-          <FirstTierHighlightPost t={t} post={postsToShow[0]} />
-        )}
-
-        {pageIndex === 1 && postsToShow.length > 1 && (
-          <SecondTierHighlightPosts
-            t={t}
-            posts={postsToShow.slice(1, startOfNotHighlighted)}
-          />
-        )}
-
-        <NonHighlightPosts
-          t={t}
-          posts={postsToShow.slice(startOfNotHighlighted)}
-          isoLocale={isoLocale}
-        />
 
         <Pagination
           onChange={handleChangePage}
@@ -136,46 +127,6 @@ export default function MovimentosPage({
   )
 }
 
-function FirstTierHighlightPost({ t, post }) {
-  return (
-    <Box>
-      <ContentImageCard
-        key={post.slug}
-        url={post.url}
-        title={post.title}
-        image={post.image}
-        tags={post.tags}
-      />
-    </Box>
-  )
-}
-
-function SecondTierHighlightPosts({ t, posts }) {
-  return (
-    <Box
-      sx={{
-        display: 'grid',
-        gridTemplateColumns: {
-          xs: '1fr',
-          md: '1fr 1fr',
-        },
-        gap: 4,
-        my: 4,
-      }}
-    >
-      {posts.map((post) => (
-        <ContentImageCard
-          key={post.slug}
-          url={post.url}
-          title={post.title}
-          image={post.image}
-          tags={post.tags}
-        />
-      ))}
-    </Box>
-  )
-}
-
 function NonHighlightPosts({ t, posts, isoLocale }) {
   if (posts.length <= 0) return null
 
@@ -186,6 +137,7 @@ function NonHighlightPosts({ t, posts, isoLocale }) {
         gridTemplateColumns: 'repeat( auto-fit, minmax(300px, 1fr) )',
         gap: 4,
         mb: 8,
+        mt: 8,
       }}
     >
       {posts.map((post) => (

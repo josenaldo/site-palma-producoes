@@ -12,7 +12,7 @@ export default function BlockMore({ children }) {
 
   return (
     <>
-      <Button variant="text" color="primary" onClick={toggleOpen}>
+      <Button variant="outlined" color="primary" onClick={toggleOpen}>
         {open ? t('common:button.less') : t('common:button.more')}
       </Button>
       <Collapse in={open}>{children}</Collapse>

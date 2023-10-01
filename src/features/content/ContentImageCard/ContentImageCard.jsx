@@ -4,7 +4,13 @@ import { Box, Card, CardContent, Typography } from '@mui/material'
 
 import { ImageBox, Link, Tags } from '@/features/ui'
 
-export default function ContentImageCard({ url, title, tags, image }) {
+export default function ContentImageCard({
+  url,
+  title,
+  tags,
+  numberOfTags = 1,
+  image,
+}) {
   const [elevation, setElevation] = useState(2)
   const [brightness, setBrightness] = useState(40)
 
@@ -97,7 +103,9 @@ export default function ContentImageCard({ url, title, tags, image }) {
                 },
               }}
             >
-              {tags && <Tags tags={tags} />}
+              {tags && (
+                <Tags tags={tags} onlyFirstTag size="small" color="grey.400" />
+              )}
             </Box>
           </Box>
         </CardContent>

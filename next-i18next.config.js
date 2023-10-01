@@ -22,17 +22,7 @@ module.exports = {
     localeDetection: true,
     defaultNS: 'common',
     fallbackNS: 'common',
-    ns: [
-      'common',
-      'contato',
-      'home',
-      'movimentos',
-      'pesquisa',
-      'portfolio',
-      'projetos',
-      'quem-somos',
-      'servicos',
-    ],
+    ns: ['common', 'contato', 'home', 'quem-somos', 'servicos'],
   },
 
   debug: process.env.NODE_ENV === 'development',

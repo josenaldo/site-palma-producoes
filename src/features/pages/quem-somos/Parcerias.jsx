@@ -12,7 +12,7 @@ export default function Parcerias({ parcerias }) {
       sx={{
         gap: 2,
         backgroundColor: 'surfice.lighter',
-        py: 10,
+        py: 8,
       }}
     >
       <Container

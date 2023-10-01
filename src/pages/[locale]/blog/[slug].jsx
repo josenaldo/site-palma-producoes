@@ -37,9 +37,9 @@ export function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const i18nPropsFunc = makeStaticProps(['common', 'movimentos'])
+  const i18nPropsFunc = makeStaticProps(['common'])
   const { slug, locale } = ctx.params
-  const url = `/${locale}/movimentos/${slug}`
+  const url = `/${locale}/blog/${slug}`
 
   const i18nProps = await i18nPropsFunc(ctx)
   const post = postContentService.getPostData(url)
@@ -79,7 +79,7 @@ export default function PortfolioPage({ post }) {
           author={post.author}
           date={post.date}
           url={post.url}
-          ns={['common', 'movimentos']}
+          ns={['common']}
         />
       </Container>
     </AppLayout>

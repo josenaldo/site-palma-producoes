@@ -261,17 +261,6 @@ import benfeitores from '../../data/benfeitores.json'
 - [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
 
 <Faixa cor='surfice.lighter'>
-  <Parcerias titulo="Produção">
-    <Parceria
-      parceiro="Palma Produções"
-      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
-      url="https://palmaproducoes.com.br"/>
-
-    <Parceria
-      parceiro="Carnavalle"
-      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
-      url="https://www.instagram.com/carnevaleproducoes/"/>
-  </Parcerias>
 
   <Colunas formato="1|1|1">
     <Parcerias titulo="Realização">
@@ -333,4 +322,17 @@ import benfeitores from '../../data/benfeitores.json'
       parceiro="Unioeste"
       logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
   </Parcerias>
+
+   <Parcerias titulo="Produção">
+    <Parceria
+      parceiro="Palma Produções"
+      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      url="https://palmaproducoes.com.br"/>
+
+    <Parceria
+      parceiro="Carnavalle"
+      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      url="https://www.instagram.com/carnevaleproducoes/"/>
+  </Parcerias>
+
 </Faixa>
