@@ -44,6 +44,7 @@ export default function BlockResponsiveImage(props) {
           xl: '15px',
         },
         overflow: 'hidden',
+        my: 4,
       }}
     >
       <ImageBox

@@ -15,6 +15,11 @@ tags:
   - "Journey"
   - "Story"
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Palma Productions is the result of the union of three talented and committed women: Emanuela Palma, Bia Herbst, and Alexandra Karmiriam. Each of them brings a unique vision and rich experience in their respective fields, creating a synergy that is the driving force behind Palma Productions.
 

@@ -61,27 +61,16 @@ export default function PortfolioPage({ post }) {
       description={post.description}
       image={post.image}
     >
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: 4,
-        }}
-      >
-        <ContentPage
-          title={post.title}
-          titleBorderBottomColor="transparent"
-          image={post.image}
-          body={post.body}
-          tags={post.tags}
-          author={post.author}
-          date={post.date}
-          url={post.url}
-          ns={['common']}
-        />
-      </Container>
+      <ContentPage
+        title={post.title}
+        image={post.image}
+        body={post.body}
+        tags={post.tags}
+        author={post.author}
+        date={post.date}
+        url={post.url}
+        ns={['common']}
+      />
     </AppLayout>
   )
 }

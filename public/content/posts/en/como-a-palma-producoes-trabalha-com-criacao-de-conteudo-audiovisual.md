@@ -16,6 +16,11 @@ tags:
   - Branding
   - Engagement
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 In today's digital world, audiovisual content is a powerful tool to capture attention and convey your brand's message effectively. At Palma Produções, we specialize in creating compelling and engaging audiovisual content that resonates with your target audience.
 

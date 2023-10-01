@@ -16,6 +16,11 @@ tags:
   - Cultural Impact
   - Socio-environmental Impact
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 ## Introduction
 

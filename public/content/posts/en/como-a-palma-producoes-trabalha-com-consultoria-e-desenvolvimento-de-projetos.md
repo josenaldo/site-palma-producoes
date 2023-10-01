@@ -17,6 +17,11 @@ tags:
   - Quality
   - Cultural and Socio-environmental Impact
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Have you ever wondered how to turn an idea into reality? At Palma Produções, we believe that it requires a unique combination of creativity, expertise, and commitment. Our team of talented professionals brings these elements together in our consulting and project development services, helping our clients turn their visions into impactful cultural and socio-environmental projects.
 

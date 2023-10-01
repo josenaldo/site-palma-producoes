@@ -165,6 +165,7 @@ export default function ContentPage({
     <Box
       sx={{
         overflowX: 'hidden',
+        mb: 6,
       }}
     >
       <Container>

@@ -1,9 +1,9 @@
 import { ImageBox } from '@/features/ui'
-import { Container } from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 export default function BlockMainImage({ image }) {
   return (
-    <Container disableGutters>
+    <Box sx={{ my: 4 }}>
       <ImageBox
         src={image.url}
         alt={image.alt}
@@ -14,6 +14,6 @@ export default function BlockMainImage({ image }) {
         fullWidth
         cover
       />
-    </Container>
+    </Box>
   )
 }

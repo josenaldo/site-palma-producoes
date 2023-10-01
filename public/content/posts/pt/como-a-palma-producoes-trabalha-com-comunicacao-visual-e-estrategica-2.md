@@ -16,7 +16,11 @@ tags:
   - Design
   - Inovação
 ---
+<Titulo/>
 
+<Tags />
+
+<ImagemPrincipal />
 
 A comunicação visual é uma ferramenta poderosa que pode aprimorar a mensagem da sua marca e envolver seu público-alvo. Na Palma Produções, entendemos a importância da comunicação visual eficaz e do pensamento estratégico na construção de uma presença de marca sólida.
 

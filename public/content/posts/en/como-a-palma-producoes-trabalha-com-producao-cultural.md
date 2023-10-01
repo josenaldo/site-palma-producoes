@@ -16,6 +16,11 @@ tags:
   - Innovation
   - Impact
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Cultural production plays a vital role in shaping society, fostering creativity, and promoting meaningful experiences. At Palma Produções, we are passionate about collaborating with artists, cultural organizations, and institutions to bring innovative and impactful cultural projects to life.
 

@@ -25,7 +25,7 @@ export default function ContentCard({
 }) {
   const { t, isoLocale } = useTranslation(['common'])
 
-  const [brightness, setBrightness] = useState(40)
+  const [brightness, setBrightness] = useState(100)
   const [elevation, setElevation] = useState(0)
 
   if (!t) return null
@@ -42,17 +42,17 @@ export default function ContentCard({
         backgroundColor: 'grey.50',
       }}
       onMouseOver={(e) => {
-        setBrightness(60)
+        setBrightness(80)
         setElevation(2)
       }}
       onMouseOut={(e) => {
-        setBrightness(40)
+        setBrightness(100)
         setElevation(0)
       }}
       onClick={(e) => {
         const oldBrightness = brightness
 
-        setBrightness(50)
+        setBrightness(70)
 
         setTimeout(() => {
           setBrightness(oldBrightness)

@@ -16,6 +16,11 @@ tags:
   - Design
   - Innovation
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Visual communication is a powerful tool that can enhance your brand's message and engage your target audience. At Palma Produções, we understand the importance of effective visual communication and strategic thinking in building a strong brand presence.
 

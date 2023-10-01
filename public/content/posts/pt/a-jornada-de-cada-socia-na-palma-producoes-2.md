@@ -15,6 +15,11 @@ tags:
   - "Jornada"
   - "História"
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 A Palma Produções é o resultado da união de três mulheres talentosas e comprometidas: Emanuela Palma, Bia Herbst e Alexandra Karmiriam. Cada uma delas traz uma visão única e uma rica experiência em suas respectivas áreas, criando uma sinergia que é a força motriz por trás da Palma Produções.
 

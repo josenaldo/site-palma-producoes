@@ -17,7 +17,11 @@ tags:
   - Impacto Socioambiental
 ---
 
-## Introdução
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Toda empresa tem uma história para contar, e a Palma Produções não é exceção. Nossa jornada é de inovação, qualidade e um profundo compromisso em criar projetos que geram impacto cultural e socioambiental.
 

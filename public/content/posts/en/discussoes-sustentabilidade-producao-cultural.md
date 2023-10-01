@@ -15,8 +15,15 @@ tags:
   - Socioenvironmental Impact
 
 ---
+<Titulo/>
 
-*Have you ever stopped to think about the impact that cultural production can have on the environment and society? In this post, we will explore the discussions surrounding sustainability in cultural production and how companies in the industry are seeking more sustainable practices. Join us on this journey!*
+<Tags />
+
+<ImagemPrincipal />
+
+<Resumo>
+Have you ever stopped to think about the impact that cultural production can have on the environment and society? In this post, we will explore the discussions surrounding sustainability in cultural production and how companies in the industry are seeking more sustainable practices. Join us on this journey!
+</Resumo>
 
 ## The importance of sustainability in cultural production
 

@@ -16,6 +16,11 @@ tags:
   - Inovação
   - Impacto
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 A produção cultural desempenha um papel fundamental na formação da sociedade, no estímulo à criatividade e na promoção de experiências significativas. Na Palma Produções, somos apaixonados por colaborar com artistas, organizações culturais e instituições para dar vida a projetos culturais inovadores e impactantes.
 

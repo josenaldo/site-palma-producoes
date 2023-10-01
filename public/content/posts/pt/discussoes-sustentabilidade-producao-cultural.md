@@ -15,8 +15,15 @@ tags:
   - Impacto Socioambiental
 
 ---
+<Titulo/>
 
-*Você já parou para pensar no impacto que a produção cultural pode ter no meio ambiente e na sociedade? Neste post, vamos explorar as discussões em torno da sustentabilidade na produção cultural e como as empresas do ramo estão buscando práticas mais sustentáveis. Venha conosco nessa jornada!*
+<Tags />
+
+<ImagemPrincipal />
+
+<Resumo>
+Você já parou para pensar no impacto que a produção cultural pode ter no meio ambiente e na sociedade? Neste post, vamos explorar as discussões em torno da sustentabilidade na produção cultural e como as empresas do ramo estão buscando práticas mais sustentáveis. Venha conosco nessa jornada!
+</Resumo>
 
 ## A importância da sustentabilidade na produção cultural
 
