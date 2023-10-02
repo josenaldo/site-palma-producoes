@@ -4,6 +4,7 @@ import { pages } from '@/data'
 import { useTranslation } from '@/features/i18n'
 import { useIsHome } from '@/features/layout'
 import { Link, SocialLinks } from '@/features/ui'
+import { LanguageSelector } from '@/features/i18n/client'
 
 export default function DesktopMenu({ elevated }) {
   const { t } = useTranslation(['common'])
@@ -20,7 +21,7 @@ export default function DesktopMenu({ elevated }) {
         flexGrow: 1,
         alignItems: 'center',
         justifyContent: 'flex-end',
-        gap: 1,
+        // gap: 1,
       }}
     >
       <MenuItems
@@ -28,6 +29,7 @@ export default function DesktopMenu({ elevated }) {
         color={!isHome || elevated ? 'text.dark' : 'text.light'}
       />
       <SocialLinks color={!isHome || elevated ? 'text.dark' : 'text.light'} />
+      <LanguageSelector onlyIcon />
     </Box>
   )
 }

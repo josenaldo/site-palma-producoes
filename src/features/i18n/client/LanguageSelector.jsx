@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import {
   Box,
   Button,
+  IconButton,
   ListItemIcon,
   ListItemText,
   Menu,
@@ -15,7 +16,7 @@ import { useTranslation } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
-export default function LanguageSelector() {
+export default function LanguageSelector({ onlyIcon = false }) {
   const { t, locale } = useTranslation(['common'])
   const router = useRouter()
 
@@ -39,7 +40,6 @@ export default function LanguageSelector() {
     if (queryString) {
       newPathname += `?${queryString}`
     }
-    console.log('🔴 new pathname', newPathname)
 
     window.location.assign(newPathname)
 
@@ -57,27 +57,45 @@ export default function LanguageSelector() {
     <Box
       key={router.asPath}
       sx={{
-        py: 1,
+        py: onlyIcon ? 0 : 1,
       }}
     >
-      <Button
-        id="basic-button"
-        variant="text"
-        aria-controls={open ? 'basic-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-        startIcon={
+      {onlyIcon ? (
+        <IconButton
+          id="basic-button"
+          variant="text"
+          aria-controls={open ? 'basic-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+        >
           <Image
             src={`/flags/${t('common:languageSelector.flag')}.svg`}
             width={20}
             height={20}
             alt={t(locale)}
           />
-        }
-      >
-        {t('common:languageSelector.language')}
-      </Button>
+        </IconButton>
+      ) : (
+        <Button
+          id="basic-button"
+          variant="text"
+          aria-controls={open ? 'basic-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+          startIcon={
+            <Image
+              src={`/flags/${t('common:languageSelector.flag')}.svg`}
+              width={20}
+              height={20}
+              alt={t(locale)}
+            />
+          }
+        >
+          {t('common:languageSelector.language')}
+        </Button>
+      )}
 
       <Menu
         id="basic-menu"
