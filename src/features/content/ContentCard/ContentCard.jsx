@@ -103,7 +103,7 @@ export default function ContentCard({
           {title}
         </Typography>
 
-        <Typography variant="body3">{description}</Typography>
+        <Typography variant="body1">{description}</Typography>
 
         <Box
           sx={{

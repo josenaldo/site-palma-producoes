@@ -54,9 +54,21 @@ const typography = {
   h6: {
     fontFamily: bebasKai.style.fontFamily,
   },
-  body3: {
+  body1: {
     fontFamily: workSans.style.fontFamily,
     fontSize: '1.2rem',
+  },
+  body2: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1.1rem',
+  },
+  body3: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1rem',
+  },
+  body4: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '0.8rem',
   },
 }
 

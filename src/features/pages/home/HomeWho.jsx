@@ -102,7 +102,7 @@ export default function HomeWho() {
               {texts.map((text, index) => (
                 <Typography
                   key={`home:who.text.${index}`}
-                  variant="body3"
+                  variant="body1"
                   sx={{ textAlign: 'justify' }}
                 >
                   {text}

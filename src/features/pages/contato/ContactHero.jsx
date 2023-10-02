@@ -27,7 +27,7 @@ export default function ContactHero() {
         CTA={() => (
           <Typography
             color="text.dark"
-            variant="body3"
+            variant="body1"
             sx={{
               '& a': {
                 fontWeight: 'bold',

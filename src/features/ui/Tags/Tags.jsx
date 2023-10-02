@@ -2,9 +2,9 @@ import { Box, Typography } from '@mui/material'
 
 const sizeVariantes = {
   small: 'caption',
-  medium: 'body2',
-  large: 'body1',
-  extralarge: 'body3',
+  medium: 'body3',
+  large: 'body2',
+  extralarge: 'body1',
 }
 
 export default function Tags({

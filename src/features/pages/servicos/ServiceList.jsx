@@ -62,7 +62,7 @@ export default function ServiceList({ services }) {
             >
               {service.title}
             </Typography>
-            <Typography variant="body2">{service.description}</Typography>
+            <Typography variant="body1">{service.description}</Typography>
           </CardContent>
         </Card>
       ))}

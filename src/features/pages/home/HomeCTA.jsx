@@ -29,7 +29,7 @@ export default function HomeCTA() {
           titleHighlightColor="secondary.main"
           titleVariant="h2"
           text={t('home:cta.text')}
-          textVariant="body3"
+          textVariant="body1"
           ctaColor="primary"
           ctaText={t('home:cta.button')}
           ctaHref="/contato"

@@ -44,9 +44,8 @@ export default function Footer() {
         <SocialLinks />
         <ContactLinks />
         <Typography
-          variant="body2"
+          variant="body4"
           sx={{
-            fontSize: '0.7rem',
             py: 1,
           }}
         >

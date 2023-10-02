@@ -20,7 +20,7 @@ export default function HomeIntro() {
           textAlign: 'center',
         }}
       >
-        <Typography variant="body3">{t('home:intro.text')}</Typography>
+        <Typography variant="body1">{t('home:intro.text')}</Typography>
         <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />
       </Container>
     </Box>

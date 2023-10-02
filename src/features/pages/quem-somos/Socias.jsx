@@ -117,7 +117,7 @@ export default function Socias({ socias }) {
                   content={socia}
                   components={{
                     p: ({ children }) => (
-                      <Typography variant="body2" mb={2}>
+                      <Typography variant="1" mb={2}>
                         {children}
                       </Typography>
                     ),
