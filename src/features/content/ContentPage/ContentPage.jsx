@@ -25,6 +25,7 @@ import {
   BlockShareButton,
   BlockTripleCarousel,
   BlockColumns,
+  BlockSpacer,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -75,7 +76,16 @@ export default function ContentPage({
     ),
 
     // Custom tags
-    BotaoCompartilhar: ({ tipo = 'icon', cor = 'tertiary' }) => (
+    BotaoCompartilhar: ({ tipo = 'button', cor = 'primary' }) => (
+      <BlockShareButton
+        url={url}
+        title={title}
+        image={image}
+        type={tipo}
+        color={cor}
+      />
+    ),
+    IconeCompartilhar: ({ tipo = 'icon', cor = 'tertiary' }) => (
       <BlockShareButton
         url={url}
         title={title}
@@ -107,7 +117,10 @@ export default function ContentPage({
     Colunas: ({ formato = '1|1', ...props }) => (
       <BlockColumns format={formato} {...props} />
     ),
-    Faixa: ({ cor, children, ...props }) => (
+    Espaco: ({ altura = 1, ...props }) => (
+      <BlockSpacer height={altura} {...props} />
+    ),
+    Faixa: ({ cor = 'surfice.lighter', children, ...props }) => (
       <Box
         sx={{
           display: 'flex',
@@ -165,7 +178,6 @@ export default function ContentPage({
     <Box
       sx={{
         overflowX: 'hidden',
-        mb: 6,
       }}
     >
       <Container>

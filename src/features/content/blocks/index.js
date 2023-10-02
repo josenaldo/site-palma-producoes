@@ -24,6 +24,8 @@ export { BlockShareButton } from './BlockShareButton'
 
 export { BlockSocialBar } from './BlockSocialBar'
 
+export { BlockSpacer } from './BlockSpacer'
+
 export { BlockTags } from './BlockTags'
 
 export { BlockToc } from './BlockToc'

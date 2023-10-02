@@ -25,6 +25,8 @@ image:
   instagram="https://www.instagram.com/mestresirsofilme/"
   youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
 
+<IconeCompartilhar />
+
 <Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8" aspectRatio="21/9" fullWidth cover/>
 
 <Resumo>
@@ -260,8 +262,9 @@ import benfeitores from '../../data/benfeitores.json'
 
 - [FIMCINE - Seleção para Mentoria no Festival Internacional de Mulheres no Cinema](https://fimcine.com.br/br/lista/mentorias)
 
-<Faixa cor='surfice.lighter'>
+<BotaoCompartilhar />
 
+<Faixa>
   <Colunas formato="1|1|1">
     <Parcerias titulo="Realização">
       <Parceria

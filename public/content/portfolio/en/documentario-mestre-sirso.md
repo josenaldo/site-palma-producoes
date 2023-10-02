@@ -25,6 +25,8 @@ image:
   instagram="https://www.instagram.com/mestresirsofilme/"
   youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
 
+<IconeCompartilhar />
+
 <Youtube url="https://www.youtube.com/watch?v=Hj0btCi1GS8" aspectRatio="21/9" fullWidth cover/>
 
 <Resumo>
@@ -65,76 +67,6 @@ Master Sirso is a deaf, Black man who reveals a story of resilience in the fight
     - Carnevale Produções
   </Caixa>
 </Colunas>
-
-<Parcerias titulo="Production">
-  <Parceria
-    parceiro="Palma Produções"
-    logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
-    url="https://palmaproducoes.com.br"/>
-
-  <Parceria
-    parceiro="Carnavalle"
-    logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
-    url="https://www.instagram.com/carnevaleproducoes/"/>
-</Parcerias>
-
-<Parcerias titulo="Realization">
-  <Parceria
-    parceiro="Capoeira Arte Luta"
-    logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Co-ideation">
-  <Parceria
-    parceiro="Benfeitoria"
-    logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
-    url=""/>
-  <Parceria parceiro="Sitawi"
-    logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Support">
-  <Parceria
-    parceiro="BNDES"
-    logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
-    url=""/>
-</Parcerias>
-
-<Parcerias titulo="Supporters">
-  <Parceria
-    parceiro="Raça Livre Produções"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
-    url="" />
-  <Parceria
-    parceiro="Biomob"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
-    url="" />
-  <Parceria
-    parceiro="Perspective Fund"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
-    url="" />
-  <Parceria
-    parceiro="FAPAN"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
-    url="" />
-  <Parceria
-    parceiro="APAN"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
-    url="" />
-  <Parceria
-    parceiro="Prefeitura de Cascavel"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
-    url="" />
-  <Parceria
-    parceiro="Gráfica Assoeste"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
-    url="" />
-  <Parceria
-    parceiro="Unioeste"
-    logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
-</Parcerias>
 
 ## The Movie
 
@@ -328,3 +260,80 @@ import benfeitores from '../../data/benfeitores.json'
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
 - [FIMCINE - Selection for Mentoring at the International Women in Film Festival](https://fimcine.com.br/br/lista/mentorias)
+
+<BotaoCompartilhar />
+
+<Faixa>
+  <Colunas formato="1|1|1">
+    <Parcerias titulo="Realização">
+      <Parceria
+        parceiro="Capoeira Arte Luta"
+        logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
+        url=""/>
+    </Parcerias>
+
+    <Parcerias titulo="Co-idealização">
+      <Parceria
+        parceiro="Benfeitoria"
+        logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
+        url=""/>
+
+      <Parceria parceiro="Sitawi"
+        logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
+        url=""/>
+    </Parcerias>
+
+    <Parcerias titulo="Apoio">
+      <Parceria
+        parceiro="BNDES"
+        logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
+        url=""/>
+    </Parcerias>
+  </Colunas>
+
+  <Parcerias titulo="Apoiadores">
+    <Parceria
+      parceiro="Raça Livre Produções"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
+      url="" />
+    <Parceria
+      parceiro="Biomob"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
+      url="" />
+    <Parceria
+      parceiro="Perspective Fund"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
+      url="" />
+    <Parceria
+      parceiro="FAPAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
+      url="" />
+    <Parceria
+      parceiro="APAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
+      url="" />
+    <Parceria
+      parceiro="Prefeitura de Cascavel"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
+      url="" />
+    <Parceria
+      parceiro="Gráfica Assoeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
+      url="" />
+    <Parceria
+      parceiro="Unioeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
+  </Parcerias>
+
+   <Parcerias titulo="Produção">
+    <Parceria
+      parceiro="Palma Produções"
+      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      url="https://palmaproducoes.com.br"/>
+
+    <Parceria
+      parceiro="Carnavalle"
+      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      url="https://www.instagram.com/carnevaleproducoes/"/>
+  </Parcerias>
+</Faixa>

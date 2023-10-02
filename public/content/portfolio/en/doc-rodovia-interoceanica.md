@@ -24,7 +24,7 @@ image:
   instagram="https://www.instagram.com/mestresirsofilme/"
   youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
 
-<BotaoCompartilhar />
+<IconeCompartilhar />
 
 <Youtube url="https://www.youtube.com/watch?v=XCVJoStoPGk" aspectRatio="21/9" fullWidth cover/>
 
@@ -80,4 +80,4 @@ From its inception, the project of this highway aimed for much more than connect
 
 The interviewees, including engineers, local residents, environmentalists, and community leaders, provide perspectives that enrich the documentary's narrative. As the testimonies interweave, the film takes us on a journey that goes beyond machines and concrete structures, exploring the tourist and economic potential while addressing the complexities of this massive undertaking.
 
-<BotaoCompartilhar tipo="button" cor="primary"/>
+<BotaoCompartilhar />
