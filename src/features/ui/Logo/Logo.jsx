@@ -28,6 +28,10 @@ export default function Logo({
     <Link
       href="/"
       sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
         lineHeight: '0',
         letterSpacing: '0',
       }}
