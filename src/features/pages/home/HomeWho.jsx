@@ -46,29 +46,24 @@ export default function HomeWho() {
         >
           <Box
             sx={{
-              display: 'flex',
+              display: {
+                xs: 'none',
+                md: 'flex',
+              },
               alignItems: 'center',
-              justifyContent: {
-                xs: 'flex-start',
-                md: 'center',
-              },
-              position: {
-                xs: 'absolute',
-                md: 'relative',
-              },
+              justifyContent: 'center',
+              position: 'relative',
               width: '100%',
-              height: '420px',
             }}
           >
             <Box
               sx={{
                 position: 'relative',
-                zIndex: -1,
-                width: '120px',
-                height: '420px',
-                filter: {
-                  xs: 'opacity(0.1)',
-                  md: 'none',
+                display: 'block',
+                aspectRatio: '12 / 42',
+                height: {
+                  md: '547px',
+                  lg: '490px',
                 },
               }}
             >
