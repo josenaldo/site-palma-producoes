@@ -3,10 +3,19 @@ import DateIcon from '@mui/icons-material/CalendarToday'
 
 import { format, parse } from 'date-fns'
 
+const variantIconSize = {
+  body1: '1.2rem',
+  body2: '1.1rem',
+  body3: '1rem',
+  body4: '0.8rem',
+  caption: '0.6rem',
+}
+
 export default function ContentDate({
   date,
   dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
   showTime = false,
+  variant = 'body1',
 }) {
   if (!date) return null
 
@@ -16,16 +25,20 @@ export default function ContentDate({
     <Box
       sx={{
         display: 'flex',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         gap: 1,
       }}
     >
-      <DateIcon fontSize="0.75rem" />
+      <DateIcon
+        sx={{
+          fontSize: variantIconSize[variant] || variantIconSize.body1,
+        }}
+      />
 
-      <Typography variant="caption">{format(parsed, 'dd/MM/yyyy')}</Typography>
+      <Typography variant={variant}>{format(parsed, 'dd/MM/yyyy')}</Typography>
 
       {showTime && (
-        <Typography variant="caption">{format(parsed, 'HH:mm')}</Typography>
+        <Typography variant={variant}>{format(parsed, 'HH:mm')}</Typography>
       )}
     </Box>
   )

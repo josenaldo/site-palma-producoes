@@ -84,5 +84,10 @@
         "PortfolioItem": "Portfolio"
       }
     }
+  },
+  "blog": {
+    "author": {
+      "by": "By"
+    }
   }
 }

@@ -39,7 +39,7 @@ export default function ContentCard({
         flexDirection: 'column',
         justifyContent: 'center',
         borderRadius: 4,
-        backgroundColor: 'grey.50',
+        // backgroundColor: 'grey.50',
       }}
       onMouseOver={(e) => {
         setBrightness(80)
@@ -59,7 +59,12 @@ export default function ContentCard({
         }, 100)
       }}
     >
-      <CardMedia>
+      <CardMedia
+        sx={{
+          borderRadius: 5,
+          overflow: 'hidden',
+        }}
+      >
         <Link
           href={url}
           skipLocaleHandling
@@ -79,15 +84,32 @@ export default function ContentCard({
           />
         </Link>
       </CardMedia>
+
       <CardContent
         sx={{
           display: 'flex',
           flexDirection: 'column',
           width: '100%',
-          gap: 1,
+          gap: 2,
           flexGrow: 1,
         }}
       >
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 1,
+            flexWrap: 'wrap',
+          }}
+        >
+          {tags && <Chip label={tags[0]} color="tertiary" />}
+
+          <ContentDate date={date} isoLocale={isoLocale} />
+        </Box>
+
+        <Typography variant="h5" component="h3" color="primary.main">
+          {title}
+        </Typography>
+
         <Box
           sx={{
             display: 'flex',
@@ -96,25 +118,6 @@ export default function ContentCard({
           }}
         >
           <ContentAuthor author={author} />
-          <ContentDate date={date} isoLocale={isoLocale} />
-        </Box>
-
-        <Typography variant="h5" component="h3" color="primary.main">
-          {title}
-        </Typography>
-
-        <Typography variant="body1">{description}</Typography>
-
-        <Box
-          sx={{
-            display: 'flex',
-            gap: 1,
-            flexWrap: 'wrap',
-          }}
-        >
-          {tags.map((tag) => (
-            <Chip key={tag} label={tag} size="small" color="tertiary" />
-          ))}
         </Box>
       </CardContent>
       <CardActions
