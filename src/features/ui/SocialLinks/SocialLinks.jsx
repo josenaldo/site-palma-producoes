@@ -25,6 +25,8 @@ export default function SocialLinks({ color = 'common.light' }) {
         <IconButton
           key={index}
           href={socialLink.href}
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{
             color: color,
             '&:hover': {

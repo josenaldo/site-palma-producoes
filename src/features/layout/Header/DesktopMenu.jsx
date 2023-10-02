@@ -23,11 +23,11 @@ export default function DesktopMenu({ elevated }) {
         gap: 1,
       }}
     >
-      <SocialLinks color={!isHome || elevated ? 'text.dark' : 'text.light'} />
       <MenuItems
         t={t}
         color={!isHome || elevated ? 'text.dark' : 'text.light'}
       />
+      <SocialLinks color={!isHome || elevated ? 'text.dark' : 'text.light'} />
     </Box>
   )
 }
