@@ -26,32 +26,26 @@ export default function ContentCard({
   const { t, isoLocale } = useTranslation(['common'])
 
   const [brightness, setBrightness] = useState(100)
-  const [elevation, setElevation] = useState(0)
 
   if (!t) return null
 
   return (
     <Card
-      elevation={elevation}
-      // variant="outlined"
+      elevation={0}
       sx={{
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         borderRadius: 4,
-        // backgroundColor: 'grey.50',
       }}
       onMouseOver={(e) => {
         setBrightness(80)
-        setElevation(2)
       }}
       onMouseOut={(e) => {
         setBrightness(100)
-        setElevation(0)
       }}
       onClick={(e) => {
         const oldBrightness = brightness
-
         setBrightness(70)
 
         setTimeout(() => {
@@ -101,7 +95,15 @@ export default function ContentCard({
             flexWrap: 'wrap',
           }}
         >
-          {tags && <Chip label={tags[0]} color="tertiary" />}
+          {tags && (
+            <Chip
+              label={tags[0]}
+              color="tertiary"
+              sx={{
+                borderRadius: 2,
+              }}
+            />
+          )}
 
           <ContentDate date={date} isoLocale={isoLocale} />
         </Box>
