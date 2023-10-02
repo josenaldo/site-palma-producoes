@@ -1,3 +1,5 @@
+export { Abstract } from './Abstract'
+
 export { AnchoredTitle } from './AnchoredTitle'
 
 export { BannerBox } from './BannerBox'

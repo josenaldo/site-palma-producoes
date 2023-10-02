@@ -2,7 +2,7 @@ import { Box, Container, Stack, Typography } from '@mui/material'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined'
 
 import { useTranslation } from '@/features/i18n'
-import { YoutubeVideo } from '@/features/ui'
+import { Abstract, YoutubeVideo } from '@/features/ui'
 
 export default function HomeIntro() {
   const { t } = useTranslation(['common', 'home'])
@@ -20,7 +20,9 @@ export default function HomeIntro() {
           textAlign: 'center',
         }}
       >
-        <Typography variant="body1">{t('home:intro.text')}</Typography>
+        <Abstract>
+          <Typography variant="body1">{t('home:intro.text')}</Typography>
+        </Abstract>
         <YoutubeVideo url={t('home:intro.video')} aspectRatio="21/9" />
       </Container>
     </Box>
