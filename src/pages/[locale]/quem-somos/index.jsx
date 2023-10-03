@@ -1,4 +1,4 @@
-import { Container } from '@mui/material'
+import { Container, useMediaQuery, useTheme } from '@mui/material'
 
 import {
   ContentPageHeader,
@@ -26,6 +26,10 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
+  const theme = useTheme()
+
+  const isBiggerScreen = useMediaQuery(theme.breakpoints.up('lg'))
+
   return (
     <AppLayout
       title={page.title}
@@ -33,7 +37,11 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
       image={page.image}
     >
       <Container>
-        <ContentPageHeader title={page.title} text={page.body} />
+        <ContentPageHeader
+          title={page.title}
+          text={page.body}
+          titleTextWrap={isBiggerScreen ? 'nowrap' : 'normal'}
+        />
       </Container>
       <ImageBox
         src={page.image.url}

@@ -7,7 +7,7 @@ export default function Title({
   color = 'text.primary',
   borderBottomColor = 'primary.main',
   sx = {},
-  textWrap = 'nowrap',
+  textWrap = 'normal',
   ...otherProps
 }) {
   return (
@@ -21,7 +21,7 @@ export default function Title({
         borderBottomColor: borderBottomColor,
         textAlign: 'center',
         textWrap: textWrap,
-        whiteSpace: textWrap === 'nowrap' ? 'nowrap' : 'normal',
+        whiteSpace: textWrap,
         ...sx,
       }}
       {...otherProps}
