@@ -202,7 +202,7 @@ import benfeitores from '../../data/benfeitores.json'
 
 ## Promotion
 
-![Movie poster [1200x1697] [caption: Movie poster] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
+![Movie poster [1920x800] [caption: Movie poster] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
 
 ## Clippings
 

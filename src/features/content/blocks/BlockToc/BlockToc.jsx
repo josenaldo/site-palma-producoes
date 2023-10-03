@@ -30,13 +30,13 @@ export default function BlockToc({ children, ...props }) {
     }
   }, {})
 
-  const getItemIndex = (entry) => {
-    const id = entry.target.id
-    const item = itemsMap[id]
-    return item.index
-  }
-
   React.useEffect(() => {
+    const getItemIndex = (entry) => {
+      const id = entry.target.id
+      const item = itemsMap[id]
+      return item.index
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.length === 0) return
@@ -81,7 +81,7 @@ export default function BlockToc({ children, ...props }) {
     return () => {
       observer.disconnect()
     }
-  }, [itemsMap, getItemIndex])
+  }, [itemsMap])
 
   return (
     <Box
@@ -90,7 +90,7 @@ export default function BlockToc({ children, ...props }) {
         alignItems: 'center',
         justifyContent: 'center',
         position: 'sticky',
-        top: '80px',
+        top: '90px',
         py: 2,
         backgroundColor: 'background.paper',
         zIndex: 100,

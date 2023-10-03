@@ -8,7 +8,7 @@ export default function BlockTripleCarousel({ children, ...props }) {
   })
 
   return (
-    <Carousel slidesPerView={3} {...props}>
+    <Carousel slidesPerView={1.5} {...props}>
       {cleanedChildren}
     </Carousel>
   )

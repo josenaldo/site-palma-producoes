@@ -42,7 +42,7 @@ export default function BlockChipList({ items, label = 'Filter', ...props }) {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           alignItems: 'center',
           width: '100%',
         }}

@@ -167,6 +167,7 @@ function ServiceCard({ service, image, direction = 'left' }) {
           {service}
         </Typography>
       </CardContent>
+
     </Card>
   )
 }

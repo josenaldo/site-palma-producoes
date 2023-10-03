@@ -74,7 +74,7 @@ O filme propõe ao espectador uma imersão no universo de uma pessoa com defici�
 
 Finalizado em 2021, o filme estreou no Festival Internacional de Cinema Panafricano de Luanda, em 2022, e neste mesmo ano foi selecionado para a Mostra de Filmes Etnográficos do Prêmio Pierre Verger.
 
-![Foto1 [1200x628] [aspect-ratio: 21/9] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
+![Foto1 [1200x628] [aspect-ratio: 1200/628] [cover]](/images/content/portfolio/documentario-mestre-sirso/filme-banner.jpg)
 
 A direção do documentário é de Emanuela Palma, com roteiro da antropóloga e documentarista Geslline Giovana Braga.
 
@@ -203,7 +203,7 @@ import benfeitores from '../../data/benfeitores.json'
 
 ## Divulgação
 
-![Cartaz do filme [1200x1697] [caption: Cartaz do filme] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
+![Cartaz do filme [1920x800] [caption: Cartaz do filme] ](/images/content/portfolio/documentario-mestre-sirso/cartaz.jpg)
 
 ## Clippings
 

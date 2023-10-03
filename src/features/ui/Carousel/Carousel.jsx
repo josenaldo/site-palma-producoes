@@ -40,8 +40,7 @@ export default function Carousel({ slidesPerView = 1, children }) {
         style={{
           '--add-bottom': '50px',
           '--swiper-theme-color': theme.palette.primary.main,
-          '--swiper-navigation-color': 'rgb(255 255 255 / 70%)',
-          '--swiper-navigation-background-color': 'rgb(255 255 255 / 70%)',
+          '--swiper-navigation-color': '#000',
           '--swiper-navigation-size': '40px',
 
           '--swiper-pagination-bullet-size': '16px',
@@ -58,13 +57,14 @@ export default function Carousel({ slidesPerView = 1, children }) {
         effect={slidesPerView === 1 ? null : 'coverflow'}
         centeredSlides={true}
         coverflowEffect={{
-          rotate: 45,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
+          depth: 20,
+          modifier: 0.5,
+          rotate: 50,
+          scale: 0.7,
           slideShadows: false,
+          stretch: 20,
         }}
-        spaceBetween={slidesPerView === 1 ? 20 : 5}
+        spaceBetween={0}
         slidesPerView={slidesPerView}
         navigation={{
           nextEl: '.swiper-button-next',
@@ -82,6 +82,7 @@ export default function Carousel({ slidesPerView = 1, children }) {
         loop
       >
         {slides}
+
         <NavigationButton className="swiper-button-next"></NavigationButton>
 
         <NavigationButton className="swiper-button-prev"></NavigationButton>
@@ -96,8 +97,8 @@ function NavigationButton({ className }) {
       className={className}
       sx={{
         display: 'inline-block',
-        color: 'light.main',
-        backgroundColor: 'primary.main',
+        color: '#000',
+        backgroundColor: 'rgb(255 255 255 / 15%)',
         width: 'var(--swiper-navigation-size) !important',
         height: 'var(--swiper-navigation-size) !important',
         borderRadius: '50%',

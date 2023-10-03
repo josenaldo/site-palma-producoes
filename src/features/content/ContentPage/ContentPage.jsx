@@ -127,11 +127,10 @@ export default function ContentPage({
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'center',
-          overflow: 'hidden',
+          // overflow: 'hidden',
           backgroundColor: cor || 'transparent',
           position: 'relative',
           width: '100vw',
-          position: 'relative',
           left: '50%',
           right: '50%',
           marginLeft: '-50vw',
@@ -154,7 +153,24 @@ export default function ContentPage({
     ),
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
-    Mais: BlockMore,
+    Mais: ({
+      textoMais = null,
+      textoMenos = null,
+      cor = 'primary',
+      variante = 'outlined',
+      children,
+      ...props
+    }) => (
+      <BlockMore
+        textMore={textoMais}
+        textLess={textoMenos}
+        variant={variante}
+        color={cor}
+        {...props}
+      >
+        {children}
+      </BlockMore>
+    ),
     Parcerias: BlockPartnerships,
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
@@ -175,11 +191,7 @@ export default function ContentPage({
   }
 
   return (
-    <Box
-      sx={{
-        overflowX: 'hidden',
-      }}
-    >
+    <Box>
       <Container>
         <Box className={styles.markdownBody}>
           <MDXContent components={comp} />
