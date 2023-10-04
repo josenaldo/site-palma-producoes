@@ -34,6 +34,40 @@ export default function HomeServices({ servicos }) {
         <Box
           sx={{
             display: 'flex',
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
+            alignItems: {
+              xs: 'center',
+              md: 'center',
+            },
+            justifyContent: 'center',
+            gap: 4,
+            width: '100%',
+          }}
+        >
+          <Title variant="h3" borderBottomColor="transparent">
+            {t('home:services.title')}
+          </Title>
+          <ButtonLink
+            href="/servicos"
+            variant="outlined"
+            color="dark"
+            size="large"
+            hoverColor="primary"
+            sx={{
+              height: 'fit-content',
+              px: 4,
+            }}
+          >
+            {t('home:services.button')}
+          </ButtonLink>
+        </Box>
+
+        <Box
+          sx={{
+            display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
@@ -87,39 +121,6 @@ export default function HomeServices({ servicos }) {
             ))}
           </Box>
         </Box>
-
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: {
-              xs: 'column',
-              md: 'row',
-            },
-            alignItems: {
-              xs: 'center',
-              md: 'center',
-            },
-            justifyContent: 'center',
-            gap: 4,
-            width: '100%',
-          }}
-        >
-          <Title variant="h3" borderBottomColor="transparent">
-            {t('home:services.title')}
-          </Title>
-          <ButtonLink
-            href="/servicos"
-            variant="outlined"
-            color="dark"
-            size="large"
-            sx={{
-              height: 'fit-content',
-              px: 4,
-            }}
-          >
-            {t('home:services.button')}
-          </ButtonLink>
-        </Box>
       </Container>
     </Box>
   )
@@ -167,7 +168,6 @@ function ServiceCard({ service, image, direction = 'left' }) {
           {service}
         </Typography>
       </CardContent>
-
     </Card>
   )
 }

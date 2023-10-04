@@ -132,6 +132,7 @@ export default function HomeWho() {
                 href="/quem-somos"
                 variant="outlined"
                 color="dark"
+                hoverColor="primary"
                 sx={{
                   height: 'fit-content',
                   px: 4,
