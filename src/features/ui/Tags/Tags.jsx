@@ -21,6 +21,8 @@ export default function Tags({
       sx={{
         display: 'flex',
         flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
         flexWrap: 'wrap',
         fontSize: '0.7rem',
         gap: 1,
