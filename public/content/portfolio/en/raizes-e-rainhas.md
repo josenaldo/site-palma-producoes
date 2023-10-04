@@ -23,21 +23,21 @@ image:
 
 <CarrosselTriplo>
 
-  ![Picture1 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/capa.jpg)
+  ![Picture1 [1200x628] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/capa.jpg)
 
-  ![Picture2 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-02.jpg)
+  ![Picture2 [3456x5184] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-02.jpg)
 
-  ![Picture3 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-03.jpg)
+  ![Picture3 [5184x3456] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-03.jpg)
 
-  ![Picture4 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-04.jpg)
+  ![Picture4 [3456x5184] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-04.jpg)
 
-  ![Picture5 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-05.jpg)
+  ![Picture5 [3456x5184] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-05.jpg)
 
-  ![Picture6 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-06.jpg)
+  ![Picture6 [3456x5184] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-06.jpg)
 
-  ![Picture7 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-07.jpg)
+  ![Picture7 [3456x5184] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-07.jpg)
 
-  ![Picture7 [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-08.jpg)
+  ![Picture7 [2867x3493] [cover] [caption: Photo Credits: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-08.jpg)
 
 </CarrosselTriplo>
 
