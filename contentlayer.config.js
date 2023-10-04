@@ -7,22 +7,8 @@ import {
 import remarkGfm from 'remark-gfm'
 import remarkUnwrapImages from 'remark-unwrap-images'
 
-import externalLinks from 'rehype-external-links'
+import rehypeExternalLinks from 'rehype-external-links'
 import rehypePrism from 'rehype-prism-plus'
-
-const remarkPlugins = [
-  remarkGfm,
-  remarkUnwrapImages,
-  [
-    externalLinks,
-    {
-      target: '_blank',
-      rel: ['nofollow', 'noopener', 'noreferrer'],
-    },
-  ],
-]
-
-const rehypePlugins = [rehypePrism]
 
 function resolveSlug(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
@@ -389,6 +375,19 @@ export const Post = defineDocumentType(() => ({
     },
   },
 }))
+
+const remarkPlugins = [remarkGfm, remarkUnwrapImages]
+
+const rehypePlugins = [
+  rehypePrism,
+  [
+    rehypeExternalLinks,
+    {
+      target: '_blank',
+      rel: ['nofollow', 'noopener', 'noreferrer'],
+    },
+  ],
+]
 
 export default makeSource({
   contentDirPath: 'public/content',
