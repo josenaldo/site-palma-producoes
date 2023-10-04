@@ -46,3 +46,5 @@ image:
 Contemplado pelo edital EMPODERA, patrocinado pelo Instituto Lojas Renner e ONU Mulheres, o projeto ofereceu uma série de atividades que promovem impacto na cadeia têxtil e ao mesmo tempo o empoderamento feminino.
 
 A iniciativa incluiu oficinas com conteúdo de empoderamento feminino e teve como destaque um curso de corte, costura e modelagem. Durante o curso, as participantes tiveram a oportunidade de adquirir habilidades essenciais na confecção de roupas e, ao mesmo tempo, fortalecer sua autoestima e senso de identidade. As peças confeccionadas durante o curso foram usadas nas sessões de fotos, criando uma celebração visual da cultura afro-brasileira e da identidade das mulheres negras envolvidas no projeto.
+
+<Espaco altura="40px" />
