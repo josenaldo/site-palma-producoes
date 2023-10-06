@@ -1,7 +1,7 @@
 import { ImageBox } from '@/features/ui'
 import { Box, Container } from '@mui/material'
 
-export default function BlockMainImage({ image }) {
+export default function BlockMainImage({ image, aspectRatio = '21/9' }) {
   return (
     <Box sx={{ my: 4 }}>
       <ImageBox
@@ -10,7 +10,7 @@ export default function BlockMainImage({ image }) {
         width={image.width}
         height={image.height}
         priority
-        aspectRatio="21/9"
+        aspectRatio={aspectRatio}
         fullWidth
         cover
       />
