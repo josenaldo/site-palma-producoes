@@ -71,6 +71,7 @@ export default function ContentPage({
             sm: 'justify',
             md: 'left',
           },
+          my: 2,
         }}
         {...props}
       />
