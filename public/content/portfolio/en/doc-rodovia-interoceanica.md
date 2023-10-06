@@ -46,12 +46,6 @@ The documentary offers a close look at the expectations of the local communities
 - **Producers**: Palma Produções
 - **Rating**: ALL AGES
 
-<Parcerias titulo="Support">
-  <Parceria
-    parceiro="Avina"
-    logo="/images/content/portfolio-parceiros/logo-avina.png"/>
-</Parcerias>
-
 ## Project
 
 The documentary "Interoceanic Highway: From the Amazon to the Pacific" was produced in 2009, directed by Emanuela Palma, Laelho Barroso, and Simone Norberto. The project stemmed from the need to address the integration between two countries that historically lived in isolation despite being geographically connected. The realization of this documentary became possible through the journalistic research grant from the Avina Foundation.
@@ -81,3 +75,11 @@ From its inception, the project of this highway aimed for much more than connect
 The interviewees, including engineers, local residents, environmentalists, and community leaders, provide perspectives that enrich the documentary's narrative. As the testimonies interweave, the film takes us on a journey that goes beyond machines and concrete structures, exploring the tourist and economic potential while addressing the complexities of this massive undertaking.
 
 <BotaoCompartilhar />
+
+<Faixa>
+  <Parcerias titulo="Apoio">
+    <Parceria
+      parceiro="Avina"
+      logo="/images/content/portfolio-parceiros/logo-avina.png"/>
+  </Parcerias>
+</Faixa>

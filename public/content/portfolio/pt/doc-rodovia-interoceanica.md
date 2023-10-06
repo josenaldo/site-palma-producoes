@@ -41,10 +41,10 @@ Esta obra faz um mergulho profundo na construção da Interoceânica, uma audaci
 
 O documentário oferece um olhar atento sobre as expectativas das comunidades locais que habitam as áreas circundantes à rodovia. Suas vozes ecoam em meio aos canteiros de obras e os avanços da engenharia. Os moradores vislumbram oportunidades econômicas e maior acessibilidade, sonhando com um futuro mais próspero. Mas também compartilham preocupações sobre a possibilidade de transformações sociais abruptas e o impacto nas suas tradições ancestrais.
 
-- Ano: 2009
-- Duração: 31 min
-- Produtoras: Palma Produções
-- Classificação: LIVRE
+- **Ano**: 2009
+- **Duração**: 31 min
+- **Produtoras**: Palma Produções
+- **Classificação**: LIVRE
 
 ## Projeto
 
