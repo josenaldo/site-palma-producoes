@@ -271,18 +271,15 @@ import benfeitores from '../../data/benfeitores.json'
         logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
         url=""/>
     </Parcerias>
-
     <Parcerias titulo="Co-idealização">
       <Parceria
         parceiro="Benfeitoria"
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
         url=""/>
-
       <Parceria parceiro="Sitawi"
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
         url=""/>
     </Parcerias>
-
     <Parcerias titulo="Apoio">
       <Parceria
         parceiro="BNDES"
@@ -330,7 +327,6 @@ import benfeitores from '../../data/benfeitores.json'
       parceiro="Palma Produções"
       logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
       url="https://palmaproducoes.com.br"/>
-
     <Parceria
       parceiro="Carnavalle"
       logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"

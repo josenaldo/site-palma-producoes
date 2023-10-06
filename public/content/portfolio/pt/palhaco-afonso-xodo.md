@@ -1,50 +1,157 @@
 ---
-id: 7
+id: 6
 highlight: true
 title: Palhaço Afonso Xodó, Banda Rio e Convidados
 tags:
   - Produção Cultural
+  - Teatro
   - Audiovisual
-  - Documentário
 description:
-  "A Palma Produções produziu o 'Palhaço Afonso Xodó, Banda Rio e Convidados', celebrando cultura e alegria."
+  "Inclusão e representatividade na magia do circo, da música e do teatro."
 image:
   url: /images/content/portfolio/palhaco-afonso-xodo/capa.jpg
   alt: Palhaço Afonso Xodó, Banda Rio e Convidados
   width: 1200
-  height: 628
+  height: 752
 ---
+<Titulo/>
 
+<Tags />
 
-<Youtube url='https://www.youtube.com/watch?v=n26LcOYqU3A' />
+<IconeCompartilhar />
 
-> "No espetáculo ‘Palhaço Afonso Xodó, Banda Rio e Convidados’ trazemos o
-> enfrentamento ao capacitismo e ao etarismo, com exemplo de respeito a uma
-> pessoa PCD (pessoa com deficiência), dando visibilidade a seu talento,
-> assim com os músicos da Banda Rio, que tem integrantes com 70 e até 81 anos de idade, e estão muito felizes com de terem sido convidados para participar do projeto”.
->
-> Manuela Palma
+<ImagemPrincipal />
 
-Em um espetáculo circense verdadeiramente memorável, a Palma Produções teve o orgulho de apresentar "Palhaço Afonso Xodó, Banda Rio e Convidados", em uma parceria bem-sucedida com o talentoso diretor Leo Carnevale. Essa produção excepcional foi uma celebração da inclusão, representatividade e arte circense de alto nível. Nesta página, convidamos você a mergulhar na experiência única que proporcionamos e destacar a nossa capacidade de criar shows extraordinários em parceria com outras empresas.
+<Toc>
+- Sinopse
+- Projeto
+- Equipe
+- Clipping
+</Toc>
 
-"Palhaço Afonso Xodó, Banda Rio e Convidados" foi mais do que um espetáculo circense; foi uma poderosa manifestação de inclusão e representatividade. Nosso elenco diversificado incluiu artistas talentosos de diferentes origens, pessoas LGBTQIA+ e artistas com deficiência, que trouxeram suas vozes únicas para o palco. Essa produção exemplificou a verdadeira essência da diversidade brasileira, proporcionando uma jornada de alegria, reflexão e celebração da vida.
+## Sinopse
 
-Com a Banda Rio tocando melodias clássicas do circo, o Palhaço Afonso Xodó, como mestre de cerimônias, encantou a plateia com números mágicos, malabarismo, canto e histórias. Cada momento do espetáculo foi meticulosamente criado para encantar o público e transmitir mensagens de aceitação, igualdade e superação de preconceitos.
+Num palco plural e inclusivo, o palhaço Afonso Xodó entra em cena com a Banda Rio, grupo de músicos que está na estrada há cinco décadas, com integrantes com mais de 80 anos. Entre os convidados, palhaços que representam a diversidade brasileira, com igualdade de gênero e raça. São homens e mulheres, brancas e negras, LGBTQIA+ e PCD que compõem a trupe de artistas deste espetáculo que traz para o público a magia do circo, do teatro e da música.
 
-## O Sucesso do Espetáculo
+<Youtube url="https://www.youtube.com/watch?v=GhIaWCMR-G0" aspectRatio="21/9" fullWidth cover/>
 
-"Palhaço Afonso Xodó, Banda Rio e Convidados" foi uma produção reconhecida e aclamada, sendo classificada em primeiro lugar no edital Fomento à Cultura Carioca (FOCA), na categoria Arte Pública. Nossa iniciativa de levar o espetáculo para escolas nas zonas Norte e Oeste do Rio de Janeiro permitiu que crianças e jovens vivenciassem a magia do circo e do teatro, de forma inclusiva e livre de julgamentos.
+## Projeto
 
-Através deste espetáculo, buscamos deixar um legado positivo na nova geração. A oficina "Encontro com o Riso", ministrada em escolas públicas, engajou professores e alunos, mostrando o processo de pesquisa e construção de um artista palhaço. Fomos inspirados pelo impacto que a arte circense pode ter na formação de crianças, abrindo suas mentes para a diversidade, respeito e criatividade.
+Contemplado em primeiro lugar no edital de Fomento à Cultura Carioca - FOCA, da Secretaria Municipal de Cultura da Prefeitura do Rio de Janeiro, na categoria Arte Pública, o projeto “Palhaço Afonso Xodó, Banda Rio e Convidados”, é uma realização da Carnevale Produções e da Palma Produções, e circulou em quatro equipamentos de cultura na periferia da cidade do Rio de Janeiro: arenas Chacrinha e Dicró, Lona da Maré e Areninha Sandra de Sá.
 
-"Palhaço Afonso Xodó, Banda Rio e Convidados" ficará eternamente marcado na história da Palma Produções. Essa produção foi uma prova da nossa habilidade em criar espetáculos emocionantes e envolventes, que tocam o coração da plateia e deixam uma impressão duradoura. Nossa dedicação à excelência artística e ao compromisso com valores inclusivos nos impulsiona a continuar produzindo eventos que cativam, inspiram e transformam vidas.
+Conseguimos reunir um público caloroso de mais de 500 pessoas, reafirmando a importância de democratização de acesso à cultura.  A cada apresentação, dois palhaços convidados compõe a cena com Afonso Xodó ao ritmo da Banda Rio, um grupo de músicos com idade entre 60 e 80 anos. **“É uma honra estar junto com vocês neste projeto. Desde de 2020 que não recebo cachê para me apresentar”, declarou o palhaço Paçoca, durante o ensaio fotográfico para o espetáculo. Paçoca é o artista André Guimarães, pessoa com deficiência, e um convidados para entrar em cena junto com o palhaço Afonso Xodó.**
 
-## A Parceria com Leo Carnevale
+A presença de um intérprete de Libras em duas apresentações é expressão do nosso compromisso em garantir que a cultura seja acessível a todos, independentemente de suas capacidades auditivas. Nossa jornada na produção deste projeto não só nos enche de satisfação, mas também reafirma nossa crença na capacidade da arte de unir comunidades, criar laços e celebrar a diversidade.  O projeto ainda realizou a oficina “Encontro com o Riso”, ministrada por Leo Carnevale, contemplando professores e alunos de escolas públicas da região onde o espetáculo circulou.
 
-Leo Carnevale, diretor do espetáculo, foi um parceiro essencial na criação e execução do "Palhaço Afonso Xodó, Banda Rio e Convidados". Sua visão artística e compromisso com a inclusão contribuíram significativamente para o sucesso deste projeto. Na Palma Produções, acreditamos que parcerias sólidas com profissionais talentosos são a chave para entregar espetáculos de alta qualidade e relevância.
+<Carrossel>
 
-Agradecemos a todos que fizeram parte dessa jornada incrível e reiteramos nosso compromisso de continuar produzindo experiências extraordinárias que encantam, emocionam e enriquecem vidas. Se você está em busca de uma produção excepcional para seus projetos, conte com a Palma Produções para criar um espetáculo único e memorável que encante seu público e transmita mensagens significativas.
+  ![Estreia da temporada na Arena Chacrina [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/estreia-da-temporada-na-arena-chacrina.jpg)
 
-(*Observação: O espetáculo "Palhaço Afonso Xodó, Banda Rio e Convidados" ocorreu em datas específicas, mas sua importância e legado continuam presentes em nossa trajetória de produções de excelência. Entre em contato conosco para obter mais informações sobre nossos projetos atuais e futuros.)
+  ![Banda Rio no palco [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/banda-rio-no-palco.jpg)
+
+  ![Equipe na Arena Dicro [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/equipe-na-arena-dicro.jpg)
+
+  ![Público no Galpão da Maré [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/publico-no-galpão-da-mare.jpg)
+
+  ![Palhaço Fantástico Melão [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/palhaco-fantastico-melao.jpg)
+
+  ![Número com a participação do público [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-com-a-participacao-do-publico.jpg)
+
+  ![Número do restaurante na Arena Sandra Sá [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-do-restaurante-na-arena-sandra-sa.jpg)
+
+</Carrossel>
+
+## Equipe
+
+Direção Artística: **Leo Carnevale**
+Direção de Produção: **Emanuela Palma**
+Assistente de Produção: **Sandra Calaça**
+Produção de Impacto: **Emanuela Palma**
+Preparação Vocal: **Jane Celeste Guberfain Estúdio da Voz**
+Preparação de Canto: **Carolina Sanches Estúdio da Voz**
+
+### Elenco
+
+Palhaço Afonso Xodo: **Leo Carnevale**
+Palhaça Eulequicina: **Clara Mello**
+Palhaço Prego: **Fabio Freitas**
+Palhaça Foca: **Fabiana Poppius**
+Palhaço Fantástico Melão: **Fernando Carvalho**
+Palhaço Paçoca: **André Guimarães**
+Palhaça Paragadom: **Hislany Midon**
+Palhaça Songa: **Lívia Prado**
+Palhaço Titão: **Rogério Rodriguês**
+
+### Banda Rio
+
+Saxofone Alto: **Norberto dos Santos Lásaro**
+Tuba: **Valdevino de Almeida Ramos**
+Trombone: **Aloisio Bernardes do Nascimento**
+Trompete: **Ivison Inácio de Oliveira**
+Trombone: **Sergio Alves da Silva**
+Bombo: **Urubatao do Nascimento**
+Caixa: **Sérgio Rosa Oliveira**
 
 ## Clipping
+
+- [AGÊNCIA BRASIL: Espetáculo circense leva cultura e inclusão à periferia do Rio](https://agenciabrasil.ebc.com.br/geral/noticia/2023-03/espetaculo-circense-leva-cultura-e-inclusao-periferia-do-rio#)
+- [O DIA: Espetáculo para todos: O circo que encanta e aquece corações](https://odia.ig.com.br/diversao/2023/04/6611913-espetaculo-para-todos-o-circo-que-encanta-e-aquece-coracoes.html?foto=7)
+- [Isto é Dinheiro: Espetáculo circense leva cultura e inclusão à periferia do Rio](https://www.istoedinheiro.com.br/espetaculo-circense-leva-cultura-e-inclusao-a-periferia-do-rio/)
+- [Sopa Cultural: Inclusão e representatividade em encontro de palhaços](https://sopacultural.com/inclusao-e-representatividade-em-encontro-de-palhacos/)
+- [Reino Literário BR: [News]Estreia de Encontro de Palhaços na periferia do Rio](http://www.reinoliterariobr.com.br/2023/03/newsestreia-de-encontro-de-palhacos-na.html)
+- [Jornal do Vale: Espetáculo circense leva cultura e inclusão à periferia do Rio](https://jornaldovale.com/espetaculo-circense-leva-cultura-e-inclusao-a-periferia-do-rio/)
+- [Minuto MT (Rodonópolis): Espetáculo circense leva cultura e inclusão à periferia do Rio](https://minutomt.com.br/brasil-mundo/espetaculo-circense-leva-cultura-e-inclusao-a-periferia-do-rio/)
+- [Estação Livre Cuibá: Espetáculo circense leva cultura e inclusão à periferia do Rio](https://estacaolivremt.com.br/espetaculo-circense-leva-cultura-e-inclusao-a-periferia-do-rio/)
+- [Portal MT Mato Grosso bem informado: Espetáculo circense leva cultura e inclusão à periferia do Rio](https://portalmt.com.br/espetaculo-circense-leva-cultura-e-inclusao-a-periferia-do-rio/)
+- [Diário Carioca: Agenda Cultural do Rio de Janeiro de 30/03 a 05/04](https://diariocarioca.com/cultura/giro-carioca/noticia/2023/03/30/agenda-cultural-do-rio-de-janeiro-de-30-03-a-05-04/10393129.html)
+- [Reino Literário BR: [News]A magia do circo, do teatro e da música chega ao Galpão Bela Maré](http://www.reinoliterariobr.com.br/2023/05/newsa-magia-do-circo-do-teatro-e-da.html)
+
+<BotaoCompartilhar />
+
+<Faixa>
+  <Parcerias titulo="Realização">
+    <Parceria
+      parceiro="Carnavalle"
+      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      url="https://www.instagram.com/carnevaleproducoes/"/>
+    <Parceria
+      parceiro="Palma Produções"
+      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      url="https://palmaproducoes.com.br"/>
+
+  </Parcerias>
+
+  <Parcerias titulo="Apoio">
+    <Parceria
+      parceiro="Raça Livre Produções"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
+      url="" />
+    <Parceria
+      parceiro="Biomob"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
+      url="" />
+    <Parceria
+      parceiro="Perspective Fund"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
+      url="" />
+    <Parceria
+      parceiro="FAPAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
+      url="" />
+    <Parceria
+      parceiro="APAN"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
+      url="" />
+    <Parceria
+      parceiro="Prefeitura de Cascavel"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
+      url="" />
+    <Parceria
+      parceiro="Gráfica Assoeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
+      url="" />
+    <Parceria
+      parceiro="Unioeste"
+      logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
+  </Parcerias>
+</Faixa>

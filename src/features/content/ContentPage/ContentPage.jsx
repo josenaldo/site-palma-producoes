@@ -141,7 +141,12 @@ export default function ContentPage({
       </Box>
     ),
     Galeria: BlockGallery,
-    ImagemPrincipal: (props) => <BlockMainImage image={image} />,
+    ImagemPrincipal: (props) => (
+      <BlockMainImage
+        image={image}
+        aspectRatio={`${image.width}/${image.height}`}
+      />
+    ),
     Lista: BlockChipList,
     Mais: ({
       textoMais = null,
