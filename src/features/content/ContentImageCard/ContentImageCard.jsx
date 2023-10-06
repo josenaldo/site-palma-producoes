@@ -10,9 +10,13 @@ export default function ContentImageCard({
   tags,
   numberOfTags = 1,
   image,
+  thumbnail,
 }) {
   const [elevation, setElevation] = useState(2)
   const [brightness, setBrightness] = useState(40)
+
+  console.log('image', image)
+  console.log('thumbnail', thumbnail)
 
   return (
     <Link href={url} skipLocaleHandling>
@@ -47,8 +51,8 @@ export default function ContentImageCard({
         }}
       >
         <ImageBox
-          src={image.url}
-          alt={image.alt}
+          src={thumbnail ? thumbnail.url : image.url}
+          alt={thumbnail ? thumbnail.alt : image.alt}
           width={1200}
           height={628}
           aspectRatio={{
