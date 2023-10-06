@@ -26,6 +26,7 @@ import {
   BlockTripleCarousel,
   BlockColumns,
   BlockSpacer,
+  BlockGallery,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -55,7 +56,7 @@ export default function ContentPage({
     h4: (props) => <AnchoredTitle component="h4" variant="h5" {...props} />,
     h5: (props) => <AnchoredTitle component="h5" variant="h6" {...props} />,
     h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
-    a: Link,
+    a: (props) => <Link {...props} sx={{ fontWeight: 500 }} />,
     hr: Divider,
     img: BlockResponsiveImage,
     pre: BlockCode,
@@ -76,23 +77,11 @@ export default function ContentPage({
     ),
 
     // Custom tags
-    BotaoCompartilhar: ({ tipo = 'button', cor = 'primary' }) => (
-      <BlockShareButton
-        url={url}
-        title={title}
-        image={image}
-        type={tipo}
-        color={cor}
-      />
+    BotaoCompartilhar: (props) => (
+      <BlockShareButton url={url} title={title} image={image} type="button" />
     ),
-    IconeCompartilhar: ({ tipo = 'icon', cor = 'tertiary' }) => (
-      <BlockShareButton
-        url={url}
-        title={title}
-        image={image}
-        type={tipo}
-        color={cor}
-      />
+    IconeCompartilhar: (props) => (
+      <BlockShareButton url={url} title={title} image={image} type="icon" />
     ),
     Carrossel: BlockCarousel,
     CarrosselTriplo: BlockTripleCarousel,
@@ -151,6 +140,7 @@ export default function ContentPage({
         </Container>
       </Box>
     ),
+    Galeria: BlockGallery,
     ImagemPrincipal: (props) => <BlockMainImage image={image} />,
     Lista: BlockChipList,
     Mais: ({

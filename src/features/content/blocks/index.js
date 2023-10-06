@@ -10,6 +10,8 @@ export { BlockCode } from './BlockCode'
 
 export { BlockColumns } from './BlockColumns'
 
+export { BlockGallery } from './BlockGallery'
+
 export { BlockMainImage } from './BlockMainImage'
 
 export { BlockMore } from './BlockMore'

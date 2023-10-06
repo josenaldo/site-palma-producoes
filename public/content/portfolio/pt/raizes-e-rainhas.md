@@ -21,9 +21,13 @@ image:
 
 <IconeCompartilhar />
 
-<CarrosselTriplo>
+<ImagemPrincipal />
 
-  ![Foto1 [1200x628] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/capa.jpg)
+É uma satisfação para a PALMA contribuir com a realização do projeto Raízes e Rainhas, com o ensaio fotográfico que registra o resultado de alguns meses de trabalho na Casa do Jongo da Serrinha, no Rio de Janeiro, em 2017.
+
+Contemplado pelo edital EMPODERA, patrocinado pelo Instituto Lojas Renner e ONU Mulheres, o projeto ofereceu uma série de atividades que promovem impacto na cadeia têxtil e ao mesmo tempo o empoderamento feminino.
+
+<Galeria>
 
   ![Foto2 [3456x5184] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-02.jpg)
 
@@ -39,12 +43,10 @@ image:
 
   ![Foto7 [2867x3493] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/raizes-e-rainhas/foto-08.jpg)
 
-</CarrosselTriplo>
-
-É uma satisfação para a PALMA contribuir com a realização do projeto Raízes e Rainhas, com o ensaio fotográfico que registra o resultado de alguns meses de trabalho na Casa do Jongo da Serrinha, no Rio de Janeiro, em 2017.
-
-Contemplado pelo edital EMPODERA, patrocinado pelo Instituto Lojas Renner e ONU Mulheres, o projeto ofereceu uma série de atividades que promovem impacto na cadeia têxtil e ao mesmo tempo o empoderamento feminino.
+</Galeria>
 
 A iniciativa incluiu oficinas com conteúdo de empoderamento feminino e teve como destaque um curso de corte, costura e modelagem. Durante o curso, as participantes tiveram a oportunidade de adquirir habilidades essenciais na confecção de roupas e, ao mesmo tempo, fortalecer sua autoestima e senso de identidade. As peças confeccionadas durante o curso foram usadas nas sessões de fotos, criando uma celebração visual da cultura afro-brasileira e da identidade das mulheres negras envolvidas no projeto.
+
+<BotaoCompartilhar />
 
 <Espaco altura="40px" />

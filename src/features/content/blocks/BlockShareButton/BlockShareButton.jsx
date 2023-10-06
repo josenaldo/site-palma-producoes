@@ -7,7 +7,7 @@ export default function BlockShareButton({
   title,
   image,
   type = 'icon',
-  color = 'tertiary',
+  color = 'secondary',
 }) {
   return (
     <Box
