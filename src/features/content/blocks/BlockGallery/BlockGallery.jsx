@@ -14,6 +14,9 @@ export default function BlockGallery({ children, ...props }) {
         md: 3,
       }}
       spacing={2}
+      sx={{
+        my: 5,
+      }}
     >
       {cleanedChildren}
     </Masonry>
