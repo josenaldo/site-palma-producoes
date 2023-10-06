@@ -12,6 +12,11 @@ image:
   alt: "Curta Simbiose"
   width: 1502
   height: 480
+thumbnail:
+  url: /images/content/portfolio/curta-simbiose/thumbnail.jpg
+  alt: "Curta Simbiose"
+  width: 1200
+  height: 736
 ---
 
 <Titulo subtitulo="Livro Momentos World"/>
