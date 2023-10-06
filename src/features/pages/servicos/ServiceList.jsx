@@ -18,7 +18,10 @@ export default function ServiceList({ services }) {
         flexDirection: 'column',
         alignItems: 'center',
         my: 10,
-        gap: 4,
+        '& .MuiPaper-root:not(:last-child)': {
+          borderBottom: '1px solid',
+          borderColor: 'grey.lighter',
+        },
       }}
     >
       {services.map((service, index) => (
@@ -29,13 +32,13 @@ export default function ServiceList({ services }) {
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },
             alignItems: 'center',
-            borderBottom: '1px solid #ccc',
+            borderRadius: 0,
+            py: 2,
           }}
         >
           <CardMedia
             sx={{
               display: 'flex',
-              padding: 2,
             }}
           >
             <Image
@@ -59,7 +62,7 @@ export default function ServiceList({ services }) {
             >
               {service.title}
             </Typography>
-            <Typography variant="body2">{service.description}</Typography>
+            <Typography variant="body1">{service.description}</Typography>
           </CardContent>
         </Card>
       ))}

@@ -14,6 +14,8 @@ export default function ContactLinks({ color = 'common.light' }) {
         <IconButton
           key={index}
           href={contactLink.href}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
           sx={{ color: color, gap: 1 }}
         >
           <contactLink.icon />{' '}

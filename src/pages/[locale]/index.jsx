@@ -11,7 +11,6 @@ import {
   HomeTestimonials,
   HomeVideo,
   HomeWho,
-  HomeWish,
 } from '@/features/pages/home'
 
 import {
@@ -51,7 +50,6 @@ export default function HomePage({ page, depoimentos, servicos }) {
         <HomeVideo />
         <HomeServices servicos={servicos} />
         <HomeTestimonials depoimentos={depoimentos} />
-        <HomeWish />
         <HomeCTA />
       </Stack>
     </AppLayout>

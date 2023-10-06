@@ -6,12 +6,13 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Chip,
   Typography,
 } from '@mui/material'
 
-import { ContentTags, ContentAuthor, ContentDate } from '@/features/content'
+import { ContentAuthor, ContentDate } from '@/features/content'
 import { useTranslation } from '@/features/i18n'
-import { ButtonLink, ImageBox, Link, ShareLink } from '@/features/ui'
+import { ButtonLink, ImageBox, Link, ShareLink, Tags } from '@/features/ui'
 
 export default function ContentCard({
   url,
@@ -24,7 +25,7 @@ export default function ContentCard({
 }) {
   const { t, isoLocale } = useTranslation(['common'])
 
-  const [brightness, setBrightness] = useState(40)
+  const [brightness, setBrightness] = useState(100)
 
   if (!t) return null
 
@@ -38,22 +39,26 @@ export default function ContentCard({
         borderRadius: 4,
       }}
       onMouseOver={(e) => {
-        setBrightness(60)
+        setBrightness(80)
       }}
       onMouseOut={(e) => {
-        setBrightness(40)
+        setBrightness(100)
       }}
       onClick={(e) => {
         const oldBrightness = brightness
-
-        setBrightness(50)
+        setBrightness(70)
 
         setTimeout(() => {
           setBrightness(oldBrightness)
         }, 100)
       }}
     >
-      <CardMedia>
+      <CardMedia
+        sx={{
+          borderRadius: 5,
+          overflow: 'hidden',
+        }}
+      >
         <Link
           href={url}
           skipLocaleHandling
@@ -73,6 +78,7 @@ export default function ContentCard({
           />
         </Link>
       </CardMedia>
+
       <CardContent
         sx={{
           display: 'flex',
@@ -82,6 +88,26 @@ export default function ContentCard({
           flexGrow: 1,
         }}
       >
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 1,
+            flexWrap: 'wrap',
+          }}
+        >
+          {tags && (
+            <Chip
+              label={tags[0]}
+              color="tertiary"
+              sx={{
+                borderRadius: 2,
+              }}
+            />
+          )}
+
+          <ContentDate date={date} isoLocale={isoLocale} />
+        </Box>
+
         <Typography variant="h5" component="h3" color="primary.main">
           {title}
         </Typography>
@@ -94,11 +120,7 @@ export default function ContentCard({
           }}
         >
           <ContentAuthor author={author} />
-          <ContentDate date={date} isoLocale={isoLocale} />
         </Box>
-
-        <Typography variant="body1">{description}</Typography>
-        <ContentTags tags={tags} backgroundColor="tertiary.main" />
       </CardContent>
       <CardActions
         sx={{
@@ -111,7 +133,7 @@ export default function ContentCard({
           {t('common:button.showMore')}
         </ButtonLink>
 
-        <ShareLink url={url} title={title} image={image.url} t={t} />
+        <ShareLink url={url} title={title} image={image.url} />
       </CardActions>
     </Card>
   )

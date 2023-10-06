@@ -68,15 +68,19 @@ export default function Hero({
             </Box>
           </Typography>
         </Box>
-        <Typography
-          variant={textVariant}
-          color={textColor}
-          sx={{
-            textAlign: 'center',
-          }}
-        >
-          {text}
-        </Typography>
+
+        {text && (
+          <Typography
+            variant={textVariant}
+            color={textColor}
+            sx={{
+              textAlign: 'center',
+            }}
+          >
+            {text}
+          </Typography>
+        )}
+
         {CTA ? (
           <CTA />
         ) : (

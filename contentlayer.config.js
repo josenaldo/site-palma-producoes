@@ -7,22 +7,8 @@ import {
 import remarkGfm from 'remark-gfm'
 import remarkUnwrapImages from 'remark-unwrap-images'
 
-import externalLinks from 'rehype-external-links'
+import rehypeExternalLinks from 'rehype-external-links'
 import rehypePrism from 'rehype-prism-plus'
-
-const remarkPlugins = [
-  remarkGfm,
-  remarkUnwrapImages,
-  [
-    externalLinks,
-    {
-      target: '_blank',
-      rel: ['nofollow', 'noopener', 'noreferrer'],
-    },
-  ],
-]
-
-const rehypePlugins = [rehypePrism]
 
 function resolveSlug(doc, folder) {
   const regex = new RegExp(`${folder}\/?`, 'g')
@@ -96,16 +82,6 @@ export const Page = defineDocumentType(() => ({
     image: {
       type: 'nested',
       of: Image,
-    },
-    mainImageFullWidth: {
-      type: 'boolean',
-      description: 'The image full width of the page',
-      defaultValue: true,
-    },
-    showMainImage: {
-      type: 'boolean',
-      description: 'Show main image of the PortfolioItem',
-      defaultValue: true,
     },
   },
   computedFields: {
@@ -326,16 +302,6 @@ export const PortfolioItem = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
-    mainImageFullWidth: {
-      type: 'boolean',
-      description: 'The image full width of the PortfolioItem',
-      defaultValue: true,
-    },
-    showMainImage: {
-      type: 'boolean',
-      description: 'Show main image of the PortfolioItem',
-      defaultValue: true,
-    },
   },
   computedFields: {
     url: {
@@ -393,21 +359,11 @@ export const Post = defineDocumentType(() => ({
       type: 'nested',
       of: Image,
     },
-    mainImageFullWidth: {
-      type: 'boolean',
-      description: 'The main image full width of the Post',
-      defaultValue: true,
-    },
-    showMainImage: {
-      type: 'boolean',
-      description: 'Show main image of the PortfolioItem',
-      defaultValue: true,
-    },
   },
   computedFields: {
     url: {
       type: 'string',
-      resolve: (doc) => resolveUrl(doc, 'posts', 'movimentos'),
+      resolve: (doc) => resolveUrl(doc, 'posts', 'blog'),
     },
     locale: {
       type: 'string',
@@ -419,6 +375,19 @@ export const Post = defineDocumentType(() => ({
     },
   },
 }))
+
+const remarkPlugins = [remarkGfm, remarkUnwrapImages]
+
+const rehypePlugins = [
+  rehypePrism,
+  [
+    rehypeExternalLinks,
+    {
+      target: '_blank',
+      rel: ['nofollow', 'noopener', 'noreferrer'],
+    },
+  ],
+]
 
 export default makeSource({
   contentDirPath: 'public/content',

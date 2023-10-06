@@ -2,7 +2,7 @@
 title: "2 - Como a Palma Produções Trabalha com Comunicação Visual e Estratégica"
 description: "Descubra como a Palma Produções combina criatividade, pensamento estratégico e expertise em comunicação visual para fornecer soluções impactantes para sua marca."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-comunicacao-visual-e-estrategica.jpg
   alt: "Equipe da Palma Produções trabalhando em comunicação visual"
@@ -16,7 +16,11 @@ tags:
   - Design
   - Inovação
 ---
+<Titulo/>
 
+<Tags />
+
+<ImagemPrincipal />
 
 A comunicação visual é uma ferramenta poderosa que pode aprimorar a mensagem da sua marca e envolver seu público-alvo. Na Palma Produções, entendemos a importância da comunicação visual eficaz e do pensamento estratégico na construção de uma presença de marca sólida.
 

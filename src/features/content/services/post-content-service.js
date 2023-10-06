@@ -1,4 +1,4 @@
-import { allPosts as allPost } from 'contentlayer/generated'
+import { allPosts as allPost, allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
 
 function getPostData(url) {

@@ -1,7 +1,14 @@
-import { Card, CardMedia, Box, CardContent, Typography } from '@mui/material'
+import {
+  Card,
+  CardMedia,
+  Box,
+  CardContent,
+  Typography,
+  Chip,
+} from '@mui/material'
 
 import { useTranslation } from '@/features/i18n'
-import { Tag, ButtonLink, ShareLink, Link } from '@/features/ui'
+import { ButtonLink, ShareLink, Link } from '@/features/ui'
 
 export default function SearchResult({ result }) {
   const { t } = useTranslation(['common'])
@@ -66,10 +73,14 @@ export default function SearchResult({ result }) {
             alignItems: 'center',
           }}
         >
-          <Tag
-            backgroundColor="tertiary.main"
-            textColor="text.light"
+          <Chip
+            sx={{
+              textTransform: 'uppercase',
+              backgroundColor: 'tertiary.main',
+              color: 'text.light',
+            }}
             label={t(`common:search.results.types.${result.type}`)}
+            size="small"
           />
 
           <Link

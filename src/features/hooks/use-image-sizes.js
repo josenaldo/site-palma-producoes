@@ -9,7 +9,7 @@ export default function useImageSizes(width) {
   const breakpoints = theme.breakpoints.values
 
   const sizes = Object.keys(breakpoints)
-    .slice(1, 5)
+    .slice(0, 5)
     .map((key) => {
       const value = breakpoints[key]
 

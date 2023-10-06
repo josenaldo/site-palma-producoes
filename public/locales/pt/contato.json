@@ -1,9 +1,6 @@
 {
   "hero": {
-    "title": "Tem um projeto em mente e quer __realizá-lo__ conosco?",
-    "text": "NOS CONTE SOBRE ELE E PREENCHA O FORMULÁRIO ABAIXO!",
-    "ctaText": "Preencher Formulário",
-    "ctaHref": "/contact",
-    "ctaVariant": "outlined"
+    "title": "Tem um projeto em mente e quer realizá-lo conosco?",
+    "ctaText": "Conte-no sobre. [Clique aqui](https://google.com) e preencha o formulário :)"
   }
 }

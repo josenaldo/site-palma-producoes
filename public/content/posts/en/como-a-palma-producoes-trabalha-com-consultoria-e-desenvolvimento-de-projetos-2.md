@@ -3,7 +3,7 @@ title: "2 - How Palma Produções Works with Consulting and Project Development"
 description:
   "Discover how Palma Produções uses innovation, quality, and a unique vision to provide impactful consulting and project development services."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-consultoria-e-desenvolvimento-de-projetos.jpg
   alt: "Palma Produções team discussing a project"
@@ -17,6 +17,11 @@ tags:
   - Quality
   - Cultural and Socio-environmental Impact
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Have you ever wondered how to turn an idea into reality? At Palma Produções, we believe that it requires a unique combination of creativity, expertise, and commitment. Our team of talented professionals brings these elements together in our consulting and project development services, helping our clients turn their visions into impactful cultural and socio-environmental projects.
 

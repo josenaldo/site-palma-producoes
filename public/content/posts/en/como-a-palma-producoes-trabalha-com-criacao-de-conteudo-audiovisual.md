@@ -2,7 +2,7 @@
 title: "How Palma Produções Works with Audiovisual Content Creation"
 description: "Discover how Palma Produções utilizes its expertise in audiovisual content creation to bring your brand's story to life and engage your target audience."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-criacao-de-conteudo-audiovisual.jpg
   alt: "Palma Produções team working on audiovisual content creation"
@@ -16,6 +16,11 @@ tags:
   - Branding
   - Engagement
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 In today's digital world, audiovisual content is a powerful tool to capture attention and convey your brand's message effectively. At Palma Produções, we specialize in creating compelling and engaging audiovisual content that resonates with your target audience.
 

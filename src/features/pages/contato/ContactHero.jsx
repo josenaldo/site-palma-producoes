@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 import { useTranslation } from '@/features/i18n'
 import { Hero } from '@/features/ui'
@@ -21,16 +21,25 @@ export default function ContactHero() {
         title={t('contato:hero.title', {
           postProcess: 'markdown',
         })}
-        titleColor="text.dark"
+        titleColor="primary.main"
         titleHighlightColor="secondary.main"
         titleVariant="h4"
-        text={t('contato:hero.text')}
-        textVariant="body1"
-        textColor="text.dark"
-        ctaColor="primary"
-        ctaText={t('contato:hero.ctaText')}
-        ctaHref={t('contato:hero.ctaHref')}
-        ctaVariant={t('contato:hero.ctaVariant', 'outlined')}
+        CTA={() => (
+          <Typography
+            color="text.dark"
+            variant="body1"
+            sx={{
+              '& a': {
+                fontWeight: 'bold',
+                color: 'text.dark',
+              },
+            }}
+          >
+            {t('contato:hero.ctaText', {
+              postProcess: 'markdown',
+            })}
+          </Typography>
+        )}
         noPadding
       />
     </Box>

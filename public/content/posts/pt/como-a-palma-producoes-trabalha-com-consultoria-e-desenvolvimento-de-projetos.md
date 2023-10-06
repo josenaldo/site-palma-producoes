@@ -2,7 +2,7 @@
 title: "Como a Palma Produções Trabalha com Consultoria e Desenvolvimento de Projetos"
 description: "Descubra como a Palma Produções utiliza inovação, qualidade e visão única para oferecer serviços de consultoria e desenvolvimento de projetos impactantes."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-consultoria-e-desenvolvimento-de-projetos.jpg
   alt: "Equipe da Palma Produções discutindo um projeto"
@@ -16,6 +16,11 @@ tags:
   - Qualidade
   - Impacto Cultural e Socioambiental
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Você já se perguntou como transformar uma ideia em realidade? Na Palma Produções, acreditamos que isso requer uma combinação única de criatividade, expertise e compromisso. Nossa equipe de profissionais talentosos reúne esses elementos em nossos serviços de consultoria e desenvolvimento de projetos, ajudando nossos clientes a transformar suas visões em projetos culturais e socioambientais impactantes.
 

@@ -2,7 +2,7 @@
 title: 2 - Discussions on Sustainability in Cultural Production
 description: "Exploring the role of sustainability in cultural production and its impact on the environment and society."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/discussoes-sustentabilidade-producao-cultural.jpg
   alt: Discussions on Sustainability in Cultural Production
@@ -15,8 +15,15 @@ tags:
   - Socioenvironmental Impact
 
 ---
+<Titulo/>
 
-*Have you ever stopped to think about the impact that cultural production can have on the environment and society? In this post, we will explore the discussions surrounding sustainability in cultural production and how companies in the industry are seeking more sustainable practices. Join us on this journey!*
+<Tags />
+
+<ImagemPrincipal />
+
+<Resumo>
+Have you ever stopped to think about the impact that cultural production can have on the environment and society? In this post, we will explore the discussions surrounding sustainability in cultural production and how companies in the industry are seeking more sustainable practices. Join us on this journey!
+</Resumo>
 
 ## The importance of sustainability in cultural production
 

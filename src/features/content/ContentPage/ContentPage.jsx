@@ -1,13 +1,35 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Divider, Typography } from '@mui/material'
+
+import { useTranslation } from '@/features/i18n'
+
+import { useMDXComponent } from 'next-contentlayer/hooks'
+
+import { AnchoredTitle, Link } from '@/features/ui'
 
 import {
-  ContentAuthor,
-  ContentBlock,
-  ContentDate,
-  ContentTags,
-} from '@/features/content'
-import { ImageBox, ShareLink, Title } from '@/features/ui'
-import { useTranslation } from '@/features/i18n'
+  BlockBlockquote,
+  BlockCarousel,
+  BlockChipList,
+  BlockCode,
+  BlockMainImage,
+  BlockResponsiveImage,
+  BlockSocialBar,
+  BlockYoutube,
+  BlockTags,
+  BlockTitle,
+  BlockToc,
+  BlockPartnerships,
+  BlockPartnershipItem,
+  BlockMore,
+  BlockAbstract,
+  BlockShareButton,
+  BlockTripleCarousel,
+  BlockColumns,
+  BlockSpacer,
+  BlockGallery,
+} from '@/features/content/blocks'
+
+import styles from './ContentPage.module.css'
 
 export default function ContentPage({
   title,
@@ -19,68 +41,151 @@ export default function ContentPage({
   date,
   url,
   ns = ['common'],
-  mainImageFullWidth,
-  showMainImage = true,
+  components = {},
 }) {
   const { t, isoLocale } = useTranslation(ns)
 
-  console.log('🔴 mainImageFullWidth ', mainImageFullWidth)
-  console.log('🔴 showMainImage ', showMainImage)
-  return (
-    <Box
-      sx={{
-        overflowX: 'hidden',
-      }}
-    >
-      {showMainImage && image && (
-        <Container disableGutters>
-          <ImageBox
-            src={image.url}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-            priority
-            fullWidth={mainImageFullWidth}
-          />
-        </Container>
-      )}
+  const contentBody = body?.code || body?.html || body?.raw || body
 
-      <Container
+  const MDXContent = useMDXComponent(contentBody)
+
+  const comp = {
+    h1: (props) => <Typography component="h1" variant="h2" {...props} />,
+    h2: (props) => <AnchoredTitle component="h2" variant="h3" {...props} />,
+    h3: (props) => <AnchoredTitle component="h3" variant="h4" {...props} />,
+    h4: (props) => <AnchoredTitle component="h4" variant="h5" {...props} />,
+    h5: (props) => <AnchoredTitle component="h5" variant="h6" {...props} />,
+    h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
+    a: (props) => <Link {...props} sx={{ fontWeight: 500 }} />,
+    hr: Divider,
+    img: BlockResponsiveImage,
+    pre: BlockCode,
+    blockquote: BlockBlockquote,
+    p: (props) => (
+      <Typography
+        component="p"
+        variant="body1"
+        sx={{
+          textAlign: {
+            xs: 'justify',
+            sm: 'justify',
+            md: 'left',
+          },
+        }}
+        {...props}
+      />
+    ),
+
+    // Custom tags
+    BotaoCompartilhar: (props) => (
+      <BlockShareButton url={url} title={title} image={image} type="button" />
+    ),
+    IconeCompartilhar: (props) => (
+      <BlockShareButton url={url} title={title} image={image} type="icon" />
+    ),
+    Carrossel: BlockCarousel,
+    CarrosselTriplo: BlockTripleCarousel,
+    Caixa: (props) => (
+      <Box
+        sx={{
+          p: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          maxWidth: '100%',
+          width: '100%',
+          height: '100%',
+          maxHeight: '100%',
+          overflow: 'hidden',
+        }}
+        {...props}
+      />
+    ),
+
+    Colunas: ({ formato = '1|1', ...props }) => (
+      <BlockColumns format={formato} {...props} />
+    ),
+    Espaco: ({ altura = 1, ...props }) => (
+      <BlockSpacer height={altura} {...props} />
+    ),
+    Faixa: ({ cor = 'surfice.lighter', children, ...props }) => (
+      <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'flex-start',
           justifyContent: 'center',
-          alignItems: 'center',
-          gap: 2,
-          width: '100%',
-          mb: 4,
+          // overflow: 'hidden',
+          backgroundColor: cor || 'transparent',
+          position: 'relative',
+          width: '100vw',
+          left: '50%',
+          right: '50%',
+          marginLeft: '-50vw',
+          marginRight: '-50vw',
         }}
+        {...props}
       >
-        <Title
-          variant="h1"
-          componente="h1"
-          borderBottomColor={titleBorderBottomColor}
-          textWrap="wrap"
-        >
-          {title}
-        </Title>
-        <Box
+        <Container
           sx={{
             display: 'flex',
-            justifyContent: 'center',
+            flexDirection: 'column',
             alignItems: 'center',
-            gap: 1,
+            justifyContent: 'center',
+            py: 4,
           }}
         >
-          <ContentAuthor author={author} />
-          <ContentDate date={date} isoLocale={isoLocale} />
-          <ShareLink url={url} title={title} image={image.url} t={t} />
-        </Box>
-        <ContentTags tags={tags} backgroundColor="tertiary.main" />
-      </Container>
+          {children}
+        </Container>
+      </Box>
+    ),
+    Galeria: BlockGallery,
+    ImagemPrincipal: (props) => <BlockMainImage image={image} />,
+    Lista: BlockChipList,
+    Mais: ({
+      textoMais = null,
+      textoMenos = null,
+      cor = 'primary',
+      variante = 'outlined',
+      children,
+      ...props
+    }) => (
+      <BlockMore
+        textMore={textoMais}
+        textLess={textoMenos}
+        variant={variante}
+        color={cor}
+        {...props}
+      >
+        {children}
+      </BlockMore>
+    ),
+    Parcerias: BlockPartnerships,
+    Parceria: BlockPartnershipItem,
+    RedesSociais: (props) => <BlockSocialBar {...props} />,
+    Resumo: BlockAbstract,
+    Tags: ({ size = 'small', ...props }) => (
+      <BlockTags tags={tags} size={size} />
+    ),
+    Titulo: (props) => (
+      <BlockTitle
+        title={title}
+        subtitle={props.subtitulo}
+        titleBorderBottomColor={titleBorderBottomColor}
+      />
+    ),
+    Youtube: (props) => <BlockYoutube {...props} />,
+    ...components,
+    Toc: BlockToc,
+  }
 
+  return (
+    <Box>
       <Container>
-        <ContentBlock body={body} />
+        <Box className={styles.markdownBody}>
+          <MDXContent components={comp} />
+        </Box>
       </Container>
     </Box>
   )

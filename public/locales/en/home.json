@@ -5,15 +5,18 @@
     "button": "Contact Us"
   },
   "intro": {
-    "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE"
+    "video": "https://www.youtube.com/watch?v=_G3VPDyhBpE",
+    "text": "How delightful to have you here. At PALMA, Rio de Janeiro meets the world, Culture integrates with Nature, and stories become bridges to a desirable future."
   },
   "who": {
     "impact": "/images/home/impact.png",
     "title": "Who makes it happen",
     "text": [
-      "The Palma Produções operates in **impactful projects** in the cultural and socio-environmental areas, with a focus on **narrative solutions** that value the **memory and cultural diversity of Brazil.**",
+      "**Our desirable future is to see the flame of belonging among Brazilians**. That's why **here at PALMA, our eyes light up** with the opportunity to bring narratives to the world that value cultural memory and identity and promote sustainable practices for ecosystem balance.",
 
-      "**Investigating, connecting, cultivating, celebrating, projecting, and telling stories** that promote a sense of belonging to our **Brazilian identity** and  <mark>generate **positive impact** in the world</mark>. This is what motivates us to work in creative, strategic, and collaborative processes **<mark>- in the audiovisual universe and multi-platform actions -</mark> to shed light on the protagonism of those who make history happen**."
+      "We connect artistic and cultural expression with the defense of human rights and the planet's sustainability. Our values are rooted in diversity, inclusion, social and environmental responsibility, creating a **unique synergy between creativity and positive impact**.",
+
+      "Our multidisciplinary team gathers talent to engage in creative, strategic, and collaborative processes - combining innovation, communication, and sustainability - **to shine a light on those who make history happen**."
     ],
     "button": "Know our Team"
   },
@@ -24,16 +27,10 @@
     "title": "What we make",
     "button": "Know our services"
   },
-  "wish": {
-    "title": "What we want",
-    "text": [
-      "At the heart of Palma Produçõess, lies a deep desire to create, innovate, and transform. We want to go beyond producing audiovisual content and project consulting; we aspire to be catalysts for positive change in the cultural industry. Our mission is to design and redefine stories, bringing to life narratives that inspire, educate, and provoke thought. We believe that each project is an opportunity to challenge the status quo, promote diversity, and contribute to a more inclusive and fair society.",
-      "Our desire is to build a bridge between art and the audience, creating experiences that resonate and make a difference. We want every captured image, every produced video, and every developed project to be a reflection of our commitment to excellence, creativity, and integrity. Our goal is not only to meet our clients' expectations but to exceed them, delivering works that stand out for their quality, originality, and impact. Join us on this journey of transformation and discover the power of visual storytelling with Palma Produçõess."
-    ]
-  },
+
   "cta": {
     "title": "Let's create something amazing together!",
-    "text": "Our team is ready to turn your ideas into reality. Whether it's audiovisual production, cultural or artistic events, we're here to provide unique and memorable experiences.",
+    "text": "Join us on this journey where every image and every word matter, where our culture takes root, and our connection to Mother Earth propels us forward.",
     "button": "Contact Us to Seal the Partnership"
   }
 }

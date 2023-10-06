@@ -2,7 +2,7 @@
 title: "2 - How Palma Produções Works with Cultural Production"
 description: "Discover how Palma Produções collaborates with artists and cultural organizations to bring innovative and impactful cultural projects to life."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/como-a-palma-producoes-trabalha-com-producao-cultural.jpg
   alt: "Palma Produções team working on cultural production"
@@ -16,6 +16,11 @@ tags:
   - Innovation
   - Impact
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Cultural production plays a vital role in shaping society, fostering creativity, and promoting meaningful experiences. At Palma Produções, we are passionate about collaborating with artists, cultural organizations, and institutions to bring innovative and impactful cultural projects to life.
 

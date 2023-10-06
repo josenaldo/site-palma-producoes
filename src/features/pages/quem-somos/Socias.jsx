@@ -17,10 +17,11 @@ export default function Socias({ socias }) {
           display: 'grid',
           gridTemplateColumns: {
             xs: '1fr',
-            sm: 'repeat(3, 1fr)',
+            sm: '1fr 1fr',
           },
           gap: 2,
           mt: 4,
+          padding: 5,
         }}
       >
         {socias.map((socia) => (
@@ -44,7 +45,7 @@ export default function Socias({ socias }) {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          mt: 5,
+          my: 5,
         }}
       >
         {socias.map((socia, index) => (
@@ -82,7 +83,11 @@ export default function Socias({ socias }) {
                     md: 8,
                   },
                   display: 'flex',
-                  justifyContent: 'flex-end',
+                  justifyContent: {
+                    xs: 'center',
+                    md: 'flex-end',
+                  },
+
                   alignItems: 'center',
                 }}
               >
@@ -90,13 +95,8 @@ export default function Socias({ socias }) {
                   variant="h4"
                   sx={{
                     display: 'inline-block',
-                    width: '100%',
-                    borderBottom: '5px solid',
+                    borderBottom: '3px solid',
                     borderColor: 'primary.main',
-                    textAlign: {
-                      xs: 'center',
-                      md: 'right',
-                    },
                   }}
                 >
                   {socia.name}
@@ -114,9 +114,10 @@ export default function Socias({ socias }) {
               >
                 <ContentBlock
                   body={socia.body}
+                  content={socia}
                   components={{
                     p: ({ children }) => (
-                      <Typography variant="body2" mb={2}>
+                      <Typography variant="1" mb={2}>
                         {children}
                       </Typography>
                     ),

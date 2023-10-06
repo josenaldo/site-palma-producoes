@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {
   Box,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
   Divider,
@@ -17,6 +18,7 @@ import { pages } from '@/data'
 import { useTranslation } from '@/features/i18n'
 import { useIsHome } from '@/features/layout'
 import { Link, Logo, SocialLinks } from '@/features/ui'
+import { LanguageSelector } from '@/features/i18n/client'
 
 export default function MobileMenu() {
   const { t } = useTranslation(['common'])
@@ -109,6 +111,16 @@ export default function MobileMenu() {
             <MenuItems t={t} onClose={handleClose} />
           </Box>
         </DialogContent>
+        <DialogActions
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            pb: 2,
+          }}
+        >
+          <LanguageSelector t={t} />
+        </DialogActions>
       </Dialog>
     </Box>
   )

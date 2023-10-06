@@ -6,32 +6,30 @@ import { useRouter } from 'next/router'
 import {
   Box,
   Button,
+  IconButton,
   ListItemIcon,
   ListItemText,
   Menu,
   MenuItem,
 } from '@mui/material'
-import LanguageIcon from '@mui/icons-material/Language'
 import { useTranslation } from '@/features/i18n'
 
 const languages = ['pt', 'en']
 
-export default function LanguageSelector() {
-  const { t } = useTranslation(['common'])
+export default function LanguageSelector({ onlyIcon = false }) {
+  const { t, locale } = useTranslation(['common'])
   const router = useRouter()
 
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
   const handleChange = async (value) => {
-    let pathname = router.pathname
+    let newPathname = router.pathname
 
     const newQuery = {
       ...router.query,
       locale: value,
     }
-
-    let newPathname = pathname
     const queryKeys = Object.keys(newQuery)
 
     queryKeys.forEach((key) => {
@@ -43,7 +41,8 @@ export default function LanguageSelector() {
       newPathname += `?${queryString}`
     }
 
-    router.push(newPathname)
+    window.location.assign(newPathname)
+
     handleClose()
   }
 
@@ -56,21 +55,47 @@ export default function LanguageSelector() {
 
   return (
     <Box
+      key={router.asPath}
       sx={{
-        py: 1,
+        py: onlyIcon ? 0 : 1,
       }}
     >
-      <Button
-        id="basic-button"
-        variant="outlined"
-        aria-controls={open ? 'basic-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-        startIcon={<LanguageIcon />}
-      >
-        {t('common:languageSelector.language')}
-      </Button>
+      {onlyIcon ? (
+        <IconButton
+          id="basic-button"
+          variant="text"
+          aria-controls={open ? 'basic-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+        >
+          <Image
+            src={`/flags/${t('common:languageSelector.flag')}.svg`}
+            width={20}
+            height={20}
+            alt={t(locale)}
+          />
+        </IconButton>
+      ) : (
+        <Button
+          id="basic-button"
+          variant="text"
+          aria-controls={open ? 'basic-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
+          startIcon={
+            <Image
+              src={`/flags/${t('common:languageSelector.flag')}.svg`}
+              width={20}
+              height={20}
+              alt={t(locale)}
+            />
+          }
+        >
+          {t('common:languageSelector.language')}
+        </Button>
+      )}
 
       <Menu
         id="basic-menu"

@@ -28,11 +28,15 @@ export default function Form({
     setValue: setValue,
   }
 
+  const submitForm = (data) => {
+    onSubmit(data, reset)
+  }
+
   return (
     <Box
       component="form"
       noValidate
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(submitForm)}
       onReset={() => {
         reset(defaultValues)
       }}

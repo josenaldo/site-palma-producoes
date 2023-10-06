@@ -1,0 +1,7 @@
+.markdownBody ul {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* margin-inline-start: 0px; */
+  padding-left: 1rem;
+}

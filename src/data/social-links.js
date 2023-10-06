@@ -11,13 +11,13 @@ export const socialLinks = [
   },
   {
     title: 'Instagram',
-    text: '@palmaproducoes',
-    href: 'https://www.instagram.com/alekarmirian/',
+    text: 'palma.producoes',
+    href: 'https://www.instagram.com/palma.producoes/',
     icon: InstagramIcon,
   },
   {
     title: 'YouTube',
-    text: '@palmaproducoes',
+    text: 'palmaproducoes',
     href: 'https://www.youtube.com/@palmaproducoes/',
     icon: YouTubeIcon,
   },

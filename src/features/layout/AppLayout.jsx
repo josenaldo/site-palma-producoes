@@ -34,7 +34,11 @@ export default function AppLayout({ title, description, image, children }) {
   }, [isoLocale, title, description, image])
 
   return (
-    <Box>
+    <Box
+      sx={{
+        contain: 'paint',
+      }}
+    >
       <NextSeo title={title} description={description} openGraph={og} />
 
       <Header />

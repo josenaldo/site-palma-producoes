@@ -2,7 +2,7 @@
 title: "A Jornada de Cada Sócia na Palma Produções"
 description: "Conheça a jornada inspiradora das sócias da Palma Produções e como suas experiências moldaram a empresa."
 date: "2023-07-19 13:00:00 -0300"
-author: "Emanuela Palma"
+author: Palma Produções
 image:
   url: "/images/content/posts/a-jornada-de-cada-socia-na-palma-producoes.jpg"
   alt: "Sócias da Palma Produções"
@@ -15,6 +15,11 @@ tags:
   - "Jornada"
   - "História"
 ---
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 A Palma Produções é o resultado da união de três mulheres talentosas e comprometidas: Emanuela Palma, Bia Herbst e Alexandra Karmiriam. Cada uma delas traz uma visão única e uma rica experiência em suas respectivas áreas, criando uma sinergia que é a força motriz por trás da Palma Produções.
 

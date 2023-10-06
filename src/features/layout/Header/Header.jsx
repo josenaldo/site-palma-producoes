@@ -42,11 +42,8 @@ export default function Header({ color, ...props }) {
       color={elevated ? 'white' : 'transparent'}
       sx={{
         position: isHome ? 'fixed' : 'sticky',
-        px: {
-          xs: 0,
-          md: 3,
-        },
         zIndex: 1000,
+        px: 0,
         py: 2,
         mb: 2,
       }}
@@ -57,6 +54,7 @@ export default function Header({ color, ...props }) {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
+          width: '100%',
         }}
       >
         <Box

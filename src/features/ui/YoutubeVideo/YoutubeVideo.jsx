@@ -5,6 +5,7 @@ export default function YoutubeVideo({
   url,
   aspectRatio = '16/9',
   width = '100%',
+  fullWidth = false,
   sx = {},
 }) {
   const videoId = url.split('v=')[1]
@@ -28,8 +29,15 @@ export default function YoutubeVideo({
   return (
     <Box
       sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
         aspectRatio: aspectRatio,
-        width: width,
+        width: fullWidth ? '100vw' : width,
+        maxWidth: fullWidth ? '100vw' : width,
+        marginLeft: fullWidth ? '-50vw' : '0',
+        left: fullWidth ? '50%' : '0',
         ...sx,
       }}
     >

@@ -13,6 +13,8 @@ export default function ImageBox({
   aspectRatio,
   cover = false,
   fullWidth = false,
+  imageStyle = {},
+  onClick = () => {},
 }) {
   const sizes = useImageSizes(width)
 
@@ -30,6 +32,7 @@ export default function ImageBox({
         left: fullWidth ? '50%' : '0',
         ...sx,
       }}
+      onClick={onClick}
     >
       <Image
         src={src}
@@ -40,6 +43,7 @@ export default function ImageBox({
         style={{
           objectFit: cover ? 'cover' : 'contain',
           overflow: cover ? 'hidden' : 'visible',
+          ...imageStyle,
         }}
       />
     </Box>

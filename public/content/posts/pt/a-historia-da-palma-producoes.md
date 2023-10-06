@@ -3,7 +3,7 @@ title: "A História da Palma Produções"
 description:
   "Descubra a jornada da Palma Produções, uma empresa comprometida em criar projetos culturais e socioambientais impactantes."
 date: 2023-07-19 13:00:00 -0300
-author: Emanuela Palma
+author: Palma Produções
 image:
   url: /images/content/posts/a-historia-da-palma-producoes.jpg
   alt: "A História da Palma Produções"
@@ -17,7 +17,11 @@ tags:
   - Impacto Socioambiental
 ---
 
-## Introdução
+<Titulo/>
+
+<Tags />
+
+<ImagemPrincipal />
 
 Toda empresa tem uma história para contar, e a Palma Produções não é exceção. Nossa jornada é de inovação, qualidade e um profundo compromisso em criar projetos que geram impacto cultural e socioambiental.
 

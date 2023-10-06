@@ -1,7 +1,8 @@
+import { useTranslation } from '@/features/i18n'
 import { Box, Typography } from '@mui/material'
-import PersonIcon from '@mui/icons-material/Person'
 
-export default function ContentAuthor({ author }) {
+export default function ContentAuthor({ author, variant = 'body1' }) {
+  const { t } = useTranslation(['common'])
   if (!author) return null
 
   return (
@@ -12,8 +13,9 @@ export default function ContentAuthor({ author }) {
         gap: 1,
       }}
     >
-      <PersonIcon fontSize="0.75rem" />
-      <Typography variant="caption">{author}</Typography>
+      <Typography variant={variant}>
+        {t('common:blog.author.by')} {author}
+      </Typography>
     </Box>
   )
 }

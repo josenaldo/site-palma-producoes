@@ -1,9 +1,6 @@
 {
   "hero": {
-    "title": "Do you have a project in mind and want __to bring it to life__ with us?",
-    "text": "TELL US ABOUT IT AND FILL OUT THE FORM BELOW!",
-    "ctaText": "Fill out the Form",
-    "ctaHref": "/contact",
-    "ctaVariant": "outlined"
+    "title": "Do you have a project in mind and want to bring it to life with us?",
+    "ctaText": "Tell us about it. [Click here](https://google.com) and fill the form :)"
   }
 }

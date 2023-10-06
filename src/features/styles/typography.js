@@ -1,5 +1,3 @@
-import { be } from 'date-fns/locale'
-import { Bebas_Neue, Work_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const bebasKai = localFont({
@@ -28,6 +26,10 @@ const textFont = workSans
 
 const typography = {
   fontFamily: workSans.style.fontFamily,
+  fontWeightLight: 200,
+  fontWeightRegular: 300,
+  fontWeightMedium: 500,
+  fontWeightBold: 700,
 
   h1: {
     fontFamily: bebasKai.style.fontFamily,
@@ -51,6 +53,22 @@ const typography = {
 
   h6: {
     fontFamily: bebasKai.style.fontFamily,
+  },
+  body1: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1.2rem',
+  },
+  body2: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1.1rem',
+  },
+  body3: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '1rem',
+  },
+  body4: {
+    fontFamily: workSans.style.fontFamily,
+    fontSize: '0.8rem',
   },
 }
 

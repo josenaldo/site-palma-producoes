@@ -16,8 +16,8 @@ export const pages = [
     href: '/portfolio',
   },
   {
-    title: 'menu.moviments',
-    href: '/movimentos',
+    title: 'menu.blog',
+    href: '/blog',
   },
   {
     title: 'menu.contact',

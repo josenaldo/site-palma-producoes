@@ -1,21 +1,24 @@
 {
   "languageSelector": {
-    "language": "Idioma",
-    "pt": "Português",
-    "en": "Inglês"
+    "language": "Português (BR)",
+    "pt": "Português (BR)",
+    "en": "Inglês (US)",
+    "flag": "pt"
   },
   "menu": {
     "home": "Início",
     "about": "Quem Somos",
     "services": "Serviços",
     "portfolio": "Portfolio",
-    "moviments": "Movimentos",
+    "blog": "Blog",
     "search": "Pesquisa",
     "contact": "Contato"
   },
   "button": {
     "showMore": "Mostrar mais",
-    "showLess": "Mostrar menos"
+    "showLess": "Mostrar menos",
+    "more": "Mais",
+    "less": "Menos"
   },
   "footer": {
     "copyright": "2023 PALMAS PRODUÇÕES. DIREITOS RESERVADOS.",
@@ -23,7 +26,8 @@
   },
   "share": {
     "title": "Compartilhe a Palma",
-    "text": "Obrigado!"
+    "text": "Obrigado!",
+    "button": "Compartilhar"
   },
   "form": {
     "error": {
@@ -77,9 +81,14 @@
     "results": {
       "types": {
         "Page": "Página",
-        "Post": "Movimento",
+        "Post": "Blog",
         "PortfolioItem": "Portfólio"
       }
+    }
+  },
+  "blog": {
+    "author": {
+      "by": "Por"
     }
   }
 }
