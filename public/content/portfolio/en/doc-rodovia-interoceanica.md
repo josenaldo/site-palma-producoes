@@ -19,11 +19,6 @@ image:
 
 <Tags />
 
-<RedesSociais
-  facebook="https://www.facebook.com/mestresirsofilme/"
-  instagram="https://www.instagram.com/mestresirsofilme/"
-  youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
-
 <IconeCompartilhar />
 
 <Youtube url="https://www.youtube.com/watch?v=XCVJoStoPGk" aspectRatio="21/9" fullWidth cover/>
