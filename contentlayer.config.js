@@ -301,6 +301,12 @@ export const PortfolioItem = defineDocumentType(() => ({
     image: {
       type: 'nested',
       of: Image,
+      required: false,
+    },
+    thumbnail: {
+      type: 'nested',
+      of: Image,
+      required: false,
     },
   },
   computedFields: {
