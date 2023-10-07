@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -24,10 +25,25 @@ export default function SociaCard({ socia, onClick, open }) {
       <CardMedia
         sx={{
           display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        <ImageBox src={socia.image} width={200} height={200} alt={socia.name} />
+        <Box
+          sx={{
+            display: 'block',
+            maxWidth: '300px',
+            width: '100%',
+          }}
+        >
+          <ImageBox
+            src={socia.image}
+            width={500}
+            height={500}
+            alt={socia.name}
+          />
+        </Box>
       </CardMedia>
       <CardContent
         sx={{
