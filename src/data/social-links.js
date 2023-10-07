@@ -6,7 +6,7 @@ export const socialLinks = [
   {
     title: 'Facebook',
     text: 'palmaproducoes',
-    href: 'https://www.facebook.com/BiaHerbst/',
+    href: 'https://www.facebook.com/palmaproducoes',
     icon: FacebookIcon,
   },
   {

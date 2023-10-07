@@ -2,6 +2,7 @@
 id: 2
 title: Comunicação Visual e Estratégica
 description:
-  "Com uma forte ênfase em design e storytelling, a Palma Produções cria comunicações visuais e estratégicas que conectam com os clientes. Nós utilizamos visualizações criativas e conteúdo memorável para construir alinhamento em torno de sua visão e estratégia."
+  "Desenhamos a narrativa de pertencimento com o cuidado que a alma da sua marca merece. Desde Branding e Design de Marca até Comunicação Digital e Direção de Arte, tecemos uma identidade visual que ecoa a cultura e respeita a natureza."
 icon: /images/content/servicos/comunicacao-visual.svg
 ---
+Desenhamos a narrativa de pertencimento com o cuidado que a alma da sua marca merece. Desde **Branding e Design de Marca** até **Comunicação Digital e Direção de Arte**, tecemos uma **identidade visual** que ecoa a cultura e respeita a natureza.
