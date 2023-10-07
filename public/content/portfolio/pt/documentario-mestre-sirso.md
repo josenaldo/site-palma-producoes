@@ -256,7 +256,6 @@ import benfeitores from '../../data/benfeitores.json'
 ### Outros Links
 
 - [Embauba Play  - Perfil da diretora](https://embaubaplay.com/diretor_s/emanuela-palma/)
-  - Bio da diretora
 
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
@@ -272,18 +271,15 @@ import benfeitores from '../../data/benfeitores.json'
         logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
         url=""/>
     </Parcerias>
-
     <Parcerias titulo="Co-idealização">
       <Parceria
         parceiro="Benfeitoria"
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
         url=""/>
-
       <Parceria parceiro="Sitawi"
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
         url=""/>
     </Parcerias>
-
     <Parcerias titulo="Apoio">
       <Parceria
         parceiro="BNDES"
@@ -292,7 +288,7 @@ import benfeitores from '../../data/benfeitores.json'
     </Parcerias>
   </Colunas>
 
-  <Parcerias titulo="Apoiadores">
+  <Parcerias titulo="Parceiros">
     <Parceria
       parceiro="Raça Livre Produções"
       logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
@@ -331,11 +327,11 @@ import benfeitores from '../../data/benfeitores.json'
       parceiro="Palma Produções"
       logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
       url="https://palmaproducoes.com.br"/>
-
     <Parceria
       parceiro="Carnavalle"
       logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
       url="https://www.instagram.com/carnevaleproducoes/"/>
+
   </Parcerias>
 
 </Faixa>

@@ -255,7 +255,6 @@ import benfeitores from '../../data/benfeitores.json'
 ### Outros Links
 
 - [Embauba Play  - Director's Bio](https://embaubaplay.com/diretor_s/emanuela-palma/)
-  - Director's Bio
 
 - [Agenda do MAM RJ](https://mam.rio/wp-content/uploads/2022/04/2022-04_Programacao-MAM_Abril.pdf)
 
@@ -265,13 +264,13 @@ import benfeitores from '../../data/benfeitores.json'
 
 <Faixa>
   <Colunas formato="1|1|1">
-    <Parcerias titulo="Realização">
+    <Parcerias titulo="Realization">
       <Parceria
         parceiro="Capoeira Arte Luta"
         logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
         url=""/>
     </Parcerias>
-    <Parcerias titulo="Co-idealização">
+    <Parcerias titulo="Co-ideation">
       <Parceria
         parceiro="Benfeitoria"
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
@@ -280,7 +279,7 @@ import benfeitores from '../../data/benfeitores.json'
         logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
         url=""/>
     </Parcerias>
-    <Parcerias titulo="Apoio">
+    <Parcerias titulo="Support">
       <Parceria
         parceiro="BNDES"
         logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
@@ -288,7 +287,7 @@ import benfeitores from '../../data/benfeitores.json'
     </Parcerias>
   </Colunas>
 
-  <Parcerias titulo="Apoiadores">
+  <Parcerias titulo="Partners">
     <Parceria
       parceiro="Raça Livre Produções"
       logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
@@ -322,7 +321,7 @@ import benfeitores from '../../data/benfeitores.json'
       logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
   </Parcerias>
 
-   <Parcerias titulo="Produção">
+   <Parcerias titulo="Production">
     <Parceria
       parceiro="Palma Produções"
       logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
