@@ -22,7 +22,7 @@ tags:
 <ImagemPrincipal />
 
 <Resumo>
-Estamos animados em compartilhar a nossa programação cultural para o mês de outubro! Preparamos uma série de eventos incríveis que celebram a diversidade cultural e a criatividade. Confira abaixo os destaques:
+Estamos animados em compartilhar a programação cultural do mês de outubro da PALMA e de nossos parceiros! Selecionamos uma série de eventos incríveis que celebram a diversidade cultural e a criatividade dos nossos artistas brasileiros. Confira abaixo os destaques:
 </Resumo>
 
 1. **Exibição Especial do Documentário "Mestre Sirso"**
