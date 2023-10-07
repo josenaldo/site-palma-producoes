@@ -44,7 +44,7 @@ export default function Header({ color, ...props }) {
         position: isHome ? 'fixed' : 'sticky',
         zIndex: 1000,
         px: 0,
-        py: 2,
+        py: 3,
         mb: 2,
       }}
     >
