@@ -23,19 +23,24 @@ export default function LanguageSelector({ onlyIcon = false }) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
+  const [query, setQuery] = React.useState({})
+
+  React.useEffect(() => {
+    if (router.isReady) {
+      setQuery(router.query)
+    }
+  }, [router.isReady, router.query])
+
   const handleChange = async (value) => {
     console.log('🔴 LanguageSelector handleChange', value)
 
     const pathname = router.pathname
-    const query = router.query
-    const searchString = router.asPath.split('?')[1] || ''
-    const newLocale = value
 
     let newPathname = router.pathname
     console.log('🔴 LanguageSelector newPathname', newPathname)
 
     const newQuery = {
-      ...router.query,
+      ...query,
       locale: value,
     }
     console.log('🔴 LanguageSelector newQuery', newQuery)
