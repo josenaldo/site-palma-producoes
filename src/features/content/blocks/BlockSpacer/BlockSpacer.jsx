@@ -2,7 +2,6 @@ import { Box } from '@mui/material'
 import React from 'react'
 
 export default function BlockSpacer({ height = 1, ...props }) {
-  console.log('BlockSpacer', { height, props })
   return (
     <Box
       className="BlockSpacer"
@@ -12,6 +11,7 @@ export default function BlockSpacer({ height = 1, ...props }) {
         paddingTop: height,
         position: 'relative',
       }}
+      {...props}
     ></Box>
   )
 }

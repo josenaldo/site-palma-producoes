@@ -15,9 +15,6 @@ export default function ContentImageCard({
   const [elevation, setElevation] = useState(2)
   const [brightness, setBrightness] = useState(40)
 
-  console.log('image', image)
-  console.log('thumbnail', thumbnail)
-
   return (
     <Link href={url} skipLocaleHandling>
       <Card

@@ -35,7 +35,6 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function BlogPage({ page, itemsPerPage, posts, pageCount }) {
-  console.log('posts', posts)
   const { t, isoLocale, locale } = useTranslation(['common'])
 
   const [pageIndex, setPageIndex] = useState(1)
