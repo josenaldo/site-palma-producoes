@@ -8,6 +8,12 @@ export default function Link({
   children,
   skipLocaleHandling = false,
   href,
+  sx = {},
+  color = 'text.primary',
+  variant = null,
+  onClick = null,
+  target = null,
+  rel = null,
   ...props
 }) {
   const router = useRouter()
@@ -31,9 +37,15 @@ export default function Link({
       component={NextLink}
       href={newHref}
       // as={newHref}
-      {...props}
+      // {...props}
       locale={locale}
       prefetch={false}
+      color={color}
+      variant={variant}
+      onClick={onClick}
+      target={target}
+      rel={rel}
+      sx={sx}
     >
       {children}
     </MuiLink>

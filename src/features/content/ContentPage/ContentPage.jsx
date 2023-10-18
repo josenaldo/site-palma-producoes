@@ -56,7 +56,7 @@ export default function ContentPage({
     h4: (props) => <AnchoredTitle component="h4" variant="h5" {...props} />,
     h5: (props) => <AnchoredTitle component="h5" variant="h6" {...props} />,
     h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
-    a: (props) => <Link {...props} sx={{ fontWeight: 500 }} />,
+    a: (props) => <Link {...props} color="primary" sx={{ fontWeight: 500 }} />,
     hr: Divider,
     img: BlockResponsiveImage,
     pre: BlockCode,
