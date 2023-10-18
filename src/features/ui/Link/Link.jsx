@@ -31,7 +31,7 @@ export default function Link({
       component={NextLink}
       href={newHref}
       {...props}
-      locale={false}
+      locale={locale}
       prefetch={false}
     >
       {children}
