@@ -27,7 +27,13 @@ export default function Link({
   }
 
   return (
-    <MuiLink component={NextLink} href={newHref} {...props} locale={false}>
+    <MuiLink
+      component={NextLink}
+      href={newHref}
+      {...props}
+      locale={false}
+      prefetch={false}
+    >
       {children}
     </MuiLink>
   )
