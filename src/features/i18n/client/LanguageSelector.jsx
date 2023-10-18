@@ -24,6 +24,7 @@ export default function LanguageSelector({ onlyIcon = false }) {
   const open = Boolean(anchorEl)
 
   const handleChange = async (value) => {
+    console.log('🔴 LanguageSelector handleChange', value)
     let newPathname = router.pathname
 
     const newQuery = {
