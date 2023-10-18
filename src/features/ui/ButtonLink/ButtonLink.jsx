@@ -25,20 +25,11 @@ export default function ButtonLink({
   if (href.indexOf('http') === 0) skipLocaleHandling = true
 
   if (locale && !skipLocaleHandling) {
-    if (locale !== 'pt' && locale !== 'en') {
-      console.log('🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴 ERROR locale!!!!', locale)
-    }
-
     if (href) {
       newHref = `/${locale}${href}`
     } else {
       newHref = router.pathname.replace('[locale]', locale)
-      console.log('🔴 Updating newHref from router.pathname', newHref)
     }
-
-    // newHref = href
-    //   ? `/${locale}${href}`
-    //   : router.pathname.replace('[locale]', locale)
   }
 
   return (
