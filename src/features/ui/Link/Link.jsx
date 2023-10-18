@@ -33,6 +33,7 @@ export default function Link({
     <MuiLink
       component={NextLink}
       href={newHref}
+      as={newHref}
       {...props}
       locale={locale}
       prefetch={false}

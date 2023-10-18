@@ -54,7 +54,8 @@ export default function LanguageSelector({ onlyIcon = false }) {
       newPathname
     )
 
-    window.location.assign(newPathname)
+    router.push(newPathname, newPathname)
+    // window.location.assign(newPathname)
 
     handleClose()
   }
