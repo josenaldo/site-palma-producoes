@@ -26,6 +26,11 @@ export default function LanguageSelector({ onlyIcon = false }) {
   const handleChange = async (value) => {
     console.log('🔴 LanguageSelector handleChange', value)
 
+    const pathname = router.pathname
+    const query = router.query
+    const searchString = router.asPath.split('?')[1] || ''
+    const newLocale = value
+
     let newPathname = router.pathname
     console.log('🔴 LanguageSelector newPathname', newPathname)
 
@@ -54,7 +59,13 @@ export default function LanguageSelector({ onlyIcon = false }) {
       newPathname
     )
 
-    router.push(newPathname, newPathname)
+    const url = { pathname: pathname }
+    console.log('🔴 LanguageSelector url', url)
+
+    const urlAs = { pathname: newPathname }
+    console.log('🔴 LanguageSelector urlAs', urlAs)
+
+    router.push(url, urlAs)
     // window.location.assign(newPathname)
 
     handleClose()
