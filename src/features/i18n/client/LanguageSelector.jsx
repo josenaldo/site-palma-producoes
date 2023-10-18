@@ -25,22 +25,34 @@ export default function LanguageSelector({ onlyIcon = false }) {
 
   const handleChange = async (value) => {
     console.log('🔴 LanguageSelector handleChange', value)
+
     let newPathname = router.pathname
+    console.log('🔴 LanguageSelector newPathname', newPathname)
 
     const newQuery = {
       ...router.query,
       locale: value,
     }
+    console.log('🔴 LanguageSelector newQuery', newQuery)
+
     const queryKeys = Object.keys(newQuery)
+    console.log('🔴 LanguageSelector queryKeys', queryKeys)
 
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
     })
+    console.log('🔴 LanguageSelector newPathname after queryKeys', newPathname)
 
     const queryString = router.asPath.split('?')[1] || ''
+    console.log('🔴 LanguageSelector queryString', queryString)
+
     if (queryString) {
       newPathname += `?${queryString}`
     }
+    console.log(
+      '🔴 LanguageSelector newPathname after query string',
+      newPathname
+    )
 
     window.location.assign(newPathname)
 
