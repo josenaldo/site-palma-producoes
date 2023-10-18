@@ -59,7 +59,7 @@ export default function LanguageSelector({ onlyIcon = false }) {
       newPathname
     )
 
-    const url = { pathname: pathname }
+    const url = { pathname: pathname, query: newQuery }
     console.log('🔴 LanguageSelector url', url)
 
     const urlAs = { pathname: newPathname }
