@@ -73,8 +73,8 @@ export default function LanguageSelector({ onlyIcon = false }) {
     const urlAs = { pathname: newPathname }
     console.log('🔴 LanguageSelector urlAs', urlAs)
 
-    router.push(url, urlAs, { query: newQuery })
-    // window.location.assign(newPathname)
+    // router.push(url, urlAs, { query: newQuery })
+    window.location.assign(newPathname)
 
     handleClose()
   }
