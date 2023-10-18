@@ -27,7 +27,10 @@ export default function LanguageSelector({ onlyIcon = false }) {
 
   React.useEffect(() => {
     if (router.isReady) {
+      console.log('🔴 LanguageSelector router.query', router.query)
       setQuery(router.query)
+    } else {
+      console.log('🔴 LanguageSelector router.isReady', router.isReady)
     }
   }, [router.isReady, router.query])
 
