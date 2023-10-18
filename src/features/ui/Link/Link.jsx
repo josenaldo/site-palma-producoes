@@ -34,11 +34,11 @@ export default function Link({
 
   return (
     <MuiLink
-      component={NextLink}
+      // component={NextLink}
       href={newHref}
       // as={newHref}
       // {...props}
-      locale={false}
+      // locale={false}
       // prefetch={false}
       color={color}
       variant={variant}
