@@ -22,9 +22,6 @@ export default function Link({
     if (href) {
       newHref = `/${locale}${href}`
     } else {
-      if (['pt', 'en'].indexOf(locale) < 0) {
-        console.log('🔴🔴🔴🔴🔴 Link locale not found', locale)
-      }
       newHref = router.pathname.replace('[locale]', locale)
     }
   }

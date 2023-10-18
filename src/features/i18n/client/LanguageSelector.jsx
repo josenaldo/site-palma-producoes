@@ -28,54 +28,29 @@ export default function LanguageSelector({ onlyIcon = false }) {
   React.useEffect(() => {
     if (!router.isReady) return
 
-    if (router.isReady) {
-      console.log('🔴 LanguageSelector router.query', router.query)
-      setQuery(router.query)
-    } else {
-      console.log('🔴 LanguageSelector router.isReady', router.isReady)
-    }
+    setQuery(router.query)
   }, [router.isReady, router.query])
 
   const handleChange = async (value) => {
-    console.log('🔴 LanguageSelector handleChange', value)
-
-    const pathname = router.pathname
-
     let newPathname = router.pathname
-    console.log('🔴 LanguageSelector newPathname', newPathname)
 
     const newQuery = {
       ...query,
       locale: value,
     }
-    console.log('🔴 LanguageSelector newQuery', newQuery)
 
     const queryKeys = Object.keys(newQuery)
-    console.log('🔴 LanguageSelector queryKeys', queryKeys)
 
     queryKeys.forEach((key) => {
       newPathname = newPathname.replace(`[${key}]`, `${newQuery[key]}`)
     })
-    console.log('🔴 LanguageSelector newPathname after queryKeys', newPathname)
 
     const queryString = router.asPath.split('?')[1] || ''
-    console.log('🔴 LanguageSelector queryString', queryString)
 
     if (queryString) {
       newPathname += `?${queryString}`
     }
-    console.log(
-      '🔴 LanguageSelector newPathname after query string',
-      newPathname
-    )
 
-    const url = { pathname: pathname, query: newQuery }
-    console.log('🔴 LanguageSelector url', url)
-
-    const urlAs = { pathname: newPathname }
-    console.log('🔴 LanguageSelector urlAs', urlAs)
-
-    // router.push(url, urlAs, { query: newQuery })
     window.location.assign(newPathname)
 
     handleClose()
