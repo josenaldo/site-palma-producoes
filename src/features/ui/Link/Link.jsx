@@ -38,8 +38,8 @@ export default function Link({
       href={newHref}
       // as={newHref}
       // {...props}
-      locale={locale}
-      prefetch={false}
+      locale={false}
+      // prefetch={false}
       color={color}
       variant={variant}
       onClick={onClick}
