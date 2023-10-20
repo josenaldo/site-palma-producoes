@@ -1,7 +1,7 @@
 ---
 id: 4
 highlight: true
-title: "ALVA | América Latina Vídeo Arte"
+title: "ALVA"
 tags:
   - Marca
   - Aplicações
@@ -13,7 +13,7 @@ image:
   width: 1200
   height: 613
 ---
-<Titulo />
+<Titulo subtitulo="América Latina Vídeo Arte"/>
 
 <Tags />
 
