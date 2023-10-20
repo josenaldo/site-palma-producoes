@@ -22,7 +22,7 @@ export default function BlockMore({
   return (
     <>
       <Button variant={variant} color={color} onClick={toggleOpen}>
-        {open ? more : less}
+        {open ? less : more}
       </Button>
       <Collapse in={open}>{children}</Collapse>
     </>

@@ -9,4 +9,6 @@ image:
   height: 1256
 ---
 
-**Palma Produções** is a cultural and socio-environmental impact producer, dedicated to projects that value **memory** and **Brazilian cultural diversity**. Our mission is to investigate, connect, cultivate, and celebrate stories that promote the feeling of **belonging** to our Brazilian identity, generating **positive impact** in the world. Our work is guided by creative, strategic, and collaborative processes, both in the audiovisual universe and in multiplatform actions. Our goal is to shed light on the **protagonism** of those who make history happen. At Palma Produções, we believe that each story has the power to generate significant and lasting changes.
+At PALMA, we bring together the humanized perspective of women who honor Brazilian cultural diversity and acknowledge the responsibility of being part of this treasure trove of inspiring stories that deserve to be told.
+
+In collaboration with partners who share the same purpose, we co-create projects and initiatives that celebrate our culture, promote sustainability, and inclusion.
