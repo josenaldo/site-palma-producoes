@@ -9,7 +9,7 @@ export default function BlockGallery({ children, ...props }) {
   return (
     <Masonry
       columns={{
-        xs: 1,
+        xs: 2,
         sm: 2,
         md: 3,
       }}
