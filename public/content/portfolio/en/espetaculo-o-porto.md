@@ -56,19 +56,13 @@ Com comicidade e sutileza, "O PORTO" retrata as mudanças que surgem, desde semp
 
 <Galeria>
 
-  ![Galeria-01](/images/content/portfolio/espetaculo-o-porto/galeria-01.jpg)
-
-  ![Galeria-02](/images/content/portfolio/espetaculo-o-porto/galeria-02.jpg)
-
-  ![Galeria-03](/images/content/portfolio/espetaculo-o-porto/galeria-03.jpg)
-
-  ![Galeria-04](/images/content/portfolio/espetaculo-o-porto/galeria-04.jpg)
-
-  ![Galeria-05](/images/content/portfolio/espetaculo-o-porto/galeria-05.jpg)
-
-  ![Galeria-06](/images/content/portfolio/espetaculo-o-porto/galeria-06.jpg)
-
-  ![Galeria-07](/images/content/portfolio/espetaculo-o-porto/galeria-07.jpg)
+![galeria-01.jpg [1200x980] ](/images/content/portfolio/espetaculo-o-porto/galeria-01.jpg)
+![galeria-02.jpg [674x1200] ](/images/content/portfolio/espetaculo-o-porto/galeria-02.jpg)
+![galeria-03.jpg [1200x760] ](/images/content/portfolio/espetaculo-o-porto/galeria-03.jpg)
+![galeria-04.jpg [1200x674] ](/images/content/portfolio/espetaculo-o-porto/galeria-04.jpg)
+![galeria-05.jpg [674x1200] ](/images/content/portfolio/espetaculo-o-porto/galeria-05.jpg)
+![galeria-06.jpg [1200x787] ](/images/content/portfolio/espetaculo-o-porto/galeria-06.jpg)
+![galeria-07.jpg [1200x836] ](/images/content/portfolio/espetaculo-o-porto/galeria-07.jpg)
 
 </Galeria>
 
