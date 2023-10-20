@@ -19,6 +19,11 @@ image:
 
 <Tags size="medium"/>
 
+<RedesSociais
+  facebook="https://www.facebook.com/palmaproducoes"
+  instagram="https://www.instagram.com/palma.producoes"
+  youtube="https://www.youtube.com/@palmaproducoes" />
+
 <IconeCompartilhar />
 
 <Youtube url="https://www.youtube.com/watch?v=XCVJoStoPGk" aspectRatio="21/9" fullWidth cover/>

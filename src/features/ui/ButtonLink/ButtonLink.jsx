@@ -25,9 +25,11 @@ export default function ButtonLink({
   if (href.indexOf('http') === 0) skipLocaleHandling = true
 
   if (locale && !skipLocaleHandling) {
-    newHref = href
-      ? `/${locale}${href}`
-      : router.pathname.replace('[locale]', locale)
+    if (href) {
+      newHref = `/${locale}${href}`
+    } else {
+      newHref = router.pathname.replace('[locale]', locale)
+    }
   }
 
   return (

@@ -2,6 +2,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import Image from 'next/image'
 
 import { palette } from '@/features/styles'
+import { ContentBlock } from '@/features/content'
 
 const colors = [
   palette.primary.main,
@@ -44,8 +45,8 @@ export default function ServiceList({ services }) {
             <Image
               src={service.icon}
               alt={service.title}
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
           </CardMedia>
           <CardContent>
@@ -62,7 +63,7 @@ export default function ServiceList({ services }) {
             >
               {service.title}
             </Typography>
-            <Typography variant="body1">{service.description}</Typography>
+            <ContentBlock body={service.body}></ContentBlock>
           </CardContent>
         </Card>
       ))}

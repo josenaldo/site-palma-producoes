@@ -23,13 +23,22 @@ export default function LanguageSelector({ onlyIcon = false }) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
+  const [query, setQuery] = React.useState({})
+
+  React.useEffect(() => {
+    if (!router.isReady) return
+
+    setQuery(router.query)
+  }, [router.isReady, router.query])
+
   const handleChange = async (value) => {
     let newPathname = router.pathname
 
     const newQuery = {
-      ...router.query,
+      ...query,
       locale: value,
     }
+
     const queryKeys = Object.keys(newQuery)
 
     queryKeys.forEach((key) => {
@@ -37,6 +46,7 @@ export default function LanguageSelector({ onlyIcon = false }) {
     })
 
     const queryString = router.asPath.split('?')[1] || ''
+
     if (queryString) {
       newPathname += `?${queryString}`
     }
