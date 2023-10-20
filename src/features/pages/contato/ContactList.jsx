@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 import { Box } from '@mui/material'
 
 import { contactLinks, socialLinks } from '@/data'
-import { ButtonLink, Link } from '@/features/ui'
+import { Link } from '@/features/ui'
 
 export default function ContactList() {
   const links = useMemo(() => [...contactLinks, ...socialLinks], [])
@@ -26,6 +26,7 @@ export default function ContactList() {
           variant="outlined"
           target="_blank"
           rel="noopener noreferrer"
+          skipLocaleHandling
           sx={{
             display: 'flex',
             flexDirection: 'row',
