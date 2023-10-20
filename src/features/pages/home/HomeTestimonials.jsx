@@ -55,7 +55,8 @@ function TestimonialCard({ testimonial }) {
             {testimonial.testimonial}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {testimonial.name} - {testimonial.position}
+            {testimonial.name}
+            {testimonial.position ? ` - ${testimonial.position}` : ''}
           </Typography>
         </CardContent>
       </Card>
