@@ -68,7 +68,7 @@ Com comicidade e sutileza, "O PORTO" retrata as mudanças que surgem, desde semp
 
 </Galeria>
 
-[Mais sobre o espetáculo](https://circocrescereviver.org.br/porto/)
+<BotaoSaibaMais href="https://circocrescereviver.org.br/porto/">Mais sobre o espetáculo</BotaoSaibaMais>
 
 <BotaoCompartilhar />
 
