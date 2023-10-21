@@ -25,7 +25,9 @@ thumbnail:
 
 <RedesSociais
   instagram="https://www.instagram.com/simbiose_gemeos/"
-  youtube="https://www.youtube.com/watch?v=pIB5gKl9I7c"  />
+  youtube="https://www.youtube.com/watch?v=pIB5gKl9I7c"
+  facebook=""
+  twitter="" />
 
 <IconeCompartilhar />
 

@@ -17,6 +17,8 @@ image:
 
 <Tags />
 
+<RedesSociais />
+
 <IconeCompartilhar />
 
 <ImagemPrincipal />

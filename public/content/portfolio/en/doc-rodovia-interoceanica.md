@@ -19,10 +19,7 @@ image:
 
 <Tags />
 
-<RedesSociais
-  facebook="https://www.facebook.com/palmaproducoes"
-  instagram="https://www.instagram.com/palma.producoes"
-  youtube="https://www.youtube.com/@palmaproducoes" />
+<RedesSociais />
 
 <IconeCompartilhar />
 

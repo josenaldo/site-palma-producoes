@@ -14,11 +14,11 @@ image:
   width: 1200
   height: 546
 ---
-
-
 <Titulo subtitulo="Renato Balocco | Rio Lisboa, 2019"/>
 
 <Tags />
+
+<RedesSociais />
 
 <IconeCompartilhar />
 
