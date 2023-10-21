@@ -35,7 +35,9 @@ export default function DesktopMenu({ searchOpen, toggleSearch }) {
         orientation="vertical"
         flexItem
         variant="middle"
-        color="dark.main"
+        sx={{
+          borderColor: 'dark.main',
+        }}
       />
       <LanguageSelector onlyIcon />
     </Box>
