@@ -157,11 +157,6 @@ export const Parceria = defineDocumentType(() => ({
       description: 'The description of the partnership',
       required: true,
     },
-    image: {
-      type: 'string',
-      description: 'The image of the partnership',
-      required: true,
-    },
     link: {
       type: 'string',
       description: 'The link of the partnership',

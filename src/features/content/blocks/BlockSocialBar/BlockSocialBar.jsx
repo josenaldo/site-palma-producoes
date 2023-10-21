@@ -5,12 +5,30 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import TwitterIcon from '@mui/icons-material/Twitter'
 
+import { socialLinks } from '@/data'
+
+const links = {
+  instagram: socialLinks.filter((link) => link.title === 'Instagram')[0]?.href,
+  facebook: socialLinks.filter((link) => link.title === 'Facebook')[0]?.href,
+  youtube: socialLinks.filter((link) => link.title === 'YouTube')[0]?.href,
+  twitter: socialLinks.filter((link) => link.title === 'Twitter')[0]?.href,
+}
+
 export default function BlockSocialBar({
-  instagram,
-  facebook,
-  youtube,
-  twitter,
+  instagram = links.instagram,
+  facebook = links.facebook,
+  youtube = links.youtube,
+  twitter = links.twitter,
 }) {
+  console.log('BlockSocialBar', {
+    instagram,
+    facebook,
+    youtube,
+    twitter,
+  })
+
+  console.log('socialLinks', socialLinks)
+
   return (
     <Box
       sx={{

@@ -23,7 +23,8 @@ image:
 <RedesSociais
   facebook="https://www.facebook.com/mestresirsofilme/"
   instagram="https://www.instagram.com/mestresirsofilme/"
-  youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"  />
+  youtube="https://www.youtube.com/watch?v=Hj0btCi1GS8"
+  twitter=""/>
 
 <IconeCompartilhar />
 

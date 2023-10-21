@@ -9,8 +9,6 @@ image:
   height: 822
 ---
 
-Um encontro de almas unidas pelo propósito, pela autenticidade e pela busca constante de um mundo onde as histórias contam, a cultura floresce e a sustentabilidade ecoa. Junte-se a nós nessa jornada de realizações humanizadas, onde cada passo é uma contribuição para a construção de um planeta mais consciente, harmonioso e conectado.
+Na PALMA reunimos o olhar humanizado de mulheres que honram a diversidade cultural brasileira e reconhecem a responsabilidade de ser parte desse tesouro de histórias inspiradoras que merecem ser contadas.
 
-"Quem Faz a Palma"
-
-Em meio a uma sociedade em constante movimento, três almas resilientes e apaixonadas emergiram como as forças motrizes por trás da Palma Produções. Alexandra, Bia e Emanuela: três mulheres extraordinárias, cada uma com sua história e paixões únicas, mas unidas por uma visão coletiva que transcende o comum.
+Na conexão com parceiros engajados no mesmo propósito, co-criamos projetos e iniciativas que celebram a nossa cultura, promovem a sustentabilidade e a inclusão.

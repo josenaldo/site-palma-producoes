@@ -15,10 +15,10 @@ export const pages = [
     title: 'menu.portfolio',
     href: '/portfolio',
   },
-  {
-    title: 'menu.blog',
-    href: '/blog',
-  },
+  // {
+  //   title: 'menu.blog',
+  //   href: '/blog',
+  // },
   {
     title: 'menu.contact',
     href: '/contato',

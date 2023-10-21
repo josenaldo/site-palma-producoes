@@ -6,12 +6,15 @@ export default function ParceriaCard({ parceria }) {
     <Button
       key={parceria.name}
       color="dark"
-      href={parceria.link}
+      href={parceria.url}
       target="_blank"
       rel="noopener noreferrer"
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
         color: 'text.secondary',
       }}
     >
@@ -23,7 +26,14 @@ export default function ParceriaCard({ parceria }) {
       >
         {parceria.name}
       </Typography>
-      <Typography variant="caption">{parceria.description}</Typography>
+      <Typography
+        variant="caption"
+        sx={{
+          flexGrow: 1,
+        }}
+      >
+        {parceria.description}
+      </Typography>
     </Button>
   )
 }

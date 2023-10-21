@@ -1,6 +1,5 @@
 ---
 name: Josenaldo Matos
-description: Desenvolvedor Web
-image: "/images/content/parcerias/josenaldo-matos.jpg"
+description: Web Developer
 link: "https://josenaldo.github.io"
 ---

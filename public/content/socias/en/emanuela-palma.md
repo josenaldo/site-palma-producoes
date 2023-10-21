@@ -1,6 +1,6 @@
 ---
 name: Emanuela Palma
-description: Partner - Journalist
+description: Partner - Executive Producer
 image: "/images/content/socias/emanuela-palma.jpg"
 order: 1
 ---

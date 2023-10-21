@@ -45,7 +45,6 @@ export default function Socias({ socias }) {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          my: 5,
         }}
       >
         {socias.map((socia, index) => (
@@ -70,6 +69,7 @@ export default function Socias({ socias }) {
                   xs: 'column',
                   md: 'row',
                 },
+                mb: 5,
               }}
             >
               <Box

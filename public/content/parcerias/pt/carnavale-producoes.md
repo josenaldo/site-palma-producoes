@@ -1,6 +1,5 @@
 ---
 name: Carnavale Produções
 description: Produtora
-image: "/images/content/parcerias/carnavale-producoes.jpg"
-link: "https://google.com"
+link: "https://www.instagram.com/carnevaleproducoes/"
 ---
