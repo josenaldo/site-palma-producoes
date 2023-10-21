@@ -11,7 +11,7 @@ import {
 import SearchIcon from '@mui/icons-material/Search'
 import CloseIcon from '@mui/icons-material/Close'
 
-import { useIsHome } from '@/features/layout'
+import { useIsElevated, useIsHome } from '@/features/layout'
 import { Logo } from '@/features/ui'
 
 import MobileMenu from './MobileMenu'
@@ -21,15 +21,11 @@ import { useRouter } from 'next/router'
 
 export default function Header({ color, ...props }) {
   const router = useRouter()
-
   const isHome = useIsHome()
+  const elevated = useIsElevated()
+
   const [searchOpen, setSearchOpen] = useState(false)
   const isSearchPage = router.pathname === '/[locale]/pesquisa'
-
-  const elevated = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-  })
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen)
@@ -103,15 +99,7 @@ export default function Header({ color, ...props }) {
             justifyContent: 'flex-end',
           }}
         >
-          {!isSearchPage && (
-            <IconButton
-              onClick={() => toggleSearch()}
-              color={!isHome || elevated ? 'black' : 'white'}
-            >
-              {searchOpen ? <CloseIcon /> : <SearchIcon />}
-            </IconButton>
-          )}
-          <MobileMenu />
+          <MobileMenu searchOpen={searchOpen} toggleSearch={toggleSearch} />
           <DesktopMenu
             elevated={elevated}
             searchOpen={searchOpen}
@@ -121,7 +109,11 @@ export default function Header({ color, ...props }) {
       </Container>
       {!isSearchPage && (
         <Collapse in={searchOpen}>
-          <Box>
+          <Box
+            sx={{
+              mt: 2,
+            }}
+          >
             <Container>
               <SearchInput backgroundDark={isHome && !elevated} />
             </Container>

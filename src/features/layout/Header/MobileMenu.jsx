@@ -19,8 +19,9 @@ import { useTranslation } from '@/features/i18n'
 import { useIsHome } from '@/features/layout'
 import { Link, Logo, SocialLinks } from '@/features/ui'
 import { LanguageSelector } from '@/features/i18n/client'
+import { SearchButton } from '@/features/search'
 
-export default function MobileMenu() {
+export default function MobileMenu({ toggleSearch, searchOpen }) {
   const { t } = useTranslation(['common'])
 
   const isHome = useIsHome()
@@ -44,6 +45,7 @@ export default function MobileMenu() {
         },
       }}
     >
+      <SearchButton toggleSearch={toggleSearch} searchOpen={searchOpen} />
       <IconButton
         size="large"
         edge="end"
@@ -181,8 +183,16 @@ function MenuItems({ t, onClose }) {
       }}
     >
       {pages.map((page) => (
-        <Link key={page.href} href={page.href} onClick={onClose} variant="nav">
-          {t(page.title)}
+        <Link
+          key={page.href}
+          href={page.href}
+          onClick={onClose}
+          variant="nav"
+          sx={{
+            color: 'light.main',
+          }}
+        >
+          {t(page.title)} 
         </Link>
       ))}
     </Box>
