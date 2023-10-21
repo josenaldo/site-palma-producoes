@@ -264,6 +264,8 @@ import benfeitores from '../../data/benfeitores.json'
 
 <BotaoCompartilhar />
 
+<Espaco altura="40px" />
+
 <Faixa>
   <Colunas formato="1|1|1">
     <Parcerias titulo="Realização">
