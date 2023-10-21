@@ -73,6 +73,8 @@ Os entrevistados, incluindo engenheiros, moradores locais, ambientalistas e líd
 
 <BotaoCompartilhar />
 
+<Espaco altura="40px" />
+
 <Faixa>
   <Parcerias titulo="Apoio">
     <Parceria

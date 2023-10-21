@@ -73,6 +73,8 @@ The interviewees, including engineers, local residents, environmentalists, and c
 
 <BotaoCompartilhar />
 
+<Espaco altura="40px" />
+
 <Faixa>
   <Parcerias titulo="Apoio">
     <Parceria

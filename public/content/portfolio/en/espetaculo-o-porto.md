@@ -3,11 +3,11 @@ id: 5
 highlight: true
 title: Espetáculo “O Porto”
 tags:
-  - Fotografia
-  - Edição
-  - Curadoria
+  - Photography
+  - Editing
+  - Curation
 description:
-  "Nossas lentes registraram cada instante, desde a concepção até a estreia, dessa obra que traz a magia do teatro como convite à reflexão"
+  "Our lenses captured every moment, from conception to premiere, of this work that brings the magic of theater as an invitation to reflection."
 image:
   url: /images/content/portfolio/espetaculo-o-porto/capa.jpg
   alt: Espetáculo “O Porto”
@@ -24,7 +24,9 @@ image:
 
 <ImagemPrincipal />
 
-Uma honra para a PALMA ter participado da montagem do espetáculo “O Porto”,  com fotografia still de Emanuela Palma. É uma produção de 2013, do Circo Crescer e Viver, com direção do italiano Bóris Vechio.
+<Resumo>
+An honor for PALMA to have participated in the production of the play 'O Porto,' with still photography by Emanuela Palma. It is a production from 2013, by Circo Crescer e Viver, directed by the Italian Bóris Vechio.
+</Resumo>
 
 <CarrosselTriplo>
 
@@ -52,9 +54,9 @@ Uma honra para a PALMA ter participado da montagem do espetáculo “O Porto”,
 
 </CarrosselTriplo>
 
-O espetáculo convida o público a uma viagem lúdica e surreal pela vida de um porto imaginário, um lugar que não existe em nenhum mapa, mas que está presente em todos os lugares.
+The show invites the audience on a playful and surreal journey through the life of an imaginary port, a place that doesn't exist on any map but is present everywhere.
 
-Com comicidade e sutileza, "O PORTO" retrata as mudanças que surgem, desde sempre, nas cidades portuárias. A contribuição da PALMA neste projeto reafirma nosso propósito de estar conectada com narrativas que deem visibilidade às expressões artísticas da nossa brasilidade. Todo o elenco foi formado exclusivamente por alunos da Escola de Circo Crescer e Viver.
+With humor and subtlety, 'O PORTO' portrays the changes that have always emerged in port cities. PALMA's contribution to this project reaffirms our commitment to being connected with narratives that bring visibility to the artistic expressions of our Brazilian culture. The entire cast was exclusively composed of students from the Crescer e Viver Circus School.
 
 <Galeria>
 
@@ -68,7 +70,7 @@ Com comicidade e sutileza, "O PORTO" retrata as mudanças que surgem, desde semp
 
 </Galeria>
 
-[Mais sobre o espetáculo](https://circocrescereviver.org.br/porto/)
+<BotaoSaibaMais href="https://circocrescereviver.org.br/porto/">More about the show</BotaoSaibaMais>
 
 <BotaoCompartilhar />
 

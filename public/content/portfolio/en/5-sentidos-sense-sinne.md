@@ -3,11 +3,11 @@ id: 2
 highlight: true
 title: "5 Sentidos Sense Sinne"
 tags:
-  - Livro
-  - Capa
-  - Documentário
+  - Book
+  - Cover
+  - Documentary
 description:
-  "Foi um prazer desenvolver o projeto do livro a partir de um livre processo estratégico-criativo de co-criação e experimentação junto a equipe do Momentos World."
+  "It was a pleasure to develop the book project through a free, strategic-creative process of co-creation and experimentation with the Momentos World team."
 image:
   url: /images/content/portfolio/5-sentidos-sense-sinne/capa.jpg
   alt: "5 Sentidos Sense Sinne"
@@ -26,16 +26,16 @@ image:
 <ImagemPrincipal />
 
 <Toc>
-- Livro
+- Book
 - Release
-- Lançamentos
+- Book Releases
 </Toc>
 
-## Livro
+## Book
 
-O livro 5 Sentidos Senses Sinne do Momentos World - Artistic Cloud Center aborda a trajetória dos espetáculos de performance de dança-teatro realizados na Áustria, na Alemanha e no Brasil, dirigidos pelo idealizador, produtor, diretor artístico e coreográfico: Vinicius.
+The book "5 Sentidos Senses Sinne" by Momentos World - Artistic Cloud Center delves into the journey of dance-theater performance shows held in Austria, Germany, and Brazil, directed by the creator, producer, artistic director, and choreographer: Vinicius.
 
-A intenção do projeto foi criar um livro artístico-biográfico com uma diagramação bem dinâmica, fluida e artística, não linear, porém harmônica. A ideia foi transmitir os movimentos, sensações e vibrações, tal qual uma dança, a partir das fotografias, grafismos, tipografia e cores. Foi uma jornada desafiadora onde o racional e o emocional se misturaram e o compasso e ritmo foram criados a cada virada de página.
+The project's intention was to create an artistic-biographical book with a dynamic, fluid, and artistic layout, non-linear yet harmonious. The idea was to convey movements, sensations, and vibrations, much like a dance, through photographs, graphics, typography, and colors. It was a challenging journey where the rational and emotional intertwined, and the tempo and rhythm were created with each page turn.
 
 ![Picture2 [3456x5184]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
 
@@ -43,15 +43,15 @@ A intenção do projeto foi criar um livro artístico-biográfico com uma diagra
 
 ## Release
 
-O livro é uma das criações do projeto MOMENTOS WORLD que está tomando a forma de um livro físico, documental, abordando a trajetória dos espetáculos de dança-teatro realizados na Áustria, na Alemanha e no Brasil, dirigidos pelo idealizador, produtor e diretor artístico e coreográfico: Vinicius.
+The book is one of the creations of the MOMENTOS WORLD project, taking the form of a physical, documentary book that explores the journey of dance-theater performances held in Austria, Germany, and Brazil, directed by the creator, producer, and artistic and choreographic director: Vinicius.
 
-Em comemoração aos 10 anos de existência desse projeto global, nutriu-se a vontade de confeccionar um livro físico que contasse, em 3 idiomas (português, alemão e inglês), detalhes de todo o processo de nascimento, desenvolvimento e estruturação do projeto. Paralelamente, o livro apresentará um vasto acervo fotográfico oferecido por talentosos fotógrafos internacionais, os quais acompanharam os 40 espetáculos já criados pelo coreógrafo Vinicius nas “7 CIDADES-MOMENTOS” (divididas entre 3 países) nestes últimos 10 anos de existência do Projeto.
+In celebration of the project's 10th anniversary, there was a desire to create a physical book that would detail the entire process of the project's birth, development, and structuring in three languages (Portuguese, German, and English). Simultaneously, the book will showcase a vast collection of photographs contributed by talented international photographers who have documented the 40 shows created by choreographer Vinicius in the "7 CITIES-MOMENTOS" (spanning three countries) over the last 10 years of the project's existence.
 
-Este livro apresenta de forma artística, documentária e poética a transformação de um projeto de performance dança-teatro nascido em Viena (2011).
+This book presents, in an artistic, documentary, and poetic manner, the transformation of a dance-theater performance project born in Vienna (2011).
 
-Saiba mais sobre o Momentos World: [https://www.momentos-world.com/books](https://www.momentos-world.com/books)
+<BotaoSaibaMais href="https://www.momentos-world.com/books">Learn more about Momentos World</BotaoSaibaMais>
 
-## Lançamentos
+## Book Releases
 
 ### 2021
 

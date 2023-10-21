@@ -49,7 +49,7 @@ Em comemoração aos 10 anos de existência desse projeto global, nutriu-se a vo
 
 Este livro apresenta de forma artística, documentária e poética a transformação de um projeto de performance dança-teatro nascido em Viena (2011).
 
-Saiba mais sobre o Momentos World: [https://www.momentos-world.com/books](https://www.momentos-world.com/books)
+<BotaoSaibaMais href="https://www.momentos-world.com/books">Saiba mais sobre o Momentos World</BotaoSaibaMais>
 
 ## Lançamentos
 

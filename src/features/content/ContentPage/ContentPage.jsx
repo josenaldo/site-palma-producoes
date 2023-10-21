@@ -27,6 +27,7 @@ import {
   BlockColumns,
   BlockSpacer,
   BlockGallery,
+  BlockKnowMoreButton,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -81,6 +82,7 @@ export default function ContentPage({
     BotaoCompartilhar: (props) => (
       <BlockShareButton url={url} title={title} image={image} type="button" />
     ),
+    BotaoSaibaMais: BlockKnowMoreButton,
     IconeCompartilhar: (props) => (
       <BlockShareButton url={url} title={title} image={image} type="icon" />
     ),

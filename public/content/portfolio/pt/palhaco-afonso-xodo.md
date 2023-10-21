@@ -110,6 +110,8 @@ Caixa: **Sérgio Rosa Oliveira**
 
 <BotaoCompartilhar />
 
+<Espaco altura="40px" />
+
 <Faixa>
   <Parcerias titulo="Realização">
     <Parceria
