@@ -3,9 +3,9 @@ id: 10
 highlight: true
 title: "No Coração da Imagem"
 tags:
-  - Curadoria
+  - Curation
   - Design
-  - Diagramação
+  - Layout
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:
@@ -25,16 +25,16 @@ image:
 <ImagemPrincipal />
 
 <Resumo>
-"(...) e todas as coisas deste mundo, as nomeadas e as não nomeadas, as conhecidas e as secretas, as visíveis e as invisíveis, como um bando de aves que se cansasse de voar e descesse das nuvens, foram pousando pouco a pouco nos seus lugares, preenchendo as ausências e reordenando os sentidos." José Saramago, A caverna. SP: Cia das Letras, 2000"
+"(...) and all the things in this world, the named and the unnamed, the known and the secret, the visible and the invisible, like a flock of birds that grew weary of flying and descended from the clouds, gradually settled in their places, filling the absences and rearranging the meanings." José Saramago, The Cave. São Paulo: Cia das Letras, 2000"
 </Resumo>
 
 <Toc>
-- O livro
-- Prefácio
-- Sobre o autor
+- The Book
+- Preface
+- About the Author
 </Toc>
 
-## O livro
+## The Book
 
 <Colunas formato="1|1">
   <Caixa>
@@ -53,31 +53,31 @@ image:
 
 <Youtube url="https://www.youtube.com/watch?v=OlXoJPr6m3s" aspectRatio="21/9" fullWidth cover/>
 
-## Prefácio
+## Preface
 
-Em 2009, visitei a Casa da Música no Porto, projeto de Rem Koolhaas, um dos mais respeitados arquitetos urbanos da atualidade. Fiquei encantado com a riqueza geométrica do prédio, com as suas linhas puras, flutuando no céu límpido de Portugal, refratado pela luz mais bonita da Europa. Passei a tarde inteira contemplando suas superfícies refletivas.
+In 2009, I visited the Casa da Música in Porto, a project by Rem Koolhaas, one of the most respected urban architects of our time. I was enchanted by the geometric richness of the building, with its pure lines floating in the clear sky of Portugal, refracted by the most beautiful light in Europe. I spent the entire afternoon contemplating its reflective surfaces.
 
-O tema das silhuetas surgiu de forma muito espontânea, no final da tarde, quando vi o contorno de pessoas que se dirigiam ao seu átrio principal, alguns apressados, outros mais lentos, mas todos movidos por alguma paixão. Pareciam alegres, ruidosos, abraçando-se às vezes, outras cumprimentando-se de longe, formando silhuetas contra o fundo geométrico criado pelos degraus da escada. Imediatamente passei a imaginar cenários diferentes para aquelas pessoas, para aquele evento, para aquela noite misteriosa, que aconteceria longe de meu olhar.
+The theme of silhouettes emerged very spontaneously in the late afternoon when I saw the outlines of people heading to its main atrium, some in a hurry, others moving more slowly, but all driven by some passion. They seemed joyful, noisy, sometimes embracing, at other times greeting each other from a distance, forming silhouettes against the geometric backdrop created by the staircase steps. Immediately, I began to imagine different scenarios for those people, for that event, for that mysterious night that would unfold far from my sight.
 
-A fotografia coloca a questão fundamental da relação entre o visível e o invisível, entre o que está ao alcance de nossos olhos e o que nos escapa, deixando apenas seu traço, sua sombra, sua marca.
+Photography poses the fundamental question of the relationship between the visible and the invisible, between what is within the reach of our eyes and what escapes us, leaving only its trace, its shadow, its mark.
 
-O que se vê na fotografia é apenas o resíduo (ou o fantasma) de uma imagem que se imagina ter visto. Se a fotografia é este fantasma, ou esta ilusão de uma relação direta com o real1, a silhueta reforça e dá corpo a este fantasma, à medida que borra o contorno das imagens, brinca e flutua na contraluz.  - Renato Balocco Rio de Janeiro, maio de 2019.
+What is seen in photography is merely the residue (or the ghost) of an image that we imagine we have seen. If photography is this ghost or this illusion of a direct relationship with the real, the silhouette reinforces and gives shape to this ghost as it blurs the contours of the images, playing and floating in the backlight. - Renato Balocco Rio de Janeiro, May 2019.
 
-## Sobre o autor
+## About the Author
 
 ![renato-balocco.jpg [1200x801] ](/images/content/portfolio/no-coracao-da-imagem/renato-balocco.jpg)
 
-Renato Balocco é Analista de Sistemas, Pós-Graduado em Fotografia e Imagem pela IUPERJ/UCAM, participou do coletivo Nós da Pós, cujo trabalho, “Eu Fotógrafo | Eu Espectador” foi exposto no Paraty em Foco (2016) e no evento Foto na Cabeça (2016). Participou, como fotógrafo, das exposições Releituras Contemporâneas na Galeria Cândido Mendes (2017), Paraty em Foto (2017) e “O que vemos o que nos olha” no CCJF, RJ (2017/2018).
+Renato Balocco is a Systems Analyst with a Postgraduate degree in Photography and Image from IUPERJ/UCAM. He was part of the collective "Nós da Pós," whose work, "Eu Fotógrafo | Eu Espectador," was exhibited at Paraty em Foco (2016) and Foto na Cabeça (2016). He participated as a photographer in exhibitions such as "Releituras Contemporâneas" at the Candido Mendes Gallery (2017), Paraty em Foto (2017), and "O que vemos o que nos olha" at CCJF, RJ (2017/2018).
 
-É coautor do livro “Eu Fotógrafo|Eu Espectador”, cujo lançamento ocorreu no Festival de Fotografia de Tiradentes (2018). Na área de fotografia e imagem, possui cursos do Ateliê da Imagem (Rio de Janeiro), JBRJ e MOMA (NY).
+He is a co-author of the book "Eu Fotógrafo|Eu Espectador," which was launched at the Tiradentes Photography Festival (2018). In the field of photography and image, he has taken courses at Ateliê da Imagem (Rio de Janeiro), JBRJ, and MOMA (NY).
 
-Participou também das edições dos “Cordéis Fotográficos” da Rua do Mercado, e da Projeção coletiva “Dobradinha” com o grupo Crônicas Fotográficas do Rio de Janeiro, no espaço Observatório, Lapa, Rio de Janeiro. Cedeu a foto para a capa do livro, “Os sentidos do tempo”, Anna Elizabeth Balocco, 2012.
+He also participated in the editions of "Cordéis Fotográficos" on Rua do Mercado and the collective projection "Dobradinha" with the group "Crônicas Fotográficas do Rio de Janeiro" at Observatório, Lapa, Rio de Janeiro. He provided the photo for the cover of the book "Os sentidos do tempo" by Anna Elizabeth Balocco in 2012.
 
-Desde que me encantei com as possibilidades que a fotografia de silhuetas oferece, sempre, durante as minhas saídas para fotografar, busco uma posição em que eu possa fazer capturas na contraluz; invariavelmente, uma pessoa ou um objeto vai se posicionar entre a luz e minha lente e permitir que o registro seja feito. O resultado, quase sempre, compensa a espera, que por muitas vezes é longa.
+Since being captivated by the possibilities offered by silhouette photography, during my outings to photograph, I always seek a position where I can capture backlight images. Inevitably, a person or object will position itself between the light and my lens, allowing the shot to be taken. The result almost always compensates for the wait, which can be quite long at times.
 
-Atualmente, faço uso de uma Nikon D750 e de uma Leica Dlux5 (compacta). com objetiva não intercambiável. Com a Nikon, uso as lentes de 28mm, 50mm e uma 18-120mm.
+Currently, I use a Nikon D750 and a Leica Dlux5 (compact), with a non-interchangeable lens. With the Nikon, I use the 28mm, 50mm, and 18-120mm lenses.
 
-Todas as fotos que compõem este trabalho são de minha autoria e foram registradas ao longo dos anos com as câmeras Nikon D70s, D300, D7100 e D750 além da Leica Dlux5.
+All the photos that make up this work are my own and were taken over the years with Nikon D70s, D300, D7100, and D750 cameras, as well as the Leica Dlux5.
 
 <BotaoCompartilhar />
 
