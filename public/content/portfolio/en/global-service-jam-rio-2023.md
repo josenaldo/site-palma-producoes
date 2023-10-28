@@ -18,26 +18,25 @@ image:
 
 <Tags />
 
-<RedesSociais />
+<RedesSociais instagram="https://www.instagram.com/servicejamrio/" twitter="" facebook="" youtube=""/>
 
 <IconeCompartilhar />
 
 <ImagemPrincipal />
 
 <Toc>
-- Sobre
-- Fotografias
+- About
+- Photographs
 </Toc>
 
-## Sobre
+## About
 
-![sobre.jpg [1200x799] ](/images/content/portfolio/global-service-jam-rio-2023/sobre.jpg)
+![About [1200x799] ](/images/content/portfolio/global-service-jam-rio-2023/sobre.jpg)
 
-[@servicejamrio](https://www.instagram.com/servicejamrio/)
+<BotaoSaibaMais href="h[ttp://globaljams.org/](https://www.instagram.com/servicejamrio/)">@servicejamrio</BotaoSaibaMais>
+<BotaoSaibaMais href="http://globaljams.org/" />
 
-[Saiba mais](http://globaljams.org/)
-
-## Fotografias
+## Photographs
 
 <Galeria>
 
