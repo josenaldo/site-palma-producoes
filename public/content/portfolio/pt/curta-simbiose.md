@@ -42,7 +42,9 @@ thumbnail:
 
 "Simbiose é um documentário sobre irmãos gêmeos que enfatiza as experiências diárias e afetivas entre estes seres que pertencem ao universo daquilo que se denomina de “Duplo”. Uma das diretrizes do curta está em dar voz àqueles que vivenciam ser uma “metade - inteira” de alguém ao longo dos tempos. Solidão, separação, semelhanças, diferenças dores e prazeres são questões tratadas pelos personagens que, sem pudores, falam do outro como se fosse de si mesmo. A proposta do documentário é trazer o tema dos gêmeos, ainda pouco explorado, para a tela grande."
 
-[@simbiose_gemeos](https://www.instagram.com/simbiose_gemeos/#)
+<BotaoSaibaMais href="https://www.instagram.com/simbiose_gemeos/#">@simbiose_gemeos</BotaoSaibaMais>
+
+<Youtube url="https://www.youtube.com/watch?v=pIB5gKl9I7c" aspectRatio="21/9" fullWidth cover/>
 
 ## Fotografias
 
