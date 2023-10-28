@@ -182,19 +182,34 @@ function Planets({ size = 400 }) {
           position: 'absolute',
 
           '& img': {
-            '@keyframes spin': {
+            '@keyframes spinOuter': {
               '0%': {
                 transform: 'rotate(0deg)',
               },
-              '20%, 100%': {
+              '15%': {
+                transform: 'rotate(0deg)',
+              },
+              '33%': {
+                transform: 'rotate(120deg)',
+              },
+              '45%': {
+                transform: 'rotate(120deg)',
+              },
+              '66%': {
+                transform: 'rotate(240deg)',
+              },
+              '75%': {
+                transform: 'rotate(240deg)',
+              },
+              '100%': {
                 transform: 'rotate(360deg)',
               },
             },
-            animationName: 'spin',
-            animationDuration: '25s',
+            animationName: 'spinOuter',
+            animationDuration: '24s',
             animationTimingFunction: 'linear',
             animationIterationCount: 'infinite',
-            animationDelay: '20s',
+            animationDelay: '6s',
           },
         }}
       >
