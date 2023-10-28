@@ -74,25 +74,25 @@ Singing Preparation: **Carolina Sanches - Estúdio da Voz**
 
 ### Cast
 
-Clown Afonso Xodo: **Leo Carnevale**
-Clown Eulequicina: **Clara Mello**
-Clown Prego: **Fabio Freitas**
-Clown Foca: **Fabiana Poppius**
-Clown Fantástico Melão: **Fernando Carvalho**
-Clown Paçoca: **André Guimarães**
-Clown Paragadom: **Hislany Midon**
-Clown Songa: **Lívia Prado**
-Clown Titão: **Rogério Rodriguês**
+Clown Afonso Xodo: **LEO CARNEVALE**
+Clown Eulequicina: **CLARA MELLO**
+Clown Prego: **FABIO FREITAS**
+Clown Foca: **FABIANA POPPIUS**
+Clown Fantástico Melão: **FERNANDO CARVALHO**
+Clown Paçoca: **ANDRÉ GUIMARÃES**
+Clown Paragadom: **HISLANY MIDON**
+Clown Songa: **LÍVIA PRADO**
+Clown Titão: **ROGÉRIO RODRIGUÊS**
 
 ### Banda Rio
 
-Alto Saxophone: **Norberto dos Santos Lásaro**
-Tuba: **Valdevino de Almeida Ramos**
-Trombone: **Aloisio Bernardes do Nascimento**
-Trumpet: **Ivison Inácio de Oliveira**
-Trombone: **Sergio Alves da Silva**
-Bass Drum: **Urubatao do Nascimento**
-Snare Drum: **Sérgio Rosa Oliveira**
+Alto Saxophone: **NORBERTO DOS SANTOS LÁSARO**
+Tuba: **VALDEVINO DE ALMEIDA RAMOS**
+Trombone: **ALOISIO BERNARDES DO NASCIMENTO**
+Trumpet: **IVISON INÁCIO DE OLIVEIRA**
+Trombone: **SERGIO ALVES DA SILVA**
+Bass Drum: **URUBATAO DO NASCIMENTO**
+Snare Drum: **SÉRGIO ROSA OLIVEIRA**
 
 ## Clipping
 

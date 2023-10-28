@@ -65,34 +65,34 @@ A presença de um intérprete de Libras em duas apresentações é expressão do
 
 ## Equipe
 
-Direção Artística: **Leo Carnevale**
-Direção de Produção: **Emanuela Palma**
-Assistente de Produção: **Sandra Calaça**
-Produção de Impacto: **Emanuela Palma**
-Preparação Vocal: **Jane Celeste Guberfain Estúdio da Voz**
-Preparação de Canto: **Carolina Sanches Estúdio da Voz**
+Direção Artística: **LEO CARNEVALE**
+Direção de Produção: **EMANUELA PALMA**
+Assistente de Produção: **SANDRA CALAÇA**
+Produção de Impacto: **EMANUELA PALMA**
+Preparação Vocal: **JANE CELESTE GUBERFAIN ESTÚDIO DA VOZ**
+Preparação de Canto: **CAROLINA SANCHES ESTÚDIO DA VOZ**
 
 ### Elenco
 
-Palhaço Afonso Xodo: **Leo Carnevale**
-Palhaça Eulequicina: **Clara Mello**
-Palhaço Prego: **Fabio Freitas**
-Palhaça Foca: **Fabiana Poppius**
-Palhaço Fantástico Melão: **Fernando Carvalho**
-Palhaço Paçoca: **André Guimarães**
-Palhaça Paragadom: **Hislany Midon**
-Palhaça Songa: **Lívia Prado**
-Palhaço Titão: **Rogério Rodriguês**
+Palhaço Afonso Xodo: **LEO CARNEVALE**
+Palhaça Eulequicina: **CLARA MELLO**
+Palhaço Prego: **FABIO FREITAS**
+Palhaça Foca: **FABIANA POPPIUS**
+Palhaço Fantástico Melão: **FERNANDO CARVALHO**
+Palhaço Paçoca: **ANDRÉ GUIMARÃES**
+Palhaça Paragadom: **HISLANY MIDON**
+Palhaça Songa: **LÍVIA PRADO**
+Palhaço Titão: **ROGÉRIO RODRIGUÊS**
 
 ### Banda Rio
 
-Saxofone Alto: **Norberto dos Santos Lásaro**
-Tuba: **Valdevino de Almeida Ramos**
-Trombone: **Aloisio Bernardes do Nascimento**
-Trompete: **Ivison Inácio de Oliveira**
-Trombone: **Sergio Alves da Silva**
-Bombo: **Urubatao do Nascimento**
-Caixa: **Sérgio Rosa Oliveira**
+Saxofone Alto: **NORBERTO DOS SANTOS LÁSARO**
+Tuba: **VALDEVINO DE ALMEIDA RAMOS**
+Trombone: **ALOISIO BERNARDES DO NASCIMENTO**
+Trompete: **IVISON INÁCIO DE OLIVEIRA**
+Trombone: **SERGIO ALVES DA SILVA**
+Bombo: **URUBATAO DO NASCIMENTO**
+Caixa: **SÉRGIO ROSA OLIVEIRA**
 
 ## Clipping
 
