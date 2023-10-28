@@ -182,19 +182,34 @@ function Planets({ size = 400 }) {
           position: 'absolute',
 
           '& img': {
-            '@keyframes spin': {
+            '@keyframes spinOuter': {
               '0%': {
                 transform: 'rotate(0deg)',
               },
-              '20%, 100%': {
+              '15%': {
+                transform: 'rotate(0deg)',
+              },
+              '33%': {
+                transform: 'rotate(120deg)',
+              },
+              '45%': {
+                transform: 'rotate(120deg)',
+              },
+              '66%': {
+                transform: 'rotate(240deg)',
+              },
+              '75%': {
+                transform: 'rotate(240deg)',
+              },
+              '100%': {
                 transform: 'rotate(360deg)',
               },
             },
-            animationName: 'spin',
-            animationDuration: '25s',
+            animationName: 'spinOuter',
+            animationDuration: '24s',
             animationTimingFunction: 'linear',
             animationIterationCount: 'infinite',
-            animationDelay: '20s',
+            animationDelay: '6s',
           },
         }}
       >
@@ -254,40 +269,5 @@ function Planets({ size = 400 }) {
         </Typography>
       </Box>
     </>
-  )
-}
-
-function ServiceCard({ service, image, direction = 'left' }) {
-  return (
-    <Card
-      elevation={0}
-      sx={{
-        display: 'flex',
-        flexDirection: direction === 'left' ? 'row' : 'row-reverse',
-        alignItems: 'center',
-        justifyContent: 'revert',
-      }}
-    >
-      <CardContent
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          textAlign: direction === 'left' ? 'left' : 'right',
-          zIndex: 1,
-          maxWidth: '220px',
-        }}
-      >
-        <Typography
-          fontWeight="600"
-          fontSize="1.1rem"
-          sx={{
-            paddingRight: direction === 'left' ? 6 : 0,
-            paddingLeft: direction === 'left' ? 0 : 6,
-          }}
-        >
-          {service}
-        </Typography>
-      </CardContent>
-    </Card>
   )
 }
