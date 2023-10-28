@@ -6,7 +6,7 @@ tags:
   - Fotografia Still
   - Making of
 description:
-  "O projeto fala sobre a simbiose entre irmãos gêmeos, para todos que experimentam ser uma 'metade inteira' de alguém."
+  "The project is about the symbiosis between twin siblings, for everyone who experiences being a 'whole half' of someone."
 image:
   url: /images/content/portfolio/curta-simbiose/capa.jpg
   alt: "Curta Simbiose"
@@ -23,8 +23,6 @@ thumbnail:
 
 <Tags />
 
-<RedesSociais />
-
 <RedesSociais
   instagram="https://www.instagram.com/simbiose_gemeos/"
   youtube="https://www.youtube.com/watch?v=pIB5gKl9I7c"
@@ -36,17 +34,19 @@ thumbnail:
 <ImagemPrincipal />
 
 <Toc>
-- Sobre
-- Fotografias
+- About
+- Photographs
 </Toc>
 
-## Sobre
+## About
 
-"Simbiose é um documentário sobre irmãos gêmeos que enfatiza as experiências diárias e afetivas entre estes seres que pertencem ao universo daquilo que se denomina de “Duplo”. Uma das diretrizes do curta está em dar voz àqueles que vivenciam ser uma “metade - inteira” de alguém ao longo dos tempos. Solidão, separação, semelhanças, diferenças dores e prazeres são questões tratadas pelos personagens que, sem pudores, falam do outro como se fosse de si mesmo. A proposta do documentário é trazer o tema dos gêmeos, ainda pouco explorado, para a tela grande."
+"Simbiose" is a documentary about twin siblings that emphasizes the daily and emotional experiences between these beings who belong to the universe of what is known as the "Double." One of the guidelines of the short film is to give a voice to those who experience being a "whole half" of someone over time. Loneliness, separation, similarities, differences, pains, and pleasures are all addressed by the characters who, without reservation, speak of the other as if it were themselves. The documentary's proposal is to bring the theme of twins, which is still relatively unexplored, to the big screen.
 
-[@simbiose_gemeos](https://www.instagram.com/simbiose_gemeos/#)
+<BotaoSaibaMais href="https://www.instagram.com/simbiose_gemeos/#">@simbiose_gemeos</BotaoSaibaMais>
 
-## Fotografias
+<Youtube url="https://www.youtube.com/watch?v=pIB5gKl9I7c" aspectRatio="21/9" fullWidth cover/>
+
+## Photographs
 
 <Galeria>
 

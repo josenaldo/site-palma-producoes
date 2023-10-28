@@ -18,7 +18,7 @@ image:
 
 <Tags />
 
-<RedesSociais />
+<RedesSociais instagram="https://www.instagram.com/servicejamrio/" twitter="" facebook="" youtube=""/>
 
 <IconeCompartilhar />
 
@@ -33,9 +33,8 @@ image:
 
 ![sobre.jpg [1200x799] ](/images/content/portfolio/global-service-jam-rio-2023/sobre.jpg)
 
-[@servicejamrio](https://www.instagram.com/servicejamrio/)
-
-[Saiba mais](http://globaljams.org/)
+<BotaoSaibaMais href="h[ttp://globaljams.org/](https://www.instagram.com/servicejamrio/)">@servicejamrio</BotaoSaibaMais>
+<BotaoSaibaMais href="http://globaljams.org/" />
 
 ## Fotografias
 

@@ -3,11 +3,11 @@ id: 11
 highlight: true
 title: Palhaço Afonso Xodó, Banda Rio e Convidados
 tags:
-  - Produção Cultural
-  - Teatro
+  - Cultural Production
+  - Theater
   - Audiovisual
 description:
-  "Inclusão e representatividade na magia do circo, da música e do teatro."
+  "Inclusion and representativity in the magic of circus, music, and theater."
 image:
   url: /images/content/portfolio/palhaco-afonso-xodo/capa.jpg
   alt: Palhaço Afonso Xodó, Banda Rio e Convidados
@@ -25,74 +25,74 @@ image:
 <ImagemPrincipal />
 
 <Toc>
-- Sinopse
-- Projeto
-- Equipe
+- Synopsis
+- Project
+- Team
 - Clipping
 </Toc>
 
-## Sinopse
+## Synopsis
 
-Num palco plural e inclusivo, o palhaço Afonso Xodó entra em cena com a Banda Rio, grupo de músicos que está na estrada há cinco décadas, com integrantes com mais de 80 anos. Entre os convidados, palhaços que representam a diversidade brasileira, com igualdade de gênero e raça. São homens e mulheres, brancas e negras, LGBTQIA+ e PCD que compõem a trupe de artistas deste espetáculo que traz para o público a magia do circo, do teatro e da música.
+On a diverse and inclusive stage, the clown Afonso Xodó takes the spotlight with the Banda Rio, a group of musicians that has been on the road for five decades, with members over 80 years old. Among the guests are clowns who represent Brazilian diversity, with gender and racial equality. Men and women, white and black, LGBTQIA+, and people with disabilities make up the troupe of artists in this show that brings the magic of circus, theater, and music to the audience.
 
 <Youtube url="https://www.youtube.com/watch?v=GhIaWCMR-G0" aspectRatio="21/9" fullWidth cover/>
 
-## Projeto
+## Project
 
-Contemplado em primeiro lugar no edital de Fomento à Cultura Carioca - FOCA, da Secretaria Municipal de Cultura da Prefeitura do Rio de Janeiro, na categoria Arte Pública, o projeto “Palhaço Afonso Xodó, Banda Rio e Convidados”, é uma realização da Carnevale Produções e da Palma Produções, e circulou em quatro equipamentos de cultura na periferia da cidade do Rio de Janeiro: arenas Chacrinha e Dicró, Lona da Maré e Areninha Sandra de Sá.
+Ranked first in the Fomento à Cultura Carioca - FOCA grant from the Municipal Department of Culture of the City of Rio de Janeiro, in the Public Art category, the project "Palhaço Afonso Xodó, Banda Rio e Convidados" is a collaboration between Carnevale Produções and Palma Produções. It toured in four cultural venues in the periphery of Rio de Janeiro: arenas Chacrinha and Dicró, Lona da Maré, and Areninha Sandra de Sá.
 
-Conseguimos reunir um público caloroso de mais de 500 pessoas, reafirmando a importância de democratização de acesso à cultura.  A cada apresentação, dois palhaços convidados compõe a cena com Afonso Xodó ao ritmo da Banda Rio, um grupo de músicos com idade entre 60 e 80 anos. **“É uma honra estar junto com vocês neste projeto. Desde de 2020 que não recebo cachê para me apresentar”, declarou o palhaço Paçoca, durante o ensaio fotográfico para o espetáculo. Paçoca é o artista André Guimarães, pessoa com deficiência, e um convidados para entrar em cena junto com o palhaço Afonso Xodó.**
+We managed to gather a warm audience of over 500 people, reaffirming the importance of democratizing access to culture. At each presentation, two guest clowns joined Afonso Xodó to the rhythm of Banda Rio, a group of musicians aged between 60 and 80. **"It is an honor to be with you in this project. Since 2020, I haven't received a fee for my performance," said the clown Paçoca during the photoshoot for the show. Paçoca is the artist André Guimarães, a person with a disability, and one of the guests to share the stage with the clown Afonso Xodó.**
 
-A presença de um intérprete de Libras em duas apresentações é expressão do nosso compromisso em garantir que a cultura seja acessível a todos, independentemente de suas capacidades auditivas. Nossa jornada na produção deste projeto não só nos enche de satisfação, mas também reafirma nossa crença na capacidade da arte de unir comunidades, criar laços e celebrar a diversidade.  O projeto ainda realizou a oficina “Encontro com o Riso”, ministrada por Leo Carnevale, contemplando professores e alunos de escolas públicas da região onde o espetáculo circulou.
+The presence of a sign language interpreter in two performances is an expression of our commitment to ensuring that culture is accessible to everyone, regardless of their hearing abilities. Our journey in producing this project not only fills us with satisfaction but also reaffirms our belief in the power of art to unite communities, create bonds, and celebrate diversity. The project also conducted the workshop "Meeting with Laughter," led by Leo Carnevale, including teachers and students from public schools in the region where the show toured.
 
 <Carrossel>
 
-  ![Estreia da temporada na Arena Chacrina [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/estreia-da-temporada-na-arena-chacrina.jpg)
+  ![Season Premiere at Arena Chacrinha [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/estreia-da-temporada-na-arena-chacrina.jpg)
 
-  ![Banda Rio no palco [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/banda-rio-no-palco.jpg)
+  ![Banda Rio on Stage [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/banda-rio-no-palco.jpg)
 
-  ![Equipe na Arena Dicro [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/equipe-na-arena-dicro.jpg)
+  ![Team at Arena Dicro [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/equipe-na-arena-dicro.jpg)
 
-  ![Público no Galpão da Maré [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/publico-no-galpão-da-mare.jpg)
+  ![Audience at Galpão da Maré [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/publico-no-galpão-da-mare.jpg)
 
   ![Palhaço Fantástico Melão [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/palhaco-fantastico-melao.jpg)
 
-  ![Número com a participação do público [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-com-a-participacao-do-publico.jpg)
+  ![Number with audience participation [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-com-a-participacao-do-publico.jpg)
 
-  ![Número do restaurante na Arena Sandra Sá [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-do-restaurante-na-arena-sandra-sa.jpg)
+  ![Restaurant number at Arena Sandra Sá [1200x800]](/images/content/portfolio/palhaco-afonso-xodo/numero-do-restaurante-na-arena-sandra-sa.jpg)
 
 </Carrossel>
 
-## Equipe
+## Team
 
-Direção Artística: **Leo Carnevale**
-Direção de Produção: **Emanuela Palma**
-Assistente de Produção: **Sandra Calaça**
-Produção de Impacto: **Emanuela Palma**
-Preparação Vocal: **Jane Celeste Guberfain Estúdio da Voz**
-Preparação de Canto: **Carolina Sanches Estúdio da Voz**
+Artistic Direction: **Leo Carnevale**
+Production Direction: **Emanuela Palma**
+Production Assistant: **Sandra Calaça**
+Impact Production: **Emanuela Palma**
+Vocal Preparation: **Jane Celeste Guberfain - Estúdio da Voz**
+Singing Preparation: **Carolina Sanches - Estúdio da Voz**
 
-### Elenco
+### Cast
 
-Palhaço Afonso Xodo: **Leo Carnevale**
-Palhaça Eulequicina: **Clara Mello**
-Palhaço Prego: **Fabio Freitas**
-Palhaça Foca: **Fabiana Poppius**
-Palhaço Fantástico Melão: **Fernando Carvalho**
-Palhaço Paçoca: **André Guimarães**
-Palhaça Paragadom: **Hislany Midon**
-Palhaça Songa: **Lívia Prado**
-Palhaço Titão: **Rogério Rodriguês**
+Clown Afonso Xodo: **Leo Carnevale**
+Clown Eulequicina: **Clara Mello**
+Clown Prego: **Fabio Freitas**
+Clown Foca: **Fabiana Poppius**
+Clown Fantástico Melão: **Fernando Carvalho**
+Clown Paçoca: **André Guimarães**
+Clown Paragadom: **Hislany Midon**
+Clown Songa: **Lívia Prado**
+Clown Titão: **Rogério Rodriguês**
 
 ### Banda Rio
 
-Saxofone Alto: **Norberto dos Santos Lásaro**
+Alto Saxophone: **Norberto dos Santos Lásaro**
 Tuba: **Valdevino de Almeida Ramos**
 Trombone: **Aloisio Bernardes do Nascimento**
-Trompete: **Ivison Inácio de Oliveira**
+Trumpet: **Ivison Inácio de Oliveira**
 Trombone: **Sergio Alves da Silva**
-Bombo: **Urubatao do Nascimento**
-Caixa: **Sérgio Rosa Oliveira**
+Bass Drum: **Urubatao do Nascimento**
+Snare Drum: **Sérgio Rosa Oliveira**
 
 ## Clipping
 
