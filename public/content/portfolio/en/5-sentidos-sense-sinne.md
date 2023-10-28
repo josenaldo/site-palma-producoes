@@ -37,7 +37,7 @@ The book "5 Sentidos Senses Sinne" by Momentos World - Artistic Cloud Center del
 
 The project's intention was to create an artistic-biographical book with a dynamic, fluid, and artistic layout, non-linear yet harmonious. The idea was to convey movements, sensations, and vibrations, much like a dance, through photographs, graphics, typography, and colors. It was a challenging journey where the rational and emotional intertwined, and the tempo and rhythm were created with each page turn.
 
-![Picture2 [3456x5184]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
+![Picture2 [1200x900]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
 
 <Youtube url="https://www.youtube.com/watch?v=hq-Qhq5rFWA" aspectRatio="21/9" fullWidth cover/>
 

@@ -37,7 +37,7 @@ O livro 5 Sentidos Senses Sinne do Momentos World - Artistic Cloud Center aborda
 
 A intenção do projeto foi criar um livro artístico-biográfico com uma diagramação bem dinâmica, fluida e artística, não linear, porém harmônica. A ideia foi transmitir os movimentos, sensações e vibrações, tal qual uma dança, a partir das fotografias, grafismos, tipografia e cores. Foi uma jornada desafiadora onde o racional e o emocional se misturaram e o compasso e ritmo foram criados a cada virada de página.
 
-![Picture2 [3456x5184]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
+![Picture2 [1200x900]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
 
 <Youtube url="https://www.youtube.com/watch?v=hq-Qhq5rFWA" aspectRatio="21/9" fullWidth cover/>
 
