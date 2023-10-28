@@ -256,38 +256,3 @@ function Planets({ size = 400 }) {
     </>
   )
 }
-
-function ServiceCard({ service, image, direction = 'left' }) {
-  return (
-    <Card
-      elevation={0}
-      sx={{
-        display: 'flex',
-        flexDirection: direction === 'left' ? 'row' : 'row-reverse',
-        alignItems: 'center',
-        justifyContent: 'revert',
-      }}
-    >
-      <CardContent
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          textAlign: direction === 'left' ? 'left' : 'right',
-          zIndex: 1,
-          maxWidth: '220px',
-        }}
-      >
-        <Typography
-          fontWeight="600"
-          fontSize="1.1rem"
-          sx={{
-            paddingRight: direction === 'left' ? 6 : 0,
-            paddingLeft: direction === 'left' ? 0 : 6,
-          }}
-        >
-          {service}
-        </Typography>
-      </CardContent>
-    </Card>
-  )
-}
