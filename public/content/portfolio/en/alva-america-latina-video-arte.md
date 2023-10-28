@@ -3,8 +3,8 @@ id: 4
 highlight: true
 title: "ALVA"
 tags:
-  - Marca
-  - Aplicações
+  - Brand
+  - Applications
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:
@@ -24,15 +24,15 @@ image:
 <ImagemPrincipal />
 
 <Toc>
-- Criação
-- Marca e Aplicações
+- Creation
+- Brand and Applications
 </Toc>
 
-## Criação
+## Creation
 
 ![foto-01.jpg [1200x526] ](/images/content/portfolio/alva-america-latina-video-arte/foto-01.jpg)
 
-## Marca e Aplicações
+## Brand and Applications
 
 ![foto-02.jpg [1200x717] ](/images/content/portfolio/alva-america-latina-video-arte/foto-02.jpg)
 
