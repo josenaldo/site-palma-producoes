@@ -6,7 +6,7 @@ export default function ParceriaCard({ parceria }) {
     <Button
       key={parceria.name}
       color="dark"
-      href={parceria.url}
+      href={parceria.link}
       target="_blank"
       rel="noopener noreferrer"
       sx={{
