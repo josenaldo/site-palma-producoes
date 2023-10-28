@@ -24,31 +24,31 @@ image:
 
 <ImagemPrincipal />
 
-## Sobre a Mostra
+## About the Showcase
 
-Entre os anos de 2011 e 2018, tivemos a satisfação de contribuir com a realização da Mostra Cinema e Direitos Humanos, em Porto Velho, Rondônia. Com a responsabilidade da produção local, nossa equipe não mediu esforços para enriquecer a experiência do público, ao criar um espaço de diálogo e reflexão, transformando sessões de cinema em momentos de conscientização. Assumimos o compromisso de ser ponte para conectar a comunidade local à cultura de educação em Direitos Humanos por meio da sétima arte. Nas sete edições que atuamos, mobilizamos um público de cerca de cinco mil pessoas.
+Between 2011 and 2018, we had the pleasure of contributing to the realization of the Cinema and Human Rights Showcase in Porto Velho, Rondônia. With the responsibility of local production, our team spared no effort to enrich the audience's experience, creating a space for dialogue and reflection, turning film sessions into moments of awareness. We undertook the commitment to serve as a bridge to connect the local community with the culture of human rights education through the seventh art. In the seven editions in which we participated, we mobilized an audience of about five thousand people.
 
 <Galeria>
 
-  ![Foto01 [3456x2304] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-01.jpg)
+  ![Photo01 [3456x2304] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-01.jpg)
 
-  ![Foto02 [960x960] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-02.jpg)
+  ![Photo02 [960x960] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-02.jpg)
 
-  ![Foto03 [4032x3024] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-03.jpg)
+  ![Photo03 [4032x3024] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-03.jpg)
 
-  ![Foto04 [5472x3648] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-04.jpg)
+  ![Photo04 [5472x3648] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-04.jpg)
 
-  ![Foto05 [5472x3648] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-05.jpg)
+  ![Photo05 [5472x3648] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-05.jpg)
 
-  ![Foto06 [3024x4032] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-06.jpg)
+  ![Photo06 [3024x4032] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-06.jpg)
 
-  ![Foto07 [4032x3024] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-07.jpg)
+  ![Photo07 [4032x3024] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-07.jpg)
 
-  ![Foto08 [4032x3024] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-08.jpg)
+  ![Photo08 [4032x3024] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-08.jpg)
 
-  ![Foto09 [3726x2096] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-09.jpg)
+  ![Photo09 [3726x2096] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-09.jpg)
 
-  ![Foto10 [4032x3024] [cover] [caption: Créditos fotos: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-10.jpg)
+  ![Photo10 [4032x3024] [cover] [caption: Photo credits: Emanuela Palma]](/images/content/portfolio/mostra-cinema-e-direitos-humanos/foto-10.jpg)
 
 </Galeria>
 
