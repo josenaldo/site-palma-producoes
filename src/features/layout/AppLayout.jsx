@@ -7,9 +7,19 @@ import { useMemo } from 'react'
 import { seoConfig, APP_DEFAULT_IMAGE } from '@/data'
 
 import { useTranslation } from '@/features/i18n'
+import { Breadcrumbs } from '@/features/ui'
+import useIsHome from '@/features/layout/useIsHome'
+import { is } from 'date-fns/locale'
 
-export default function AppLayout({ title, description, image, children }) {
+export default function AppLayout({
+  title,
+  description,
+  image,
+  children,
+  crumbs,
+}) {
   const { t, isoLocale } = useTranslation(['common'])
+  const isHome = useIsHome()
 
   const og = useMemo(() => {
     const imageObject = image
@@ -42,6 +52,7 @@ export default function AppLayout({ title, description, image, children }) {
       <NextSeo title={title} description={description} openGraph={og} />
 
       <Header />
+      {!isHome && <Breadcrumbs crumbs={crumbs} />}
       <main id="__next">{children}</main>
       <Footer />
     </Box>

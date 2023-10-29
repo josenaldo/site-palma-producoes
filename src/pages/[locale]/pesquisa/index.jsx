@@ -29,7 +29,7 @@ function buildQuery({ locale, query, pageIndex, itemsPerPage }) {
 }
 
 export default function SearchPage({ page, itemsPerPage }) {
-  const { locale } = useTranslation(['common'])
+  const { t, locale } = useTranslation(['common'])
 
   const [query, setQuery] = useState('')
   const [loading, setLoading] = useState(false)
@@ -85,6 +85,14 @@ export default function SearchPage({ page, itemsPerPage }) {
       title={page.title}
       description={page.description}
       image={page.image}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.search'),
+          href: '/pesquisa',
+          last: true,
+        },
+      ]}
     >
       <Container>
         <ContentPageHeader

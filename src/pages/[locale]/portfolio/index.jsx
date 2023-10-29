@@ -13,6 +13,7 @@ import {
 import { AppLayout } from '@/features/layout'
 import { Pagination } from '@/features/ui'
 import { buildStaticProps } from '@/features/pages/server'
+import { useTranslation } from '@/features/i18n'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await buildStaticProps(params, 'portfolio')
@@ -27,6 +28,8 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function PortfolioPage({ page, portfolioList }) {
+  const { t } = useTranslation(['common'])
+
   const [pageIndex, setPageIndex] = useState(1)
   const [loading, setLoading] = useState(false)
 
@@ -49,6 +52,14 @@ export default function PortfolioPage({ page, portfolioList }) {
       title={page.title}
       description={page.description}
       image={page.image}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.portfolio'),
+          href: '/portifolio',
+          last: true,
+        },
+      ]}
     >
       <Container>
         <ContentPageHeader

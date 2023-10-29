@@ -66,6 +66,14 @@ export default function BlogPage({ page, itemsPerPage, posts, pageCount }) {
       image={page.image}
       isoLocale={isoLocale}
       t={t}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.blog'),
+          href: '/blog',
+          last: true,
+        },
+      ]}
     >
       <Container>
         <ContentPageHeader

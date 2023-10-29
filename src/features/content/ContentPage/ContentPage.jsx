@@ -1,9 +1,9 @@
+import React from 'react'
+
 import { Box, Container, Divider, Typography } from '@mui/material'
-
-import { useTranslation } from '@/features/i18n'
-
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
+import { useTranslation } from '@/features/i18n'
 import { AnchoredTitle, Link } from '@/features/ui'
 
 import {
@@ -28,6 +28,7 @@ import {
   BlockSpacer,
   BlockGallery,
   BlockKnowMoreButton,
+  BlockLightbox,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -50,6 +51,16 @@ export default function ContentPage({
 
   const MDXContent = useMDXComponent(contentBody)
 
+  const imagesRef = React.useRef([])
+  const [openLightbox, setOpenLightbox] = React.useState(false)
+  const [indexLightbox, setIndexLightbox] = React.useState(0)
+
+  function openLightboxWithIndex(src) {
+    const index = imagesRef.current.findIndex((image) => image.src === src)
+    setOpenLightbox(true)
+    setIndexLightbox(index)
+  }
+
   const comp = {
     h1: (props) => <Typography component="h1" variant="h2" {...props} />,
     h2: (props) => <AnchoredTitle component="h2" variant="h3" {...props} />,
@@ -59,7 +70,22 @@ export default function ContentPage({
     h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
     a: (props) => <Link {...props} color="primary" sx={{ fontWeight: 500 }} />,
     hr: Divider,
-    img: BlockResponsiveImage,
+    img: (props) => {
+      const imageExists =
+        imagesRef.current.filter((image) => image.src === props.src).length > 0
+
+      if (!imageExists) {
+        imagesRef.current.push(props)
+      }
+
+      return (
+        <BlockResponsiveImage
+          openLightbox={openLightbox}
+          setOpenLightbox={openLightboxWithIndex}
+          {...props}
+        />
+      )
+    },
     pre: BlockCode,
     blockquote: BlockBlockquote,
     p: (props) => (
@@ -191,9 +217,16 @@ export default function ContentPage({
   return (
     <Box>
       <Container>
-        <Box className={styles.markdownBody}>
+        <Box className={`contentPage ${styles.markdownBody}`}>
           <MDXContent components={comp} />
         </Box>
+        <BlockLightbox
+          imagesRef={imagesRef}
+          open={openLightbox}
+          setOpen={setOpenLightbox}
+          index={indexLightbox}
+          setIndex={setIndexLightbox}
+        />
       </Container>
     </Box>
   )
