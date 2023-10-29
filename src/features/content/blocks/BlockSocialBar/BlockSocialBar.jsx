@@ -20,15 +20,6 @@ export default function BlockSocialBar({
   youtube = links.youtube,
   twitter = links.twitter,
 }) {
-  console.log('BlockSocialBar', {
-    instagram,
-    facebook,
-    youtube,
-    twitter,
-  })
-
-  console.log('socialLinks', socialLinks)
-
   return (
     <Box
       sx={{
