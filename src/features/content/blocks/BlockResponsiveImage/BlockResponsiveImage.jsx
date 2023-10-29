@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material'
 
-import { ImageBox, LightBox } from '@/features/ui'
-import { useState } from 'react'
+import { ImageBox } from '@/features/ui'
 
 /**
  * Componente que insira imagens no conteúdo markdown e informe as dimensões da imagem.
@@ -11,7 +10,11 @@ import { useState } from 'react'
  * @param {*} props
  * @returns
  */
-export default function BlockResponsiveImage(props) {
+export default function BlockResponsiveImage({
+  openLightbox,
+  setOpenLightbox,
+  ...props
+}) {
   const alt = props.alt?.replace(/\[[^\]]*\]/g, '').trim()
   const metaSize = props.alt?.match(/\[([^\]]+)\]/g)
 
@@ -26,8 +29,6 @@ export default function BlockResponsiveImage(props) {
   const caption = props.alt?.match(/\[caption: (.*?)\]/)?.pop()
   const fullWidth = props.alt?.match(/\[fullwidth\]/)?.pop() ? true : false
   const aspectRatio = props.alt?.match(/\[aspect-ratio: (.*?)\]/)?.pop() || null
-
-  const [open, setOpen] = useState(false)
 
   return (
     <Box
@@ -52,7 +53,9 @@ export default function BlockResponsiveImage(props) {
         imageStyle={{
           borderRadius: '10px',
         }}
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpenLightbox(props.src)
+        }}
       />
 
       {hasCaption && (
@@ -69,17 +72,6 @@ export default function BlockResponsiveImage(props) {
           </Typography>
         </Box>
       )}
-
-      <LightBox
-        src={props.src}
-        width={width}
-        height={height}
-        alt={alt}
-        aspectRatio={aspectRatio}
-        open={open}
-        onClose={() => setOpen(false)}
-        caption={caption}
-      />
     </Box>
   )
 }

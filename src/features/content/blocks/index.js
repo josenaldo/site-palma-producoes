@@ -12,6 +12,8 @@ export { BlockColumns } from './BlockColumns'
 
 export { BlockGallery } from './BlockGallery'
 
+export { BlockLightbox } from './BlockLightbox'
+
 export { BlockKnowMoreButton } from './BlockKnowMoreButton'
 
 export { BlockMainImage } from './BlockMainImage'

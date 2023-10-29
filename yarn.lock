@@ -7248,6 +7248,11 @@ yargs@^17.7.2:
     y18n "^5.0.5"
     yargs-parser "^21.1.1"
 
+yet-another-react-lightbox@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.14.0.tgz#7f90a345818e252c3963d02ba0289e36b968cfce"
+  integrity sha512-UbkxGre2TzzIuRL9bQp6Spbc/9Hgn8JYofs0DJL1cyCc6+ir5I5djJKLs9UpyH61Ak/y81QYF5MA6ve//ggJrw==
+
 yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
