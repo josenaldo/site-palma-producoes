@@ -93,5 +93,15 @@
   },
   "content": {
     "knowMore": "Saiba mais"
+  },
+  "breadcrumbs": {
+    "home": "Início",
+    "about": "Quem Somos",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "contact": "Contato",
+    "search": "Pesquisa",
+    "searchResults": "Resultados da pesquisa",
+    "blog": "Blog"
   }
 }

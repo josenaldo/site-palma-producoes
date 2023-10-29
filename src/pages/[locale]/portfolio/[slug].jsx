@@ -6,6 +6,7 @@ import {
   getStaticPaths as i18nGetStaticPaths,
   makeStaticProps,
 } from '@/features/i18n/server'
+import { useTranslation } from '@/features/i18n'
 
 export function getStaticPaths() {
   const i18nPaths = i18nGetStaticPaths()
@@ -54,11 +55,26 @@ export async function getStaticProps(ctx) {
 }
 
 export default function PortfolioPage({ portfolio }) {
+  const { t } = useTranslation(['common', 'portfolio'])
+
   return (
     <AppLayout
       title={portfolio.title}
       description={portfolio.description}
       image={portfolio.image}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.portfolio'),
+          href: '/portfolio',
+          last: false,
+        },
+        {
+          text: portfolio.title,
+          href: portfolio.url,
+          last: true,
+        },
+      ]}
     >
       <ContentPage
         title={portfolio.title}

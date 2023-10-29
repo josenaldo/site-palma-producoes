@@ -4,6 +4,8 @@ export { AnchoredTitle } from './AnchoredTitle'
 
 export { BannerBox } from './BannerBox'
 
+export { Breadcrumbs } from './Breadcrumbs'
+
 export { ButtonLink } from './ButtonLink'
 
 export { Carousel } from './Carousel'

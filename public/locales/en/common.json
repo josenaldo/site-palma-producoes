@@ -92,5 +92,15 @@
   },
   "content": {
     "knowMore": "Know more"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "search": "Search",
+    "searchResults": "Search results",
+    "blog": "Blog"
   }
 }

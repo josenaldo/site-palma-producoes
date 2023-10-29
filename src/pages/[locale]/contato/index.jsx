@@ -5,6 +5,7 @@ import { AppLayout } from '@/features/layout'
 import { ContentPageHeader } from '@/features/content'
 import { buildStaticProps } from '@/features/pages/server'
 import { ContactForm, ContactList, ContactHero } from '@/features/pages/contato'
+import { useTranslation } from '@/features/i18n'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await buildStaticProps(params, 'contato')
@@ -15,12 +16,21 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function ContatoPage({ isoLocale, page }) {
+  const { t } = useTranslation(['common'])
   return (
     <AppLayout
       title={page.title}
       description={page.description}
       image={page.image}
       isoLocale={isoLocale}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.contact'),
+          href: '/contato',
+          last: true,
+        },
+      ]}
     >
       <Container
         sx={{

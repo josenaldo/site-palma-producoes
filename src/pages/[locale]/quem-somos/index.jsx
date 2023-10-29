@@ -10,6 +10,7 @@ import { AppLayout } from '@/features/layout'
 import { Parcerias, Socias } from '@/features/pages/quem-somos'
 import { buildStaticProps } from '@/features/pages/server'
 import { ImageBox } from '@/features/ui'
+import { useTranslation } from '@/features/i18n'
 
 export async function getStaticProps({ params }) {
   const propsWrapper = await buildStaticProps(params, 'quem-somos')
@@ -26,6 +27,7 @@ export async function getStaticProps({ params }) {
 export { getStaticPaths }
 
 export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
+  const { t } = useTranslation(['common'])
   const theme = useTheme()
 
   const isBiggerScreen = useMediaQuery(theme.breakpoints.up('lg'))
@@ -35,6 +37,14 @@ export default function QuemSomosPage({ isoLocale, page, socias, parcerias }) {
       title={page.title}
       description={page.description}
       image={page.image}
+      crumbs={[
+        { text: t('common:breadcrumbs.home'), href: '/' },
+        {
+          text: t('common:breadcrumbs.about'),
+          href: '/quem-somos',
+          last: true,
+        },
+      ]}
     >
       <Container>
         <ContentPageHeader
