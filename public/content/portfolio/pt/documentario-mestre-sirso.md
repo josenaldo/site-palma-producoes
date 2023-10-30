@@ -266,7 +266,7 @@ import benfeitores from '../../data/benfeitores.json'
 
 <Espaco altura="40px" />
 
-<Faixa>
+<Faixa cor="primary.main">
   <Colunas formato="1|1|1">
     <Parcerias titulo="Realização">
       <Parceria
