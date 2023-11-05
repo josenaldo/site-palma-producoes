@@ -10,7 +10,12 @@ export default function BlockKnowMoreButton({ href, children = null }) {
   const text = children || t('common:content.knowMore')
 
   return (
-    <Button variant="outlined" href={href} endIcon={<OpenInNewIcon />}>
+    <Button
+    variant="outlined"
+    href={href}
+    target="_blank"
+    rel='noopener noreferrer'
+    endIcon={<OpenInNewIcon />}>
       {text}
     </Button>
   )
