@@ -115,47 +115,63 @@ Caixa: **SÉRGIO ROSA OLIVEIRA**
 <Faixa>
   <Parcerias titulo="Realização">
     <Parceria
-      parceiro="Carnavalle"
-      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      parceiro="Carnavalle Produções"
+      logo="/images/content/portfolio-parceiros/logo-carnavalle-producoes.png"
       url="https://www.instagram.com/carnevaleproducoes/"/>
     <Parceria
       parceiro="Palma Produções"
-      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      logo="/images/content/portfolio-parceiros/logo-palma.png"
       url="https://palmaproducoes.com.br"/>
+    <Parceria
+      parceiro="Arte Moldura"
+      logo="/images/content/portfolio-parceiros/logo-arte-moldura.png"
+      url=""/>
+    <Parceria
+      parceiro="Porta Música"
+      logo="/images/content/portfolio-parceiros/logo-porta-musica.png"
+      url=""/>
+    <Parceria
+      parceiro="Quero Bem"
+      logo="/images/content/portfolio-parceiros/logo-quero-bem.png"
+      url=""/>
 
   </Parcerias>
 
   <Parcerias titulo="Apoio">
     <Parceria
-      parceiro="Raça Livre Produções"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
-      url="" />
+      parceiro="Par Produções"
+      logo="/images/content/portfolio-parceiros/logo-par-producoes.png" />
     <Parceria
-      parceiro="Biomob"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
-      url="" />
+      parceiro="Arena Chacrinha"
+      logo="/images/content/portfolio-parceiros/logo-arena-chacrinha.png" />
     <Parceria
-      parceiro="Perspective Fund"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
-      url="" />
+      parceiro="Fetaerj"
+      logo="/images/content/portfolio-parceiros/logo-fetaerj.png" />
     <Parceria
-      parceiro="FAPAN"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
-      url="" />
+      parceiro="Arena Carioca Dicró"
+      logo="/images/content/portfolio-parceiros/logo-arena-carioca-dicro.png" />
     <Parceria
-      parceiro="APAN"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
-      url="" />
+      parceiro="Observatório das Favelas"
+      logo="/images/content/portfolio-parceiros/logo-observatorio-das-favelas.png" />
     <Parceria
-      parceiro="Prefeitura de Cascavel"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
-      url="" />
+      parceiro="Arena Santa Cruz"
+      logo="/images/content/portfolio-parceiros/logo-arena-santa-cruz.png" />
     <Parceria
-      parceiro="Gráfica Assoeste"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
-      url="" />
+      parceiro="Fetaerj"
+      logo="/images/content/portfolio-parceiros/logo-fetaerj.png" />
     <Parceria
-      parceiro="Unioeste"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
+      parceiro="Zona de Cultura Santa Cruz"
+      logo="/images/content/portfolio-parceiros/logo-zona-de-cultura-santa-cruz.png" />
+    <Parceria
+      parceiro="Lona Cultural Municipal Herbert Vianna"
+      logo="/images/content/portfolio-parceiros/logo-lona-cultural-municipal-herbert-viana.png" />
+    <Parceria
+      parceiro="Redes da Maré"
+      logo="/images/content/portfolio-parceiros/logo-redes-da-mare.png" />
+  </Parcerias>
+  <Parcerias titulo="Patrocínio">
+    <Parceria
+      parceiro="Foca"
+      logo="/images/content/portfolio-parceiros/logo-foca.png" />
   </Parcerias>
 </Faixa>
