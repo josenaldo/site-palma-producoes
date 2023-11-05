@@ -266,75 +266,71 @@ import benfeitores from '../../data/benfeitores.json'
 
 <Espaco altura="40px" />
 
-<Faixa cor="primary.main">
+<Faixa>
   <Colunas formato="1|1|1">
     <Parcerias titulo="Realização">
       <Parceria
         parceiro="Capoeira Arte Luta"
-        logo="/images/content/portfolio-parceiros/logo-realizacao-capoeira-arte-luta.png"
+        logo="/images/content/portfolio-parceiros/logo-capoeira-arte-luta.png"
         url=""/>
     </Parcerias>
     <Parcerias titulo="Co-idealização">
       <Parceria
         parceiro="Benfeitoria"
-        logo="/images/content/portfolio-parceiros/logo-coidealizacao-benfeitoria.png"
+        logo="/images/content/portfolio-parceiros/logo-benfeitoria.png"
         url=""/>
       <Parceria parceiro="Sitawi"
-        logo="/images/content/portfolio-parceiros/logo-coidealizacao-sitawi.png"
+        logo="/images/content/portfolio-parceiros/logo-sitawi.png"
         url=""/>
     </Parcerias>
     <Parcerias titulo="Apoio">
       <Parceria
         parceiro="BNDES"
-        logo="/images/content/portfolio-parceiros/logo-apoio-bndes.png"
+        logo="/images/content/portfolio-parceiros/logo-bndes.png"
         url=""/>
     </Parcerias>
   </Colunas>
-
   <Parcerias titulo="Parceiros">
     <Parceria
       parceiro="Raça Livre Produções"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-reca-livre.png"
+      logo="/images/content/portfolio-parceiros/logo-raca-livre-producoes.png"
       url="" />
     <Parceria
       parceiro="Biomob"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-biomob.png"
+      logo="/images/content/portfolio-parceiros/logo-biomob.png"
       url="" />
     <Parceria
       parceiro="Perspective Fund"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-perspective-fund.png"
+      logo="/images/content/portfolio-parceiros/logo-perspective-fund.png"
       url="" />
     <Parceria
       parceiro="FAPAN"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-fapan.png"
+      logo="/images/content/portfolio-parceiros/logo-fapan.png"
       url="" />
     <Parceria
       parceiro="APAN"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-apan.png"
+      logo="/images/content/portfolio-parceiros/logo-apan.png"
       url="" />
     <Parceria
       parceiro="Prefeitura de Cascavel"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-prefeitura-cascavel.png"
+      logo="/images/content/portfolio-parceiros/logo-prefeitura-cascavel.png"
       url="" />
     <Parceria
       parceiro="Gráfica Assoeste"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-assoeste.png"
+      logo="/images/content/portfolio-parceiros/logo-grafica-assoeste-e-editora-ltda.png"
       url="" />
     <Parceria
       parceiro="Unioeste"
-      logo="/images/content/portfolio-parceiros/logo-apoiadores-unioeste.png" />
+      logo="/images/content/portfolio-parceiros/logo-unioeste.png" />
   </Parcerias>
-
    <Parcerias titulo="Produção">
     <Parceria
       parceiro="Palma Produções"
-      logo="/images/content/portfolio-parceiros/logo-producao-palma.png"
+      logo="/images/content/portfolio-parceiros/logo-palma.png"
       url="https://palmaproducoes.com.br"/>
     <Parceria
       parceiro="Carnavalle"
-      logo="/images/content/portfolio-parceiros/logo-producao-carnavalle.png"
+      logo="/images/content/portfolio-parceiros/logo-carnavalle-producoes.png"
       url="https://www.instagram.com/carnevaleproducoes/"/>
-
   </Parcerias>
-
 </Faixa>
