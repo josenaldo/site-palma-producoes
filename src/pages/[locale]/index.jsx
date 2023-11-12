@@ -45,7 +45,7 @@ export default function HomePage({ page, depoimentos, servicos }) {
     >
       <Stack>
         <HomeHero />
-        <HomeIntro />
+        {/* <HomeIntro /> */}
         <HomeWho />
         <HomeVideo />
         <HomeServices servicos={servicos} />
