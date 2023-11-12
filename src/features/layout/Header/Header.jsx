@@ -37,7 +37,7 @@ export default function Header({ color, ...props }) {
       elevation={elevated ? 4 : 0}
       color={elevated ? 'white' : 'transparent'}
       sx={{
-        position: isHome ? 'fixed' : 'sticky',
+        position: isHome && !elevated ? 'fixed' : 'sticky' ,
         zIndex: 1000,
         px: 0,
         py: 3,
