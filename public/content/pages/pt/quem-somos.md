@@ -9,6 +9,6 @@ image:
   height: 822
 ---
 
-Na PALMA reunimos o olhar humanizado de mulheres que honram a diversidade cultural brasileira e reconhecem a responsabilidade de ser parte desse tesouro de histórias inspiradoras que merecem ser contadas.
+*O olhar estratégico, criativo e humanizado de Alê Karmirian e Emanuela Palma está focado na realização de projetos que promovam o sentimento de pertencimento e a consciência do equilíbrio socioambiental. Nos conectamos na produção do documentário Mestre Sirso, uma oportunidade que criou a sinergia para seguirmos trabalhando juntas.*
 
-Na conexão com parceiros engajados no mesmo propósito, co-criamos projetos e iniciativas que celebram a nossa cultura, promovem a sustentabilidade e a inclusão.
+*Investigar, conectar, projetar, realizar e contar histórias é o que nos move e motiva a criar experiências que conectam cultura e sustentabilidade numa jornada de inspiração, criação, impacto e transformação.*

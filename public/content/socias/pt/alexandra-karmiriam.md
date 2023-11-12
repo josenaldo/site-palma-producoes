@@ -1,6 +1,6 @@
 ---
 name: Alexandra Karmiriam
-description: Sócia - Designer - Produtora de Conteúdo Visual
+description: Líder de Inovação - Gerente de Projetos
 image: "/images/content/socias/alexandra-karmiriam.jpg"
 order: 3
 ---
