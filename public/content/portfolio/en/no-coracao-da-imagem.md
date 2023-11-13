@@ -36,20 +36,7 @@ image:
 
 ## The Book
 
-<Colunas formato="1|1">
-  <Caixa>
-
-  ![foto-real.jpg [900x1200] ](/images/content/portfolio/no-coracao-da-imagem/foto-real.jpg)
-
-  </Caixa>
-
-  <Caixa>
-
-  ![mockup.jpg [1200x623] ](/images/content/portfolio/no-coracao-da-imagem/mockup.jpg)
-
-  </Caixa>
-
-</Colunas>
+![mockup.jpg [1200x623] ](/images/content/portfolio/no-coracao-da-imagem/mockup.jpg)
 
 <Youtube url="https://www.youtube.com/watch?v=OlXoJPr6m3s" aspectRatio="21/9" fullWidth cover/>
 
