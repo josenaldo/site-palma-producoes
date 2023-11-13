@@ -1,7 +1,7 @@
 ---
 title: What We Do
 description:
-  "Discover how Palma Produçõess can help bring your ideas to life. We offer a range of services, including innovation consulting, visual and strategic communication, audiovisual content creation, and cultural production. Our team of experienced professionals is ready to help you achieve your goals."
+  "With a holistic approach and a multidisciplinary team, we combine innovation and communication to guide every step of your journey in realizing a project. We co-create, develop, and identify possible paths for the unfolding of new products and services that don't yet have a name."
 image:
   url: "/images/content/pages/servicos.jpg"
   alt: "Palma Produções - Services"
@@ -9,8 +9,4 @@ image:
   height: 628
 ---
 
-Palma Productions operates in **impactful projects *in the cultural and socio-environmental field***, with a focus on solutions and narratives that value the needs, memory, and cultural diversity of Brazil.
-
-***To investigate, connect, nurture, celebrate, project, and tell stories*** that promote a sense of belonging to our ***Brazilian identity*** and generate positive impact in the world.
-
-This is what motivates us to engage in creative, strategic, and collaborative processes - in the audiovisual realm and through multi-platform actions - ***to shine a light on the protagonism of those who make history happen***.
+*With a holistic approach and a multidisciplinary team, we combine innovation and communication to guide every step of your journey in realizing a project. We co-create, develop, and identify possible paths for the unfolding of new products and services that don't yet have a name*.
