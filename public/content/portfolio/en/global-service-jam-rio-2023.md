@@ -3,9 +3,10 @@ id: 8
 highlight: true
 title: "Global Service Jam Rio • 2023"
 tags:
-  - Co-organização
-  - Facilitação
-  - Fotografia
+  - Co-organization
+  - Facilitation
+  - Photography
+numberOfTags: 2
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:

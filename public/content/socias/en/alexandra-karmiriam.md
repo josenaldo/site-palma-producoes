@@ -1,6 +1,6 @@
 ---
 name: Alexandra Karmiriam
-description: Partner - Designer - Visual Content Producer
+description: Innovation Leader - Project Manager
 image: "/images/content/socias/alexandra-karmiriam.jpg"
 order: 3
 ---

@@ -1,11 +1,11 @@
 ---
 id: 2
 highlight: true
-title: "5 Sentidos Sense Sinne"
+title: "Livro 5 Sentidos Sense Sinne"
 tags:
-  - Livro
-  - Capa
-  - Documentário
+  - Design
+  - Curadoria
+  - Diagramação
 description:
   "Foi um prazer desenvolver o projeto do livro a partir de um livre processo estratégico-criativo de co-criação e experimentação junto a equipe do Momentos World."
 image:

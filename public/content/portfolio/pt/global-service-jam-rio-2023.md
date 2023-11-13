@@ -6,6 +6,7 @@ tags:
   - Co-organização
   - Facilitação
   - Fotografia
+numberOfTags: 2
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:

@@ -19,19 +19,19 @@ import CloseIcon from '@mui/icons-material/Close'
 import { useTranslation } from '@/features/i18n'
 
 const iconFontSize = {
-  xs: 40,
-  sm: 42,
-  md: 44,
-  lg: 46,
-  xl: 48,
+  xs: 24,
+  sm: 28,
+  md: 32,
+  lg: 36,
+  xl: 40,
 }
 
 const iconSpace = {
   xs: '8px',
   sm: '12px',
-  md: '16px',
-  lg: '20px',
-  xl: '24px',
+  md: '14px',
+  lg: '16px',
+  xl: '16px',
 }
 
 function getHrefAndText(t, url, netUrl) {

@@ -35,6 +35,7 @@ export default function ServiceList({ services }) {
             alignItems: 'center',
             borderRadius: 0,
             py: 2,
+            width: '100%',
           }}
         >
           <CardMedia

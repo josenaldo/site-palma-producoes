@@ -1,11 +1,11 @@
 ---
 id: 2
 highlight: true
-title: "5 Sentidos Sense Sinne"
+title: "Book 5 Sentidos Sense Sinne"
 tags:
-  - Book
-  - Cover
-  - Documentary
+  - Design
+  - Curation
+  - Layout
 description:
   "It was a pleasure to develop the book project through a free, strategic-creative process of co-creation and experimentation with the Momentos World team."
 image:
