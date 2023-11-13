@@ -10,10 +10,10 @@ const sizeVariantes = {
 export default function Tags({
   tags,
   color = 'grey.600',
-  onlyFirstTag = false,
+  numberOfTags,
   size = 'small',
 }) {
-  const tagsToShow = onlyFirstTag ? tags.slice(0, 1) : tags
+  const tagsToShow = numberOfTags ? tags.slice(0, numberOfTags) : tags
   const variant = sizeVariantes[size] || sizeVariantes.small
 
   return (

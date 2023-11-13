@@ -87,6 +87,7 @@ export default function PortfolioPage({ page, portfolioList }) {
               image={portfolio.image}
               thumbnail={portfolio.thumbnail}
               tags={portfolio.tags}
+              numberOfTags={portfolio.numberOfTags}
             />
           ))}
         </Box>

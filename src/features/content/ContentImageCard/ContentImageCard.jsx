@@ -105,7 +105,7 @@ export default function ContentImageCard({
               }}
             >
               {tags && (
-                <Tags tags={tags} onlyFirstTag size="small" color="grey.400" />
+                <Tags tags={tags} numberOfTags={numberOfTags} size="small" color="grey.400" />
               )}
             </Box>
           </Box>

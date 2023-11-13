@@ -288,6 +288,11 @@ export const PortfolioItem = defineDocumentType(() => ({
       description: 'The tags of the portfolio item',
       required: false,
     },
+    numberOfTags: {
+      type: 'number',
+      description: 'The number of tags to show in portfolio page',
+      defaultValue: 1,
+    },
     description: {
       type: 'string',
       description: 'The description of the portfolio item',
@@ -355,6 +360,11 @@ export const Post = defineDocumentType(() => ({
       of: { type: 'string' },
       description: 'The tags of the post',
       required: false,
+    },
+    numberOfTags: {
+      type: 'number',
+      description: 'The number of tags to show in portfolio page',
+      defaultValue: 1,
     },
     image: {
       type: 'nested',
