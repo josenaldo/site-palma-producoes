@@ -3,8 +3,7 @@ id: 4
 highlight: true
 title: "ALVA"
 tags:
-  - Marca
-  - Aplicações
+  - Criação de Marca
 description:
   "An executive production project aimed at raising awareness about the importance of traffic safety."
 image:
