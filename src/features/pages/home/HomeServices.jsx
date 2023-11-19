@@ -12,7 +12,7 @@ import {
 import Image from 'next/image'
 
 import { useTranslation } from '@/features/i18n'
-import { ButtonLink, Title } from '@/features/ui'
+import { ButtonLink, Planets, Title } from '@/features/ui'
 import { useWidth } from '@/features/hooks'
 
 const planetSizes = {
@@ -171,103 +171,5 @@ function PlanetText({
     >
       {text}
     </Typography>
-  )
-}
-
-function Planets({ size = 400 }) {
-  return (
-    <>
-      <Box
-        sx={{
-          position: 'absolute',
-
-          '& img': {
-            '@keyframes spinOuter': {
-              '0%': {
-                transform: 'rotate(0deg)',
-              },
-              '15%': {
-                transform: 'rotate(0deg)',
-              },
-              '33%': {
-                transform: 'rotate(120deg)',
-              },
-              '45%': {
-                transform: 'rotate(120deg)',
-              },
-              '66%': {
-                transform: 'rotate(240deg)',
-              },
-              '75%': {
-                transform: 'rotate(240deg)',
-              },
-              '100%': {
-                transform: 'rotate(360deg)',
-              },
-            },
-            animationName: 'spinOuter',
-            animationDuration: '24s',
-            animationTimingFunction: 'linear',
-            animationIterationCount: 'infinite',
-            animationDelay: '6s',
-          },
-        }}
-      >
-        <Image
-          src="/images/home/services-outer.svg"
-          alt="Serviços"
-          height={size}
-          width={size}
-        />
-      </Box>
-      <Box
-        sx={{
-          position: 'absolute',
-          '& img': {
-            '@keyframes spin': {
-              from: {
-                transform: 'rotate(0deg)',
-              },
-              to: {
-                transform: 'rotate(360deg)',
-              },
-            },
-            animationName: 'spin',
-            animationDuration: '5s',
-            animationTimingFunction: 'linear',
-            animationIterationCount: 'infinite',
-            animationDelay: '1s',
-          },
-        }}
-      >
-        <Image
-          src="/images/home/services-inner.svg"
-          alt="Serviços"
-          height={size}
-          width={size}
-        />
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <Typography
-          variant="h5"
-          sx={{
-            width: '120px',
-            color: 'grey.700',
-          }}
-        >
-          Ecossistema com Soluções Integradas
-        </Typography>
-      </Box>
-    </>
   )
 }
