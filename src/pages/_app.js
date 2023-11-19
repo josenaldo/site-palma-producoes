@@ -5,6 +5,9 @@ import { seoConfig } from '@/data'
 import { RootLayout } from '@/features/layout'
 import '@/features/styles/globals.css'
 import nextI18nConfig from '../../next-i18next.config'
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-PKSQ591VPT");
 
 function App({ Component, pageProps }) {
   return (

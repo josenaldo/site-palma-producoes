@@ -24,6 +24,8 @@ export { Logo } from './Logo'
 
 export { Pagination } from './Pagination'
 
+export {Planets} from './Planets'
+
 export { ShareLink } from './ShareLink'
 
 export { SocialLinks } from './SocialLinks'
