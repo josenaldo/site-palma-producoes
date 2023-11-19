@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { Box, Button } from '@mui/material'
 import LoadingButton from '@mui/lab/LoadingButton'
 
+import { useReCaptcha } from "next-recaptcha-v3";
+
 import axios from 'axios'
 import * as yup from 'yup'
 import 'yup-phone-lite'
@@ -10,6 +12,7 @@ import 'yup-phone-lite'
 import { Form, FormInputPhone, FormInputText } from '@/features/form'
 import { useTranslation } from '@/features/i18n'
 import { Notification, useNotification } from '@/features/notification'
+
 
 const defaultValues = {
   name: '',
@@ -23,6 +26,7 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false)
   const { dispatch, setNotification, setErrorNotification, LEVELS } =
     useNotification()
+  const { executeRecaptcha } = useReCaptcha();
 
   const nameLabel = t('common:form.contato.name')
   const phoneLabel = t('common:form.contato.phone')
@@ -63,7 +67,11 @@ export default function ContactForm() {
     setLoading(true)
 
     try {
-      const res = await axios.post('/api/contact', data)
+
+      const token = await executeRecaptcha("form_submit");
+
+
+      const res = await axios.post('/api/contact', {data, token})
       dispatch(
         setNotification({
           type: LEVELS.SUCCESS,
