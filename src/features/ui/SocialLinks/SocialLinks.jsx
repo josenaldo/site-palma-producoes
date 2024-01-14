@@ -23,17 +23,17 @@ export default function SocialLinks({ color = 'common.light' }) {
     >
       {socialLinks.map((socialLink, index) => (
         <IconButton
-          key={index}
+          key={socialLink.href}
           href={socialLink.href}
           target="_blank"
           rel="noopener noreferrer"
           sx={{
             color: color,
             '&:hover': {
-              color: 'primary.main',
+              color: socialLink.color || 'primary.main',
             },
             '&:active': {
-              color: 'primary.dark',
+              color: socialLink.color || 'primary.dark',
             },
           }}
         >
