@@ -62,7 +62,7 @@ function HomeHeroCTA() {
     <Button
       color="light"
       onClick={() => {
-        const homeIntro = document.getElementById('homeIntro')
+        const homeIntro = document.getElementById('homeWho')
         if (homeIntro) {
           homeIntro.scrollIntoView({ behavior: 'smooth', block: 'center' })
         }

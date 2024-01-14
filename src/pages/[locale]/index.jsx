@@ -1,15 +1,15 @@
+import PropTypes from 'prop-types'
 import { Stack } from '@mui/material'
 
 import { getStaticPaths } from '@/features/i18n/server'
 
 import { AppLayout } from '@/features/layout'
 import {
+  HomeBannerToServices,
   HomeCTA,
   HomeHero,
-  HomeIntro,
   HomeServices,
   HomeTestimonials,
-  HomeVideo,
   HomeWho,
 } from '@/features/pages/home'
 
@@ -35,7 +35,26 @@ export async function getStaticProps({ params }) {
 
 export { getStaticPaths }
 
-// TODo: add SEO
+HomePage.propTypes = {
+  page: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
+  depoimentos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      testimonial: PropTypes.string.isRequired,
+      position: PropTypes.string,
+    })
+  ).isRequired,
+  servicos: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+}
+
 export default function HomePage({ page, depoimentos, servicos }) {
   return (
     <AppLayout
@@ -43,11 +62,10 @@ export default function HomePage({ page, depoimentos, servicos }) {
       description={page.description}
       image={page.image}
     >
-      <Stack>
+      <Stack gap={8}>
         <HomeHero />
-        {/* <HomeIntro /> */}
         <HomeWho />
-        <HomeVideo />
+        <HomeBannerToServices />
         <HomeServices servicos={servicos} />
         <HomeTestimonials depoimentos={depoimentos} />
         <HomeCTA />

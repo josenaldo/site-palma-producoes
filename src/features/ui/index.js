@@ -4,6 +4,8 @@ export { AnchoredTitle } from './AnchoredTitle'
 
 export { BannerBox } from './BannerBox'
 
+export { BigBanner } from './BigBanner'
+
 export { Breadcrumbs } from './Breadcrumbs'
 
 export { ButtonLink } from './ButtonLink'
@@ -18,13 +20,15 @@ export { ImageFallback } from './ImageFallback'
 
 export { Hero } from './Hero'
 
+export { HomeTitleWithButton } from './HomeTitleWithButton'
+
 export { Link } from './Link'
 
 export { Logo } from './Logo'
 
 export { Pagination } from './Pagination'
 
-export {Planets} from './Planets'
+export { Planets } from './Planets'
 
 export { ShareLink } from './ShareLink'
 

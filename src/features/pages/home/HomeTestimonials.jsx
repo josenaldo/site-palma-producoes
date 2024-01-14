@@ -1,25 +1,54 @@
+import PropTypes from 'prop-types'
 import { Box, Card, CardContent, Container, Typography } from '@mui/material'
-import { Carousel } from '@/features/ui'
+
+import { Carousel, HomeTitleWithButton } from '@/features/ui'
+import { useTranslation } from '@/features/i18n'
+
+HomeTestimonials.propTypes = {
+  depoimentos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      testimonial: PropTypes.string.isRequired,
+      position: PropTypes.string,
+    })
+  ).isRequired,
+}
 
 export default function HomeTestimonials({ depoimentos }) {
+  const { t } = useTranslation(['common', 'home'])
+
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        my: 10,
-        width: '100%',
-        gap: 4,
-      }}
-    >
-      <Carousel>
-        {depoimentos.map((depoimento) => (
-          <TestimonialCard key={depoimento.url} testimonial={depoimento} />
-        ))}
-      </Carousel>
-    </Container>
+    <Box component="section" id="homeTestimonials">
+      <HomeTitleWithButton
+        title={t('home:portfolio.title')}
+        href="/portfolio"
+        buttonText={t('home:portfolio.button')}
+      />
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%',
+          gap: 4,
+        }}
+      >
+        <Carousel>
+          {depoimentos.map((depoimento) => (
+            <TestimonialCard key={depoimento.name} testimonial={depoimento} />
+          ))}
+        </Carousel>
+      </Container>
+    </Box>
   )
+}
+
+TestimonialCard.propTypes = {
+  testimonial: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    testimonial: PropTypes.string.isRequired,
+    position: PropTypes.string,
+  }).isRequired,
 }
 
 function TestimonialCard({ testimonial }) {

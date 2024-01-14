@@ -1,9 +1,8 @@
+import Image from 'next/image'
 import { Box, Container, Typography } from '@mui/material'
 
-import Image from 'next/image'
-
 import { useTranslation } from '@/features/i18n'
-import { ButtonLink, Title } from '@/features/ui'
+import { HomeTitleWithButton } from '@/features/ui'
 import { useImageSizes } from '@/features/hooks'
 
 export default function HomeWho() {
@@ -16,12 +15,7 @@ export default function HomeWho() {
   })
 
   return (
-    <Box
-      component="section"
-      sx={{
-        mt: 10,
-      }}
-    >
+    <Box component="section" id="homeWho">
       <Container
         sx={{
           display: 'flex',
@@ -105,43 +99,12 @@ export default function HomeWho() {
               ))}
             </Box>
 
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: {
-                  xs: 'column',
-                  md: 'row',
-                },
-                alignItems: {
-                  xs: 'center',
-                  md: 'center',
-                },
-                justifyContent: {
-                  xs: 'center',
-                  md: 'flex-start',
-                },
-                gap: 4,
-                width: '100%',
-              }}
-            >
-              <Title variant="h3" borderBottomColor="transparent">
-                {t('home:who.title')}
-              </Title>
-              <ButtonLink
-                size="large"
-                href="/quem-somos"
-                variant="outlined"
-                color="dark"
-                hoverColor="primary"
-                sx={{
-                  height: 'fit-content',
-                  px: 4,
-                  flexGrow: 1,
-                }}
-              >
-                {t('home:who.button')}
-              </ButtonLink>
-            </Box>
+            <HomeTitleWithButton
+              title={t('home:who.title')}
+              href="/quem-somos"
+              buttonText={t('home:who.button')}
+              fullwidth
+            />
           </Box>
         </Box>
       </Container>
