@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Container, Divider, Typography } from '@mui/material'
+import { Box, Chip, Container, Divider, Typography } from '@mui/material'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { useTranslation } from '@/features/i18n'
@@ -131,7 +131,7 @@ export default function ContentPage({
         {...props}
       />
     ),
-
+    Chip: ({ label, ...props }) => <Chip label={label} {...props} />,
     Colunas: ({ formato = '1|1', ...props }) => (
       <BlockColumns format={formato} {...props} />
     ),

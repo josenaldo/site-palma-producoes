@@ -1,12 +1,12 @@
 ---
 id: 2
-title: Comunicação Visual e Estratégica
+title: COMUNICAÇÃO | Experiências Visuais e Estratégicas
 description:
-  Criamos narrativas com o cuidado que sua marca/projeto merece"
+  "Criamos narrativas em diferentes formatos e mídias para conectar pessoas e ampliar o potencial de impacto do seu projeto."
 icon: /images/content/servicos/comunicacao-visual.svg
 ---
-Criamos narrativas com o cuidado que sua marca/projeto merece.
+Criamos narrativas em diferentes formatos e mídias para conectar pessoas e ampliar o potencial de impacto do seu projeto.
 
-*Branding • Identidade Visual • Design Gráfico e Digital • Planejamento Estratégico para Mídias • Direção de Arte • Produção Editorial • Marketing Digital*
+**Posicionamento de Marca • Identidade Visual • Design Gráfico e Digital • Marketing Digital • Direção de Arte • Produção Editorial • UX/UI**
 
 *ESCUTA E PESQUISA >> PLANEJAMENTO ESTRATÉGICO >> DESIGN >> PUBLICAÇÕES E VEICULAÇÕES >> ANÁLISE E ACOMPANHAMENTO*

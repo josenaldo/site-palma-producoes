@@ -1,12 +1,12 @@
 ---
 id: 3
-title: Criação de Conteúdo Audiovisual
+title: AUDIOVISUAL | Criação de Conteúdo Audiovisual
 description:
-  "Nossas lentes são a janela para o coração do Brasil."
+  "Nossas lentes revelam histórias únicas."
 icon: /images/content/servicos/criacao-de-conteudos.svg
 ---
-Nossas lentes são a janela para o coração do Brasil.
+Nossas lentes revelam histórias únicas.
 
-*Produção Executiva • Direção de Arte • Direção • Roteiro • Fotografia • Vídeo • Produção • Edição*
+**Produção Executiva • Direção de Arte • Direção • Roteiro • Fotografia • Vídeo • Produção • Edição**
 
 *DESENVOLVIMENTO  >> PRÉ-PRODUÇÃO >> PRODUÇÃO >> PÓS-PRODUÇÃO*

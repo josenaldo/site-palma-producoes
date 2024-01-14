@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Chip, Typography } from '@mui/material'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { Link } from '@/features/ui'
@@ -20,7 +20,7 @@ export default function ContentBlock({ body, content, components = {} }) {
     h5: (props) => <Typography component="h5" variant="h5" {...props} />,
     h6: (props) => <Typography component="h6" variant="h6" {...props} />,
     a: Link,
-
+    Chip: ({ label, ...props }) => <Chip label={label} {...props} />,
     ...components,
   }
 
