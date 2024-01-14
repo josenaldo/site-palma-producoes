@@ -1,40 +1,43 @@
-.outerPlanet{
+.outerPlanet {
   position: absolute;
 }
 
 .outerPlanetAnimation img {
   animation-name: spinOuter;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-delay: 1s;
 }
 
 @keyframes spinOuter {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
 
-  /* 15%{
-    transform: rotate(0deg);
-  }
-
-  33%{
-    transform: rotate(-120deg);
-  }
-
-  45%{
-    transform: rotate(-120deg);
-  }
-
-  66%{
-    transform: rotate(-240deg);
-  }
-  75%{
-    transform: rotate(-240deg);
-  } */
-
-  100%{
+  100% {
     transform: rotate(-360deg);
+  }
+}
+
+.innerPlanet {
+  position: absolute;
+}
+
+.innerPlanetAnimation img {
+  animation-name: spinInner;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes spinInner {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
