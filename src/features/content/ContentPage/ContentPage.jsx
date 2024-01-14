@@ -29,6 +29,7 @@ import {
   BlockGallery,
   BlockKnowMoreButton,
   BlockLightbox,
+  BlockSequence,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -199,6 +200,7 @@ export default function ContentPage({
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
     Resumo: BlockAbstract,
+    Sequencia: BlockSequence,
     Tags: ({ size = 'small', ...props }) => (
       <BlockTags tags={tags} size={size} />
     ),

@@ -1,12 +1,12 @@
 ---
 id: 3
-title: Creation of Audiovisual Content
-description:
-  "Our lenses are the window to the heart of Brazil"
+title: AUDIOVISUAL | Audiovisual Content Creation
+description: "Our lenses reveal unique stories."
 icon: /images/content/servicos/criacao-de-conteudos.svg
 ---
-Our lenses are the window to the heart of Brazil.
 
-*Executive Production • Art Direction • Direction • Script • Photography • Video • Production • Editing*
+Our lenses reveal unique stories.
 
-*DEVELOPMENT >> PRE-PRODUCTION >> PRODUCTION >> POST-PRODUCTION*
+**Executive Production • Art Direction • Direction • Scriptwriting • Photography • Video • Production • Editing**
+
+<Sequencia color='tertiary' passos="DEVELOPMENT > PRE-PRODUCTION > PRODUCTION > POST-PRODUCTION" />

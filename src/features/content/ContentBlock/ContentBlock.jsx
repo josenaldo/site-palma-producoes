@@ -2,7 +2,7 @@ import { Box, Chip, Typography } from '@mui/material'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { Link } from '@/features/ui'
-import { BlockResponsiveImage } from '@/features/content/blocks'
+import { BlockResponsiveImage, BlockSequence } from '@/features/content/blocks'
 
 import styles from './ContentBlock.module.css'
 
@@ -20,8 +20,9 @@ export default function ContentBlock({ body, content, components = {} }) {
     h5: (props) => <Typography component="h5" variant="h5" {...props} />,
     h6: (props) => <Typography component="h6" variant="h6" {...props} />,
     a: Link,
-    Chip: ({ label, ...props }) => <Chip label={label} {...props} />,
+        Chip: ({ label, ...props }) => <Chip label={label} {...props} />,
     ...components,
+    Sequencia: BlockSequence
   }
 
   return (

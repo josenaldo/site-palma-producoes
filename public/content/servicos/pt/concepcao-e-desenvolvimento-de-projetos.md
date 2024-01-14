@@ -10,4 +10,4 @@ Guiamos cada passo da sua jornada com a abordagem do Design Thinking para criar 
 
 **Consultoria • Gestão de Projetos • Design de Serviços • Produção Executiva • Curadoria • Produção Cultural**
 
-*ENTENDIMENTO DO PROBLEMA >> PROPOSTA DE VALOR >> SPRINTS PARA PROTOTIPAR >> PROJETO >> DESENVOLVIMENTO >> ANÁLISE*
+<Sequencia color='primary' passos="ENTENDIMENTO DO PROBLEMA > PROPOSTA DE VALOR > SPRINTS PARA PROTOTIPAR > PROJETO > DESENVOLVIMENTO > ANÁLISE" />

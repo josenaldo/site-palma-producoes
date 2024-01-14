@@ -1,12 +1,12 @@
 ---
 id: 1
-title: Conception and Project Development
-description:
-  "We guide every step of your journey through the Design Thinking approach."
+title: INNOVATION | Conception and Project Development
+description: "We guide every step of your journey with a Design Thinking approach to create things that don't yet have a name."
 icon: /images/content/servicos/consultoria-e-projetos.svg
 ---
-We guide every step of your journey through the Design Thinking approach.
 
-*Consulting • Project Management • Executive Production • Curation • Cultural Production*
+We guide every step of your journey with a Design Thinking approach to create things that don't yet have a name.
 
-*UNDERSTANDING THE PROBLEM >> VALUE PROPOSITION >> SPRINTS FOR PROTOTYPING >> PROJECT >> DEVELOPMENT >> ANALYSIS*
+**Consulting • Project Management • Service Design • Executive Production • Curation • Cultural Production**
+
+<Sequencia color='primary' passos="UNDERSTANDING THE PROBLEM > VALUE PROPOSITION > SPRINTS FOR PROTOTYPING > PROJECT > DEVELOPMENT > ANALYSIS" />
