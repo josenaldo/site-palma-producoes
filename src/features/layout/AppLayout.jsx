@@ -9,7 +9,7 @@ import { seoConfig, APP_DEFAULT_IMAGE } from '@/data'
 import { useTranslation } from '@/features/i18n'
 import { Breadcrumbs } from '@/features/ui'
 import useIsHome from '@/features/layout/useIsHome'
-import { is } from 'date-fns/locale'
+import ScrollTop from '@/features/layout/Header/ScrollTop'
 
 export default function AppLayout({
   title,
@@ -44,17 +44,20 @@ export default function AppLayout({
   }, [isoLocale, title, description, image])
 
   return (
-    <Box
-      sx={{
-        contain: 'paint',
-      }}
-    >
-      <NextSeo title={title} description={description} openGraph={og} />
+    <>
+      <Box
+        sx={{
+          contain: 'paint',
+        }}
+      >
+        <NextSeo title={title} description={description} openGraph={og} />
 
-      <Header />
-      {!isHome && <Breadcrumbs crumbs={crumbs} />}
-      <main id="__next">{children}</main>
-      <Footer />
-    </Box>
+        <Header />
+        {!isHome && <Breadcrumbs crumbs={crumbs} />}
+        <main id="__next">{children}</main>
+        <Footer />
+      </Box>
+      <ScrollTop />
+    </>
   )
 }

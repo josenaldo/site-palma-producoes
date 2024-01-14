@@ -17,7 +17,7 @@ export default function Footer() {
           sm: 'column',
           md: 'row',
         },
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         padding: 3,
         width: '100%',
@@ -26,12 +26,6 @@ export default function Footer() {
         gap: 1,
       }}
     >
-      <Box
-        sx={{
-          width: '10%',
-        }}
-      ></Box>
-
       <Box
         sx={{
           display: 'flex',
@@ -52,49 +46,6 @@ export default function Footer() {
           &copy; {t('common:footer:copyright')}
         </Typography>
         <LanguageSelector t={t} />
-      </Box>
-
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'flex-end',
-        }}
-      >
-        <Button
-          sx={{
-            display: {
-              xs: 'none',
-              sm: 'none',
-              md: 'flex',
-            },
-          }}
-          color="secondary"
-          size="small"
-          endIcon={<ArrowUpwardIcon />}
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-          }}
-        >
-          {t('common:footer.backToTop')}
-        </Button>
-
-        <IconButton
-          sx={{
-            display: {
-              xs: 'flex',
-              sm: 'flex',
-              md: 'none',
-            },
-          }}
-          color="secondary"
-          size="small"
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-          }}
-        >
-          <ArrowUpwardIcon />
-        </IconButton>
       </Box>
     </Box>
   )
