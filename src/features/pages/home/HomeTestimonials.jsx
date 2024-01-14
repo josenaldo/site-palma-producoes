@@ -18,7 +18,13 @@ export default function HomeTestimonials({ depoimentos }) {
   const { t } = useTranslation(['common', 'home'])
 
   return (
-    <Box component="section" id="homeTestimonials">
+    <Box
+      component="section"
+      id="homeTestimonials"
+      display={'flex'}
+      flexDirection={'column'}
+      gap={8}
+    >
       <HomeTitleWithButton
         title={t('home:portfolio.title')}
         href="/portfolio"
@@ -30,10 +36,9 @@ export default function HomeTestimonials({ depoimentos }) {
           flexDirection: 'column',
           alignItems: 'center',
           width: '100%',
-          gap: 4,
         }}
       >
-        <Carousel>
+        <Carousel py={0}>
           {depoimentos.map((depoimento) => (
             <TestimonialCard key={depoimento.name} testimonial={depoimento} />
           ))}

@@ -16,7 +16,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
-export default function Carousel({ slidesPerView = 1, children }) {
+export default function Carousel({ slidesPerView = 1, children, py = 4 }) {
   const theme = useTheme()
 
   const arrayChildren = React.Children.toArray(children)
@@ -31,7 +31,7 @@ export default function Carousel({ slidesPerView = 1, children }) {
       sx={{
         width: '100%',
         maxWidth: '100%',
-        py: 4,
+        py: py,
         position: 'relative',
       }}
     >
