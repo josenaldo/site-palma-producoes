@@ -107,10 +107,6 @@ export default function ShareDialog({ description, url, open, onClose }) {
         color="primary"
         sx={{ paddingRight: '40px' }}
       >
-        <Typography variant="h6" component="div">
-          {t('common:share.title')}
-        </Typography>
-
         {onClose ? (
           <IconButton
             aria-label="close"
@@ -135,7 +131,9 @@ export default function ShareDialog({ description, url, open, onClose }) {
         }}
       >
         <DialogContentText sx={{ textAlign: 'center' }}>
-          {description || t('common:share.text')}
+          <Typography variant="h6" component="div" color="primary">
+            {description || t('common:share.text')}
+          </Typography>
         </DialogContentText>
       </DialogContent>
       <DialogActions>
