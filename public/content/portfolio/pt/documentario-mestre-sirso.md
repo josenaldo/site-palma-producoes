@@ -67,7 +67,7 @@ Mestre Sirso é um homem surdo, negro, que revela uma história de resistência 
     - Palma Produções
     - Carnevale Produções
 
-    <BotaoSaibaMais href="https://todesplay.com.br/">Em breve na Todes Play</BotaoSaibaMais>
+    <BotaoSaibaMais href="https://todesplay.com.br/">Assista na Todes Play</BotaoSaibaMais>
 
   </Caixa>
 </Colunas>

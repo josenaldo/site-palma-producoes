@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Container, Divider, Typography } from '@mui/material'
+import { Box, Chip, Container, Divider, Typography } from '@mui/material'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { useTranslation } from '@/features/i18n'
@@ -29,6 +29,7 @@ import {
   BlockGallery,
   BlockKnowMoreButton,
   BlockLightbox,
+  BlockSequence,
 } from '@/features/content/blocks'
 
 import styles from './ContentPage.module.css'
@@ -131,7 +132,7 @@ export default function ContentPage({
         {...props}
       />
     ),
-
+    Chip: ({ label, ...props }) => <Chip label={label} {...props} />,
     Colunas: ({ formato = '1|1', ...props }) => (
       <BlockColumns format={formato} {...props} />
     ),
@@ -199,6 +200,7 @@ export default function ContentPage({
     Parceria: BlockPartnershipItem,
     RedesSociais: (props) => <BlockSocialBar {...props} />,
     Resumo: BlockAbstract,
+    Sequencia: BlockSequence,
     Tags: ({ size = 'small', ...props }) => (
       <BlockTags tags={tags} size={size} />
     ),

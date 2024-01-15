@@ -1,18 +1,7 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material'
+import PropTypes from 'prop-types'
+import { Box, Container, Typography } from '@mui/material'
 
-import Image from 'next/image'
-
-import { useTranslation } from '@/features/i18n'
-import { ButtonLink, Planets, Title } from '@/features/ui'
+import { Planets } from '@/features/ui'
 import { useWidth } from '@/features/hooks'
 
 const planetSizes = {
@@ -31,19 +20,21 @@ const planetBoxSizes = {
   xl: '50%',
 }
 
+HomeServices.propTypes = {
+  servicos: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+}
+
 export default function HomeServices({ servicos }) {
-  const { t } = useTranslation(['common', 'home'])
   const screenWidth = useWidth()
   const planetSize = planetSizes[screenWidth]
   const planetBoxSize = planetBoxSizes[screenWidth]
 
   return (
-    <Box
-      component="section"
-      sx={{
-        mt: 10,
-      }}
-    >
+    <Box component="section" id="homeServices">
       <Container
         sx={{
           display: 'flex',
@@ -53,40 +44,6 @@ export default function HomeServices({ servicos }) {
           gap: 4,
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: {
-              xs: 'column',
-              md: 'row',
-            },
-            alignItems: {
-              xs: 'center',
-              md: 'center',
-            },
-            justifyContent: 'center',
-            gap: 4,
-            width: '100%',
-          }}
-        >
-          <Title variant="h3" borderBottomColor="transparent">
-            {t('home:services.title')}
-          </Title>
-          <ButtonLink
-            href="/servicos"
-            variant="outlined"
-            color="dark"
-            size="large"
-            hoverColor="primary"
-            sx={{
-              height: 'fit-content',
-              px: 4,
-            }}
-          >
-            {t('home:services.button')}
-          </ButtonLink>
-        </Box>
-
         <Box
           sx={{
             display: 'flex',
@@ -149,6 +106,12 @@ export default function HomeServices({ servicos }) {
       </Container>
     </Box>
   )
+}
+
+PlanetText.propTypes = {
+  text: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  width: PropTypes.object,
 }
 
 function PlanetText({

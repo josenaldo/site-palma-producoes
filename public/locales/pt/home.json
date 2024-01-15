@@ -12,11 +12,17 @@
     "impact": "/images/home/impacto.png",
     "title": "Quem faz a Palma",
     "text": [
-      "*O ecossistema da Palma conecta arte e inovação para apresentar ao mundo histórias que inspiram mudanças de consciência. Atuamos de forma holística na construção de narrativas - desde a sua concepção até a realização e divulgação - indicando as abordagens possíveis em diferentes formatos e mídias.*",
+      "*O ecossistema da Palma conecta inovação, comunicação e audiovisual para criar experiências e narrativas que nos inspiram seguir na direção de um futuro regenerativo.*",
 
-      "*Na sinergia do Design Thinking, co-criamos e expandimos o olhar para o potencial de impacto do seu projeto. Com parceiros conectados ao mesmo propósito, estamos engajadas em iniciativas que reconheçam o valor da diversidade cultural brasileira e a importância do equilíbrio socioambiental. É o nosso compromisso para um mundo mais justo e inclusivo.*"
+      "*Guiamos cada passo da sua jornada na criação de coisas que ainda não têm nome. Projetamos, desenvolvemos e identificamos desdobramentos possíveis - em produtos e serviços - para diferentes formatos e mídias.*",
+
+      "*Estamos conectadas a uma rede engajada em iniciativas que valorizam a diversidade cultural brasileira para promover o sentimento de pertencimento e o equilíbrio socioambiental.*"
     ],
     "button": "Conheça nosso time"
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "button": "Conheça nossos projetos"
   },
   "video": {
     "video": "https://www.youtube.com/watch?v=Hj0btCi1GS8"
@@ -28,7 +34,7 @@
   },
 
   "cta": {
-    "title": "Vamos criar algo incrível juntos!",
+    "title": "Vamos criar algo juntos!",
     "text": "Queremos ampliar o potencial de impacto do seu projeto",
     "button": "ENTRE EM CONTATO"
   }

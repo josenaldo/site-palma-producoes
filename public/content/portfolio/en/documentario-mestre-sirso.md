@@ -67,7 +67,7 @@ Master Sirso is a deaf, Black man who reveals a story of resilience in the fight
     - Palma Produções
     - Carnevale Produções
 
-    <BotaoSaibaMais href="https://todesplay.com.br/">Em breve na Todes Play</BotaoSaibaMais>
+    <BotaoSaibaMais href="https://todesplay.com.br/">Watch on Todes Play</BotaoSaibaMais>
 
   </Caixa>
 </Colunas>

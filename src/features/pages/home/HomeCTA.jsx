@@ -9,6 +9,7 @@ export default function HomeCTA() {
   return (
     <Box
       component="section"
+      id="homeCTA"
       sx={{
         backgroundColor: 'dark.main',
         display: 'flex',

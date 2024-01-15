@@ -1,12 +1,12 @@
 ---
 id: 2
-title: Visual and Strategic Communication
-description:
-  "We craft narratives with the care your brand/project deserves."
+title: COMMUNICATION | Visual and Strategic Experiences
+description: "We create narratives in different formats and media to connect people and expand the impact potential of your project."
 icon: /images/content/servicos/comunicacao-visual.svg
 ---
-We craft narratives with the care your brand/project deserves
 
-*Branding • Visual Identity • Graphic and Digital Design • Strategic Media Planning • Art Direction • Editorial Production • Digital Marketing*
+We create narratives in different formats and media to connect people and expand the impact potential of your project.
 
-*LISTENING AND RESEARCH >> STRATEGIC PLANNING >> DESIGN >> PUBLICATIONS AND BROADCASTS >> ANALYSIS AND MONITORING*
+**Brand Positioning • Visual Identity • Graphic and Digital Design • Digital Marketing • Art Direction • Editorial Production • UX/UI**
+
+<Sequencia color='secondary' passos="LISTENING AND RESEARCH > STRATEGIC PLANNING > DESIGN > PUBLICATIONS AND BROADCAST > ANALYSIS AND MONITORING" />

@@ -1,6 +1,6 @@
 ---
 name: Emanuela Palma
-description: Sócia - Produtora Executive
+description: Sócia - Produtora Executiva
 image: "/images/content/socias/emanuela-palma.jpg"
 order: 1
 ---

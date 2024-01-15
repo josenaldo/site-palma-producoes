@@ -1,6 +1,6 @@
 ---
 name: Alexandra Karmiriam
-description: Líder de Inovação - Gerente de Projetos
+description: Sócia - Líder de Inovação - Gerente de Projetos
 image: "/images/content/socias/alexandra-karmiriam.jpg"
 order: 3
 ---

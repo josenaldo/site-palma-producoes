@@ -3,8 +3,8 @@ id: 7
 highlight: true
 title: "Mostra Cinema e Direitos Humanos"
 tags:
-  - Fotografia
   - Produção Cultural
+  - Fotografia
   - Audiovisual
 description:
   "Umas das mais ricas experiências da Palma com a produção de impacto, abrindo caminhos para a formação de público e plateia para refletirmos os Direitos Humanos por meio da Sétima Artes."

@@ -32,7 +32,7 @@ export default function ServiceList({ services }) {
           sx={{
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: 'center',
+            alignItems: 'flex-start',
             borderRadius: 0,
             py: 2,
             width: '100%',
@@ -41,13 +41,16 @@ export default function ServiceList({ services }) {
           <CardMedia
             sx={{
               display: 'flex',
+              justifyContent: 'center',
+              width: { xs: '100%', sm: 'auto' },
+              pt: 1,
             }}
           >
             <Image
               src={service.icon}
               alt={service.title}
-              width={50}
-              height={50}
+              width={100}
+              height={100}
             />
           </CardMedia>
           <CardContent>
@@ -64,7 +67,15 @@ export default function ServiceList({ services }) {
             >
               {service.title}
             </Typography>
-            <ContentBlock body={service.body}></ContentBlock>
+            <Box sx={{
+              textAlign: {
+                xs: 'center',
+                sm: 'left',
+              },
+
+            }}>
+              <ContentBlock body={service.body}></ContentBlock>
+            </Box>
           </CardContent>
         </Card>
       ))}

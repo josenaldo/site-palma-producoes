@@ -73,6 +73,7 @@
     "yup-phone-lite": "^2.0.1"
   },
   "devDependencies": {
+    "prettier": "^3.2.2",
     "rimraf": "^5.0.1"
   }
 }

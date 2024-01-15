@@ -1,11 +1,12 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import Image from 'next/image'
+import { Box, Typography } from '@mui/material'
+
 import { useElementOnScreen, useWidth } from '@/features/hooks'
 import { useTranslation } from '@/features/i18n'
-import { Box, Typography } from '@mui/material'
-import Image from 'next/image'
-import React from 'react'
 
 import styles from './Planets.module.css'
-
 
 const options = {
   root: null,
@@ -13,15 +14,20 @@ const options = {
   threshold: '0.5',
 }
 
+Planets.propTypes = {
+  size: PropTypes.number,
+}
 
 export default function Planets({ size = 400 }) {
-
   const { t } = useTranslation(['common', 'home'])
   const [containerRef, isVisible] = useElementOnScreen(options)
 
   return (
     <>
-      <Box ref={containerRef} className={`${styles.outerPlanet} ${isVisible ? styles.outerPlanetAnimation : ''}`}>
+      <Box
+        ref={containerRef}
+        className={`${styles.outerPlanet} ${isVisible ? styles.outerPlanetAnimation : ''}`}
+      >
         <Image
           src="/images/home/services-outer.svg"
           alt="Serviços"
@@ -29,26 +35,7 @@ export default function Planets({ size = 400 }) {
           width={size}
         />
       </Box>
-      <Box
-        sx={{
-          position: 'absolute',
-          '& img': {
-            '@keyframes spin': {
-              from: {
-                transform: 'rotate(0deg)',
-              },
-              to: {
-                transform: 'rotate(360deg)',
-              },
-            },
-            animationName: 'spin',
-            animationDuration: '5s',
-            animationTimingFunction: 'linear',
-            animationIterationCount: 'infinite',
-            animationDelay: '1s',
-          },
-        }}
-      >
+      <Box className={`${styles.innerPlanet} ${styles.innerPlanetAnimation}`}>
         <Image
           src="/images/home/services-inner.svg"
           alt="Serviços"

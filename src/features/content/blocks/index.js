@@ -26,6 +26,8 @@ export { BlockPartnershipItem } from './BlockPartnerships'
 
 export { BlockResponsiveImage } from './BlockResponsiveImage'
 
+export {BlockSequence } from './BlockSequence'
+
 export { BlockShareButton } from './BlockShareButton'
 
 export { BlockSocialBar } from './BlockSocialBar'

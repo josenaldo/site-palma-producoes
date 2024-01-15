@@ -12,11 +12,17 @@
     "impact": "/images/home/impact.png",
     "title": "Who makes it happen",
     "text": [
-      "*The Palma ecosystem connects art and innovation to present stories to the world that inspire shifts in consciousness. We operate holistically in crafting narratives—from conception to realization and promotion—indicating possible approaches in different formats and media.*",
+      "*The Palma ecosystem connects innovation, communication, and audiovisual to create experiences and narratives that inspire us to move towards a regenerative future.*",
 
-      "*In the synergy of Design Thinking, we co-create and expand perspectives on the impact potential of your project. With partners aligned with the same purpose, we are engaged in initiatives that recognize the value of Brazilian cultural diversity and the importance of socio-environmental balance. It is our commitment to a fairer and more inclusive world.*"
+      "*We guide every step of your journey in creating things that have no name yet. We design, develop, and identify possible developments - in products and services - for different formats and media.*",
+
+      "*We are connected to a network engaged in initiatives that value Brazilian cultural diversity to promote a sense of belonging and socio-environmental balance.*"
     ],
     "button": "Know our Team"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "button": "Know our projects"
   },
   "video": {
     "video": "https://www.youtube.com/watch?v=Hj0btCi1GS8"
@@ -28,7 +34,7 @@
   },
 
   "cta": {
-    "title": "Let's create something amazing together!",
+    "title": "Let's create something together!",
     "text": "We want to amplify the impact potential of your project.",
     "button": "CONTACT US"
   }

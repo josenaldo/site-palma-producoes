@@ -9,4 +9,6 @@ image:
   height: 628
 ---
 
-*Com uma visão holística e uma equipe multidisciplinar unimos inovação e comunicação para guiar cada passo da sua jornada na realização de um projeto. Co-criamos, desenvolvemos e identificamos possíveis caminhos para o desdobramento em novos produtos e serviços que ainda não têm nome*.
+*Com uma visão holística e equipe multidisciplinar, criamos experiências e narrativas que conectam cultura e sustentabilidade numa jornada de inspiração, inovação, impacto e transformação.*
+
+*Frente de trabalho:*.
