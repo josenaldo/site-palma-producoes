@@ -1,6 +1,6 @@
 ---
 id: 9
-highlight: true
+highlight: false
 title: "Raízes e Rainhas"
 tags:
   - Photography

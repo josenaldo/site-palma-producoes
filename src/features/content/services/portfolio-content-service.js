@@ -11,22 +11,32 @@ export function getAllPortfolio(locale) {
     (portfolio) => portfolio.locale === locale
   )
 
-  const sorted = filtered.sort((a, b) => a.id - b.id)
+  const sorted = filtered.sort((a, b) => {
+    if (a.highlight && !b.highlight) {
+      return -1
+    }
+
+    if (!a.highlight && b.highlight) {
+      return 1
+    }
+
+    return a.id - b.id
+  })
 
   return sorted
 }
 
 export function getPortfolio(locale, page = 0, limit = 10) {
-  const filtered = allPortfolio.filter(
+  const filtered = allPortfolioItems.filter(
     (portfolio) => portfolio.locale === locale
   )
 
   const sorted = filtered.sort((a, b) => {
-    if (a.highlighted && !b.highlighted) {
+    if (a.highlight && !b.highlight) {
       return -1
     }
 
-    if (!a.highlighted && b.highlighted) {
+    if (!a.highlight && b.highlight) {
       return 1
     }
 
