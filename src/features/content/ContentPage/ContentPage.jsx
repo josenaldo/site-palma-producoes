@@ -65,10 +65,38 @@ export default function ContentPage({
   const comp = {
     h1: (props) => <Typography component="h1" variant="h2" {...props} />,
     h2: (props) => <AnchoredTitle component="h2" variant="h3" {...props} />,
-    h3: (props) => <AnchoredTitle component="h3" variant="h4" {...props} />,
-    h4: (props) => <AnchoredTitle component="h4" variant="h5" {...props} />,
-    h5: (props) => <AnchoredTitle component="h5" variant="h6" {...props} />,
-    h6: (props) => <AnchoredTitle component="h6" variant="h6" {...props} />,
+    h3: (props) => (
+      <AnchoredTitle
+        component="h3"
+        variant="h4"
+        borderBottomColor="transparent"
+        {...props}
+      />
+    ),
+    h4: (props) => (
+      <AnchoredTitle
+        component="h4"
+        variant="h5"
+        borderBottomColor="transparent"
+        {...props}
+      />
+    ),
+    h5: (props) => (
+      <AnchoredTitle
+        component="h5"
+        variant="h6"
+        borderBottomColor="transparent"
+        {...props}
+      />
+    ),
+    h6: (props) => (
+      <AnchoredTitle
+        component="h6"
+        variant="h6"
+        borderBottomColor="transparent"
+        {...props}
+      />
+    ),
     a: (props) => <Link {...props} color="primary" sx={{ fontWeight: 500 }} />,
     hr: Divider,
     img: (props) => {
