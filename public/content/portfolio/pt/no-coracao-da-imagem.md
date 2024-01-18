@@ -1,6 +1,6 @@
 ---
 id: 10
-highlight: true
+highlight: false
 title: "No Coração da Imagem"
 tags:
   - Curadoria
