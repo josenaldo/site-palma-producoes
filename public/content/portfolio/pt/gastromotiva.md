@@ -6,7 +6,7 @@ tags:
   - Audiovisual
   - Design Digital
 description:
-  "Comida que transforma"
+  "Em parceria com a CallBMídia, capturamos, dirigimos e editamos um vídeo de Natal com a participação de David Hertz, Fundador da Gastromotiva, uma organização sem fins lucrativos que utiliza a gastronomia para a transformação social, combatendo a fome e a insegurança desde 2006."
 image:
   url: /images/content/portfolio/gastromotiva/capa.jpg
   alt: Gastromotiva
@@ -313,10 +313,6 @@ Em parceria com CallBMídia fizemos a Captação, Direção e Edição de Vídeo
 ![imagem-3.jpg [1200x800] ](/images/content/portfolio/gastromotiva/design-acao-natal/imagem-3.jpg)
 
 </Galeria>
-
-### Campanha Chega de Fome
-
-### Projeto Cozinhas Solidárias
 
 ### 4 Anos Refettorio Gastromotiva
 
