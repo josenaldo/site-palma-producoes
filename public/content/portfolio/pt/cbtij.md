@@ -1,7 +1,7 @@
 ---
 id: 14
 highlight: true
-title: Centro Brasileiro de Teatro para a Infância e Juventude - CBTIJ
+title: CBTIJ
 tags:
   - Design Gráfico e Digital
 description:
@@ -14,7 +14,7 @@ image:
 
 ---
 
-<Titulo/>
+<Titulo subtitulo="Centro Brasileiro de Teatro para a Infância e Juventude" />
 
 <Tags />
 
@@ -39,25 +39,39 @@ A identidade visual da II Mostra de Repertórios do CBTIJ foi concebida com o pr
 
 Com elementos da cultura popular e cores vibrantes buscamos transmitir a energia e a pluralidade presentes nas performances, valorizando a multiplicidade de histórias e perspectivas exploradas durante a mostra.
 
+<Galeria>
+
+![identidade-visual-1.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-1.jpg)
+
+![identidade-visual-2.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-2.jpg)
+
+![identidade-visual-3.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-3.jpg)
+
+![identidade-visual-4.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-4.jpg)
+
+![identidade-visual-5.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-5.jpg)
+
+</Galeria>
+
 ## Design Digital
 
 Texto: Para ampliar o alcance do evento, de forma acessível e atrativa, desenvolvemos as peças gráficas para a comunicação digital explorando a riqueza dos elementos da identidade visual que criamos para o projeto. As peças de cada atividade foram criadas com o olhar cuidadoso trazendo a essência do projeto.
 
 <Carrossel>
 
-![design-digital-1.jpg](/images/content/portfolio/cbtij/design-digital-1.jpg)
+![design-digital-1.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-1.jpg)
 
-![design-digital-2.jpg](/images/content/portfolio/cbtij/design-digital-2.jpg)
+![design-digital-2.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-2.jpg)
 
-![design-digital-3.jpg](/images/content/portfolio/cbtij/design-digital-3.jpg)
+![design-digital-3.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-3.jpg)
 
-![design-digital-4.jpg](/images/content/portfolio/cbtij/design-digital-4.jpg)
+![design-digital-4.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-4.jpg)
 
-![design-digital-5.jpg](/images/content/portfolio/cbtij/design-digital-5.jpg)
+![design-digital-5.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-5.jpg)
 
-![design-digital-6.jpg](/images/content/portfolio/cbtij/design-digital-6.jpg)
+![design-digital-6.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-6.jpg)
 
-![design-digital-7.jpg](/images/content/portfolio/cbtij/design-digital-7.jpg)
+![design-digital-7.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-7.jpg)
 
 </Carrossel>
 
@@ -88,5 +102,7 @@ A revista é um registro inspirador dos acontecimentos da II Mostra de Repertór
 ![mostra-7.jpg [900x1200] ](/images/content/portfolio/cbtij/mostra-7.jpg)
 
 </Galeria>
+
+<BotaoCompartilhar />
 
 <Espaco altura="40px" />

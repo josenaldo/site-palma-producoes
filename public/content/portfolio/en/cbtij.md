@@ -1,7 +1,7 @@
 ---
 id: 14
 highlight: true
-title: Centro Brasileiro de Teatro para a Infância e Juventude - CBTIJ
+title: CBTIJ
 tags:
   - Graphic and Digital Design
 description:
@@ -14,7 +14,7 @@ image:
 
 ---
 
-<Titulo/>
+<Titulo subtitulo="Centro Brasileiro de Teatro para a Infância e Juventude" />
 
 <Tags />
 
@@ -39,25 +39,39 @@ The visual identity of the II CBTIJ Repertoire Showcase was conceived with the p
 
 With elements of popular culture and vibrant colors, we sought to convey the energy and plurality present in the performances, valuing the multiplicity of stories and perspectives explored during the showcase.
 
+<Galeria>
+
+![identidade-visual-1.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-1.jpg)
+
+![identidade-visual-2.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-2.jpg)
+
+![identidade-visual-3.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-3.jpg)
+
+![identidade-visual-4.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-4.jpg)
+
+![identidade-visual-5.jpg [1200x675] ](/images/content/portfolio/cbtij/identidade-visual-5.jpg)
+
+</Galeria>
+
 ## Digital Design
 
 Text: To expand the event's reach, in an accessible and attractive way, we developed the graphic materials for digital communication, exploring the richness of the elements of the visual identity we created for the project. The materials for each activity were created with a careful eye, bringing out the essence of the project.
 
 <Carrossel>
 
-![design-digital-1.jpg](/images/content/portfolio/cbtij/design-digital-1.jpg)
+![design-digital-1.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-1.jpg)
 
-![design-digital-2.jpg](/images/content/portfolio/cbtij/design-digital-2.jpg)
+![design-digital-2.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-2.jpg)
 
-![design-digital-3.jpg](/images/content/portfolio/cbtij/design-digital-3.jpg)
+![design-digital-3.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-3.jpg)
 
-![design-digital-4.jpg](/images/content/portfolio/cbtij/design-digital-4.jpg)
+![design-digital-4.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-4.jpg)
 
-![design-digital-5.jpg](/images/content/portfolio/cbtij/design-digital-5.jpg)
+![design-digital-5.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-5.jpg)
 
-![design-digital-6.jpg](/images/content/portfolio/cbtij/design-digital-6.jpg)
+![design-digital-6.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-6.jpg)
 
-![design-digital-7.jpg](/images/content/portfolio/cbtij/design-digital-7.jpg)
+![design-digital-7.jpg [1200x675] ](/images/content/portfolio/cbtij/design-digital-7.jpg)
 
 </Carrossel>
 
@@ -88,5 +102,7 @@ It is an honor for PALMA to participate in the realization of this editorial pro
 ![mostra-7.jpg [900x1200] ](/images/content/portfolio/cbtij/mostra-7.jpg)
 
 </Galeria>
+
+<BotaoCompartilhar />
 
 <Espaco altura="40px" />

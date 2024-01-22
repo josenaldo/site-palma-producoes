@@ -40,7 +40,7 @@ export default function Carousel({ slidesPerView = 1, children, py = 4 }) {
         style={{
           '--add-bottom': '50px',
           '--swiper-theme-color': theme.palette.primary.main,
-          '--swiper-navigation-color': '#000',
+          '--swiper-navigation-color': '#fff',
           '--swiper-navigation-size': '40px',
 
           '--swiper-pagination-bullet-size': '16px',
@@ -97,8 +97,8 @@ function NavigationButton({ className }) {
       className={className}
       sx={{
         display: 'inline-block',
-        color: '#000',
-        backgroundColor: 'rgb(255 255 255 / 15%)',
+        color: '#fff',
+        backgroundColor: 'rgb(0 0 0 / 60%)',
         width: 'var(--swiper-navigation-size) !important',
         height: 'var(--swiper-navigation-size) !important',
         borderRadius: '50%',
