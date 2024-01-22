@@ -10,5 +10,3 @@ image:
 ---
 
 *Com uma visão holística e equipe multidisciplinar, criamos experiências e narrativas que conectam cultura e sustentabilidade numa jornada de inspiração, inovação, impacto e transformação.*
-
-*Frente de trabalho:*.
