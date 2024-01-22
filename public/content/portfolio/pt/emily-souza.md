@@ -1,6 +1,6 @@
 ---
-id: 13
-highlight: true
+id: 6
+highlight: false
 title: Emily Souza • Psiquiatra
 tags:
   - Estratégia
@@ -52,5 +52,7 @@ para o MINIMALISMO e a construção de uma proposta que refletisse a EMPATIA, AL
 ![composicao-07.jpg [1200x675] ](/images/content/portfolio/emily-souza/composicao-07.jpg)
 
 ![composicao-08.jpg [1200x675] ](/images/content/portfolio/emily-souza/composicao-08.jpg)
+
+<BotaoCompartilhar />
 
 <Espaco altura="40px" />

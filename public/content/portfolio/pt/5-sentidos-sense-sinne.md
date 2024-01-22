@@ -19,8 +19,6 @@ image:
 
 <Tags />
 
-<RedesSociais />
-
 <IconeCompartilhar />
 
 <ImagemPrincipal />
@@ -37,7 +35,7 @@ O livro 5 Sentidos Senses Sinne do Momentos World - Artistic Cloud Center aborda
 
 A intenção do projeto foi criar um livro artístico-biográfico com uma diagramação bem dinâmica, fluida e artística, não linear, porém harmônica. A ideia foi transmitir os movimentos, sensações e vibrações, tal qual uma dança, a partir das fotografias, grafismos, tipografia e cores. Foi uma jornada desafiadora onde o racional e o emocional se misturaram e o compasso e ritmo foram criados a cada virada de página.
 
-![Picture2 [1200x900]](/images/content/portfolio/5-sentidos-sense-sinne/mockup-livro-5-sentidos-sense-sinne-1.jpg)
+
 
 <Youtube url="https://www.youtube.com/watch?v=hq-Qhq5rFWA" aspectRatio="21/9" fullWidth cover/>
 
@@ -53,25 +51,8 @@ Este livro apresenta de forma artística, documentária e poética a transforma�
 
 ## Lançamentos
 
-### 2021
-
-- [Live Conectart](https://www.instagram.com/p/CW-oWXpFwUk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-
-### 2023
-
-- [Rio de Janeiro](https://www.instagram.com/p/CmPME07g6_i/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-- [São Paulo](https://www.instagram.com/p/CjS33ZkOWMO/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-- [Brooklinfest](https://www.instagram.com/p/CkDfe-4Altk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-
-### 2024
-
-- [Brasília](https://www.instagram.com/p/CtrxKtcpyJ_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-
-### 2025
-
-- [Curitiba](https://www.instagram.com/p/Cv1JJurt2PF/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
-
 <Carrossel>
+
 
   ![Lançamento 01 - SP [caption: Lançamento 01 - SP]](/images/content/portfolio/5-sentidos-sense-sinne/lancamento-01-sp.jpg)
 
@@ -96,6 +77,24 @@ Este livro apresenta de forma artística, documentária e poética a transforma�
   ![Lançamento 11 - Live Conectart [caption: Lançamento 11 - Live Conectart]](/images/content/portfolio/5-sentidos-sense-sinne/lancamento-11-live-conectart.jpg)
 
 </Carrossel>
+
+### 2021
+
+- [Live Conectart](https://www.instagram.com/p/CW-oWXpFwUk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
+
+### 2023
+
+- [Rio de Janeiro](https://www.instagram.com/p/CmPME07g6_i/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
+- [São Paulo](https://www.instagram.com/p/CjS33ZkOWMO/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
+- [Brooklinfest](https://www.instagram.com/p/CkDfe-4Altk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
+
+### 2024
+
+- [Brasília](https://www.instagram.com/p/CtrxKtcpyJ_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
+
+### 2025
+
+- [Curitiba](https://www.instagram.com/p/Cv1JJurt2PF/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==)
 
 <BotaoCompartilhar />
 

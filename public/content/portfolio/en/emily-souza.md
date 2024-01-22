@@ -1,6 +1,6 @@
 ---
-id: 13
-highlight: true
+id: 6
+highlight: false
 title: Emily Souza • Psychiatrist
 tags:
   - Strategy
@@ -52,4 +52,7 @@ Her values, both as a professional and as a human being, inspired the path towar
 
 ![composicao-08.jpg [1200x675] ](/images/content/portfolio/emily-souza/composicao-08.jpg)
 
+<BotaoCompartilhar />
+
 <Espaco altura="40px" />
+

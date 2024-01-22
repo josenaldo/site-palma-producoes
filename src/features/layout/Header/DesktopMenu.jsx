@@ -23,6 +23,7 @@ export default function DesktopMenu({ searchOpen, toggleSearch }) {
         flexGrow: 1,
         alignItems: 'center',
         justifyContent: 'flex-end',
+        gap: 1,
       }}
     >
       <MenuItems
