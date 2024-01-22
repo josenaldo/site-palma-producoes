@@ -1,6 +1,6 @@
 ---
-id: 13
-highlight: true
+id: 6
+highlight: false
 title: Emily Souza • Psychiatrist
 tags:
   - Strategy
