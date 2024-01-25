@@ -1,6 +1,7 @@
 ---
 id: 4
 highlight: false
+visible: true
 title: CBTIJ
 tags:
   - Graphic and Digital Design

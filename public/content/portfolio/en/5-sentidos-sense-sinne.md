@@ -1,6 +1,7 @@
 ---
 id: 2
 highlight: false
+visible: true
 title: "Book 5 Sentidos Sense Sinne"
 tags:
   - Design

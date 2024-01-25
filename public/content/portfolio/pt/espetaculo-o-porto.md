@@ -1,6 +1,7 @@
 ---
 id: 9
 highlight: false
+visible: true
 title: Espetáculo “O Porto”
 tags:
   - Fotografia

@@ -1,6 +1,7 @@
 ---
 id: 8
 highlight: false
+visible: true
 title: "Curta Simbiose"
 tags:
   - Fotografia Still

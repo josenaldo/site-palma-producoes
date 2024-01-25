@@ -8,7 +8,7 @@ export function getPortfolioData(url) {
 
 export function getAllPortfolio(locale) {
   const filtered = allPortfolioItems.filter(
-    (portfolio) => portfolio.locale === locale
+    (portfolio) => portfolio.locale === locale && portfolio.visible === true
   )
 
   const sorted = filtered.sort((a, b) => {
@@ -28,7 +28,7 @@ export function getAllPortfolio(locale) {
 
 export function getPortfolio(locale, page = 0, limit = 10) {
   const filtered = allPortfolioItems.filter(
-    (portfolio) => portfolio.locale === locale
+    (portfolio) => portfolio.locale === locale && portfolio.visible === true
   )
 
   const sorted = filtered.sort((a, b) => {

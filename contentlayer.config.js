@@ -277,6 +277,11 @@ export const PortfolioItem = defineDocumentType(() => ({
       description: 'The highlight of the portfolio item',
       required: true,
     },
+    visible: {
+      type: 'boolean',
+      description: 'The visibility of the portfolio item',
+      defaultValue: true,
+    },
     title: {
       type: 'string',
       description: 'The title of the portfolio item',

@@ -1,6 +1,7 @@
 ---
 id: 3
 highlight: false
+visible: true
 title: "Rodovia Interoceânica: da Amazônia ao Pacífico"
 tags:
   - Documentário

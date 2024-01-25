@@ -1,6 +1,7 @@
 ---
 id: 1
 highlight: false
+visible: true
 title: "Mestre Sirso"
 tags:
   - Documentary
