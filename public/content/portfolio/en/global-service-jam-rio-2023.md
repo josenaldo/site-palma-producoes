@@ -1,6 +1,7 @@
 ---
 id: 11
 highlight: false
+visible: true
 title: "Global Service Jam Rio • 2023"
 tags:
   - Co-organization

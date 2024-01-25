@@ -1,6 +1,7 @@
 ---
 id: 7
 highlight: false
+visible: true
 title: "Mostra Cinema e Direitos Humanos"
 tags:
   - Cultural Production

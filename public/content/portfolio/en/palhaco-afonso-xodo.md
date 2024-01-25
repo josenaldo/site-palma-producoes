@@ -1,6 +1,7 @@
 ---
 id: 10
 highlight: false
+visible: true
 title: Palhaço Afonso Xodó, Banda Rio e Convidados
 tags:
   - Cultural Production

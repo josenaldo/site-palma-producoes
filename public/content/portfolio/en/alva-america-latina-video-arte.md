@@ -1,6 +1,7 @@
 ---
 id: 12
 highlight: false
+visible: true
 title: "ALVA"
 tags:
   - Brand Creation

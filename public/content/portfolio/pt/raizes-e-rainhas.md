@@ -1,6 +1,7 @@
 ---
 id: 13
 highlight: false
+visible: true
 title: "Raízes e Rainhas"
 tags:
   - Fotografia

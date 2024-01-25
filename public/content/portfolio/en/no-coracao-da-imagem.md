@@ -1,6 +1,7 @@
 ---
 id: 14
 highlight: false
+visible: true
 title: "No Coração da Imagem"
 tags:
   - Curation
