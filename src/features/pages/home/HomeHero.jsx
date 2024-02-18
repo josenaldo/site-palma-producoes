@@ -26,6 +26,7 @@ export default function HomeHero() {
         muted
         loop
         id="heroVideo"
+        poster="/videos/home/hero.jpg"
         sx={{
           position: 'absolute',
           zIndex: '-1',
@@ -34,9 +35,10 @@ export default function HomeHero() {
           objectFit: 'cover',
           overflow: 'hidden',
           filter: 'brightness(0.3)',
+          backgroundColor: 'grey.darker',
         }}
       >
-        <source src="/videos/home/hero-480p.mp4" type="video/mp4" />
+        <source src="/videos/home/hero-optimized.mp4" type="video/mp4" />
       </Box>
 
       <Container sx={{}}>
