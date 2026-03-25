@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Site Palma Produções
 
-## Getting Started
+Site oficial da [Palma Produções](https://site-palma-producoes.vercel.app) — produtora cultural e socioambiental comprometida com projetos de qualidade e impacto.
 
-First, run the development server:
+## Histórico do projeto
+
+| Evento | Data |
+|--------|------|
+| Repositório criado no GitHub | 27 de junho de 2023 |
+| Associação com a Vercel | 27 de junho de 2023 |
+
+O repositório foi criado em **27 de junho de 2023** com o commit inicial gerado pelo `create-next-app`. Na mesma data, o projeto foi associado à plataforma [Vercel](https://vercel.com), onde é hospedado até hoje em: https://site-palma-producoes.vercel.app
+
+## Tecnologias
+
+- [Next.js 13](https://nextjs.org/) — framework React para produção
+- [Contentlayer](https://contentlayer.dev/) — gerenciamento de conteúdo via Markdown/MDX
+- [Tailwind CSS](https://tailwindcss.com/) — estilização utilitária
+- [Material UI (MUI)](https://mui.com/) — componentes de interface
+- [next-i18next](https://github.com/i18next/next-i18next) — internacionalização (PT/EN)
+- [React Email](https://react.email/) — templates de e-mail
+- [Vercel](https://vercel.com) — hospedagem e deploy contínuo
+
+## Como rodar localmente
+
+1. Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/josenaldo/site-palma-producoes.git
+cd site-palma-producoes
+npm install
+```
+
+2. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Inicia o servidor de desenvolvimento (Contentlayer + Next.js) |
+| `npm run build` | Gera o build de produção |
+| `npm start` | Inicia o servidor em modo produção |
+| `npm run lint` | Executa o ESLint |
+| `npm run clean` | Remove os artefatos de build (`.next`, `.contentlayer`) |
+| `npm run email` | Inicia o servidor de preview de e-mails |
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+O projeto é implantado automaticamente na [Vercel](https://vercel.com) a cada push na branch `main`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+URL de produção: **https://site-palma-producoes.vercel.app**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para mais detalhes sobre deploy com Next.js, veja a [documentação de deployment do Next.js](https://nextjs.org/docs/deployment).
